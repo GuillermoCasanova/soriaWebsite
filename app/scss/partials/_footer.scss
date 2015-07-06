@@ -64,7 +64,6 @@ footer {
 .footer-siteInfo {
   @extend %mb2; 
   @extend %text-center;
-  color: $grey--dark;
 
   a { 
     @include transition(color .2s ease-in-out);

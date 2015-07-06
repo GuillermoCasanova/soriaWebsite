@@ -8,12 +8,23 @@
 }
 
 .button--primary {
-  @include button--3d($purple); 
+  @include button--flat($primaryColor); 
+
+    &.secondaryAction {
+        @include button--flat($accentColor);  
+    }   
 }
 
 .button--secondary {
-  @include button--flat($purple);
+  @include button--outline($primaryColor);
+
+  &.secondaryAction {
+        @include button--outline($accentColor);  
+    }   
+
 }
+
+
 
 .button--back {
   &:before {

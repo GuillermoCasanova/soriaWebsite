@@ -6,15 +6,26 @@
 
 .panel {
   @extend %mt1; 
+  @extend %dropshadow; 
 }
 
 .panel--warning {
-    @include panel-type($red, $icon--alert);}
+    @include panel($red, $icon--alert);}
 
 .panel--information {
-    @include panel-type($primaryColor, false);
+    @include panel($primaryColor, false);
     border-top: 6px solid $primaryColor; 
-    }
+    background-color: transparent; 
+}
+
+
+.panel--information--secondary {
+    border-top: 6px solid $secondaryColor; 
+}
+
+.panel--information--tetriary {
+    border-top: 6px solid $grey--dark; 
+}
 
 .panel-title {
   @extend %fwb;
@@ -37,3 +48,4 @@
         @include transform(scale(1.1)); 
     }
 }
+

@@ -3,7 +3,7 @@
     #Panels
 \*------------------------------------*/
 
-@mixin panel-type($color, $icon)
+@mixin panel($color, $icon)
 {
   @extend %ptrbl2; 
   background-color: $grey--light;  
