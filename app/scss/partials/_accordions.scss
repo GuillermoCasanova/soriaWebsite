@@ -1,0 +1,110 @@
+
+/*------------------------------------*\
+    #Accordions
+\*------------------------------------*/
+
+
+.accordion {
+  @include accordion-container;
+
+  & > :nth-child(even) .accordion-title,
+  & > :nth-child(even) .content {
+    background-color: #fff; 
+  }
+
+  & > :nth-child(odd) .accordion-title,
+  & > :nth-child(odd) .content,
+  & > :nth-child(odd) .content.active {
+    background-color: $grey--light; 
+  }
+
+  .content {
+    @include accordion-content;
+    @extend %prl1;
+    @extend %ptb2;     
+  }  
+  
+  //makes the plus sign turn to negative sign
+  & > dd.active .accordion-title-icon {
+    @include icon($icon--negsign);
+  }
+  
+  dd {
+    @extend %mb0; 
+  }
+
+}
+
+.accordion-title {
+  @include accordion-navigation;
+  @extend %ptb3; 
+  @extend %pl3;  
+  @extend %pr3; 
+  @extend %mb0; 
+  @extend %media--fr;
+  color: $off-black !important; 
+
+  .accordion-title-icon {
+    //Adds plus sign to accordion titles 
+    @include icon($icon--plussign);
+    margin-left: rem-calc(6); 
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Contained Accordion
+\*------------------------------------*/
+
+
+.accordion--contained {
+  border: 4px solid $grey--mid;
+
+
+  dd.active {
+    .accordion-title {
+      border-bottom: 1px solid $grey--light; 
+    }
+  }
+
+  .accordion-title {
+    @extend %ptb2; 
+    @extend %pl2;
+  }
+
+  .content {
+    @extend %ptrbl2;   
+    border-bottom: 1px solid $grey--light; 
+    &
+    p,
+    ul,
+    li {
+      font-size: rem-calc(13);
+    }  
+  }  
+
+  .content,
+  .accordion-title {
+    font-size: rem-calc(14);
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Accordion With Colored Odd Tabs 
+\*------------------------------------*/
+
+
+.accordion--colored {
+  & > :nth-child(even) {
+    .accordion-title:hover {
+      color: #fff; 
+    }
+  }
+}

@@ -1,0 +1,152 @@
+
+/*------------------------------------*\
+    #Sections
+\*------------------------------------*/
+
+
+.section {
+    @include box-sizing(border-box);
+    @extend %position--relative; 
+    padding-bottom: rem-calc(48);
+}
+
+
+.section--highlighted { 
+    background-color: $grey--light; 
+    border-bottom: solid 1px $grey--mid;  
+    border-top: solid 1px $grey--mid;
+
+    .section-text {
+        color: #fff; 
+    }
+}
+
+.section--highlighted--noBorderTop { 
+    border-top: 0; 
+}
+
+.section--normal {
+    background-color: #fff;   
+}
+
+.section--alt {
+    overflow: hidden;
+    width: 100%; 
+    background-color: $secondaryColor; 
+
+    & > .row { 
+      @extend %position--relative; 
+    }
+
+    & .section-text {
+        color: #fff; 
+        @include text-shadow--title($secondaryColor);  
+    }
+
+    & .section-text--highlight {
+        color: $accentColor;
+    }
+
+    & .section--alt-bg {
+        @extend %position--absolute; 
+        min-width: rem-calc(800);
+        opacity: .3;
+        top: 0; 
+        left:0; 
+        right: 0; 
+        bottom: 0; 
+        width: 100%;
+
+        // @include breakpoint(mobileOnly) {
+        //     margin-left: -50%; 
+        // }
+  
+        // @include breakpoint(teenBear) {
+        //     min-width: rem-calc(1440);
+        // }
+    }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    #Section Header 
+\*------------------------------------*/
+
+
+.section--header {
+    @extend %flexb; 
+    @extend %position--relative; 
+    @include single-box-shadow(0, -1px, 6px, 1px, rgba(0, 0, 0, .2), inset);
+    min-height: rem-calc(160);
+    overflow: hidden;
+    
+    @include breakpoint(teenBear) {
+        min-height: rem-calc(270);
+    }
+
+    @include breakpoint(mamaBear) {
+        min-height: rem-calc(310);
+    }
+
+    @include breakpoint(papaBear) {
+        min-height: rem-calc(380);
+    }
+
+    @include breakpoint(godBear) {
+        min-height: rem-calc(450);
+    }
+
+    p {
+        @extend %text--white;
+    }
+
+    .section-backgroundImage {
+        @extend %position--absolute; 
+        left: 0; 
+        margin: 0 auto;
+        opacity: .2;
+        right: 0; 
+        top: 0;
+        width: 100%; 
+        z-index: 10; 
+        
+        @include breakpoint(teenBear) {
+          min-width: rem-calc(880);
+        }
+
+        @include breakpoint(papaBear) {
+          min-width: rem-calc(1440);
+        }
+    }
+
+    .header-content {
+        @extend %text--white; 
+        @extend %ptb2; 
+        @extend %display--block; 
+        @extend %position--relative; 
+        @include grid-column(12);
+        z-index: 100;
+
+        @include breakpoint(teenBear) {
+            @include grid-column(6);
+        }
+    }
+
+    .header-title {
+      @extend %mb1; 
+      white-space: nowrap; 
+        
+      @include breakpoint(mobileOnly) {
+        font-size: rem-calc(32);
+      }
+    }
+
+    .header-title, 
+    .header-subTitle {
+        @extend %text--white; 
+    }
+}

@@ -1,0 +1,29 @@
+
+/*------------------------------------*\
+    #Photos
+\*------------------------------------*/
+
+//Variables for homepage Program photos 
+$homepage_program__yoga: "../images/circle_yoga1.jpg";
+$homepage_program__groupevents: "../images/circle_groupevents1.jpg";
+$homepage_program__team: "../images/circle_team1.jpg";
+$homepage_program__memberships: "../images/circle_memberships1.jpg";
+$homepage_program__portablewall: "../images/circle_portablewall1.jpg";
+$homepage_program__camp: "../images/circle_youthcamps1.jpg";
+
+
+$firstvisit_step3: "../images/firstvisit/step3.png";
+
+@mixin image--circle($dimensions) {
+  @include border-radius(9999px);
+  width: $dimensions;
+  height: $dimensions; 
+}
+
+@mixin image--border($bordercolor, $border-width) {
+  @extend %dropshadow;
+  border: $bordercolor solid $border-width;
+}
+
+
+

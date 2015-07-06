@@ -1,0 +1,82 @@
+
+/*------------------------------------*\
+    #Tabs
+\*------------------------------------*/
+
+.tabs {
+  @extend %mb0; 
+  @extend %clearfix; 
+  width: 100%;
+}
+
+
+.tabs.vertical-on-Large {
+    @include breakpoint(teenBear) {
+        width: 30%;
+        float: left; 
+    }
+
+
+    .tabs-title {
+        @include breakpoint(teenBear) {
+        width: 100%; 
+        }
+    }
+
+    .tabs-content {
+        @include breakpoint(teenBear) {
+        width: 70%; 
+        }
+    }
+}
+
+.tabs-title {
+  @extend %position--relative; 
+  @extend %horizontal-align; 
+  @extend %text-center; 
+
+  width: 100%; 
+  background-color: $grey--mid; 
+  @include breakpoint(teenBear) {
+    margin-left: 0; 
+    margin-right: 0; 
+    width: auto; 
+    float: left; 
+  }
+  
+  &.active,
+  &:hover,
+  &:active {
+    @extend %fwb;
+    background-color: #fff; 
+    a {
+      color: $off-black; 
+    }
+  }
+
+  a { 
+    @extend %ptb2; 
+    @extend %prl4;
+    @extend %display--inlineBlock; 
+    width: 100%; 
+  }
+
+}
+
+.tabs-content {
+  @extend %clearfix; 
+  @extend %ptb4; 
+  @extend %position--relative; 
+  background-color: #fff; 
+
+  .content {
+    display: none; 
+  }
+
+  .content.active {
+    @extend %display--block; 
+    @extend %position--relative; 
+  }
+}
+
+

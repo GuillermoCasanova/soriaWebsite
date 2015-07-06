@@ -1,0 +1,406 @@
+
+/*------------------------------------*\
+    #Slideshows 
+\*------------------------------------*/
+
+/* Slick Slider Variables */
+$slick-arrow-color: $off-black;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-dot-character: '\2022' !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: .75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: .25 !default;
+
+
+/* Slider */
+
+.slick-slider {
+  @extend %position--relative; 
+  @extend %display--block; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+
+        &:hover {
+      .slick-prev, 
+      .slick-next {
+        opacity: 1; 
+      }
+      .slick-prev {
+      left: 4%;
+      }
+      .slick-next {
+        right: 4%; 
+      } 
+  }
+}
+
+//Animation for loader
+
+@include keyframes (rotate) {
+  0% {
+      @include transform(rotate(0deg));
+  }
+  100% {
+      @include transform(rotate(360deg));
+  }
+
+}
+
+.pre-loader {
+  display: none; 
+}
+
+.slick-loading {
+
+.pre-loader {
+    display: block; 
+    height: rem-calc(40);
+    width: rem-calc(40);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    margin: auto;
+   @include animation(rotate .9s infinite linear);
+}
+
+  .slick-list,
+  .slide img {
+    opacity: 0; 
+  }
+
+}
+
+
+
+.slick-list {
+    @include single-transition(all, .4s, ease-in-out);
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    //Showing list of slides after init 
+    opacity: 1; 
+
+    &:focus {
+        outline: none;
+    }
+
+    .slick-loading & {
+        background: #fff;
+    }
+
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+
+
+}
+.slick-slider .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    @extend %position--relative; 
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+.slick-slide {
+    @extend %left; 
+    height: 100%;
+    min-height: 1px;
+    position: relative;
+    overflow: hidden;  
+  
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    // &.slick-loading img {
+    //     display: none;
+    // }
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    @include breakpoint(godBear) {
+      max-height: rem-calc(560); 
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    @include radius(100%);
+    @include single-transition(all, .4s, ease-in-out);
+    position: absolute;
+    display: block;
+    height: rem-calc(40);
+    width: rem-calc(40);
+    line-height: 0;
+    cursor: pointer;
+    background: white;
+    color: $grey--dark;
+    top: 50%;
+    margin-top: -10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    opacity: 0;
+
+    &:hover, 
+    &:focus {
+      outline: none;
+      color: $off-black;
+    }
+
+    &.slick-disabled:before {
+        opacity: $slick-opacity-not-active;
+    }
+}
+
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: rem-calc(30);
+    line-height: 1;
+    color: $slick-arrow-color;
+    opacity: $slick-opacity-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.slick-prev {
+  left: -3%;
+
+  @include icon($icon--arrowleft) {
+    right: 0;
+    left: -4px; 
+  }
+
+}
+
+
+.slick-next {
+  right: -3%;
+  
+  @include icon($icon--arrowright) {
+      left: 0;
+      right: -4px; 
+  }
+
+}
+
+
+
+
+
+
+/* Dots */
+
+.slick-dots {
+    @extend %mt2; 
+    position: absolute;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    //Making dots visible after loading;
+    opacity: 1; 
+
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+            @include border-radius(100%);
+            border: 0;
+            background: $grey--mid; 
+            display: block;
+            height: rem-calc(14);
+            width: rem-calc(14);
+            outline: none;
+            line-height: 0;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, 
+            &:focus {
+                background: $grey--dark; 
+                outline: none;
+                &:before {
+                  opacity: $slick-opacity-on-hover;
+                }
+            }
+        }
+    }
+    
+    .slick-active button {
+      background-color: $grey--dark;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Header Image  Slideshow  
+\*------------------------------------*/
+
+
+.slideShow--header {
+  @extend %mb4; 
+  background-color: $grey--mid; 
+}
+
+
+.slideShow--header-caption {
+  position: absolute; 
+  bottom: 0; 
+  background-color: transparent; 
+  height: auto;
+  width: rem-calc(190);
+  right: -50%;
+  opacity: 0; 
+  @include single-transition(all, .3s, cubic-bezier(.67,.11,.94,.96));
+
+  @include breakpoint(teenBear) {
+    width: rem-calc(300);
+  } 
+
+  @include breakpoint(mamaBear) {
+    width: rem-calc(440);
+  }
+
+  &.slideShow--header-caption.showing {
+    opacity: 1; 
+    right: 4%;
+
+    @include breakpoint(godBear) {
+      right: 8%; 
+    } 
+  }
+}
+
+
+.slideShow--header-caption-title {
+  @include single-transition(all, .3s, cubic-bezier(.67,.11,.94,.96));
+  color: #fff;
+  display: block;
+  font-size: rem-calc(18);
+  position: relative;
+  opacity: 0; 
+  
+  span {
+    padding: rem-calc(4); 
+    padding-bottom: rem-calc(2); 
+    padding-top: rem-calc(2);
+      
+
+    @include breakpoint(teenBear) {
+      font-size: rem-calc(36);
+      padding: rem-calc(8); 
+      padding-top: rem-calc(4);
+      padding-bottom: rem-calc(4);  
+    }
+  }
+
+  &.showing {
+    opacity: 1; 
+  }
+
+}
+
+
+.slideShow--header-caption-par {
+  @include single-transition(all, .4s, cubic-bezier(.67,.11,.94,.96));
+  opacity: 0; 
+  background-color: #fff;
+  color: $off-black; 
+  font-size: rem-calc(7);
+  font-weight: 300;
+  padding: rem-calc(5);
+  top: 0; 
+
+  @include breakpoint(teenBear) {
+    font-size: rem-calc(14);
+    padding: rem-calc(12);
+  }
+  
+  @include breakpoint(mamaBear) {
+    font-size: rem-calc(16);
+  }
+
+  &.showing {
+    opacity: 1; 
+  }
+}
+
+
+/*auto play slideShow Styles*/
+
+// .slideShow--autoplay {
+//   display: block;
+//   margin-bottom: em-calc(160);
+// }
+
+// .slideShow-page {
+//   position: absolute; 
+// }
+
+
+
+

@@ -1,0 +1,228 @@
+
+/*------------------------------------*\
+    #Icons (Extends from modules/partials.scss)
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    #Sizes 
+\*------------------------------------*/
+
+
+.icon--jumbo {
+  font-size: rem-calc(90);
+}
+
+.icon--large {
+  @extend %h2;
+}
+
+.icon--medium {
+  @extend %h4;
+}
+
+.icon--small {
+  @extend %h5; 
+}
+
+.icon--tiny {
+  margin: rem-calc(4); 
+  font-size: rem-calc(12);
+}
+
+
+
+
+/*------------------------------------*\
+    #Classes  
+\*------------------------------------*/
+
+
+.icon--opacityHover {
+  @include transition(.1s, ease-in-out);
+  opacity: .7;
+  
+  &:hover {
+    opacity: 1; 
+  }
+}
+
+.hasNoIcon {
+  &:before,
+  &:after {
+    content: "" !important; 
+  }
+}
+
+
+
+
+/*------------------------------------*\
+    #Communications 
+\*------------------------------------*/
+
+
+[rel*="email"] {
+  @include icon($icon--email) {
+    margin-right: 10px;
+  }
+}
+
+[rel*="phone"] {
+  @include icon($icon--phone) {
+    margin-right: 10px;
+    }
+}
+
+[rel*="fax"] {
+  @include icon($icon--fax) {
+    margin-right: 10px;
+  }
+}
+
+[rel*="location"] {
+  @include icon($icon--location) {
+    margin-right: 10px;
+  }
+
+  &.icon--brandColors {
+    color: $red;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Arrows 
+\*------------------------------------*/
+
+
+[rel*="prev"] {
+  @include icon($icon--arrowleft);
+}
+
+[rel*="next"] {
+  @include icon($icon--arrowright);
+}
+
+[rel*="up"] {
+  @include icon($icon--arrowup);
+}
+
+[rel*="down"] {
+  @include icon($icon--arrowdown);
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    #Social media 
+\*------------------------------------*/
+
+
+a[href*="twitter"],
+.icon--twitter {
+  @include icon($icon--twitter); 
+
+  &.icon--brandColors {
+    color: $blue--twitter;
+  }
+
+}
+
+a[href*="facebook"],
+.icon--facebook {
+  @include icon($icon--facebook);
+
+    &.icon--brandColors {
+    color: $blue--facebook;
+  }
+
+}
+
+a[href*="vimeo"],
+.icon--vimeo {
+  @include icon($icon--vimeo);
+}
+
+.icon--instagram {
+  @include icon($icon--instagram);
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Seasons 
+\*------------------------------------*/
+
+
+[rel*="summer"] {
+  @include icon($icon--summer) {
+    color: $yellow; 
+  }
+}
+
+[rel*="winter"] {
+  @include icon($icon--winter) {
+    color: $blue; 
+  }
+}
+
+[rel*="spring"] {
+  @include icon($icon--spring) {
+    color: $green; 
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Misc 
+\*------------------------------------*/
+
+
+[rel*="time"] {
+  @include icon($icon--clock, $position: after) {
+    color: $grey--light;
+    padding-left: rem-calc(7);
+    padding-right: rem-calc(2);
+  }
+}
+
+[rel*="date"] {
+    @include icon($icon--clock) {
+        color: $grey--dark; 
+        padding-right: rem-calc(4);
+    }
+}
+
+[rel*="tags"] {
+    @include icon($icon--tags) {
+        color: $grey--dark; 
+        padding-right: rem-calc(4);
+    }
+}
+
+//Genders 
+[rel*="male"] {
+    @include icon($icon--male);
+}
+
+//Documents, Waivers, Online Forms 
+a[href$=".pdf"] {
+    @include icon($icon--doc);
+}
+
+a[href*="rockgympro"] {
+  @include icon($icon--laptop);
+}

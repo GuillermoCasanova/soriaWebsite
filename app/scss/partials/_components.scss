@@ -1,0 +1,105 @@
+
+/*------------------------------------*\
+    #Components
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Tooltips  //Other properties are in the settings--overwrite.scss file 
+\*------------------------------------*/
+
+
+.tooltip {
+	border-top: solid 4px $purple;
+	max-width: em-calc(300);
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Choice With Icon Object
+\*------------------------------------*/
+
+
+.choiceWithIcon {
+	@extend %text-center; 
+
+	.choiceWithIcon-icon {
+			left: 0;
+			margin: 0 auto;
+			right: 0;
+			top: 0;
+
+			@include single-transition(all, .2s, ease-in-out);
+			
+			&:hover,
+			&:active {
+	    @extend %position--relative; 
+	    top: -1px;
+	  	} 
+	}
+
+	.bd {
+			margin-top: rem-calc(12);
+			@extend %horizontal-align; 
+	}
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Newsposts
+\*------------------------------------*/
+
+
+.post-thumbnail {
+    @extend %mb2; 
+    width: 90%;
+    height: auto;
+}
+
+
+
+.post-body {
+    font-family: 'Open Sans', $base-font-family, sans-serif; 
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Instagram Stream 
+\*------------------------------------*/
+
+
+.instagram_stream {
+	@extend %display--block; 
+	@extend %position--relative; 
+	@include block-grid(2);
+
+	@include breakpoint(teenBear) {
+		@include block-grid(3);
+		margin-right: auto;
+		margin-left: auto;
+		img {width: 100%; }
+	}
+
+	img {
+		@include single-transition(border, .2s, ease-in-out);
+		border: 4px solid $grey--dark;
+		&:hover {border: 4px solid #fff;}
+	}
+}
+
+.blockGrid-2 {
+	@include block-grid(2);
+}
+
+
+

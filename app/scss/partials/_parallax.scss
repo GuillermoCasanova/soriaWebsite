@@ -1,0 +1,138 @@
+
+/*------------------------------------*\
+    #Parallax (With bg image fixed)
+\*------------------------------------*/
+
+
+.parallax-bg {
+    position: relative; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 60rem;
+}
+
+
+
+
+/*------------------------------------*\
+    #Parallax Backgrounds
+\*------------------------------------*/
+
+
+.bg--youthTeam1 {
+    @include breakpoint(childBear) {
+      background-image: url("../images/background_youthteam1_small.jpg")
+    }
+    
+    @include breakpoint(teenBear) {
+    background-image: url("../images/background_youthteam1.jpg");
+  }
+}
+
+
+.bg--youthCamps1 { 
+    @include breakpoint(childBear) {
+      background-image: url("../images/background_youthcamps1_small.jpg")
+    }
+    
+    @include breakpoint(teenBear) {
+    background-image: url("../images/background_youthcamps1.jpg");
+  }
+}
+
+
+// @include parallax-init;
+
+
+// .container--parallax {
+//   padding: 10%;
+//   max-width: 40em;
+//   margin: auto;
+//   > * {
+//     position: absolute;
+//   }
+// }
+
+
+// .under--4 {
+//   @include parallax(.4);
+// }
+
+// .over--1 {
+//   @include parallax(2);
+// }
+
+
+// .container {
+//   :nth-child(1) {
+    
+//     top: 200px;
+//     left: 200px;
+//   }
+//   :nth-child(2) {
+//     @include parallax(.2);
+//     top: 200px;
+//     left: 500px;
+//   }
+//   :nth-child(3) {
+//     @include parallax(.3);
+//     top: 400px;
+//     left: 600px;
+//   }
+//   :nth-child(4) {
+//     @include parallax(.1);
+//     top: 500px;
+//     left: 500px;
+//   }
+//   :nth-child(5) {
+//     @include parallax(-2);
+//     top: 2000px;
+//     left: 2000px;
+//   }
+//   :nth-child(6) {
+//     @include parallax(.4);
+//     top: 600px;
+//     left: 300px;
+//   }
+//   :nth-child(7) {
+//     @include parallax(-1);
+//     top: 400px;
+//     left: 1000px;
+//   }
+//   :nth-child(8) {
+//     @include parallax(-.4);
+//     top: 100px;
+//     left: 1400px;
+//   }
+//   :nth-child(9) {
+//     @include parallax(.4);
+//     top: 900px;
+//     left: 500px;
+//   }
+//   :nth-child(10) {
+//     @include parallax(-1);
+//     top: 1600px;
+//     left: 100px;
+//   }
+//   padding: 10%;
+//   max-width: 40em;
+//   margin: auto;
+//   > * {
+//     position: absolute;
+//   }
+// }
+
+
+
+
+  
+
+
+
+// <img src="images/background_youthteam1_small.jpg" 
+// data-interchange="[images/background_youthteam1_small.jpg, (small)], 
+// [images/background_youthteam1.jpg, (medium)]" class="section--alt-bg"> 

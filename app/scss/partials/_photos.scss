@@ -1,0 +1,41 @@
+
+/*------------------------------------*\
+    #Images
+\*------------------------------------*/
+
+
+.image--circle--small {
+		@include image--circle(em-calc(100));
+}
+
+.image--circle--medium {
+		@include image--circle(em-calc(230));
+}
+
+.image--circle--big {
+		@include image--circle(em-calc(360));
+}
+
+.image--border {
+		@include image--border(#fff, em-calc(12));
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    #Classes
+\*------------------------------------*/
+
+
+[class*="image--"] { 
+  margin: rem-calc(12);
+}
+
+.image--responsive {
+		max-width: 100%; 
+		height: auto; 
+}

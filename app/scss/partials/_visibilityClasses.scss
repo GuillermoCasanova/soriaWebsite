@@ -1,0 +1,26 @@
+
+/*------------------------------------*\
+    #Visibility Classes 
+\*------------------------------------*/
+
+
+.hide-on-small {
+  @include breakpoint(mobileOnly) {
+    display: none !important; 
+  }
+}
+
+.show-on-small {
+  display: none !important; 
+  
+  @include breakpoint(mobileOnly) {
+    display: block !important; 
+  }
+
+}
+
+.hide-on-large {
+    @include breakpoint(mamaBear) {
+        display: none; 
+    }
+}

@@ -1,0 +1,108 @@
+
+/*------------------------------------*\
+    #Logos 
+\*------------------------------------*/
+
+
+.logo--aiguille {
+	background: url('../images/logo_aiguille.svg') left no-repeat;
+	background-size: cover;
+	min-width: em-calc(50);
+	min-height: em-calc(30)
+}
+
+//Fallback image for browsers that don't support .svg
+.no-svg .logo--aiguille {
+	background: url('../images/logo_aiguille.png') left no-repeat;
+	background-size: cover;
+}
+
+
+.logo--404 {
+	background-image: url('../images/404.svg');
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center; 
+	width: 100%;
+	min-height: 400px ; 
+	height: auto; 
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Proshop Logos   
+\*------------------------------------*/
+
+
+.logo--laSportiva {
+		@extend %logo;
+		background-image: url('../images/logo_lasportiva.png');
+}
+
+.logo--blackDiamond {
+		@extend %logo;
+		background-image: url('../images/logo_blackdiamond.svg');
+}
+
+.logo--metolius {
+		@extend %logo;
+		background-image: url('../images/logo_metolius.svg');
+}
+
+.logo--petzl {
+		@extend %logo;
+		background-image: url('../images/logo_petzl.svg');
+}
+
+.logo--madRock {
+		@extend %logo;
+		background-image: url('../images/logo_madrock.png');
+}
+
+.logo--fiveTen {
+		@extend %logo;
+		background-image: url('../images/logo_fiveten.jpg');
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Sizes 
+\*------------------------------------*/
+
+
+.logo--small {
+	margin: rem-calc(6);
+	min-width: rem-calc(80);
+	min-height: rem-calc(60);
+}
+
+.logo--medium {
+	margin: rem-calc(8);
+	min-width: rem-calc(120);
+	min-height: rem-calc(100);
+}
+
+.logo--large {
+	margin: rem-calc(10);
+	min-width: rem-calc(140);
+	min-height: rem-calc(140);
+}
+
+
+.logoHover-animation {
+	
+	@include single-transition(opacity, .2s, ease-in-out);
+	opacity: 1; 
+
+	&:hover,
+	&:active {
+		opacity: .6;
+	}
+}
+

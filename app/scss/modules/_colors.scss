@@ -1,0 +1,72 @@
+
+/*------------------------------------*\
+    #Colors 
+\*------------------------------------*/
+
+
+
+$primaryColor: #ef8111; 
+$primaryColor--dark: darken($primaryColor, 10%); 
+
+$secondaryColor: #3c4750; 
+$accentColor: #0d3d64; 
+
+//Blacks n' greys
+$off-black: #191919;
+$grey--light: #f5f5f5;
+$grey--mid: #dfdfdf;
+$grey--dark: #888f95;
+
+//Colors
+$blue: #4ebfd7;
+$green: #b9d362;
+$orange: #f5a540;
+$purple: #8568b1;
+$pink: #f40878;
+$red: #e0274f;
+$yellow: #f6d42e;
+
+$blue--light: lighten($blue, 5%);
+$green--light: lighten($green, 5%);
+$orange--light: lighten($orange, 5%);
+$purple--light: lighten($purple, 5%);
+$pink--light: lighten($pink, 5%);
+$red--light: lighten($red, 5%);
+$yellow--light: lighten($yellow, 5%);
+
+$blue--dark: darken($blue, 5%);
+$green--dark:  darken($green, 5%);
+$orange--dark: darken($orange, 5%);
+$purple--dark: darken($purple, 5%);
+$pink--dark: darken($pink, 5%);
+$red--dark: darken($red, 5%);
+$yellow--dark: darken($yellow, 5%);
+
+// $aiguilleColors: 
+// (blue, $blue), 
+// (green, $green), 
+// (orange, $orange), 
+// (purple, $purple), 
+// (pink, $pink), 
+// (red, $red), 
+// (yellow, $yellow);
+
+
+
+
+
+/*------------------------------------*\
+    #Social Media  
+\*------------------------------------*/
+
+
+$blue--twitter: #55ACEE;
+$blue--facebook: #3b5998;
+$blue--vimeo: #1ab7ea; 
+
+
+//
+//Element Colors
+//
+
+$dropDown-color: $off-black; 

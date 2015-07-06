@@ -1,0 +1,214 @@
+
+/*------------------------------------*\
+    #Typography 
+\*------------------------------------*/
+
+
+body, html {	
+	font-family: $base-font-family; 
+	font-size: rem-calc(15);
+
+	@include breakpoint(teenBear) {
+			font-size: rem-calc(18); 
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Text Weights 
+\*------------------------------------*/
+
+
+.fwn {font-weight: $normal;}
+.fwb {font-weight: $bold;}
+.uc {text-transform: uppercase;}
+
+
+
+
+
+/*------------------------------------*\
+    #Text Alignments  
+\*------------------------------------*/
+
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+
+
+
+
+/*------------------------------------*\
+    #Text Sizes and hn sizes  
+\*------------------------------------*/
+
+
+h1, 
+.h1 { 
+		@extend %h1; 
+}
+
+h2, 
+.h2 { 
+		@extend %h2; 
+}
+
+h3, 
+.h3 { 
+		@extend %h3; 
+}
+
+h4, 
+.h4 { 
+		@extend %h4; 
+}
+
+h5, 
+.h5 { 
+		@extend %h5; 
+}
+
+h6, 
+.h6 { 
+		@extend %h6; 
+}
+
+.text--mega { 
+		@extend %text--mega; 
+}
+
+.text--micro { 
+		@extend %text--micro; 
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Paragraph Sizes
+\*------------------------------------*/
+
+
+.par--subText {
+		font-size: rem-calc(14);
+}
+
+.par--important {
+		font-size: rem-calc(18);
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Blockquotes 
+\*------------------------------------*/
+
+
+.blockquote--bubble {
+		@include blockquote($blue);
+}	
+
+
+
+
+/*------------------------------------*\
+    #Links
+\*------------------------------------*/
+
+
+a {
+	@extend %fwb; 
+	@extend %disableDefaultHighlight;
+
+	&[class*="link"] {
+			@include single-transition(all, .2s, ease-in-out);
+	}
+
+	&.link--orange:hover { color: $orange;}
+	&.link--red:hover { color: $red;}
+	&.link--blue:hover { color: $blue;}
+	&.link--purple:hover {color: $purple;}
+	&.link--yellow:hover {color: $yellow;}
+	&.link--green:hover {color: $green;}
+}
+
+.link--white {
+	color: #fff; 
+	
+	&:hover {
+		color: $grey--mid; 
+	}
+}
+
+
+.link--underline {
+	text-decoration: underline; 
+
+	&:hover {
+		text-decoration: none; 
+	}
+}
+
+
+
+
+/*------------------------------------*\
+    #Headers
+\*------------------------------------*/
+
+
+.header--standout {
+		@extend %mt1; 
+		@extend %mb1; 
+		@extend %text-center; 
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Section--Alt Type Styles 
+\*------------------------------------*/
+
+.section--alt {
+	
+	.section--alt-subTitle {
+            @extend %fwb;
+			@extend %text--white; 
+	}
+
+	.section--alt-text {
+		@extend %text--white;
+
+		&:hover {
+				@extend %text--white; 
+			}
+	}
+
+	.section--alt-link {
+			padding: rem-calc(2); 
+			&:hover {
+					background-color: #fff; 
+			}
+	}
+}
+
+
+//
+//Font Colors and Typefaces
+//
+
+.txtc2 {
+	color: $grey--mid; 
+}
+
+

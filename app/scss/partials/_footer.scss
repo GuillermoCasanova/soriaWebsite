@@ -1,0 +1,100 @@
+    
+/*------------------------------------*\
+    #Footer 
+\*------------------------------------*/
+
+footer {
+  @extend %text-left; 
+  @extend %pt4;
+  @extend %text--white; 
+  background-color: $secondaryColor; 
+  
+  .footer-title {
+    @extend %fwb;
+    @extend %text--white;
+    @extend %uc; 
+  }
+
+  .footer-link {  
+    color: $grey--dark; 
+
+    &:hover {
+         @extend %text--white; 
+    }
+
+  }
+
+  //Hours Of Operation Block Begin
+  .footer-hoursofoperation {
+
+    hr {
+      border-color: $grey--dark;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0; 
+      width: 100%;
+    }
+
+    .hoursofoperation-days {
+      @extend %left
+    }
+
+    .hoursofoperation-time {
+      @extend %right;
+    }
+
+    .hoursofoperation-time.active:after {color: $green;}
+
+    .hoursofoperation-days, 
+    .hoursofoperation-time {
+      margin-bottom: em-calc(8);
+      margin-top: em-calc(8);
+    }
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Credit Info 
+\*------------------------------------*/
+
+.footer-siteInfo {
+  @extend %mb2; 
+  @extend %text-center;
+  color: $grey--dark;
+
+  a { 
+    @include transition(color .2s ease-in-out);
+    color: $grey--dark;
+    @extend %link--underline; 
+
+    &:hover {
+      @extend %text--white; 
+    }
+
+  }
+}
+
+
+[class*="copyright"] {
+  @extend %mb1; 
+  @extend %display--block; 
+  @extend %text--micro;  
+
+  @include breakpoint(teenBear) {
+    float: left; 
+  }
+}
+  
+[class*="credit"] {  
+  @extend %mb1; 
+  @extend %display--block; 
+  @extend %text--micro; 
+
+  @include breakpoint(teenBear) {
+    float: right; 
+  }
+}

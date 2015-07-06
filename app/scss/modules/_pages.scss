@@ -1,0 +1,40 @@
+
+/*------------------------------------*\
+    #Page Colors 
+\*------------------------------------*/
+
+@mixin sectionMainColor($color)
+{
+		.txt--sectionMainColor { color: $color;}
+	  
+		.bg--sectionMainColor {background-color: $color !important;}
+
+        .icon--sectionMainColor {
+            &:after, 
+            &:before {
+                color: $color; 
+            }
+        }
+	   
+		a { @include transition(color, .2s ease-in-out); color: $color; }
+		a:hover { color: $off-black; }
+		
+		.underline--sectionMainColor {
+				border-bottom: 4px solid $color;
+				width: 90%;
+		}
+
+		.accordion-title:hover { color: $color !important; }
+		.accordion-title.bg--sectionMainColor:hover {color: #FFF !important;}
+		
+		.section--alt-title {
+				color: $color; 
+				@include text-shadow--title($color);
+		}
+
+		.header-title, .header-subTitle {
+				@include text-shadow--title($color);
+		}
+
+}
+

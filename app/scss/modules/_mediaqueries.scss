@@ -1,0 +1,29 @@
+
+/*------------------------------------*\
+    #Media Queries 
+\*------------------------------------*/
+
+
+@mixin breakpoint($point) {
+ @if $point == godBear {
+    @media (min-width: 1300) { @content; }
+  }
+  @else if $point == mobileOnly {
+    @media (min-width: 100px)  and (max-width: 460px) { @content; }
+  }
+  @else if $point == papaBear {
+    @media (min-width: 1180px) { @content; }
+  }
+  @else if $point == mamaBear {
+    @media (min-width: 900px) { @content;}
+  }
+  @else if $point == teenBear {
+    @media (min-width: 760px) { @content; }
+  }
+  @else if $point == childBear {
+    @media (min-width: 100px) { @content; }
+  }
+
+}
+
+

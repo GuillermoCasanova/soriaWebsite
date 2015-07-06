@@ -1,0 +1,18 @@
+
+/*------------------------------------*\
+    #Panels
+\*------------------------------------*/
+
+@mixin panel-type($color, $icon)
+{
+  @extend %ptrbl2; 
+  background-color: $grey--light;  
+
+  .panel-title {
+    @include icon($icon) {
+      @extend %h3; 
+      @extend %mr2; 
+      color: lighten($color, 20%);
+    }
+  }
+}

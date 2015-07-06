@@ -1,0 +1,100 @@
+
+/*------------------------------------*\
+    #Pricing Tables 
+\*------------------------------------*/
+
+.pricingtable {
+  @include pricing-table-container;
+  @extend %mt1;
+
+  .right {
+    font-weight: $extra-bold;
+  }
+
+  .pricingtable-smalltext {
+    color: $off-black; 
+    font-size: em-calc(10);
+  }
+  
+  &.is-halfofcontainer, &.is-thirdofcontainer {
+
+    &.text-center {
+      .pricingtable-subtitle,
+      [class*="pricingtable-item--"] {
+        @extend .text-center; 
+      }
+    }
+  }
+    &.is-halfofcontainer {
+
+      @include breakpoint(teenBear) {
+        float: left; 
+        width: 48%; 
+        margin-right: 2%; 
+      }
+  }
+
+    &.is-thirdofcontainer {
+
+      @include breakpoint(teenBear) {
+        float: left; 
+        width: 33%; 
+      }
+    }
+}
+
+.pricingtable-icondescriptor {
+  @extend %mtb3; 
+  font-size: em-calc(100);
+}
+
+
+
+
+/*------------------------------------*\
+    #Titles 
+\*------------------------------------*/
+
+
+.pricingtable-title {
+  @extend %ptb2; 
+  @extend %fwb; 
+  @extend %h3;
+  text-align: center; 
+  color: #fff; 
+  text-transform: uppercase;
+}
+
+.pricingtable-subtitle {
+  @include pricing-table-bullet;
+  background-color: $grey--light; 
+  font-weight: $extra-bold; 
+}
+
+.pricingtable-subtitle, 
+[class*="pricingtable-item"] {
+  border-left: 1px solid  $grey--mid; 
+  border-right: 1px solid  $grey--mid;
+}
+
+[class*="pricingtable-item"] {
+  @include pricing-table-bullet;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #List Items 
+\*------------------------------------*/
+
+
+.pricingtable-item--greybg {
+  background-color: $grey--light; 
+}
+  
+.pricingtable-item--whitebg {
+  background-color: #fff; 
+}
