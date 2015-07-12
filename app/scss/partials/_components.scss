@@ -78,28 +78,28 @@
 \*------------------------------------*/
 
 
-.instagram_stream {
-	@extend %display--block; 
-	@extend %position--relative; 
-	@include block-grid(2);
+// .instagram_stream {
+// 	@extend %display--block; 
+// 	@extend %position--relative; 
+// 	@include block-grid(2);
 
-	@include breakpoint(teenBear) {
-		@include block-grid(3);
-		margin-right: auto;
-		margin-left: auto;
-		img {width: 100%; }
-	}
+// 	@include breakpoint(teenBear) {
+// 		@include block-grid(3);
+// 		margin-right: auto;
+// 		margin-left: auto;
+// 		img {width: 100%; }
+// 	}
 
-	img {
-		@include single-transition(border, .2s, ease-in-out);
-		border: 4px solid $grey--dark;
-		&:hover {border: 4px solid #fff;}
-	}
-}
+// 	img {
+// 		@include single-transition(border, .2s, ease-in-out);
+// 		border: 4px solid $grey--dark;
+// 		&:hover {border: 4px solid #fff;}
+// 	}
+// }
 
-.blockGrid-2 {
-	@include block-grid(2);
-}
+// .blockGrid-2 {
+// 	@include block-grid(2);
+// }
 
 
 

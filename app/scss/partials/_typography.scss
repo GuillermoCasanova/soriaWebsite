@@ -9,7 +9,7 @@ body, html {
 	font-size: rem-calc(15);
 
 	@include breakpoint(teenBear) {
-			font-size: rem-calc(18); 
+			font-size: rem-calc(16); 
 	}
 }
 
@@ -125,27 +125,12 @@ h6,
 
 
 a {
-	@extend %fwb; 
 	@extend %disableDefaultHighlight;
 
 	&[class*="link"] {
 			@include single-transition(all, .2s, ease-in-out);
 	}
 
-	&.link--orange:hover { color: $orange;}
-	&.link--red:hover { color: $red;}
-	&.link--blue:hover { color: $blue;}
-	&.link--purple:hover {color: $purple;}
-	&.link--yellow:hover {color: $yellow;}
-	&.link--green:hover {color: $green;}
-}
-
-.link--white {
-	color: #fff; 
-	
-	&:hover {
-		color: $grey--mid; 
-	}
 }
 
 

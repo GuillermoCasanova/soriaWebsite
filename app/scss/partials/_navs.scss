@@ -48,27 +48,36 @@
 \*------------------------------------*/
 
 
-.menu-icon {
-
-  &:hover,
-  &:active {
-
-    span:after {
-      box-shadow: 
-      0px 0px 0px 1px $green, 
-      0px 7px 0px 1px $green, 
-      0px 14px 0px 1px $green;
-    }
-  }
-}
-
 .tab-bar {
   @extend %dropshadow--darker; 
   z-index: 970; 
 
-  @include breakpoint(mamaBear) {
-    display: none; 
-  }
+    .menu-icon {
+            span:after {
+            
+                @include single-transition(all, .2s, ease-in-out); 
+                  box-shadow: 
+              0px 0px 0px 1.5px $grey--dark, 
+              0px 7px 0px 1.5px $grey--dark, 
+              0px 14px 0px 1.5px $grey--dark;
+            }
+
+            
+        &:hover,
+        &:active {
+            
+            span:after {
+
+              box-shadow: 
+              0px 0px 0px 1.5px $secondaryColor, 
+              0px 7px 0px 1.5px $secondaryColor, 
+              0px 14px 0px 1.5px $secondaryColor;
+            }
+
+        }
+
+    }
+
 }
 
 
@@ -220,45 +229,45 @@
 //Triangle Above Drop-downs
 //
 
-.top-bar-section ul.dropdown:after {
-	content: "";
-	position: absolute;
-	display: block;
-	top: -14px;
-	bottom: -14px;
-	bottom: auto;
-	left: 0;
-	right: 0;
-	margin: 0 auto; 
-	width: 0; 
-	border-width: 0 14px 14px;
-	border-style: solid;
-	border-color: $dropDown-color transparent;
-}
+// .top-bar-section ul.dropdown:after {
+// 	content: "";
+// 	position: absolute;
+// 	display: block;
+// 	top: -14px;
+// 	bottom: -14px;
+// 	bottom: auto;
+// 	left: 0;
+// 	right: 0;
+// 	margin: 0 auto; 
+// 	width: 0; 
+// 	border-width: 0 14px 14px;
+// 	border-style: solid;
+// 	border-color: $dropDown-color transparent;
+// }
 
 
 //
 //Triangle Next To link that are dropdowns 
 //
 
-.top-bar-section .right .has-dropdown > a:after {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: $grey--mid transparent transparent;
-    border-image: none;
-    border-right: 5px inset transparent;
-    border-style: solid inset inset;
-    border-width: 5px;
-    content: "";
-    display: block;
-    height: 0;
-    margin-top: -2.5px;
-    right: -8px; 
-    top: 42.5px;
-    width: 0;
-}	
+// .top-bar-section .right .has-dropdown > a:after {
+//     -moz-border-bottom-colors: none;
+//     -moz-border-left-colors: none;
+//     -moz-border-right-colors: none;
+//     -moz-border-top-colors: none;
+//     border-color: $grey--mid transparent transparent;
+//     border-image: none;
+//     border-right: 5px inset transparent;
+//     border-style: solid inset inset;
+//     border-width: 5px;
+//     content: "";
+//     display: block;
+//     height: 0;
+//     margin-top: -2.5px;
+//     right: -8px; 
+//     top: 42.5px;
+//     width: 0;
+// }	
 
 .top-bar-section .right .has-dropdown > a {
   padding-right: rem-calc(20) !important;
@@ -267,45 +276,68 @@
 
 
 
-//
-//Logo Container Styles
-//
+
+
+
+
+/*------------------------------------*\
+    #Mobile Nav Styles 
+\*------------------------------------*/
+
+
+.off-canvas-list {
+
+    li {
+
+        @include single-transition(all, .2s, ease-in-out); 
+         &:hover {
+    
+            & > a {
+
+                @include single-transition(all, .2s, ease-in-out); 
+                border-left: 4px solid $primaryColor; 
+                color: $primaryColor; 
+                
+            }   
+        }
+    }
+
+
+}
+
+
+
+
+/*------------------------------------*\
+    #Logo Container Styles 
+\*------------------------------------*/
+
 
 .title-area { 
-		@extend %opacity_hover;
-		.toggle-topbar span, {
-		color: $off-black;}
+    @extend %ml2; 
+	@extend %opacity_hover;
+	.toggle-topbar span, {
+	color: $off-black;}
 }
 
 .name {
-		display: block; 
+	@extend %display--block;  
     height: 100%; 
 }
 
 .navBar-logo {
-  display: block; 
-  height: rem-calc(45);
-  width: rem-calc(70); 
-  
-	@include breakpoint(mamaBear) {
-    margin-left: rem-calc(18);
-    width: rem-calc(100);
-    height: 100%;
-    line-height: rem-calc(76); 
-    }
+    @extend %display--block;  
+    display: block; 
+    width: rem-calc(110); 
 
-    @include breakpoint(papaBear) {
-    width: rem-calc(124);
+    @media #{$medium-up} {
+        width: rem-calc(160);
     }
 }
 
 
 
-ul.off-canvas-list li {
-    a:hover {
-      background-color: $dropDown-color; 
-    }
-}
+
 
 //Bug fix for background-position: fixed for parallax elements
 .off-canvas-wrap, .inner-wrap,

@@ -21,7 +21,14 @@
   &.secondaryAction {
         @include button--outline($accentColor);  
     }   
+}
 
+.button--tetriary {
+  @include button--outline($primaryColor);
+
+  &.secondaryAction {
+        @include button--outline($accentColor);  
+    }   
 }
 
 
