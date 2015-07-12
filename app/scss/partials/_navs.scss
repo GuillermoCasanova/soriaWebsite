@@ -11,74 +11,31 @@
 
 
 .topContactBar {
-  background-color: $primaryColor;
-  height: rem-calc(8); 
+  background-color: $secondaryColor;
+  text-align: right; 
 
   .topContactBar-item {
+    padding-top: rem-calc(4px);    
+    padding-bottom: rem-calc(4px); 
 	font-size: rem-calc(10);   
-    line-height: rem-calc(12); 
+    line-height: rem-calc(16); 
+    @extend %mr2; 
 
+       @media #{$medium-up} {
+          font-size: rem-calc(14);
+            
+       }
 
-    @include breakpoint(teenBear) {
-      font-size: rem-calc(12);
+      &, 
+      a {
+        @extend %text--white;
+      }
+
     }
-	}
-
-  &, 
-  a {
-    @extend %text--white;
-  }
 }
 
 
 
-
-
-/*------------------------------------*\
-    #Color for Nav Links 
-\*------------------------------------*/
-
-
-
-
-
-
-/*------------------------------------*\
-    #Off Canvas Nav Hamburger Icon 
-\*------------------------------------*/
-
-
-.tab-bar {
-  @extend %dropshadow--darker; 
-  z-index: 970; 
-
-    .menu-icon {
-            span:after {
-            
-                @include single-transition(all, .2s, ease-in-out); 
-                  box-shadow: 
-              0px 0px 0px 1.5px $grey--dark, 
-              0px 7px 0px 1.5px $grey--dark, 
-              0px 14px 0px 1.5px $grey--dark;
-            }
-
-            
-        &:hover,
-        &:active {
-            
-            span:after {
-
-              box-shadow: 
-              0px 0px 0px 1.5px $secondaryColor, 
-              0px 7px 0px 1.5px $secondaryColor, 
-              0px 14px 0px 1.5px $secondaryColor;
-            }
-
-        }
-
-    }
-
-}
 
 
 
@@ -96,6 +53,79 @@
     z-index: 950;
     @extend %dropshadow--darker; 
 }
+
+
+//
+//Nav Container Styles
+//
+
+.top-bar-section ul.right {
+  background-color: #fff; 
+  color: $off-black; 
+  font-weight: $normal;
+  text-align: center;
+
+    @include breakpoint(papaBear) {
+		padding-right: rem-calc(18);
+    }
+}
+
+//
+//Nav Links Styles
+//
+
+.top-bar-section ul li > a {
+    @extend %fwb;
+  // font-size: rem-calc(12.5);
+
+  // @include breakpoint(papaBear) {
+  //   font-size: rem-calc(14);
+  // }
+}
+
+
+
+.top-bar-section ul li {
+
+    @include single-transition(all, .2s, ease-in-out); 
+
+    position: relative; 
+    
+    &:after {
+        opacity: 0; 
+        @include single-transition(all, .2s, ease-in-out); 
+
+    }
+
+    a {
+        @include single-transition(all, .2s, ease-in-out); 
+    }
+
+    &:hover {
+
+        a {
+        color: $primaryColor; 
+    
+        }
+
+        &:after {
+            height: 4px; 
+            right: 0; 
+            left: 0; 
+            bottom: 0; 
+            content: " "; 
+            position: absolute; 
+            display: block;
+            color: $primaryColor; 
+            border-bottom: 4px solid $primaryColor;
+            margin-top: -4px;  
+            opacity: 1; 
+        }
+    }
+
+
+}
+
 
 
 .header {
@@ -142,36 +172,6 @@
         padding-top: 118px; 
     }
 }
-
-//
-//Nav Container Styles
-//
-
-.top-bar-section ul.right {
-  background-color: #fff; 
-  color: $off-black; 
-  font-weight: $normal;
-  text-align: center;
-
-    @include breakpoint(papaBear) {
-		padding-right: rem-calc(18);
-    }
-}
-
-//
-//Nav Links Styles
-//
-
-.top-bar-section ul li > a {
-    @extend %fwb;
-  // font-size: rem-calc(12.5);
-
-  // @include breakpoint(papaBear) {
-  //   font-size: rem-calc(14);
-  // }
-}
-
-
 
 /*------------------------------------*\
     #Dropdown
@@ -304,6 +304,48 @@
 
 
 }
+
+
+
+
+
+/*------------------------------------*\
+    #Off Canvas Nav Hamburger Icon 
+\*------------------------------------*/
+
+
+.tab-bar {
+  @extend %dropshadow--darker; 
+  z-index: 970; 
+
+    .menu-icon {
+            span:after {
+            
+                @include single-transition(all, .2s, ease-in-out); 
+                  box-shadow: 
+              0px 0px 0px 1.5px $grey--dark, 
+              0px 7px 0px 1.5px $grey--dark, 
+              0px 14px 0px 1.5px $grey--dark;
+            }
+
+            
+        &:hover,
+        &:active {
+            
+            span:after {
+
+              box-shadow: 
+              0px 0px 0px 1.5px $secondaryColor, 
+              0px 7px 0px 1.5px $secondaryColor, 
+              0px 14px 0px 1.5px $secondaryColor;
+            }
+
+        }
+
+    }
+
+}
+
 
 
 

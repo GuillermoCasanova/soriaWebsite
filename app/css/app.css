@@ -7654,19 +7654,19 @@ meta.foundation-mq-topbar {
 }
 /* line 373, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #555555;
-  color: #3c4750;
-  background: #222222;
+  background-color: #ef8111;
+  color: #ef8111;
+  background: transparent;
 }
 /* line 383, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
   background: #ef8111;
-  color: #FFFFFF;
+  color: #ef8111;
 }
 /* line 387, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a:hover {
   background: #ce6f0e;
-  color: #FFFFFF;
+  color: #ef8111;
 }
 /* line 395, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
@@ -7852,32 +7852,32 @@ meta.foundation-mq-topbar {
   }
   /* line 545, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
-    background-color: #555555;
-    background: #222222;
-    color: #3c4750;
+    background-color: #ef8111;
+    background: transparent;
+    color: #ef8111;
   }
   /* line 555, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
-    background: #fff;
+    background: transparent;
     line-height: 5rem;
     padding: 0 1.66667rem;
   }
   /* line 559, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #555555;
-    background: #222222;
+    background-color: #ef8111;
+    background: transparent;
   }
   /* line 569, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: #ef8111;
-    color: #FFFFFF;
+    color: #ef8111;
     line-height: 5rem;
     padding: 0 1.66667rem;
   }
   /* line 574, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
     background: #ce6f0e;
-    color: #FFFFFF;
+    color: #ef8111;
   }
   /* line 584, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
@@ -7957,8 +7957,8 @@ meta.foundation-mq-topbar {
   }
   /* line 646, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    background-color: #555555;
-    color: #3c4750;
+    background-color: #ef8111;
+    color: #ef8111;
     background: #222222;
   }
   /* line 655, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7983,7 +7983,7 @@ meta.foundation-mq-topbar {
   }
   /* line 678, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #fff;
+    background: transparent;
     height: 5rem;
     padding: 0 1.66667rem;
   }
@@ -8008,14 +8008,14 @@ meta.foundation-mq-topbar {
 
   /* line 708, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #222222;
-    color: #3c4750;
+    background-color: #ef8111;
+    background: transparent;
+    color: #ef8111;
   }
   /* line 717, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
     background: #ef8111;
-    color: #FFFFFF;
+    color: #ef8111;
   }
   /* line 725, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
@@ -10024,8 +10024,8 @@ h6,
     #Text Colors 
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar,
-.topContactBar a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
+.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
+.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
 }
@@ -10164,8 +10164,8 @@ h6,
     #Text Colors 
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar,
-.topContactBar a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
+.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
+.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
 }
@@ -10303,8 +10303,8 @@ h6,
     #Text Colors 
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar,
-.topContactBar a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
+.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
+.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
 }
@@ -10460,7 +10460,7 @@ footer {
 }
 
 /* line 106, ../scss/modules/_generics.scss */
-.tab-bar, .top-bar, .header, .dropshadow--darker {
+.top-bar, .header, .tab-bar, .dropshadow--darker {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
@@ -10901,7 +10901,7 @@ footer {
 }
 
 /* line 580, ../scss/modules/_generics.scss */
-.panel--warning .panel-title:before, .panel--information .panel-title:before {
+.topContactBar .topContactBar-item, .panel--warning .panel-title:before, .panel--information .panel-title:before {
   margin-right: 0.75rem !important;
 }
 
@@ -11323,55 +11323,90 @@ a[class*="link"] {
 \*------------------------------------*/
 /* line 13, ../scss/partials/_navs.scss */
 .topContactBar {
-  background-color: #ef8111;
-  height: 0.5rem;
+  background-color: #3c4750;
+  text-align: right;
 }
 /* line 17, ../scss/partials/_navs.scss */
 .topContactBar .topContactBar-item {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 0.625rem;
-  line-height: 0.75rem;
+  line-height: 1rem;
 }
-@media (min-width: 760px) {
+@media only screen and (min-width: 40.0625em) {
   /* line 17, ../scss/partials/_navs.scss */
   .topContactBar .topContactBar-item {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
-}
-
-/*------------------------------------*\
-    #Color for Nav Links 
-\*------------------------------------*/
-/*------------------------------------*\
-    #Off Canvas Nav Hamburger Icon 
-\*------------------------------------*/
-/* line 51, ../scss/partials/_navs.scss */
-.tab-bar {
-  z-index: 970;
-}
-/* line 56, ../scss/partials/_navs.scss */
-.tab-bar .menu-icon span:after {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
-}
-/* line 69, ../scss/partials/_navs.scss */
-.tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
-  box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
 
 /*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
-/* line 93, ../scss/partials/_navs.scss */
+/* line 50, ../scss/partials/_navs.scss */
 .top-bar {
   background-color: #fff;
   color: #191919;
   z-index: 950;
 }
 
-/* line 101, ../scss/partials/_navs.scss */
+/* line 62, ../scss/partials/_navs.scss */
+.top-bar-section ul.right {
+  background-color: #fff;
+  color: #191919;
+  font-weight: 400;
+  text-align: center;
+}
+@media (min-width: 1180px) {
+  /* line 62, ../scss/partials/_navs.scss */
+  .top-bar-section ul.right {
+    padding-right: 1.125rem;
+  }
+}
+
+/* line 88, ../scss/partials/_navs.scss */
+.top-bar-section ul li {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+/* line 94, ../scss/partials/_navs.scss */
+.top-bar-section ul li:after {
+  opacity: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 100, ../scss/partials/_navs.scss */
+.top-bar-section ul li a {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 106, ../scss/partials/_navs.scss */
+.top-bar-section ul li:hover a {
+  color: #ef8111;
+}
+/* line 111, ../scss/partials/_navs.scss */
+.top-bar-section ul li:hover:after {
+  height: 4px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  color: #ef8111;
+  border-bottom: 4px solid #ef8111;
+  margin-top: -4px;
+  opacity: 1;
+}
+
+/* line 131, ../scss/partials/_navs.scss */
 .header {
   -moz-transition: -moz-transform, 0.2s, ease-in-out;
   -o-transition: -o-transform, 0.2s, ease-in-out;
@@ -11382,13 +11417,13 @@ a[class*="link"] {
   display: none;
 }
 @media (min-width: 900px) {
-  /* line 101, ../scss/partials/_navs.scss */
+  /* line 131, ../scss/partials/_navs.scss */
   .header {
     display: block;
   }
 }
 
-/* line 115, ../scss/partials/_navs.scss */
+/* line 145, ../scss/partials/_navs.scss */
 .header.fixed {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11397,7 +11432,7 @@ a[class*="link"] {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 115, ../scss/partials/_navs.scss */
+  /* line 145, ../scss/partials/_navs.scss */
   .header.fixed {
     position: fixed;
     left: 0;
@@ -11405,7 +11440,7 @@ a[class*="link"] {
   }
 }
 
-/* line 128, ../scss/partials/_navs.scss */
+/* line 158, ../scss/partials/_navs.scss */
 .header.default {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
@@ -11417,28 +11452,14 @@ a[class*="link"] {
   z-index: 99;
 }
 
-/* line 138, ../scss/partials/_navs.scss */
+/* line 168, ../scss/partials/_navs.scss */
 .mainContainer.pushed {
   padding-top: 0;
 }
 @media (min-width: 900px) {
-  /* line 138, ../scss/partials/_navs.scss */
+  /* line 168, ../scss/partials/_navs.scss */
   .mainContainer.pushed {
     padding-top: 118px;
-  }
-}
-
-/* line 150, ../scss/partials/_navs.scss */
-.top-bar-section ul.right {
-  background-color: #fff;
-  color: #191919;
-  font-weight: 400;
-  text-align: center;
-}
-@media (min-width: 1180px) {
-  /* line 150, ../scss/partials/_navs.scss */
-  .top-bar-section ul.right {
-    padding-right: 1.125rem;
   }
 }
 
@@ -11506,31 +11527,51 @@ a[class*="link"] {
 }
 
 /*------------------------------------*\
+    #Off Canvas Nav Hamburger Icon 
+\*------------------------------------*/
+/* line 317, ../scss/partials/_navs.scss */
+.tab-bar {
+  z-index: 970;
+}
+/* line 322, ../scss/partials/_navs.scss */
+.tab-bar .menu-icon span:after {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
+}
+/* line 335, ../scss/partials/_navs.scss */
+.tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
+  box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
+}
+
+/*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 319, ../scss/partials/_navs.scss */
+/* line 361, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
 
-/* line 323, ../scss/partials/_navs.scss */
+/* line 365, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 328, ../scss/partials/_navs.scss */
+/* line 370, ../scss/partials/_navs.scss */
 .navBar-logo {
   display: block;
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 328, ../scss/partials/_navs.scss */
+  /* line 370, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 10rem;
   }
 }
 
-/* line 343, ../scss/partials/_navs.scss */
+/* line 385, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -11539,27 +11580,27 @@ a[class*="link"] {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 360, ../scss/partials/_navs.scss */
+/* line 402, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 364, ../scss/partials/_navs.scss */
+/* line 406, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 364, ../scss/partials/_navs.scss */
+  /* line 406, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 375, ../scss/partials/_navs.scss */
+/* line 417, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 378, ../scss/partials/_navs.scss */
+/* line 420, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
