@@ -11,7 +11,7 @@
   @include button--flat($primaryColor); 
 
     &.secondaryAction {
-        @include button--flat($accentColor);  
+        @include button--flat($secondaryColor);  
     }   
 }
 
@@ -19,7 +19,7 @@
   @include button--outline($primaryColor);
 
   &.secondaryAction {
-        @include button--outline($accentColor);  
+        @include button--outline($secondaryColor);  
     }   
 }
 

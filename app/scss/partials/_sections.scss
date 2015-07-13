@@ -67,6 +67,13 @@
     }
 }
 
+.section--primary {
+    background-color: $primaryColor; 
+    & .section-text {
+        color: #fff; 
+    }
+}
+
 
 
 
