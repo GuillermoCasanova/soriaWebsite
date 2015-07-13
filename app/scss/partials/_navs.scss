@@ -391,6 +391,56 @@
 
 
 
+
+/*------------------------------------*\
+    #Side Nav 
+\*------------------------------------*/
+
+
+.secondaryNav {
+    background-color: #fff;
+    @extend %dropshadow--darker;
+
+}
+
+.secondaryNav-list {
+    background-color: $grey--light;
+    @extend %ml0; 
+
+    li.title {
+        color: $grey--dark;
+        display: block;
+        
+        @extend %pt1; 
+        @extend %pl2; 
+    }
+
+    li.link {
+        @extend %fwb; 
+
+        a {
+            width: 100%; 
+            display: block; 
+            @extend %pl2; 
+            @extend %mtb1; 
+            @extend %ptb1; 
+            
+            &:hover {
+                background-color: $grey--mid; 
+
+            }
+        }
+    }
+
+    li:last-child {
+        @extend %pb2; 
+    }
+}
+
+
+
+
+
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
