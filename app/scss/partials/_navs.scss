@@ -11,7 +11,7 @@
 
 
 .topContactBar {
-  background-color: $primaryColor;
+  background-color: $secondaryColor;
   text-align: left; 
 
   .topContactBar-item {
@@ -48,10 +48,10 @@
 
 
 .top-bar {
-    background-color: #fff;
     color: $off-black; 
     z-index: 950;
-    @extend %dropshadow--darker; 
+    @include single-transition(all, 0.4s, ease-in-out); 
+    //@extend %dropshadow--darker; 
 
    //  &.hover, &.not-click:hover {
    //      & > .dropdown {
@@ -90,7 +90,9 @@
 // }
 
 
-
+.attached .top-bar {
+    background-color: #FFF; 
+}
 
 
 
@@ -465,40 +467,57 @@
 
 
 
+//Container for Navigation bar that hides and changes the state of .top-bar
+.header {
+    z-index: 999;
+    display: none;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    left: 0px;
+    // @extend %dropshadow--darker; 
+    @extend %position--fixed; 
+    @include transition(transform, .4s, ease-in-out);     
 
-// .header {
-//     background-color: #fff;
-//     z-index: 999;
-//     display: none;
-//     @extend %dropshadow--darker; 
-//     @include transition(transform, .2s, ease-in-out);     
+    @include breakpoint(mamaBear) {
+        display: block; 
+    }
 
-//     @include breakpoint(mamaBear) {
-//       display: block; 
-//     }
+}
 
-// }
-
-// .header.fixed {
-//     @include translateY(0);
-//     @extend %position--relative; 
-//     width: 100%;
+.header.is-alt {
     
-//     @include breakpoint(mamaBear) {
-//         position: fixed; 
-//         left: 0;
-//         top: 0;
-//     }
-// }
+    .top-bar {
+        background-color: #fff; 
+
+        .top-bar-section ul li.top-bar-link > a {
+            color: $secondaryColor; 
+        }
+    }
+
+}
+
+.header.is-fixed {
+    @include translateY(0);
+    @extend %position--relative; 
+    width: 100%;
+    
+    @include breakpoint(mamaBear) {
+        position: fixed; 
+        left: 0;
+        top: 0;
+    }
+
+}
 
 
-// .header.default {
-//     @include translateY(-130px); 
-//     width: 100%;
-//     left: 0;
-//     @extend %position--fixed; 
-//     top: 0;
-//     z-index: 99;
+.header.is-hidden{
+    @include translateY(-130px); 
+    width: 100%;
+    left: 0;
+    @extend %position--fixed; 
+    top: 0;
+    z-index: 99;
 
-// }
+}
 

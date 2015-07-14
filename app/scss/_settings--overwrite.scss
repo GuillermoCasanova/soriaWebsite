@@ -1400,11 +1400,11 @@ $menu-slide: "transform 400ms ease-in-out";
  //$include-html-top-bar-classes: false; 
     
 // Background color for the top bar
-$topbar-bg-color: #fff;
+$topbar-bg-color: transparent;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(80);
+$topbar-height: rem-calc(100);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1412,7 +1412,7 @@ $topbar-height: rem-calc(80);
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: #3c4750;
+$topbar-link-color: #fff;
 $topbar-link-color-hover: #ef8111;
 $topbar-link-color-active: #ef8111;
 $topbar-link-color-active-hover: #ef8111;
@@ -1433,7 +1433,7 @@ $topbar-link-dropdown-padding: 0;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #fff;
+$topbar-dropdown-bg: transparent;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 $topbar-dropdown-link-bg: #3c4750;

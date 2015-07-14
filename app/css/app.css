@@ -7257,7 +7257,7 @@ meta.foundation-mq-topbar {
 /* line 119, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #fff;
+  background: transparent;
 }
 /* line 123, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -7287,15 +7287,15 @@ meta.foundation-mq-topbar {
 }
 /* line 149, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .fixed.expanded:not(.top-bar) .top-bar-section {
-  margin-top: 5rem;
+  margin-top: 6.25rem;
   z-index: 98;
 }
 
 /* line 156, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar {
-  background: #fff;
-  height: 5rem;
-  line-height: 5rem;
+  background: transparent;
+  height: 6.25rem;
+  line-height: 6.25rem;
   margin-bottom: 0;
   overflow: hidden;
   position: relative;
@@ -7345,21 +7345,21 @@ meta.foundation-mq-topbar {
 /* line 209, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name {
   font-size: 16px;
-  height: 5rem;
+  height: 6.25rem;
   margin: 0;
 }
 /* line 214, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
   font-size: 1.0625rem;
-  line-height: 5rem;
+  line-height: 6.25rem;
   margin: 0;
 }
 /* line 219, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
-  color: #3c4750;
+  color: #fff;
   display: block;
   font-weight: normal;
-  padding: 0 2.5rem;
+  padding: 0 3.125rem;
   width: 75%;
 }
 /* line 230, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7370,13 +7370,13 @@ meta.foundation-mq-topbar {
 }
 /* line 235, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #3c4750;
+  color: #fff;
   display: block;
   font-size: 0.8125rem;
   font-weight: bold;
-  height: 5rem;
-  line-height: 5rem;
-  padding: 0 2.5rem;
+  height: 6.25rem;
+  line-height: 6.25rem;
+  padding: 0 3.125rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -7390,7 +7390,7 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
   height: 34px;
   line-height: 33px;
-  padding: 0 4.0625rem 0 2.5rem;
+  padding: 0 4.6875rem 0 3.125rem;
   position: relative;
 }
 /* line 129, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7401,7 +7401,7 @@ meta.foundation-mq-topbar {
   position: absolute;
   margin-top: -8px;
   top: 50%;
-  right: 2.5rem;
+  right: 3.125rem;
   box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
   width: 16px;
 }
@@ -7416,7 +7416,7 @@ meta.foundation-mq-topbar {
 }
 /* line 272, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #fff;
+  background: transparent;
 }
 /* line 277, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -7457,32 +7457,32 @@ meta.foundation-mq-topbar {
 /* line 323, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px gray;
+  border-top: solid 1px transparent;
   clear: both;
   height: 1px;
   width: 100%;
 }
 /* line 331, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li {
-  background: #fff;
+  background: transparent;
 }
 /* line 334, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a {
-  color: #3c4750;
+  color: #fff;
   display: block;
   font-family: "Roboto Condensed";
   font-size: 1rem;
   font-weight: normal;
-  padding-left: 2.5rem;
-  padding: 12px 0 12px 2.5rem;
+  padding-left: 3.125rem;
+  padding: 12px 0 12px 3.125rem;
   text-transform: none;
   width: 100%;
 }
 /* line 345, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   font-size: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
   background-color: #ef8111;
   border-color: #c0670d;
   color: #FFFFFF;
@@ -7568,8 +7568,8 @@ meta.foundation-mq-topbar {
 /* line 359, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button {
   font-size: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
   background-color: #ef8111;
   border-color: #c0670d;
   color: #FFFFFF;
@@ -7670,7 +7670,7 @@ meta.foundation-mq-topbar {
 }
 /* line 395, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
-  padding: 2.5rem;
+  padding: 3.125rem;
 }
 /* line 400, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-dropdown {
@@ -7678,7 +7678,7 @@ meta.foundation-mq-topbar {
 }
 /* line 404, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-dropdown > a:after {
-  margin-right: 2.5rem;
+  margin-right: 3.125rem;
   margin-top: -4.5px;
   position: absolute;
   top: 50%;
@@ -7725,7 +7725,7 @@ meta.foundation-mq-topbar {
 /* line 444, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
   font-weight: normal;
-  padding: 8px 2.5rem;
+  padding: 8px 3.125rem;
 }
 /* line 447, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
@@ -7739,7 +7739,7 @@ meta.foundation-mq-topbar {
 }
 /* line 458, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #3c4750;
+  color: #fff;
   display: block;
 }
 /* line 462, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7748,7 +7748,7 @@ meta.foundation-mq-topbar {
 }
 /* line 466, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.has-form {
-  padding: 8px 2.5rem;
+  padding: 8px 3.125rem;
 }
 /* line 470, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li .button,
@@ -7761,7 +7761,7 @@ meta.foundation-mq-topbar {
   font-size: 0.625rem;
   font-weight: bold;
   margin-bottom: 0;
-  padding: 8px 2.5rem 2px;
+  padding: 8px 3.125rem 2px;
   text-transform: uppercase;
 }
 
@@ -7773,7 +7773,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.0625em) {
   /* line 492, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #fff;
+    background: transparent;
     overflow: visible;
   }
   /* line 172, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7810,11 +7810,11 @@ meta.foundation-mq-topbar {
     font-size: 0.875rem;
     height: 1.75rem;
     position: relative;
-    top: 1.625rem;
+    top: 2.25rem;
   }
   /* line 517, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #fff;
+    background: transparent;
   }
 
   /* line 522, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7852,8 +7852,8 @@ meta.foundation-mq-topbar {
   /* line 555, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     background: transparent;
-    line-height: 5rem;
-    padding: 0 2.5rem;
+    line-height: 6.25rem;
+    padding: 0 3.125rem;
   }
   /* line 559, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -7864,8 +7864,8 @@ meta.foundation-mq-topbar {
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: #ef8111;
     color: #ef8111;
-    line-height: 5rem;
-    padding: 0 2.5rem;
+    line-height: 6.25rem;
+    padding: 0 3.125rem;
   }
   /* line 574, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
@@ -7916,8 +7916,8 @@ meta.foundation-mq-topbar {
   .top-bar-section .dropdown li a {
     background: #3c4750;
     color: #FFFFFF;
-    line-height: 5rem;
-    padding: 12px 2.5rem;
+    line-height: 6.25rem;
+    padding: 12px 3.125rem;
     white-space: nowrap;
   }
   /* line 641, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7944,18 +7944,18 @@ meta.foundation-mq-topbar {
   /* line 668, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section > ul > .divider,
   .top-bar-section > ul > [role="separator"] {
-    border-right: solid 1px white;
+    border-right: solid 1px rgba(33, 33, 33, 0);
     border-bottom: none;
     border-top: none;
     clear: none;
-    height: 5rem;
+    height: 6.25rem;
     width: 0;
   }
   /* line 678, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
     background: transparent;
-    height: 5rem;
-    padding: 0 2.5rem;
+    height: 6.25rem;
+    padding: 0 3.125rem;
   }
   /* line 686, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .right li .dropdown {
@@ -10377,17 +10377,18 @@ footer .footer-hoursofoperation .hoursofoperation-time {
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .section, .section--alt > .row, .section--header, .section--header .header-content {
+.header.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .section, .section--alt > .row, .image-wrap, .section--header, .section--header .header-content {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backtotop:before, .section--alt .section--alt-bg, .section--header .section-backgroundImage {
+.blockquote--bubble p:after, .button--backtotop:before, .section--alt .section--alt-bg, .regular,
+.blurred, .section--header .section-backgroundImage {
   position: absolute;
 }
 
 /* line 59, ../scss/modules/_generics.scss */
-.button--backtotop {
+.button--backtotop, .header, .header.is-hidden {
   position: fixed;
 }
 
@@ -10430,7 +10431,7 @@ footer {
 }
 
 /* line 106, ../scss/modules/_generics.scss */
-.top-bar, .tab-bar, .secondaryNav, .dropshadow--darker {
+.tab-bar, .secondaryNav, .dropshadow--darker {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
@@ -11306,7 +11307,7 @@ a[class*="link"] {
 \*------------------------------------*/
 /* line 13, ../scss/partials/_navs.scss */
 .topContactBar {
-  background-color: #ef8111;
+  background-color: #3c4750;
   text-align: left;
 }
 /* line 17, ../scss/partials/_navs.scss */
@@ -11328,15 +11329,23 @@ a[class*="link"] {
 \*------------------------------------*/
 /* line 50, ../scss/partials/_navs.scss */
 .top-bar {
-  background-color: #fff;
   color: #191919;
   z-index: 950;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 93, ../scss/partials/_navs.scss */
+.attached .top-bar {
+  background-color: #FFF;
 }
 
 /*------------------------------------*\
     #Top Bar Links 
 \*------------------------------------*/
-/* line 103, ../scss/partials/_navs.scss */
+/* line 105, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11344,7 +11353,7 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
   position: relative;
 }
-/* line 109, ../scss/partials/_navs.scss */
+/* line 111, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:after {
   opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
@@ -11352,18 +11361,18 @@ a[class*="link"] {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 115, ../scss/partials/_navs.scss */
+/* line 117, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 121, ../scss/partials/_navs.scss */
+/* line 123, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover a {
   color: #ef8111;
 }
-/* line 126, ../scss/partials/_navs.scss */
+/* line 128, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover:after {
   height: 4px;
   right: 0;
@@ -11381,16 +11390,16 @@ a[class*="link"] {
 /*------------------------------------*\
     #Dropdown 
 \*------------------------------------*/
-/* line 163, ../scss/partials/_navs.scss */
+/* line 165, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 167, ../scss/partials/_navs.scss */
+/* line 169, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 171, ../scss/partials/_navs.scss */
+/* line 173, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11400,12 +11409,12 @@ a[class*="link"] {
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 177, ../scss/partials/_navs.scss */
+/* line 179, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link:hover {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 184, ../scss/partials/_navs.scss */
+/* line 186, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11415,7 +11424,7 @@ a[class*="link"] {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-/* line 190, ../scss/partials/_navs.scss */
+/* line 192, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a:hover {
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
@@ -11427,14 +11436,14 @@ a[class*="link"] {
 /*------------------------------------*\
     #Mobile Nav Styles 
 \*------------------------------------*/
-/* line 278, ../scss/partials/_navs.scss */
+/* line 280, ../scss/partials/_navs.scss */
 .off-canvas-list li {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 284, ../scss/partials/_navs.scss */
+/* line 286, ../scss/partials/_navs.scss */
 .off-canvas-list li:hover > a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11447,11 +11456,11 @@ a[class*="link"] {
 /*------------------------------------*\
     #Off Canvas Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 306, ../scss/partials/_navs.scss */
+/* line 308, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 311, ../scss/partials/_navs.scss */
+/* line 313, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11459,7 +11468,7 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 324, ../scss/partials/_navs.scss */
+/* line 326, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -11467,29 +11476,29 @@ a[class*="link"] {
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 350, ../scss/partials/_navs.scss */
+/* line 352, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
 
-/* line 354, ../scss/partials/_navs.scss */
+/* line 356, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 359, ../scss/partials/_navs.scss */
+/* line 361, ../scss/partials/_navs.scss */
 .navBar-logo {
   display: block;
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 359, ../scss/partials/_navs.scss */
+  /* line 361, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 374, ../scss/partials/_navs.scss */
+/* line 376, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -11498,26 +11507,26 @@ a[class*="link"] {
 /*------------------------------------*\
     #Side Nav 
 \*------------------------------------*/
-/* line 389, ../scss/partials/_navs.scss */
+/* line 391, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
 
-/* line 395, ../scss/partials/_navs.scss */
+/* line 397, ../scss/partials/_navs.scss */
 .secondaryNav-list {
   background-color: #f5f5f5;
 }
-/* line 399, ../scss/partials/_navs.scss */
+/* line 401, ../scss/partials/_navs.scss */
 .secondaryNav-list li.title {
   color: #888f95;
   display: block;
 }
-/* line 409, ../scss/partials/_navs.scss */
+/* line 411, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a {
   width: 100%;
   display: block;
 }
-/* line 416, ../scss/partials/_navs.scss */
+/* line 418, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a:hover {
   background-color: #dfdfdf;
 }
@@ -11525,33 +11534,91 @@ a[class*="link"] {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 440, ../scss/partials/_navs.scss */
+/* line 442, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 444, ../scss/partials/_navs.scss */
+/* line 446, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 444, ../scss/partials/_navs.scss */
+  /* line 446, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 455, ../scss/partials/_navs.scss */
+/* line 457, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 458, ../scss/partials/_navs.scss */
+/* line 460, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+/* line 471, ../scss/partials/_navs.scss */
+.header {
+  z-index: 999;
+  display: none;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  left: 0px;
+  -moz-transition: -moz-transform, 0.4s, ease-in-out;
+  -o-transition: -o-transform, 0.4s, ease-in-out;
+  -webkit-transition: -webkit-transform, 0.4s, ease-in-out;
+  transition: transform, 0.4s, ease-in-out;
+}
+@media (min-width: 900px) {
+  /* line 471, ../scss/partials/_navs.scss */
+  .header {
+    display: block;
+  }
+}
+
+/* line 490, ../scss/partials/_navs.scss */
+.header.is-alt .top-bar {
+  background-color: #fff;
+}
+/* line 493, ../scss/partials/_navs.scss */
+.header.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
+  color: #3c4750;
+}
+
+/* line 500, ../scss/partials/_navs.scss */
+.header.is-fixed {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  width: 100%;
+}
+@media (min-width: 900px) {
+  /* line 500, ../scss/partials/_navs.scss */
+  .header.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+/* line 514, ../scss/partials/_navs.scss */
+.header.is-hidden {
+  -moz-transform: translateY(-130px);
+  -ms-transform: translateY(-130px);
+  -webkit-transform: translateY(-130px);
+  transform: translateY(-130px);
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 
 /*------------------------------------*\
@@ -13829,9 +13896,38 @@ p,
 }
 
 /*------------------------------------*\
+    #Section Scroll Blur Effect  
+\*------------------------------------*/
+/* line 90, ../scss/partials/_sections.scss */
+.image-wrap {
+  overflow: hidden;
+}
+
+/* line 96, ../scss/partials/_sections.scss */
+.regular,
+.blurred {
+  width: 100%;
+  min-height: 100vh;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 104, ../scss/partials/_sections.scss */
+.regular {
+  opacity: 1;
+}
+
+/* line 108, ../scss/partials/_sections.scss */
+.blurred {
+  opacity: 0;
+}
+
+/*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 93, ../scss/partials/_sections.scss */
+/* line 120, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
@@ -13840,30 +13936,30 @@ p,
   overflow: hidden;
 }
 @media (min-width: 760px) {
-  /* line 93, ../scss/partials/_sections.scss */
+  /* line 120, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 16.875rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 93, ../scss/partials/_sections.scss */
+  /* line 120, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 19.375rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 93, ../scss/partials/_sections.scss */
+  /* line 120, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 23.75rem;
   }
 }
 @media (min-width: 1300) {
-  /* line 93, ../scss/partials/_sections.scss */
+  /* line 120, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 28.125rem;
   }
 }
-/* line 120, ../scss/partials/_sections.scss */
+/* line 147, ../scss/partials/_sections.scss */
 .section--header .section-backgroundImage {
   left: 0;
   margin: 0 auto;
@@ -13874,18 +13970,18 @@ p,
   z-index: 10;
 }
 @media (min-width: 760px) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 147, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 55rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 147, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 90rem;
   }
 }
-/* line 139, ../scss/partials/_sections.scss */
+/* line 166, ../scss/partials/_sections.scss */
 .section--header .header-content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -13894,7 +13990,7 @@ p,
   z-index: 100;
 }
 @media (min-width: 760px) {
-  /* line 139, ../scss/partials/_sections.scss */
+  /* line 166, ../scss/partials/_sections.scss */
   .section--header .header-content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -13902,12 +13998,12 @@ p,
     float: left;
   }
 }
-/* line 152, ../scss/partials/_sections.scss */
+/* line 179, ../scss/partials/_sections.scss */
 .section--header .header-title {
   white-space: nowrap;
 }
 @media (min-width: 100px) and (max-width: 460px) {
-  /* line 152, ../scss/partials/_sections.scss */
+  /* line 179, ../scss/partials/_sections.scss */
   .section--header .header-title {
     font-size: 2rem;
   }

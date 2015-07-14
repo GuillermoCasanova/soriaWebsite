@@ -22,8 +22,6 @@ var app = (function(document, $) {
 (function() {
 	app.init();
 })();
-'use strict';
-
 
 
 //Code for blur effect scroll 
@@ -66,5 +64,62 @@ $(document).on('ready', function() {
     //Binds blur effect to scroll
     $(document).bind('scroll', fader); 
 
+    (function($){
+
+        var prevScroll = 0;
+        var currentScroll; 
+        var navBar = $('.header');
+        var navBarHeight = navBar.height(); 
+        var didScroll = false; 
+        var theWindow = $(window);
+        var offset = 200; 
+
+        $(window).scroll(function() {
+            didScroll = true;
+        });
+         
+        setInterval(function() {
+            if ( didScroll) {
+
+                didScroll = false;
+
+                currentScroll = theWindow.scrollTop();
+
+                if (currentScroll > navBarHeight) {
+                    navBar.addClass('is-alt');
+                }
+                if (currentScroll < navBarHeight / 2) {
+                    navBar.removeClass('is-alt'); 
+                }
+
+                if(currentScroll > navBarHeight / 2 && currentScroll < prevScroll) {
+                    console.log("showing"); 
+
+                    navBar.removeClass('is-hidden'); 
+                    navBar.addClass('is-fixed');
+                }
+                if(currentScroll > prevScroll && currentScroll > navBarHeight + offset) {
+                    console.log("hiding"); 
+                    navBar.removeClass('is-fixed'); 
+                    navBar.addClass('is-hidden'); 
+                }
+
+               prevScroll = currentScroll;
+
+            }
+
+            // if(theWindow.scrollTop() === 0) {
+            //     navBar.removeClass('fixed'); 
+            // }
+
+        }, 200);
+
+    })(jQuery);
+
 });
+
+
+
+//Code for hiding navigation bar
+
 

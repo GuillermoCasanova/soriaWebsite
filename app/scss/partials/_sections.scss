@@ -82,6 +82,33 @@
 
 
 
+/*------------------------------------*\
+    #Section Scroll Blur Effect  
+\*------------------------------------*/
+
+
+.image-wrap {
+    @extend %position--relative;
+    overflow: hidden; 
+}
+
+
+.regular,
+.blurred {
+    @extend %position--absolute; 
+    width: 100%; 
+    min-height: 100vh; 
+    @include transform(translate3d(0,0,0));
+}
+
+.regular {
+    opacity: 1; 
+}
+
+.blurred {
+    opacity:0; 
+}
+
 
 
 
