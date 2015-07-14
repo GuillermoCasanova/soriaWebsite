@@ -10,7 +10,8 @@
 }
 
 .panel--warning {
-    @include panel($red, $icon--alert);}
+    //@include panel($red, $icon--alert);
+}
 
 .panel--information {
     @include panel($primaryColor, false);

@@ -91,6 +91,15 @@
   position: absolute; 
 }
 
+.fixed {
+        z-index: 999;
+    display: none;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    left: 0px;
+}
+
 
 
 
@@ -201,7 +210,7 @@
 
 
 .vh100 {
-    height:95vh;
+    height: 100vh;
 }
 
 

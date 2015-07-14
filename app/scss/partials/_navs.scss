@@ -477,7 +477,7 @@
     left: 0px;
     // @extend %dropshadow--darker; 
     @extend %position--fixed; 
-    @include transition(transform, .4s, ease-in-out);     
+    @include transition(transform, .3s, ease-in-out);     
 
     @include breakpoint(mamaBear) {
         display: block; 

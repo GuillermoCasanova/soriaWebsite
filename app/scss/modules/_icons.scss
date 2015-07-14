@@ -4,85 +4,111 @@
 \*------------------------------------*/
 
 
-@import "typography.scss";
-
-
 @font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello.eot?37598492');
-  src: url('../fonts/fontello.eot?37598492#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff?37598492') format('woff'),
-       url('../fonts/fontello.ttf?37598492') format('truetype'),
-       url('../fonts/fontello.svg?37598492#fontello') format('svg');
+  font-family: 'fontello--soriallc';
+  src: url('../fonts/fontello--soriallc.eot?32878312');
+  src: url('../fonts/fontello--soriallc.eot?32878312#iefix') format('embedded-opentype'),
+       url('../fonts/fontello--soriallc.woff?32878312') format('woff'),
+       url('../fonts/fontello--soriallc.ttf?32878312') format('truetype'),
+       url('../fonts/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello--soriallc';
+    src: url('../font/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
+  }
+}
+*/
  
-// .icon-instagram-filled:before { content: '\e800'; } /* '' */
-// .icon-phone:before { content: '\e801'; } /* '' */
-// .icon-attention:before { content: '\e802'; } /* '' */
-// .icon-info:before { content: '\e803'; } /* '' */
-// .icon-male:before { content: '\e804'; } /* '' */
-// .icon-angle-down:before { content: '\e805'; } /* '' */
-// .icon-angle-up:before { content: '\e806'; } /* '' */
-// .icon-angle-right:before { content: '\e807'; } /* '' */
-// .icon-angle-left:before { content: '\e808'; } /* '' */
-// .icon-female:before { content: '\e809'; } /* '' */
-// .icon-plus:before { content: '\e80a'; } /* '' */
-// .icon-minus:before { content: '\e80b'; } /* '' */
-// .icon-laptop:before { content: '\e80c'; } /* '' */
-// .icon-tags:before { content: '\e80d'; } /* '' */
-// .icon-print:before { content: '\e80e'; } /* '' */
-// .icon-clock:before { content: '\e80f'; } /* '' */
-// .icon-doc-text:before { content: '\e810'; } /* '' */
-// .icon-vimeo:before { content: '\e811'; } /* '' */
-// .icon-sun:before { content: '\e812'; } /* '' */
-// .icon-location-1:before { content: '\e813'; } /* '' */
-// .icon-snow:before { content: '\e814'; } /* '' */
-// .icon-leaf:before { content: '\e815'; } /* '' */
-// .icon-facebook:before { content: '\e816'; } /* '' */
-// .icon-mail:before { content: '\e817'; } /* '' */
-// .icon-twitter-bird:before { content: '\e818'; } /* '' */
+ [class^="icon--"]:before, [class*=" icon--"]:before {
+  font-family: "fontello--soriallc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+// .icon-left-open-big:before { content: '\e800'; } /* '' */
+// .icon-right-open-big:before { content: '\e801'; } /* '' */
+// .icon-plus-circled:before { content: '\e802'; } /* '' */
+// .icon-minus-circled:before { content: '\e803'; } /* '' */
+// .icon-linkedin:before { content: '\e804'; } /* '' */
+// .icon-facebook:before { content: '\e805'; } /* '' */
+// .icon-facebook-circled:before { content: '\e806'; } /* '' */
+// .icon-linkedin-circled:before { content: '\e807'; } /* '' */
+// .icon-hourglass:before { content: '\e808'; } /* '' */
+// .icon-clock:before { content: '\e809'; } /* '' */
+// .icon-tools:before { content: '\e80a'; } /* '' */
+// .icon-map:before { content: '\e80b'; } /* '' */
+// .icon-compass:before { content: '\e80c'; } /* '' */
+// .icon-chat:before { content: '\e80d'; } /* '' */
+// .icon-search:before { content: '\e80e'; } /* '' */
+// .icon-users:before { content: '\e80f'; } /* '' */
+// .icon-flow-tree:before { content: '\e810'; } /* '' */
+// .icon-chart-pie:before { content: '\e811'; } /* '' */
+// .icon-up-open-big:before { content: '\e812'; } /* '' */
+// .icon-down-open-big:before { content: '\e813'; } /* '' */
+// .icon-location:before { content: '\e814'; } /* '' */
+// .icon-linkedin-rect:before { content: '\e815'; } /* '' */
+// .icon-facebook-rect:before { content: '\e816'; } /* '' */
+// .icon-right-circled2:before { content: '\e817'; } /* '' */
+// .icon-left-circled2:before { content: '\e818'; } /* '' */
+// .icon-phone:before { content: '\e819'; } /* '' */
+// .icon-mail-alt:before { content: '\e81a'; } /* '' */
 
-$icon--alert: '\e802';
-$icon--info: '\e803';
 
-$icon--plussign: '\e80a';
-$icon--negsign:  '\e80b';
-$icon--tags: '\e80d'; 
+$icon--plussign: '\e802';
+$icon--negsign:  '\e803';
 
 //Communication 
-$icon--phone: '\e801';
-$icon--fax: '\e80e';
-$icon--email: '\e817';
-
-$icon--female: '\e809';
-$icon--male : '\e804';
-$icon--clock: '\e80f';
+$icon--phone: '\e819';
+$icon--email:  '\e81a';
 
 
 //Arrows 
-$icon--arrowright: '\e807';
-$icon--arrowleft: '\e808';
-$icon--arrowup: '\e806';
-$icon--arrowdown: '\e805';
+$icon--arrowright: '\e801';
+$icon--arrowleft: '\e800';
+$icon--arrowup: '\e812';
+$icon--arrowdown: '\e813';
 
-//Documents/Devices
-$icon--doc: '\e810';
-$icon--laptop : '\e80c';
 
 //Social Media 
-$icon--twitter: '\e818';
-$icon--facebook: '\e816';
-$icon--location: '\e813';
-$icon--vimeo: '\e811';
-$icon--instagram: '\e800'; 
+$icon--linkedIn: '\e804';
+$icon--facebook: '\e805';
+$icon--location: '\e814';
 
-//Seasons
-$icon--winter: '\e814';
-$icon--summer: '\e812';
-$icon--spring: '\e815';
 
 
 @mixin icon($icon: false, $position: before) {
@@ -93,7 +119,7 @@ $icon--spring: '\e815';
   &:#{$position} {
     @if $icon {
       content: $icon;
-      font-family: fontello;
+      font-family: "fontello--soriallc";
       font-style: normal; 
       vertical-align: middle; 
       margin-right: rem-calc(4); 

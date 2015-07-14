@@ -62,7 +62,8 @@ $(document).on('ready', function() {
     }
 
     //Binds blur effect to scroll
-    $(document).bind('scroll', fader); 
+    //TODO: Optimize this method for medium effect to prevent lag 
+    // $(document).bind('scroll', fader); 
 
     (function($){
 
@@ -72,7 +73,7 @@ $(document).on('ready', function() {
         var navBarHeight = navBar.height(); 
         var didScroll = false; 
         var theWindow = $(window);
-        var offset = 200; 
+        var offset = 800; 
 
         $(window).scroll(function() {
             didScroll = true;
@@ -85,21 +86,18 @@ $(document).on('ready', function() {
 
                 currentScroll = theWindow.scrollTop();
 
-                if (currentScroll > navBarHeight) {
+                if (currentScroll > navBarHeight + 1000) {
                     navBar.addClass('is-alt');
                 }
-                if (currentScroll < navBarHeight / 2) {
+                if (currentScroll < navBarHeight) {
                     navBar.removeClass('is-alt'); 
                 }
 
-                if(currentScroll > navBarHeight / 2 && currentScroll < prevScroll) {
-                    console.log("showing"); 
-
+                if( (currentScroll  + offset) < prevScroll || currentScroll < navBarHeight) {
                     navBar.removeClass('is-hidden'); 
                     navBar.addClass('is-fixed');
                 }
-                if(currentScroll > prevScroll && currentScroll > navBarHeight + offset) {
-                    console.log("hiding"); 
+                if(currentScroll > prevScroll) {
                     navBar.removeClass('is-fixed'); 
                     navBar.addClass('is-hidden'); 
                 }
@@ -112,7 +110,7 @@ $(document).on('ready', function() {
             //     navBar.removeClass('fixed'); 
             // }
 
-        }, 200);
+        }, 300);
 
     })(jQuery);
 

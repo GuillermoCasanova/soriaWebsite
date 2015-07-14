@@ -7287,15 +7287,15 @@ meta.foundation-mq-topbar {
 }
 /* line 149, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .fixed.expanded:not(.top-bar) .top-bar-section {
-  margin-top: 6.25rem;
+  margin-top: 5.625rem;
   z-index: 98;
 }
 
 /* line 156, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar {
   background: transparent;
-  height: 6.25rem;
-  line-height: 6.25rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
   margin-bottom: 0;
   overflow: hidden;
   position: relative;
@@ -7345,13 +7345,13 @@ meta.foundation-mq-topbar {
 /* line 209, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name {
   font-size: 16px;
-  height: 6.25rem;
+  height: 5.625rem;
   margin: 0;
 }
 /* line 214, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
   font-size: 1.0625rem;
-  line-height: 6.25rem;
+  line-height: 5.625rem;
   margin: 0;
 }
 /* line 219, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7359,7 +7359,7 @@ meta.foundation-mq-topbar {
   color: #fff;
   display: block;
   font-weight: normal;
-  padding: 0 3.125rem;
+  padding: 0 2.8125rem;
   width: 75%;
 }
 /* line 230, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7374,9 +7374,9 @@ meta.foundation-mq-topbar {
   display: block;
   font-size: 0.8125rem;
   font-weight: bold;
-  height: 6.25rem;
-  line-height: 6.25rem;
-  padding: 0 3.125rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  padding: 0 2.8125rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -7390,7 +7390,7 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
   height: 34px;
   line-height: 33px;
-  padding: 0 4.6875rem 0 3.125rem;
+  padding: 0 4.375rem 0 2.8125rem;
   position: relative;
 }
 /* line 129, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7401,7 +7401,7 @@ meta.foundation-mq-topbar {
   position: absolute;
   margin-top: -8px;
   top: 50%;
-  right: 3.125rem;
+  right: 2.8125rem;
   box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
   width: 16px;
 }
@@ -7473,16 +7473,16 @@ meta.foundation-mq-topbar {
   font-family: "Roboto Condensed";
   font-size: 1rem;
   font-weight: normal;
-  padding-left: 3.125rem;
-  padding: 12px 0 12px 3.125rem;
+  padding-left: 2.8125rem;
+  padding: 12px 0 12px 2.8125rem;
   text-transform: none;
   width: 100%;
 }
 /* line 345, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   font-size: 1rem;
-  padding-left: 3.125rem;
-  padding-right: 3.125rem;
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem;
   background-color: #ef8111;
   border-color: #c0670d;
   color: #FFFFFF;
@@ -7568,8 +7568,8 @@ meta.foundation-mq-topbar {
 /* line 359, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button {
   font-size: 1rem;
-  padding-left: 3.125rem;
-  padding-right: 3.125rem;
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem;
   background-color: #ef8111;
   border-color: #c0670d;
   color: #FFFFFF;
@@ -7670,7 +7670,7 @@ meta.foundation-mq-topbar {
 }
 /* line 395, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
-  padding: 3.125rem;
+  padding: 2.8125rem;
 }
 /* line 400, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-dropdown {
@@ -7678,7 +7678,7 @@ meta.foundation-mq-topbar {
 }
 /* line 404, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-dropdown > a:after {
-  margin-right: 3.125rem;
+  margin-right: 2.8125rem;
   margin-top: -4.5px;
   position: absolute;
   top: 50%;
@@ -7725,7 +7725,7 @@ meta.foundation-mq-topbar {
 /* line 444, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
   font-weight: normal;
-  padding: 8px 3.125rem;
+  padding: 8px 2.8125rem;
 }
 /* line 447, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
@@ -7748,7 +7748,7 @@ meta.foundation-mq-topbar {
 }
 /* line 466, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.has-form {
-  padding: 8px 3.125rem;
+  padding: 8px 2.8125rem;
 }
 /* line 470, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li .button,
@@ -7761,7 +7761,7 @@ meta.foundation-mq-topbar {
   font-size: 0.625rem;
   font-weight: bold;
   margin-bottom: 0;
-  padding: 8px 3.125rem 2px;
+  padding: 8px 2.8125rem 2px;
   text-transform: uppercase;
 }
 
@@ -7810,7 +7810,7 @@ meta.foundation-mq-topbar {
     font-size: 0.875rem;
     height: 1.75rem;
     position: relative;
-    top: 2.25rem;
+    top: 1.9375rem;
   }
   /* line 517, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
@@ -7852,8 +7852,8 @@ meta.foundation-mq-topbar {
   /* line 555, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     background: transparent;
-    line-height: 6.25rem;
-    padding: 0 3.125rem;
+    line-height: 5.625rem;
+    padding: 0 2.8125rem;
   }
   /* line 559, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -7864,8 +7864,8 @@ meta.foundation-mq-topbar {
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: #ef8111;
     color: #ef8111;
-    line-height: 6.25rem;
-    padding: 0 3.125rem;
+    line-height: 5.625rem;
+    padding: 0 2.8125rem;
   }
   /* line 574, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
@@ -7916,8 +7916,8 @@ meta.foundation-mq-topbar {
   .top-bar-section .dropdown li a {
     background: #3c4750;
     color: #FFFFFF;
-    line-height: 6.25rem;
-    padding: 12px 3.125rem;
+    line-height: 5.625rem;
+    padding: 12px 2.8125rem;
     white-space: nowrap;
   }
   /* line 641, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7948,14 +7948,14 @@ meta.foundation-mq-topbar {
     border-bottom: none;
     border-top: none;
     clear: none;
-    height: 6.25rem;
+    height: 5.625rem;
     width: 0;
   }
   /* line 678, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
     background: transparent;
-    height: 6.25rem;
-    padding: 0 3.125rem;
+    height: 5.625rem;
+    padding: 0 2.8125rem;
   }
   /* line 686, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .right li .dropdown {
@@ -9897,146 +9897,52 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
 /*------------------------------------*\
     #Icons  (codes for icons.scss partial)
 \*------------------------------------*/
-/*------------------------------------*\
-    #Typography
-\*------------------------------------*/
-/* line 13, ../scss/modules/_typography.scss */
-.button {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-/*------------------------------------*\
-    #Font Weights 
-\*------------------------------------*/
-/* line 31, ../scss/modules/_typography.scss */
-.button, .section--alt .section--alt-subTitle, .secondaryNav-list li.link, .pricingtable-title, footer .footer-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title, .panel--asButton:hover {
-  font-weight: 700;
-}
-
-/* line 32, ../scss/modules/_typography.scss */
-footer .footer-title {
-  text-transform: uppercase;
-}
-
-/*------------------------------------*\
-    #Font Weights 
-\*------------------------------------*/
-/* line 42, ../scss/modules/_typography.scss */
-.header--standout, .imageButton .imageButton-txt, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
-  text-align: center;
-}
-
-/* line 43, ../scss/modules/_typography.scss */
-footer {
-  text-align: left;
-}
-
-/*------------------------------------*\
-    #Text Sizes and Hn sizes 
-\*------------------------------------*/
-/* line 55, ../scss/modules/_typography.scss */
-.text--mega {
-  font-size: 3.875rem;
-  line-height: 1.333;
-  font-size: 4vw;
-  font-family: "Asar";
-}
-
-/* line 63, ../scss/modules/_typography.scss */
-h1,
-.h1 {
-  font-size: 2.25rem;
-  line-height: 1.333;
-}
-
-/* line 68, ../scss/modules/_typography.scss */
-h2,
-.h2, .icon--large {
-  font-size: 1.75rem;
-  line-height: 1.125;
-}
-
-/* line 73, ../scss/modules/_typography.scss */
-h3,
-.h3, .list--h4 > li, .pricingtable-title, .panel--warning .panel-title:before, .panel--information .panel-title:before {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-/* line 78, ../scss/modules/_typography.scss */
-h4,
-.h4, .icon--medium, .panel-title {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-/* line 83, ../scss/modules/_typography.scss */
-h5,
-.h5, .icon--small {
-  font-size: 1.125rem;
-  line-height: 1.333;
-}
-
-/* line 88, ../scss/modules/_typography.scss */
-h6,
-.h6 {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* line 93, ../scss/modules/_typography.scss */
-.text--micro, [class*="copyright"], [class*="credit"], .panel-body {
-  font-size: 0.75rem;
-  line-height: 2;
-}
-
-/*------------------------------------*\
-    #Text Colors 
-\*------------------------------------*/
-/* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
-.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
-.section--header .header-subTitle {
-  color: #fff;
-}
-
-/*------------------------------------*\
-    #Links 
-\*------------------------------------*/
-/* line 118, ../scss/modules/_typography.scss */
-.footer-siteInfo a {
-  text-decoration: underline;
-}
-/* line 121, ../scss/modules/_typography.scss */
-.footer-siteInfo a:hover {
-  text-decoration: none;
-}
-
-/*------------------------------------*\
-    #Hovers 
-\*------------------------------------*/
-/* line 134, ../scss/modules/_typography.scss */
-.title-area {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 136, ../scss/modules/_typography.scss */
-.title-area:hover {
-  opacity: .7;
-}
-
-/*------------------------------------*\
-    #Blockquotes
-\*------------------------------------*/
 @font-face {
-  font-family: 'fontello';
-  src: url("../fonts/fontello.eot?37598492");
-  src: url("../fonts/fontello.eot?37598492#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?37598492") format("woff"), url("../fonts/fontello.ttf?37598492") format("truetype"), url("../fonts/fontello.svg?37598492#fontello") format("svg");
+  font-family: 'fontello--soriallc';
+  src: url("../fonts/fontello--soriallc.eot?32878312");
+  src: url("../fonts/fontello--soriallc.eot?32878312#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?32878312") format("woff"), url("../fonts/fontello--soriallc.ttf?32878312") format("truetype"), url("../fonts/fontello--soriallc.svg?32878312#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello--soriallc';
+    src: url('../font/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
+  }
+}
+*/
+/* line 28, ../scss/modules/_icons.scss */
+[class^="icon--"]:before, [class*=" icon--"]:before {
+  font-family: "fontello--soriallc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 /*------------------------------------*\
     #Typography
 \*------------------------------------*/
@@ -10098,7 +10004,7 @@ h2,
 
 /* line 73, ../scss/modules/_typography.scss */
 h3,
-.h3, .list--h4 > li, .pricingtable-title, .panel--warning .panel-title:before, .panel--information .panel-title:before {
+.h3, .list--h4 > li, .pricingtable-title, .panel--information .panel-title:before {
   font-size: 1.5rem;
   line-height: 1.3;
 }
@@ -10176,146 +10082,52 @@ h6,
 /*------------------------------------*\
     #Icons  (codes for icons.scss partial)
 \*------------------------------------*/
-/*------------------------------------*\
-    #Typography
-\*------------------------------------*/
-/* line 13, ../scss/modules/_typography.scss */
-.button {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-/*------------------------------------*\
-    #Font Weights 
-\*------------------------------------*/
-/* line 31, ../scss/modules/_typography.scss */
-.button, .section--alt .section--alt-subTitle, .secondaryNav-list li.link, .pricingtable-title, footer .footer-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title, .panel--asButton:hover {
-  font-weight: 700;
-}
-
-/* line 32, ../scss/modules/_typography.scss */
-footer .footer-title {
-  text-transform: uppercase;
-}
-
-/*------------------------------------*\
-    #Font Weights 
-\*------------------------------------*/
-/* line 42, ../scss/modules/_typography.scss */
-.header--standout, .imageButton .imageButton-txt, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
-  text-align: center;
-}
-
-/* line 43, ../scss/modules/_typography.scss */
-footer {
-  text-align: left;
-}
-
-/*------------------------------------*\
-    #Text Sizes and Hn sizes 
-\*------------------------------------*/
-/* line 55, ../scss/modules/_typography.scss */
-.text--mega {
-  font-size: 3.875rem;
-  line-height: 1.333;
-  font-size: 4vw;
-  font-family: "Asar";
-}
-
-/* line 63, ../scss/modules/_typography.scss */
-h1,
-.h1 {
-  font-size: 2.25rem;
-  line-height: 1.333;
-}
-
-/* line 68, ../scss/modules/_typography.scss */
-h2,
-.h2, .icon--large {
-  font-size: 1.75rem;
-  line-height: 1.125;
-}
-
-/* line 73, ../scss/modules/_typography.scss */
-h3,
-.h3, .list--h4 > li, .pricingtable-title, .panel--warning .panel-title:before, .panel--information .panel-title:before {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-/* line 78, ../scss/modules/_typography.scss */
-h4,
-.h4, .icon--medium, .panel-title {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-/* line 83, ../scss/modules/_typography.scss */
-h5,
-.h5, .icon--small {
-  font-size: 1.125rem;
-  line-height: 1.333;
-}
-
-/* line 88, ../scss/modules/_typography.scss */
-h6,
-.h6 {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* line 93, ../scss/modules/_typography.scss */
-.text--micro, [class*="copyright"], [class*="credit"], .panel-body {
-  font-size: 0.75rem;
-  line-height: 2;
-}
-
-/*------------------------------------*\
-    #Text Colors 
-\*------------------------------------*/
-/* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
-.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
-.section--header .header-subTitle {
-  color: #fff;
-}
-
-/*------------------------------------*\
-    #Links 
-\*------------------------------------*/
-/* line 118, ../scss/modules/_typography.scss */
-.footer-siteInfo a {
-  text-decoration: underline;
-}
-/* line 121, ../scss/modules/_typography.scss */
-.footer-siteInfo a:hover {
-  text-decoration: none;
-}
-
-/*------------------------------------*\
-    #Hovers 
-\*------------------------------------*/
-/* line 134, ../scss/modules/_typography.scss */
-.title-area {
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 136, ../scss/modules/_typography.scss */
-.title-area:hover {
-  opacity: .7;
-}
-
-/*------------------------------------*\
-    #Blockquotes
-\*------------------------------------*/
 @font-face {
-  font-family: 'fontello';
-  src: url("../fonts/fontello.eot?37598492");
-  src: url("../fonts/fontello.eot?37598492#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?37598492") format("woff"), url("../fonts/fontello.ttf?37598492") format("truetype"), url("../fonts/fontello.svg?37598492#fontello") format("svg");
+  font-family: 'fontello--soriallc';
+  src: url("../fonts/fontello--soriallc.eot?32878312");
+  src: url("../fonts/fontello--soriallc.eot?32878312#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?32878312") format("woff"), url("../fonts/fontello--soriallc.ttf?32878312") format("truetype"), url("../fonts/fontello--soriallc.svg?32878312#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello--soriallc';
+    src: url('../font/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
+  }
+}
+*/
+/* line 28, ../scss/modules/_icons.scss */
+[class^="icon--"]:before, [class*=" icon--"]:before {
+  font-family: "fontello--soriallc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 /*------------------------------------*\
     #Photos
 \*------------------------------------*/
@@ -10498,7 +10310,7 @@ footer {
 }
 
 /* line 199, ../scss/modules/_generics.scss */
-.ptrbl2, .accordion--contained .content, .panel--warning, .panel--information {
+.ptrbl2, .accordion--contained .content, .panel--information {
   padding: 0.75rem !important;
 }
 
@@ -10872,7 +10684,7 @@ footer {
 }
 
 /* line 580, ../scss/modules/_generics.scss */
-.topContactBar .topContactBar-item, .panel--warning .panel-title:before, .panel--information .panel-title:before {
+.topContactBar .topContactBar-item, .panel--information .panel-title:before {
   margin-right: 0.75rem !important;
 }
 
@@ -11226,10 +11038,10 @@ a[class*="link"] {
 .button--backtotop:hover:before, .button--backtotop:active:before {
   color: #fff;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .button--backtotop:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -11571,10 +11383,10 @@ a[class*="link"] {
   width: 100%;
   z-index: 99;
   left: 0px;
-  -moz-transition: -moz-transform, 0.4s, ease-in-out;
-  -o-transition: -o-transform, 0.4s, ease-in-out;
-  -webkit-transition: -webkit-transform, 0.4s, ease-in-out;
-  transition: transform, 0.4s, ease-in-out;
+  -moz-transition: -moz-transform, 0.3s, ease-in-out;
+  -o-transition: -o-transform, 0.3s, ease-in-out;
+  -webkit-transition: -webkit-transform, 0.3s, ease-in-out;
+  transition: transform, 0.3s, ease-in-out;
 }
 @media (min-width: 900px) {
   /* line 471, ../scss/partials/_navs.scss */
@@ -12255,46 +12067,36 @@ a[class*="link"] {
 /*------------------------------------*\
     #Communications 
 \*------------------------------------*/
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="email"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
   margin-right: 10px;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="phone"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
   margin-right: 10px;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="fax"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  margin-right: 10px;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="location"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
   margin-right: 10px;
 }
-/* line 89, ../scss/partials/_icons.scss */
+/* line 84, ../scss/partials/_icons.scss */
 [rel*="location"].icon--brandColors {
   color: #e0274f;
 }
@@ -12302,37 +12104,37 @@ a[class*="link"] {
 /*------------------------------------*\
     #Arrows 
 \*------------------------------------*/
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="prev"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="next"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="up"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 [rel*="down"]:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -12341,152 +12143,24 @@ a[class*="link"] {
 /*------------------------------------*\
     #Social media 
 \*------------------------------------*/
-/* line 93, ../scss/modules/_icons.scss */
-a[href*="twitter"]:before,
-.icon--twitter:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-/* line 133, ../scss/partials/_icons.scss */
-a[href*="twitter"].icon--brandColors,
-.icon--twitter.icon--brandColors {
-  color: #55ACEE;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 a[href*="facebook"]:before,
 .icon--facebook:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
 }
-/* line 143, ../scss/partials/_icons.scss */
+/* line 128, ../scss/partials/_icons.scss */
 a[href*="facebook"].icon--brandColors,
 .icon--facebook.icon--brandColors {
   color: #3b5998;
 }
 
-/* line 93, ../scss/modules/_icons.scss */
-a[href*="vimeo"]:before,
-.icon--vimeo:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-.icon--instagram:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/*------------------------------------*\
-    #Seasons 
-\*------------------------------------*/
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="summer"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #f6d42e;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="winter"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #4ebfd7;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="spring"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #b9d362;
-}
-
 /*------------------------------------*\
     #Misc 
 \*------------------------------------*/
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="time"]:after {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #f5f5f5;
-  padding-left: 0.4375rem;
-  padding-right: 0.125rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="date"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #888f95;
-  padding-right: 0.25rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="tags"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #888f95;
-  padding-right: 0.25rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-[rel*="male"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-a[href$=".pdf"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 93, ../scss/modules/_icons.scss */
-a[href*="rockgympro"]:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
 /*------------------------------------*\
     #Pricing Tables 
 \*------------------------------------*/
@@ -12662,10 +12336,20 @@ a[href*="rockgympro"]:before {
   position: absolute;
 }
 
+/* line 94, ../scss/partials/_generics.scss */
+.fixed {
+  z-index: 999;
+  display: none;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  left: 0px;
+}
+
 /*------------------------------------*\
     #Position Types 
 \*------------------------------------*/
-/* line 103, ../scss/partials/_generics.scss */
+/* line 112, ../scss/partials/_generics.scss */
 .circle {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -12675,7 +12359,7 @@ a[href*="rockgympro"]:before {
 /*------------------------------------*\
     #Media Object (Content with a floated image or text)
 \*------------------------------------*/
-/* line 115, ../scss/partials/_generics.scss */
+/* line 124, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -12689,7 +12373,7 @@ a[href*="rockgympro"]:before {
   overflow: auto;
 }
 
-/* line 119, ../scss/partials/_generics.scss */
+/* line 128, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -12703,7 +12387,7 @@ a[href*="rockgympro"]:before {
   overflow: auto;
 }
 
-/* line 124, ../scss/partials/_generics.scss */
+/* line 133, ../scss/partials/_generics.scss */
 .cf {
   overflow: hidden;
   zoom: 1;
@@ -12712,41 +12396,41 @@ a[href*="rockgympro"]:before {
 /*------------------------------------*\
     #Flag Object  (like Media Object but with centered body vertically)
 \*------------------------------------*/
-/* line 138, ../scss/partials/_generics.scss */
+/* line 147, ../scss/partials/_generics.scss */
 .flag {
   display: table;
   width: 100%;
 }
 
-/* line 143, ../scss/partials/_generics.scss */
+/* line 152, ../scss/partials/_generics.scss */
 .flag-image,
 .flag-body {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 148, ../scss/partials/_generics.scss */
+/* line 157, ../scss/partials/_generics.scss */
 .flag--top .flag-image, .flag--top
 .flag-body {
   vertical-align: top;
 }
-/* line 152, ../scss/partials/_generics.scss */
+/* line 161, ../scss/partials/_generics.scss */
 .flag--bottom .flag-image, .flag--bottom
 .flag-body {
   vertical-align: bottom;
 }
 
-/* line 160, ../scss/partials/_generics.scss */
+/* line 169, ../scss/partials/_generics.scss */
 .flag-image > img {
   display: block;
   max-width: none;
 }
-/* line 165, ../scss/partials/_generics.scss */
+/* line 174, ../scss/partials/_generics.scss */
 .flag--rev .flag-image {
   padding-left: 10px;
   padding-right: 0;
 }
 
-/* line 172, ../scss/partials/_generics.scss */
+/* line 181, ../scss/partials/_generics.scss */
 .flag-body {
   width: 100%;
 }
@@ -12754,36 +12438,36 @@ a[href*="rockgympro"]:before {
 /*------------------------------------*\
     #Width Classes 
 \*------------------------------------*/
-/* line 185, ../scss/partials/_generics.scss */
+/* line 194, ../scss/partials/_generics.scss */
 .width100 {
   width: 100%;
 }
 
-/* line 187, ../scss/partials/_generics.scss */
+/* line 196, ../scss/partials/_generics.scss */
 .width60 {
   width: 100%;
 }
 @media (min-width: 760px) {
-  /* line 187, ../scss/partials/_generics.scss */
+  /* line 196, ../scss/partials/_generics.scss */
   .width60 {
     width: 60%;
   }
 }
 
-/* line 195, ../scss/partials/_generics.scss */
+/* line 204, ../scss/partials/_generics.scss */
 .expand-on-small {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 195, ../scss/partials/_generics.scss */
+  /* line 204, ../scss/partials/_generics.scss */
   .expand-on-small {
     width: auto;
   }
 }
 
-/* line 203, ../scss/partials/_generics.scss */
+/* line 212, ../scss/partials/_generics.scss */
 .vh100 {
-  height: 95vh;
+  height: 100vh;
 }
 
 /*------------------------------------*\
@@ -12792,7 +12476,7 @@ a[href*="rockgympro"]:before {
 /*------------------------------------*\
     #Margins
 \*------------------------------------*/
-/* line 229, ../scss/partials/_generics.scss */
+/* line 238, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -12806,7 +12490,7 @@ a[href*="rockgympro"]:before {
   overflow: auto;
 }
 
-/* line 233, ../scss/partials/_generics.scss */
+/* line 242, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -12823,7 +12507,7 @@ a[href*="rockgympro"]:before {
 /*------------------------------------*\
     #Paddings
 \*------------------------------------*/
-/* line 390, ../scss/partials/_generics.scss */
+/* line 399, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -12837,7 +12521,7 @@ a[href*="rockgympro"]:before {
   overflow: auto;
 }
 
-/* line 394, ../scss/partials/_generics.scss */
+/* line 403, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -13138,10 +12822,10 @@ footer .footer-hoursofoperation .hoursofoperation-time {
 .slick-prev {
   left: -3%;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .slick-prev:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -13153,10 +12837,10 @@ footer .footer-hoursofoperation .hoursofoperation-time {
 .slick-next {
   right: -3%;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .slick-next:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -13632,10 +13316,10 @@ footer .footer-hoursofoperation .hoursofoperation-time {
   background: #FFFFFF;
   display: block;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .accordion > dd.active .accordion-title-icon:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -13668,10 +13352,10 @@ footer .footer-hoursofoperation .hoursofoperation-time {
 .accordion-title .accordion-title-icon {
   margin-left: 0.375rem;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .accordion-title .accordion-title-icon:before {
-  content: "";
-  font-family: fontello;
+  content: "";
+  font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;
   margin-right: 0.25rem;
@@ -13760,42 +13444,28 @@ p,
 /*------------------------------------*\
     #Panels
 \*------------------------------------*/
-/* line 12, ../scss/partials/_panels.scss */
-.panel--warning {
-  background-color: #f5f5f5;
-}
-/* line 93, ../scss/modules/_icons.scss */
-.panel--warning .panel-title:before {
-  content: "";
-  font-family: fontello;
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #ed8098;
-}
-
-/* line 15, ../scss/partials/_panels.scss */
+/* line 16, ../scss/partials/_panels.scss */
 .panel--information {
   background-color: #f5f5f5;
   border-top: 6px solid #ef8111;
   background-color: transparent;
 }
-/* line 93, ../scss/modules/_icons.scss */
+/* line 119, ../scss/modules/_icons.scss */
 .panel--information .panel-title:before {
   color: #f5b471;
 }
 
-/* line 22, ../scss/partials/_panels.scss */
+/* line 23, ../scss/partials/_panels.scss */
 .panel--information--secondary {
   border-top: 6px solid #3c4750;
 }
 
-/* line 26, ../scss/partials/_panels.scss */
+/* line 27, ../scss/partials/_panels.scss */
 .panel--information--tetriary {
   border-top: 6px solid #888f95;
 }
 
-/* line 41, ../scss/partials/_panels.scss */
+/* line 42, ../scss/partials/_panels.scss */
 .panel--asButton {
   cursor: pointer;
   -moz-transition: all 0.2s ease-in-out;
@@ -13803,7 +13473,7 @@ p,
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 46, ../scss/partials/_panels.scss */
+/* line 47, ../scss/partials/_panels.scss */
 .panel--asButton:hover {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
