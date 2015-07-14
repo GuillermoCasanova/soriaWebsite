@@ -1398,7 +1398,7 @@ $menu-slide: "transform 400ms ease-in-out";
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
  //$include-html-top-bar-classes: false; 
-
+    
 // Background color for the top bar
 $topbar-bg-color: #fff;
 // $topbar-bg: $topbar-bg-color;
@@ -1417,18 +1417,18 @@ $topbar-link-color-hover: #ef8111;
 $topbar-link-color-active: #ef8111;
 $topbar-link-color-active-hover: #ef8111;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: transparent;
 $topbar-link-bg-hover: transparent;
 $topbar-link-bg-color-hover: #ef8111;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active: #ef8111;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-$topbar-link-font-family: $font-family-serif;
+$topbar-link-font-family: $font-family-sans-serif;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: ($topbar-height / 3);
-// $topbar-back-link-size: rem-calc(18);
-// $topbar-link-dropdown-padding: rem-calc(20);
+$topbar-link-padding: ($topbar-height / 2);
+$topbar-back-link-size: rem-calc(14);
+$topbar-link-dropdown-padding: 0;
 // $topbar-button-font-size: .75rem;
 // $topbar-button-top: 7px;
 
@@ -1436,8 +1436,8 @@ $topbar-link-font-family: $font-family-serif;
 $topbar-dropdown-bg: #fff;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $jet;
+$topbar-dropdown-link-bg: #3c4750;
+$topbar-dropdown-link-bg-hover: scale-color($topbar-dropdown-link-bg, $lightness: -5%);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1474,8 +1474,8 @@ $topbar-dropdown-bg: #fff;
 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
-// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
+$topbar-arrows: false; //Set false to remove the triangle icon from the menu item
+$topbar-dropdown-arrows: false; //Set false to remove the \00bb >> text from dropdown subnavigation li//
 
 // 36. Visibility Classes
 // - - - - - - - - - - - - - - - - - - - - - - - - -

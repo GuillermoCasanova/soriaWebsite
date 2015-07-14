@@ -7,7 +7,7 @@
 .section {
     @include box-sizing(border-box);
     @extend %position--relative; 
-    padding-bottom: rem-calc(48);
+    @extend %ptb5; 
 }
 
 
@@ -57,21 +57,27 @@
         bottom: 0; 
         width: 100%;
 
-        // @include breakpoint(mobileOnly) {
-        //     margin-left: -50%; 
-        // }
-  
-        // @include breakpoint(teenBear) {
-        //     min-width: rem-calc(1440);
-        // }
+        @include breakpoint(mobileOnly) {
+            margin-left: -50%; 
+        }
+
+        @media #{$medium-up} {
+            min-width: rem-calc(960);
+        }
+
+        @media #{$large-up} {
+            min-width: rem-calc(1280);
+        }
     }
 }
 
 .section--primary {
     background-color: $primaryColor; 
+
     & .section-text {
         color: #fff; 
     }
+
 }
 
 

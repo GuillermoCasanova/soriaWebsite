@@ -11,8 +11,8 @@
 
 
 .topContactBar {
-  background-color: $secondaryColor;
-  text-align: right; 
+  background-color: $primaryColor;
+  text-align: left; 
 
   .topContactBar-item {
     padding-top: rem-calc(4px);    
@@ -52,6 +52,29 @@
     color: $off-black; 
     z-index: 950;
     @extend %dropshadow--darker; 
+
+   //  &.hover, &.not-click:hover {
+   //      & > .dropdown {
+   //          opacity: 1; //Add this line.
+   //      }
+   //  }
+
+   //  .dropdown {
+   //      opacity: 0; //Add this line.
+   //      @include single-transition(opacity, 500ms, ease); //Add this line.
+   //  }
+
+   // .top-bar-section {
+   //      .has-dropdown {
+   //          &:hover,
+   //          &:active {
+   //              & > .dropdown {
+   //                  @include single-transition(opacity, 500ms, ease); //Add this line.
+   //                  opacity: 1; //Add this line.
+   //              }
+   //          }
+   //      }
+   //  }
 }
 
 
@@ -59,33 +82,25 @@
 //Nav Container Styles
 //
 
-.top-bar-section ul.right {
-  background-color: #fff; 
-  color: $off-black; 
-  font-weight: $normal;
-  text-align: center;
-
-    @include breakpoint(papaBear) {
-		padding-right: rem-calc(18);
-    }
-}
-
-//
-//Nav Links Styles
-//
-
-.top-bar-section ul li > a {
-    @extend %fwb;
-  // font-size: rem-calc(12.5);
-
-  // @include breakpoint(papaBear) {
-  //   font-size: rem-calc(14);
-  // }
-}
+// .top-bar-section ul.right {
+//   background-color: #fff; 
+//   color: $off-black; 
+//   font-weight: $normal;
+//   text-align: center;
+// }
 
 
 
-.top-bar-section ul li {
+
+
+
+
+/*------------------------------------*\
+    #Top Bar Links 
+\*------------------------------------*/
+
+
+.top-bar-section ul li.top-bar-link {
 
     @include single-transition(all, .2s, ease-in-out); 
 
@@ -126,101 +141,74 @@
 
 }
 
+// .top-bar-section li.hover > a:not(.button):active {
+//     background-color: red; 
+// }
 
+// .mainContainer.pushed {
+//         padding-top: 0; 
 
-.header {
-    @extend %dropshadow--darker; 
-    @include transition(transform, .2s, ease-in-out);    
-    background-color: #fff;
-    z-index: 999;
-
-    display: none; 
-
-    @include breakpoint(mamaBear) {
-      display: block; 
-    }
-
-}
-
-.header.fixed {
-    @include translateY(0);
-    @extend %position--relative; 
-    width: 100%;
-    
-    @include breakpoint(mamaBear) {
-        position: fixed; 
-        left: 0;
-        top: 0;
-    }
-}
-
-
-.header.default {
-    @include translateY(-130px); 
-    width: 100%;
-    left: 0;
-    @extend %position--fixed; 
-    top: 0;
-    z-index: 99;
-
-}
-
-.mainContainer.pushed {
-        padding-top: 0; 
-
-    @include breakpoint(mamaBear) {
-        padding-top: 118px; 
-    }
-}
+//     @include breakpoint(mamaBear) {
+//         padding-top: 118px; 
+//     }
+// }
 
 /*------------------------------------*\
-    #Dropdown
+    #Dropdown 
 \*------------------------------------*/
 
 
 .top-bar-section {
 	  	
   .dropdown {
-    position: absolute; 
-    top: rem-calc(70);
-    background-color: $dropDown-color;
+    background-color: $dropDown-color; 
+    overflow: hidden; 
+        
+        .parent-link {
+          display: none; 
+        }
+        //Overrides Foundation Dropdown styles inherited from Top bar Styles
+        .dropdown-link {
+            @include single-transition(all, .2s, ease-in-out);
+            background-color: $dropDown-color; 
+            border-left: 4px solid $dropDown-color; 
+            overflow: hidden; 
+            
+             &:hover {
+                border-left: 4px solid $primaryColor; 
+                //Taken from settings--overwrite in order for li to have same bg color as link
+                background-color: scale-color($topbar-dropdown-link-bg, $lightness: -5%);
+             }
 
-    .parent-link {
-      display: none; 
-    }
-	
-    hr {
-      text-align: center;
-      width: 70%;
-      padding: 0; 
-      margin-top: rem-calc(2);
-      margin-bottom: rem-calc(2);
-      margin-right: auto;
-      margin-left: auto;
-	 }
-  
-  //Override Foundation Navigation white bg color that applies to the 
-  //dropdown and nav, makes it the same color as the dropdown instead 
-   &:hover {
-    li,
-    a {
-      background-color: $dropDown-color !important; 
-    }
-   }
-  }	
-} 
+                            
+            a {
+                @include single-transition(all, .2s, ease-in-out); 
+                line-height: rem-calc(44) !important; 
+                padding-left: rem-calc(16) !important; 
+                padding-right: rem-calc(16) !important; 
 
+                &:hover{
+                    @include transform(translateX(4px)); 
+                    color: $primaryColor; 
+                }
+            }
+
+
+        }
+
+    } 
+}
 
 //
 //Sets the height of the dropdown buttons
 //
-.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
- 	line-height: 45px; 
+// .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+//  	line-height: 45px; 
 
-  &:hover {
-    background-color: transparent; 
-  }
-}
+//   &:hover {
+//     background-color: transparent; 
+//   }
+// }
 
 
 
@@ -269,9 +257,9 @@
 //     width: 0;
 // }	
 
-.top-bar-section .right .has-dropdown > a {
-  padding-right: rem-calc(20) !important;
-}
+// .top-bar-section .right .has-dropdown > a {
+//   padding-right: rem-calc(20) !important;
+// }
 
 
 
@@ -290,6 +278,7 @@
     li {
 
         @include single-transition(all, .2s, ease-in-out); 
+
          &:hover {
     
             & > a {
@@ -373,7 +362,7 @@
     width: rem-calc(110); 
 
     @media #{$medium-up} {
-        width: rem-calc(160);
+        width: rem-calc(180);
     }
 }
 
@@ -472,3 +461,44 @@
     }
   }
 }
+
+
+
+
+
+// .header {
+//     background-color: #fff;
+//     z-index: 999;
+//     display: none;
+//     @extend %dropshadow--darker; 
+//     @include transition(transform, .2s, ease-in-out);     
+
+//     @include breakpoint(mamaBear) {
+//       display: block; 
+//     }
+
+// }
+
+// .header.fixed {
+//     @include translateY(0);
+//     @extend %position--relative; 
+//     width: 100%;
+    
+//     @include breakpoint(mamaBear) {
+//         position: fixed; 
+//         left: 0;
+//         top: 0;
+//     }
+// }
+
+
+// .header.default {
+//     @include translateY(-130px); 
+//     width: 100%;
+//     left: 0;
+//     @extend %position--fixed; 
+//     top: 0;
+//     z-index: 99;
+
+// }
+
