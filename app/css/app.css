@@ -11607,12 +11607,12 @@ a[class*="link"] {
   color: #888f95;
   display: block;
 }
-/* line 421, ../scss/partials/_navs.scss */
+/* line 420, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a {
   width: 100%;
   display: block;
 }
-/* line 428, ../scss/partials/_navs.scss */
+/* line 427, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a:hover {
   background-color: #dfdfdf;
 }
@@ -11620,27 +11620,27 @@ a[class*="link"] {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 452, ../scss/partials/_navs.scss */
+/* line 451, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 456, ../scss/partials/_navs.scss */
+/* line 455, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 456, ../scss/partials/_navs.scss */
+  /* line 455, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 467, ../scss/partials/_navs.scss */
+/* line 466, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 470, ../scss/partials/_navs.scss */
+/* line 469, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
