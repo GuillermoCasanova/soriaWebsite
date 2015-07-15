@@ -15,10 +15,17 @@
 
 .panel--information {
     @include panel($primaryColor, false);
-    border-top: 6px solid $primaryColor; 
-    background-color: transparent; 
+    border-top: 6px solid $primaryColor;
+    background-color: #fff;  
 }
 
+.panel--alt {
+    background-color: $secondaryColor; 
+
+    .panel-text {
+        color: #fff; 
+    }
+}
 
 .panel--information--secondary {
     border-top: 6px solid $secondaryColor; 
@@ -50,3 +57,100 @@
     }
 }
 
+
+
+
+/*------------------------------------*\
+    #Flipping Panels
+\*------------------------------------*/
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    -moz-perspective: 600; 
+    cursor: pointer; 
+    @include perspective(600); 
+    @include single-transition(all, 0.2s, ease-in-out); 
+    @extend %position--relative;  
+    @extend %mb3; 
+}
+
+
+/* flip the pane when clicked through jQuery Class Toggle */
+.flip-container.hover .flipper {
+    @include transform(rotateY(180deg));
+}
+
+/* increase pane size on hover */
+.flip-container:hover {
+    @include transform(scale(1.05)); 
+}
+
+/* flip speed goes here */
+.flipper {
+    @include single-transition(all, 0.4s, ease-in-out); 
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    //height: rem-calc(180px); 
+    top: 0;
+    left: 0;
+    @extend %position--absolute; 
+
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    @include transform(rotateY(0deg));
+}
+
+/* back, initially hidden pane */
+.back {
+    @include transform(rotateY(180deg));
+}
+
+.enter-in {
+    opacity: 1;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Flipping Panels Sizes
+\*------------------------------------*/
+
+
+.flip-container.medium {
+        width: 100%; 
+        min-width: rem-calc(280px);
+        height: rem-calc(230px);
+    .back, 
+    .front {
+        width: 100%; 
+        min-width: rem-calc(280px);
+        height: rem-calc(230px);
+    }
+
+}
+
+
+// .flip-container.small {
+//         width: 100%; 
+//         min-width: rem-calc(140px);
+//         min-height: rem-calc(120px);
+//     .back, 
+//     .front {
+//         width: 100%; 
+//         min-width: rem-calc(140px);
+//         min-height: rem-calc(120px);
+//     }
+
+// }

@@ -107,6 +107,10 @@
   @include box-shadow(rgba(0,0,0, .3) 1px 1px 3px);
 }
 
+%dropshadow1 {
+ @include box-shadow(rgba(0,0,0, .2) 1px 1px 10px); 
+}
+
 
 
 

@@ -27,6 +27,28 @@ var app = (function(document, $) {
 //Code for blur effect scroll 
 $(document).on('ready', function() {
 
+
+    var controller = new ScrollMagic.Controller();
+
+    $(function() {
+
+
+        //Tweens/Animations
+        var tween = TweenMax.staggerFrom('.enter-in', 3, {
+                opacity: 0
+        }, 2); 
+
+
+        //ScrollMagic Scenes
+        var scene = new ScrollMagic.Scene({
+                    triggerElement: "#scene",
+                    duration: 250
+        }).setTween(tween).addTo(controller); 
+
+
+    });
+
+
     function fader() {
 
         var r = $('.blurred'),
@@ -61,58 +83,64 @@ $(document).on('ready', function() {
 
     }
 
+
+    //Animation for flip-containers to active on click 
+    $('.flip-container').on('click', function(){
+        $(this).toggleClass('hover');
+    });
+
     //Binds blur effect to scroll
     //TODO: Optimize this method for medium effect to prevent lag 
-    // $(document).bind('scroll', fader); 
+  //$(document).bind('scroll', fader); 
 
-    (function($){
+    // (function($){
 
-        var prevScroll = 0;
-        var currentScroll; 
-        var navBar = $('.header');
-        var navBarHeight = navBar.height(); 
-        var didScroll = false; 
-        var theWindow = $(window);
-        var offset = 800; 
+    //     var prevScroll = 0;
+    //     var currentScroll; 
+    //     var navBar = $('.header');
+    //     var navBarHeight = navBar.height(); 
+    //     var didScroll = false; 
+    //     var theWindow = $(window);
+    //     var offset = 800; 
 
-        $(window).scroll(function() {
-            didScroll = true;
-        });
+    //     $(window).scroll(function() {
+    //         didScroll = true;
+    //     });
          
-        setInterval(function() {
-            if ( didScroll) {
+    //     setInterval(function() {
+    //         if ( didScroll) {
 
-                didScroll = false;
+    //             didScroll = false;
 
-                currentScroll = theWindow.scrollTop();
+    //             currentScroll = theWindow.scrollTop();
 
-                if (currentScroll > navBarHeight + 1000) {
-                    navBar.addClass('is-alt');
-                }
-                if (currentScroll < navBarHeight) {
-                    navBar.removeClass('is-alt'); 
-                }
+    //             if (currentScroll > navBarHeight + 1000) {
+    //                 navBar.addClass('is-alt');
+    //             }
+    //             if (currentScroll < navBarHeight) {
+    //                 navBar.removeClass('is-alt'); 
+    //             }
 
-                if( (currentScroll  + offset) < prevScroll || currentScroll < navBarHeight) {
-                    navBar.removeClass('is-hidden'); 
-                    navBar.addClass('is-fixed');
-                }
-                if(currentScroll > prevScroll) {
-                    navBar.removeClass('is-fixed'); 
-                    navBar.addClass('is-hidden'); 
-                }
+    //             if( (currentScroll  + offset) < prevScroll || currentScroll < navBarHeight) {
+    //                 navBar.removeClass('is-hidden'); 
+    //                 navBar.addClass('is-fixed');
+    //             }
+    //             if(currentScroll > prevScroll) {
+    //                 navBar.removeClass('is-fixed'); 
+    //                 navBar.addClass('is-hidden'); 
+    //             }
 
-               prevScroll = currentScroll;
+    //            prevScroll = currentScroll;
 
-            }
+    //         }
 
-            // if(theWindow.scrollTop() === 0) {
-            //     navBar.removeClass('fixed'); 
-            // }
+    //         // if(theWindow.scrollTop() === 0) {
+    //         //     navBar.removeClass('fixed'); 
+    //         // }
 
-        }, 300);
+    //     }, 300);
 
-    })(jQuery);
+    // })(jQuery);
 
 });
 

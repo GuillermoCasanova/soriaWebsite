@@ -48,10 +48,10 @@
 
 
 .top-bar {
-    color: $off-black; 
     z-index: 950;
     @include single-transition(all, 0.4s, ease-in-out); 
-    //@extend %dropshadow--darker; 
+    @extend %dropshadow1; 
+    
 
    //  &.hover, &.not-click:hover {
    //      & > .dropdown {
@@ -306,7 +306,7 @@
 
 
 .tab-bar {
-  @extend %dropshadow--darker; 
+  @extend %dropshadow1; 
   z-index: 970; 
 
     .menu-icon {
@@ -390,7 +390,7 @@
 
 .secondaryNav {
     background-color: #fff;
-    @extend %dropshadow--darker;
+    @extend %dropshadow1;
 
 }
 
@@ -489,7 +489,7 @@
     
     .top-bar {
         background-color: #fff; 
-
+        @extend %dropshadow1; 
         .top-bar-section ul li.top-bar-link > a {
             color: $secondaryColor; 
         }

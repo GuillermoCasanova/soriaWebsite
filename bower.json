@@ -2,6 +2,8 @@
   "name": "zf5_project",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.3.0" 
+    "font-awesome": "~4.3.0",
+    "ScrollMagic": "~2.0.5",
+    "gsap": "~1.17.0"
   }
 }

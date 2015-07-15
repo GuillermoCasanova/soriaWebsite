@@ -23,13 +23,15 @@
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+
   </head>
 
-  <body>
+  <body >
 
 
     <!--Main Navigation for Medium Up --> 
-    <div class="header">
+    <div class="header" id="header">
 
         <!--Top Contact Bar--> 
 <!--         <div class="topContactBar">
@@ -71,19 +73,21 @@
                                 <a href="serviceExample.html">Business Valuations</a>
                             </li>
                               <li class="dropdown-link">
+
                                 <a href="">Litigation Support</a>
                             </li>
                               <li class="dropdown-link">
                                 <a href="">Forensic Accounting-Fraud </a>
                             </li>
-                              <li class="dropdown-link">
+                            <li class="dropdown-link">
                                 <a href="">ERM–Risk Management </a>
                             </li>
                               
-                              <li class="dropdown-link">
+                            <li class="dropdown-link">
                                 <a href="">Due Diligence </a>
                             </li>
-                              <li class="dropdown-link">
+                            
+                            <li class="dropdown-link">
                                 <a href="">Transfer Pricing Studies</a>
                             </li>
                               <li class="dropdown-link">
@@ -155,39 +159,47 @@
             <div class="section  section--alt  vh100  image-wrap">
                 
                 <div class="section--alt-bg">
-                    <div class="  100vh  regular" style="background:url(images/business5.jpg) no-repeat center center; background-size: cover;"></div>
+
+                    <div class="  100vh  regular" style="background:url(images/business5.jpg) no-repeat center center; background-size: cover;">
+                        
+                    </div>
                     
-                     <div class="   100vh  blurred" style="background:url(images/business5--blurred.jpg)no-repeat center center; background-size: cover;"></div>
+                     <div class="   100vh  blurred" style="background:url(images/business5--blurred.jpg)no-repeat center center; background-size: cover;">
+                         
+                     </div>
+
                 </div>
 
-                    <div class="row  vertical-align">
-                                
-                        <div class="small-12 medium-11 small-centered columns">
+                <div class="row  vertical-align">
+                            
+                    <div class="small-12 medium-11 small-centered columns">
 
-                            <h1 class="section-text  text--mega ">We are Soria LLC, a consulting organization integrating academic background and experience in <u >law</u>, <u >finance</u>, and <u >accounting</u> to find feasible solutions for our clients. </h1>    
-
-                        </div>
+                        <h1 class="section-text  text--mega ">We are Soria LLC, a consulting organization integrating academic background and experience in <u >law</u>, <u >finance</u>, and <u >accounting</u> to find feasible solutions for our clients. </h1>    
 
                     </div>
+
+                </div>
 
             </div>
 
 
     <!--Services--> 
-    <div class="section">
+    <div class="section" id="scene" >
         
         <div class="row">
 
-            <div class="small-12  medium-9  medium-centered columns  mb3 text-center ">
+            <div class="small-12  medium-9  medium-centered columns  mb3 text-center enter-in">
 
-                 <h1 class="">Attorneys & Accountants</h1>
+                 <h1>Attorneys & Accountants</h1>
 
-                <h2 class="h3  text-center header--secondary">We provide a different point of view and excellent credentials in:</h2> 
+                <h2 class="h3  text-center header--secondary">with a different point of view and excellent credentials in:</h2> 
             </div>
 
         </div>
 
 
+        <!--Services - Card -->
+        <!--TODO: refactor this:  ontouchstart="this.classList.toggle('hover');" -->
         <div class="row">
 
             <div class="small-12 small-centered  columns">
@@ -196,67 +208,173 @@
                 
                     <ul class="row">
 
-                        <li class="medium-6  large-4  columns    text-center">
+                        <li class="medium-6  large-4  columns  text-center">
+    
+                            <div class="flip-container  medium">
 
-                        <div class="h2  panel  panel--information  panel--asButton ptb5">
+                                <div class="flipper">
+                                
+                                    <div class="enter-in  [ panel  panel--information   ] ptb3  front">
+                                    
+                                              
+                                            <img src="images/icons/8.svg" alt="icon" width="100"  class="icon">
+                                            
+                                             <div class="bd">
+                                            
+                                                <span class="h4">
+                                                    Business Valuations, Mergers & Acquisitions
+                                                </span>
+                                            
+                                            </div>
+                                    
+                                    </div>
+                                
+                                    <div class="enter-in  text-left  [ panel  panel--information panel--alt   ] ptb2  back">
+                                        
+                                            <p class="text--micro  panel-text">
+                                                Since markets and the economy are in constant flux, Business Valuations are no longer an option but a necessity. Business valuations is a set of procedures geared towards estimating the economic value of a business, part of a business or a specific asset.
+                                            </p>
 
-                            <a href="serviceExample.html">Business Valuations, Mergers & Acquisitions</a>
-                        </div>
+                                            <a href="serviceExample.html"><button class="right  button--secondary tiny  button--expanded">Learn More</button></a>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
 
                         </li>
-                
-                        <li class="medium-6  large-4  columns    text-center">
 
-                            <div class="panel  panel--information panel--information--secondary panel--asButton ptb5">Litigation Support</div>
+                        <li class="medium-6  large-4  columns  text-center">
+    
+                            <div class="flip-container  medium">
+
+                                <div class="flipper">
+                                
+                                    <div class="enter-in  [ panel  panel--information   ] ptb3  front">
+                                    
+                                        <img src="images/icons/88.svg" alt="icon" width="100"  class="icon">
+
+                                         <div class="bd">
+
+                                            <span class="h4">Litigation Support</span>
+
+                                        </div>
+        
+                                    </div>
+                            
+                                    <div class="enter-in  text-left  [ panel  panel--information  panel--alt   ] ptb2  back">
+                                        
+                                            <p class="text--micro  panel-text">
+                                                Since markets and the economy are in constant flux, Business Valuations are no longer an option but a necessity. Business valuations is a set of procedures geared towards estimating the economic value of a business, part of a business or a specific asset.
+                                            </p>
+
+                                            <a href="serviceExample.html"><button class="right  button--secondary tiny  button--expanded">Learn More</button></a>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
 
                         </li>
-                
-                        <li class="medium-6  large-4  columns    text-center">
 
-                            <div class="panel  panel--information  panel--information--tetriary  panel--asButton ptb5">Forensic Accounting-Fraud Services</div>
+                        <li class="medium-6  large-4  columns  text-center">
+    
+                            <div class="flip-container  medium">
+
+                                <div class="flipper">
+                                
+                                    <div class="enter-in  [ panel  panel--information   ] ptb3  front">
+                                    
+                                        <img src="images/icons/32.svg" alt="icon" width="100"  class="icon">
+
+                                         <div class="bd">
+
+                                            <span class="h4">Forensic Accounting-Fraud Services</span>
+
+                                        </div>
+        
+                                    </div>
+                            
+                                    <div class="enter-in  text-left  [ panel  panel--information  panel--alt   ] ptb2  back">
+                                        
+                                            <p class="text--micro  panel-text">
+                                                Since markets and the economy are in constant flux, Business Valuations are no longer an option but a necessity. Business valuations is a set of procedures geared towards estimating the economic value of a business, part of a business or a specific asset.
+                                            </p>
+
+                                            <a href="serviceExample.html"><button class="right  button--secondary tiny  button--expanded">Learn More</button></a>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
 
                         </li>
-                
                 
                     </ul>
                 
                 </div>
-                
+                                           
                 <div class="small-12 columns">
                 
                     <ul class="row">
 
                         <li class="medium-6  large-4  columns  text-center">
 
-                            <div class="h2  panel  panel--information  panel--asButton ptb5">
-                                 ERM–Risk Management Services
+                            <div class="h2  enter-in  panel  panel--information  panel--asButton  ptb5">
+
+                                <img src="images/icons/55.svg" alt="icon" width="100"  class="icon">
+
+                                 <div class="bd">
+
+                                     <span class="h4">ERM–Risk Management Services</span>
+
+                                 </div>
+
                             </div>
 
                         </li>
 
                         <li class="medium-6  large-4  columns  text-center">
 
-                            <div class="h2  panel  panel--information  panel--asButton ptb5">
-                                Due Diligence Services
+                            <div class="enter-in  panel  panel--information  panel--asButton ptb5">
+
+                                <img src="images/icons/43.svg" alt="icon" width="100"  class="icon">
+
+                                 <div class="bd">
+
+                                    <span class="h4">Due Diligence Services</span>
+
+                                </div>
+
                             </div>
 
                         </li>
                 
                         <li class="medium-6  large-4  columns  text-center">
 
-                            <div class="h2  panel  panel--information  panel--asButton ptb5">  
-                                 Transfer Pricing Studies
+                            <div class="  enter-in  panel  panel--information  panel--asButton ptb5">
+
+                                <img src="images/icons/8.svg" alt="icon" width="100"  class="icon">
+                                 <div class="bd">
+
+                                    <span class="h4">Transfer Pricing Studies</span>
+
+                                </div>
+
                             </div>
 
                         </li>
                 
-                        <li class="medium-12  large-4  columns   text-center  end">
+<!--                         <li class="medium-12  large-4  columns   text-center  end">
 
-                            <div class="panel  panel--information  panel--asButton  ptb5">
+                            <div class="enter-in  panel  panel--information  panel--asButton  ptb5">
                                     Internal Audits/Operations Support
                             </div>
 
-                        </li>
+                        </li> -->
 
                     </ul>
                 
@@ -273,7 +391,7 @@
     <!--Characteristics-->
     <div class="section--highlighted">
             
-        <ul class="row  ptb5  mtb5 ">
+        <ul class="row  ptb5  mtb5 " id="fade-in">
 
             <li class="text-center  small-12 columns medium-4">
 
@@ -431,13 +549,17 @@
         </div>
 
     </div>
-
+    
 
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
@@ -462,6 +584,7 @@
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
     <!-- endbuild -->
+
   </body>
         
 </html>
