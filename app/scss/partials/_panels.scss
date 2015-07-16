@@ -19,7 +19,6 @@
 
 .panel-body {
   @extend %text--micro; 
-  @extend %mb0; 
 }
 
 
@@ -73,9 +72,8 @@
 
 /* entire container, keeps perspective */
 .flip-container {
-    -moz-perspective: 600; 
     cursor: pointer; 
-    @include perspective(600); 
+    @include perspective(600px); 
     @include single-transition(all, 0.2s, ease-in-out); 
     @extend %position--relative;  
     @extend %mb3; 
@@ -94,19 +92,17 @@
 
 /* flip speed goes here */
 .flipper {
-    @include single-transition(all, 0.4s, ease-in-out); 
-    transform-style: preserve-3d;
     position: relative;
+    @include single-transition(all, 0.2s, ease-in-out); 
+    @include transform-style(preserve-3d); 
 }
 
 /* hide back of pane during swap */
 .front, .back {
-    backface-visibility: hidden;
-    //height: rem-calc(180px); 
     top: 0;
     left: 0;
+    @include backface-visibility(hidden);
     @extend %position--absolute; 
-
 }
 
 /* front pane, placed above back */

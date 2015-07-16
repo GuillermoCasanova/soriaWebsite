@@ -27,26 +27,26 @@ var app = (function(document, $) {
 //Code for blur effect scroll 
 $(document).on('ready', function() {
 
+    //* Scroll Magic *//
+    // var controller = new ScrollMagic.Controller();
 
-    var controller = new ScrollMagic.Controller();
-
-    $(function() {
-
-
-        //Tweens/Animations
-        var tween = TweenMax.staggerFrom('.enter-in', 3, {
-                opacity: 0
-        }, 2); 
+    // $(function() {
 
 
-        //ScrollMagic Scenes
-        var scene = new ScrollMagic.Scene({
-                    triggerElement: "#scene",
-                    duration: 250
-        }).setTween(tween).addTo(controller); 
+    //     //Tweens/Animations
+    //     var tween = TweenMax.staggerFrom('.enter-in', 2, {
+    //             opacity: 0
+    //     }, 2); 
 
 
-    });
+    //     //ScrollMagic Scenes
+    //     var scene = new ScrollMagic.Scene({
+    //                 triggerElement: "#scene",
+    //                 duration: 400
+    //     }).setTween(tween).addTo(controller); 
+
+
+    // });
 
 
     function fader() {
@@ -85,7 +85,7 @@ $(document).on('ready', function() {
 
 
     //Animation for flip-containers to active on click 
-    $('.flip-container').on('click  ontouchstart', function(){
+    $('.flip-container').on('click', function(){
         $(this).toggleClass('hover');
     });
 
