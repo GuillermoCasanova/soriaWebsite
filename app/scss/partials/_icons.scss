@@ -15,7 +15,7 @@
 }
 
 .icon--large {
-  @extend %h2;
+  @extend %h1;
 }
 
 .icon--medium {
@@ -129,6 +129,10 @@ a[href*="facebook"],
     color: $blue--facebook;
   }
 
+}
+
+.icon--linkedIn {
+    @include icon($icon--linkedIn);
 }
 
 

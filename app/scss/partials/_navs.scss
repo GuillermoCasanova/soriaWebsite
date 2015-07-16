@@ -50,7 +50,6 @@
 .top-bar {
     z-index: 950;
     @include single-transition(all, 0.4s, ease-in-out); 
-    @extend %dropshadow1; 
     
 
    //  &.hover, &.not-click:hover {
@@ -103,10 +102,9 @@
 
 
 .top-bar-section ul li.top-bar-link {
-
+    
     @include single-transition(all, .2s, ease-in-out); 
-
-    position: relative; 
+    @extend %position--relative; 
     
     &:after {
         opacity: 0; 
@@ -115,9 +113,12 @@
     }
 
     a {
+        .top-bar.is-normal & {
+            color: $secondaryColor; 
+        }
         @include single-transition(all, .2s, ease-in-out); 
     }
-
+    //Adds Bottom border to links on hover 
     &:hover {
 
         a {
@@ -428,6 +429,19 @@
 }
 
 
+.secondaryNav--fixed {
+    display: none; 
+    width: rem-calc(400px);
+    z-index: 100; 
+    right: 40px; 
+    @extend %position--fixed; 
+    
+    @media #{$medium-up} {
+        display: block;
+    }
+}
+
+
 
 
 
@@ -468,7 +482,7 @@
 
 
 //Container for Navigation bar that hides and changes the state of .top-bar
-.header {
+.top-bar-container {
     z-index: 999;
     display: none;
     top: 0px;
@@ -485,7 +499,7 @@
 
 }
 
-.header.is-alt {
+.top-bar-container.is-alt {
     
     .top-bar {
         background-color: #fff; 
@@ -497,7 +511,7 @@
 
 }
 
-.header.is-fixed {
+.top-bar-container.is-fixed {
     @include translateY(0);
     @extend %position--relative; 
     width: 100%;
@@ -511,7 +525,7 @@
 }
 
 
-.header.is-hidden{
+.top-bar-container.is-hidden{
     @include translateY(-130px); 
     width: 100%;
     left: 0;

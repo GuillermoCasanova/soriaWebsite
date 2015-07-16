@@ -4,15 +4,15 @@
 \*------------------------------------*/
 
 
-.image--circle--small {
+.image--circle.small {
 		@include image--circle(em-calc(120));
 }
 
-.image--circle--medium {
-		@include image--circle(em-calc(230));
+.image--circle.medium {
+		@include image--circle(em-calc(200));
 }
 
-.image--circle--big {
+.image--circle.big {
 		@include image--circle(em-calc(360));
 }
 

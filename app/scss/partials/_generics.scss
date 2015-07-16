@@ -84,15 +84,15 @@
 
 
 .relative {
-  position: relative;
+  @extend %position--relative; 
 }
 
 .absolute {
-  position: absolute; 
+  @extend %position--absolute; 
 }
 
 .fixed {
-        z-index: 999;
+    z-index: 999;
     display: none;
     top: 0px;
     width: 100%;
@@ -105,8 +105,22 @@
 
 
 
+
 /*------------------------------------*\
-    #Position Types 
+    #Overflows
+\*------------------------------------*/
+
+
+.overflow-visible {
+    overflow: visible; 
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Shapes
 \*------------------------------------*/
 
 .circle {
@@ -164,8 +178,7 @@
 }
 
 .flag-image {
-  // padding-right: 10px;
-
+    
   > img {
     display: block;
     max-width: none;

@@ -18,7 +18,8 @@
 
 
 .panel-body {
-  @extend %text--micro; 
+  font-size: rem-calc(14);
+  line-height: 1.5;  
 }
 
 
@@ -37,7 +38,7 @@
 
 .panel--information {
     @include panel($primaryColor, false);
-    border-top: 6px solid $primaryColor;
+    border-top: 4px solid $primaryColor;
     background-color: #fff;  
 }
 
@@ -133,12 +134,12 @@
 .flip-container.medium {
         width: 100%; 
         min-width: rem-calc(280px);
-        height: rem-calc(230px);
+        height: rem-calc(200px);
     .back, 
     .front {
         width: 100%; 
         min-width: rem-calc(280px);
-        height: rem-calc(230px);
+        height: rem-calc(200px);
     }
 
 }

@@ -12,8 +12,13 @@
                 "scrollmagic/uncompressed/ScrollMagic.js",
                 "scrollmagic/uncompressed/plugins/animation.gsap.js"  
              ]
+        },
+        "gsap" : {
+            "main" : [
+                "src/uncompressed/TweenMax.js",
+                "src/uncompressed/plugins/ScrollToPlugin.js"  
+             ]
         }
 
     }
 }
-

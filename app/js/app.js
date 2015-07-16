@@ -24,31 +24,64 @@ var app = (function(document, $) {
 })();
 
 
-//Code for blur effect scroll 
 $(document).on('ready', function() {
 
     //* Scroll Magic *//
-    // var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
 
-    // $(function() {
+    $(function() {
+
+        // Checks to see if required trigger is on page
+        if($('#scene').length > 0) {
+
+            // Sevices - Tween 
+               var tween = TweenMax.staggerFrom('.enter-in', 2, {
+                    opacity: 0
+            }, 2); 
+
+            // Services - Scene
+            var scene = new ScrollMagic.Scene({
+                        triggerElement: "#scene",
+                        duration: 400
+            }).setTween(tween).addTo(controller);    
+
+        }
 
 
-    //     //Tweens/Animations
-    //     var tween = TweenMax.staggerFrom('.enter-in', 2, {
-    //             opacity: 0
-    //     }, 2); 
+        //Checks to see if required trigger is available for scrolling 
+        if($('.smoothScroll').length > 0) {
+            // Anchor Smooth Scrolling - Scene 
+            var scene = new ScrollMagic.Scene({triggerElement: ".secondaryNav", duration: 200, triggerHook: "onLeave"})
+                            .addTo(controller);
+
+            // Tells Controller to smoothly go to position with TweenMax
+            controller.scrollTo(function (newpos) {
+                TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+            });
+
+            // Bing scroll animation to links with .smoothScroll class
+            $(document).on("click", ".smoothScroll", function (e) {
+                var id = $(this).attr("href");
+                if ($(id).length > 0) {
+                    e.preventDefault();
+
+                    // trigger scroll
+                    controller.scrollTo(id);
+
+                        // if supported by the browser we can even update the URL.
+                    if (window.history && window.history.pushState) {
+                        history.pushState("", document.title, id);
+                    }
+                }
+            });
+        }
 
 
-    //     //ScrollMagic Scenes
-    //     var scene = new ScrollMagic.Scene({
-    //                 triggerElement: "#scene",
-    //                 duration: 400
-    //     }).setTween(tween).addTo(controller); 
+
+    });
 
 
-    // });
-
-
+    //Code for blur effect scroll 
     function fader() {
 
         var r = $('.blurred'),
@@ -95,59 +128,55 @@ $(document).on('ready', function() {
     //TODO: Optimize this method for medium effect to prevent lag 
     $(document).on('scroll', fader); 
 
-    // (function($){
+    (function($){
 
-    //     var prevScroll = 0;
-    //     var currentScroll; 
-    //     var navBar = $('.header');
-    //     var navBarHeight = navBar.height(); 
-    //     var didScroll = false; 
-    //     var theWindow = $(window);
-    //     var offset = 800; 
+        var prevScroll = 0;
+        var currentScroll; 
+        var navBar = $('.top-bar-container');
+        var navBarHeight = navBar.height(); 
+        var didScroll = false; 
+        var theWindow = $(window);
+        var offSet = 200; 
 
-    //     $(window).scroll(function() {
-    //         didScroll = true;
-    //     });
+        $(window).scroll(function() {
+            didScroll = true;
+        });
          
-    //     setInterval(function() {
-    //         if ( didScroll) {
+        setInterval(function() {
+            if ( didScroll) {
 
-    //             didScroll = false;
+                didScroll = false;
 
-    //             currentScroll = theWindow.scrollTop();
+                currentScroll = theWindow.scrollTop();
 
-    //             if (currentScroll > navBarHeight + 1000) {
-    //                 navBar.addClass('is-alt');
-    //             }
-    //             if (currentScroll < navBarHeight) {
-    //                 navBar.removeClass('is-alt'); 
-    //             }
 
-    //             if( (currentScroll  + offset) < prevScroll || currentScroll < navBarHeight) {
-    //                 navBar.removeClass('is-hidden'); 
-    //                 navBar.addClass('is-fixed');
-    //             }
-    //             if(currentScroll > prevScroll) {
-    //                 navBar.removeClass('is-fixed'); 
-    //                 navBar.addClass('is-hidden'); 
-    //             }
+                if (currentScroll < navBarHeight) {
+                    navBar.removeClass('is-alt'); 
+                }
 
-    //            prevScroll = currentScroll;
+                //Shows Navigation Bar when user starts scrolling up 
+                if( currentScroll < prevScroll ) {
+                    navBar.removeClass('is-hidden'); 
+                    navBar.addClass('is-fixed');
+                }
 
-    //         }
+                if(currentScroll > prevScroll) {
+                    navBar.removeClass('is-fixed'); 
+                    navBar.addClass('is-hidden');
+                }
 
-    //         // if(theWindow.scrollTop() === 0) {
-    //         //     navBar.removeClass('fixed'); 
-    //         // }
+                if(navBar.hasClass('is-fixed') && currentScroll > navBarHeight) {
+                    navBar.addClass('is-alt'); 
+                }
 
-    //     }, 300);
+               prevScroll = currentScroll;
 
-    // })(jQuery);
+            }
+
+        }, 300);
+
+    })(jQuery);
 
 });
-
-
-
-//Code for hiding navigation bar
 
 

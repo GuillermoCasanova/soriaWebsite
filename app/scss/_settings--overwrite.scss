@@ -1400,7 +1400,7 @@ $menu-slide: "transform 400ms ease-in-out";
  //$include-html-top-bar-classes: false; 
     
 // Background color for the top bar
-$topbar-bg-color: rgba(255, 255, 255, 1);
+$topbar-bg-color: transparent; 
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1412,7 +1412,7 @@ $topbar-height: rem-calc(90);
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: #3c4750;
+$topbar-link-color: #fff;
 $topbar-link-color-hover: #ef8111;
 $topbar-link-color-active: #ef8111;
 $topbar-link-color-active-hover: #ef8111;

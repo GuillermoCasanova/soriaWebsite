@@ -93,7 +93,8 @@
 
 		}
 
-		&:active {
+		&:active,
+        &:focus {
 			background-color: lighten($color, 5%); 
 		}
 }
@@ -113,8 +114,10 @@
 
         }
 
-        &:active {
+        &:active,
+        &:focus {
             background-color: $color; 
         }
+        
 }
 
