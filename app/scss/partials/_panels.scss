@@ -9,31 +9,6 @@
   @extend %dropshadow; 
 }
 
-.panel--warning {
-    //@include panel($red, $icon--alert);
-}
-
-.panel--information {
-    @include panel($primaryColor, false);
-    border-top: 6px solid $primaryColor;
-    background-color: #fff;  
-}
-
-.panel--alt {
-    background-color: $secondaryColor; 
-
-    .panel-text {
-        color: #fff; 
-    }
-}
-
-.panel--information--secondary {
-    border-top: 6px solid $secondaryColor; 
-}
-
-.panel--information--tetriary {
-    border-top: 6px solid $grey--dark; 
-}
 
 .panel-title {
   @extend %fwb;
@@ -41,21 +16,52 @@
   @extend %mb0;  
 }
 
+
 .panel-body {
   @extend %text--micro; 
   @extend %mb0; 
 }
 
-.panel--asButton {
-    cursor: pointer; 
 
-    @include single-transition(all, 0.2s, ease-in-out); 
 
-    &:hover {
-        @extend %fwb; 
-        @include transform(scale(1.1)); 
+
+
+/*------------------------------------*\
+    #Panel Types 
+\*------------------------------------*/
+
+
+.panel--warning {
+    //@include panel($red, $icon--alert);
+}
+
+
+.panel--information {
+    @include panel($primaryColor, false);
+    border-top: 6px solid $primaryColor;
+    background-color: #fff;  
+}
+
+
+.panel--alt {
+    background-color: $secondaryColor; 
+
+    .panel-body {
+        color: #fff; 
     }
 }
+
+
+// .panel--asButton {
+//     cursor: pointer; 
+
+//     @include single-transition(all, 0.2s, ease-in-out); 
+
+//     &:hover {
+//         @extend %fwb; 
+//         @include transform(scale(1.1)); 
+//     }
+// }
 
 
 

@@ -9955,7 +9955,7 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Font Weights 
 \*------------------------------------*/
 /* line 31, ../scss/modules/_typography.scss */
-.button, .section--alt .section--alt-subTitle, .secondaryNav-list li.link, .pricingtable-title, footer .footer-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title, .panel--asButton:hover {
+.button, .section--alt .section--alt-subTitle, .secondaryNav-list li.link, .pricingtable-title, footer .footer-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title {
   font-weight: 700;
 }
 
@@ -13453,7 +13453,10 @@ p,
 /*------------------------------------*\
     #Panels
 \*------------------------------------*/
-/* line 16, ../scss/partials/_panels.scss */
+/*------------------------------------*\
+    #Panel Types 
+\*------------------------------------*/
+/* line 39, ../scss/partials/_panels.scss */
 .panel--information {
   background-color: #f5f5f5;
   border-top: 6px solid #ef8111;
@@ -13464,46 +13467,20 @@ p,
   color: #f5b471;
 }
 
-/* line 22, ../scss/partials/_panels.scss */
+/* line 46, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 25, ../scss/partials/_panels.scss */
-.panel--alt .panel-text {
-  color: #fff;
-}
-
-/* line 30, ../scss/partials/_panels.scss */
-.panel--information--secondary {
-  border-top: 6px solid #3c4750;
-}
-
-/* line 34, ../scss/partials/_panels.scss */
-.panel--information--tetriary {
-  border-top: 6px solid #888f95;
-}
-
 /* line 49, ../scss/partials/_panels.scss */
-.panel--asButton {
-  cursor: pointer;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 54, ../scss/partials/_panels.scss */
-.panel--asButton:hover {
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.panel--alt .panel-body {
+  color: #fff;
 }
 
 /*------------------------------------*\
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 69, ../scss/partials/_panels.scss */
+/* line 75, ../scss/partials/_panels.scss */
 .flip-container {
   -moz-perspective: 600;
   cursor: pointer;
@@ -13517,7 +13494,7 @@ p,
 }
 
 /* flip the pane when clicked through jQuery Class Toggle */
-/* line 80, ../scss/partials/_panels.scss */
+/* line 86, ../scss/partials/_panels.scss */
 .flip-container.hover .flipper {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13526,7 +13503,7 @@ p,
 }
 
 /* increase pane size on hover */
-/* line 85, ../scss/partials/_panels.scss */
+/* line 91, ../scss/partials/_panels.scss */
 .flip-container:hover {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -13535,7 +13512,7 @@ p,
 }
 
 /* flip speed goes here */
-/* line 90, ../scss/partials/_panels.scss */
+/* line 96, ../scss/partials/_panels.scss */
 .flipper {
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -13546,7 +13523,7 @@ p,
 }
 
 /* hide back of pane during swap */
-/* line 97, ../scss/partials/_panels.scss */
+/* line 103, ../scss/partials/_panels.scss */
 .front, .back {
   backface-visibility: hidden;
   top: 0;
@@ -13554,7 +13531,7 @@ p,
 }
 
 /* front pane, placed above back */
-/* line 107, ../scss/partials/_panels.scss */
+/* line 113, ../scss/partials/_panels.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -13565,7 +13542,7 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 114, ../scss/partials/_panels.scss */
+/* line 120, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13573,7 +13550,7 @@ p,
   transform: rotateY(180deg);
 }
 
-/* line 118, ../scss/partials/_panels.scss */
+/* line 124, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13581,13 +13558,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 131, ../scss/partials/_panels.scss */
+/* line 137, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 14.375rem;
 }
-/* line 135, ../scss/partials/_panels.scss */
+/* line 141, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;

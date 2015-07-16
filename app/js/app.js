@@ -85,13 +85,15 @@ $(document).on('ready', function() {
 
 
     //Animation for flip-containers to active on click 
-    $('.flip-container').on('click', function(){
+    $('.flip-container').on('click  ontouchstart', function(){
         $(this).toggleClass('hover');
     });
 
+   // ontouchstart="this.classList.toggle('hover');
+
     //Binds blur effect to scroll
     //TODO: Optimize this method for medium effect to prevent lag 
-  //$(document).bind('scroll', fader); 
+    $(document).on('scroll', fader); 
 
     // (function($){
 

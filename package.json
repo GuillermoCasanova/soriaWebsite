@@ -1,12 +1,12 @@
 {
-  "name": "zf5_project",
-  "description": "",
+  "name": "SoriaLLC_website",
+  "description": "Website for Soria, LLC",
   "version": "0.0.1",
   "description": "",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Guillermo Martinez",
+    "email": "hi.guillermocasanova@gmail.com"
   },
   "repository": {
     "type": "git",

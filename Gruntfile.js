@@ -143,7 +143,10 @@ module.exports = function(grunt) {
 					'jquery-placeholder',
 					'foundation'
 				]
-			}
+			},
+            options: {
+                bowerJson: require('./bower.json')
+            }
 		}
 
 	});
