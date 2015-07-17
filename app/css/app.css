@@ -9963,7 +9963,7 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Font Weights 
 \*------------------------------------*/
 /* line 42, ../scss/modules/_typography.scss */
-.header--standout, .imageButton .imageButton-txt, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
+.header--standout, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
   text-align: center;
 }
 
@@ -10035,7 +10035,7 @@ h6,
     #Text Colors 
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
-.imageButton .imageButton-txt, .topContactBar .topContactBar-item,
+.topContactBar .topContactBar-item,
 .topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
@@ -10182,7 +10182,7 @@ h6,
 }
 
 /* line 59, ../scss/modules/_generics.scss */
-.button--backtotop, .secondaryNav--fixed, .top-bar-container, .top-bar-container.is-hidden {
+.button--backtotop, .fixedTab, .secondaryNav--fixed, .top-bar-container, .top-bar-container.is-hidden {
   position: fixed;
 }
 
@@ -10190,22 +10190,16 @@ h6,
     #Flexbox 
 \*------------------------------------*/
 /* line 72, ../scss/modules/_generics.scss */
-.imageButton .imageButton-bg, .section--header {
+.section--header {
   display: -webkit-flex;
   display: flex;
-}
-
-/* line 77, ../scss/modules/_generics.scss */
-.imageButton .imageButton-txt {
-  margin-bottom: auto;
-  margin-top: auto;
 }
 
 /*------------------------------------*\
     #Flexbox 
 \*------------------------------------*/
 /* line 89, ../scss/modules/_generics.scss */
-.header--standout, .imageButton .imageButton-txt, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
+.header--standout, .footer-nav, .choiceWithIcon, .footer-siteInfo, .tabs-title {
   text-align: center;
 }
 
@@ -10241,18 +10235,11 @@ footer {
 /*------------------------------------*\
     #Shapes 
 \*------------------------------------*/
-/* line 122, ../scss/modules/_generics.scss */
-.imageButton {
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-
 /*------------------------------------*\
     #Centering Vertically and Horizontally  
 \*------------------------------------*/
 /* line 136, ../scss/modules/_generics.scss */
-.imageButton .imageButton-txt, .choiceWithIcon .bd, .tabs-title {
+.choiceWithIcon .bd, .tabs-title {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -10329,7 +10316,7 @@ footer {
 }
 
 /* line 232, ../scss/modules/_generics.scss */
-.profile .profile-bio, .pt2 {
+.fixedTab, .profile .profile-bio, .pt2 {
   padding-top: 0.75rem !important;
 }
 
@@ -10359,7 +10346,7 @@ footer {
 }
 
 /* line 261, ../scss/modules/_generics.scss */
-.pb2 {
+.fixedTab, .pb2 {
   padding-bottom: 0.75rem !important;
 }
 
@@ -10461,7 +10448,7 @@ footer {
 }
 
 /* line 361, ../scss/modules/_generics.scss */
-.pr2 {
+.fixedTab, .pr2 {
   padding-right: 0.75rem !important;
 }
 
@@ -10491,7 +10478,7 @@ footer {
 }
 
 /* line 390, ../scss/modules/_generics.scss */
-.secondaryNav-list li.title, .secondaryNav-list li.link a, .pl2, .accordion--contained .accordion-title {
+.fixedTab, .secondaryNav-list li.title, .secondaryNav-list li.link a, .pl2, .accordion--contained .accordion-title {
   padding-left: 0.75rem !important;
 }
 
@@ -11041,54 +11028,53 @@ a[class*="link"] {
 }
 
 /*------------------------------------*\
-    #Map Button
+    #Button Classes
 \*------------------------------------*/
-/* line 103, ../scss/partials/_buttons.scss */
-.imageButton {
-  width: 8.125rem;
-  height: 8.125rem;
+/* line 106, ../scss/partials/_buttons.scss */
+.button--expanded {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    #Fixed Tab Button
+\*------------------------------------*/
+/* line 119, ../scss/partials/_buttons.scss */
+.fixedTab {
+  background-color: #ef8111;
+  color: #fff;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  z-index: 101;
+  font-size: 1.125rem;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(0);
-}
-/* line 113, ../scss/partials/_buttons.scss */
-.imageButton:hover .imageButton-bg, .imageButton:active .imageButton-bg {
-  opacity: 1;
-}
-/* line 118, ../scss/partials/_buttons.scss */
-.imageButton .imageButton-bg {
+  white-space: nowrap;
+  width: 12.5rem;
+  cursor: pointer;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 105%;
-  height: 105%;
+}
+/* line 138, ../scss/partials/_buttons.scss */
+.fixedTab .link {
   opacity: 0;
-  overflow: hidden;
 }
-/* line 128, ../scss/partials/_buttons.scss */
-.imageButton .imageButton-txt {
-  z-index: 100;
+/* line 142, ../scss/partials/_buttons.scss */
+.fixedTab a {
+  color: #3c4750;
 }
-
-/* line 139, ../scss/partials/_buttons.scss */
-.imageButton--googleMaps {
-  background-image: url("../images/googlemaps_icon.jpg");
-  background-size: cover;
-  background-position: center;
+/* line 145, ../scss/partials/_buttons.scss */
+.fixedTab a:hover {
+  color: #fff;
 }
-/* line 144, ../scss/partials/_buttons.scss */
-.imageButton--googleMaps .imageButton-bg {
-  overflow: hidden;
-  background-color: #b9d362;
+/* line 150, ../scss/partials/_buttons.scss */
+.fixedTab:hover {
+  width: 20.25rem;
 }
-
-/*------------------------------------*\
-    #Button Classes
-\*------------------------------------*/
-/* line 158, ../scss/partials/_buttons.scss */
-.button--expanded {
-  width: 100%;
+/* line 153, ../scss/partials/_buttons.scss */
+.fixedTab:hover .link {
+  opacity: 1;
 }
 
 /*------------------------------------*\
@@ -12312,6 +12298,27 @@ a[href*="facebook"].icon--brandColors,
 /* line 119, ../scss/modules/_icons.scss */
 .icon--linkedIn:before {
   content: "";
+  font-family: "fontello--soriallc";
+  font-style: normal;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+/*------------------------------------*\
+    #Plus and Negative 
+\*------------------------------------*/
+/* line 119, ../scss/modules/_icons.scss */
+[rel*="plus"]:before {
+  content: "";
+  font-family: "fontello--soriallc";
+  font-style: normal;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+/* line 119, ../scss/modules/_icons.scss */
+[rel*="neg"]:before {
+  content: "";
   font-family: "fontello--soriallc";
   font-style: normal;
   vertical-align: middle;

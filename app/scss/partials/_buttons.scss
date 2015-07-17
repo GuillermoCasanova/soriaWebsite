@@ -95,58 +95,6 @@
 
 
 
-/*------------------------------------*\
-    #Map Button
-\*------------------------------------*/
-
-
-.imageButton {
-    @extend %circle; 
-    width: rem-calc(130);
-    height: rem-calc(130);
-    overflow: hidden; 
-    //Hack for preventing flicker on Chrome 
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateX(0);
-    &:hover,
-    &:active {
-        .imageButton-bg {
-          opacity: 1; 
-        }
-    } 
-
-    .imageButton-bg {
-        @extend %flexb; 
-        @include single-transition(all, .2s, ease-in-out);
-        width: 105%;
-        height: 105%; 
-        opacity: 0;  
-        overflow: hidden; 
-
-    }
-
-    .imageButton-txt {
-        @extend %flexb-center-vert;
-        @extend %horizontal-align;
-        @extend %text--white;
-        @extend %text-center; 
-        z-index: 100; 
-    }
-}
-
-
-//Google Maps Button
-.imageButton--googleMaps {
-  background-image: url('../images/googlemaps_icon.jpg'); 
-  background-size: cover;
-  background-position: center; 
-
-  .imageButton-bg {
-    overflow: hidden; 
-    background-color: $green; 
-  }
-}
-
 
 
 
@@ -159,6 +107,54 @@
     width: 100%; 
 }
 
+
+
+
+
+/*------------------------------------*\
+    #Fixed Tab Button
+\*------------------------------------*/
+
+
+.fixedTab {
+    background-color: $primaryColor;
+    color: #fff; 
+    bottom: 0; 
+    left: 20px;
+    right: 0;  
+    z-index: 101; 
+    font-size: rem-calc(18); 
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: rem-calc(200px); 
+    cursor: pointer; 
+    @include single-transition(all, 0.2s, ease-in-out); 
+    @extend %pr2;
+    @extend %pl2;  
+    @extend %pt2; 
+    @extend %pb2; 
+    @extend %position--fixed; 
+
+    .link {
+        opacity: 0; 
+    }
+
+    a {
+        color: $secondaryColor; 
+
+        &:hover {
+            color: #fff; 
+        }
+    }
+
+    &:hover {
+        width: rem-calc(324px); 
+
+        .link {
+            opacity: 1; 
+        }
+    }
+}
 
 
 
