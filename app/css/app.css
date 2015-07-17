@@ -10321,7 +10321,7 @@ footer {
 }
 
 /* line 236, ../scss/modules/_generics.scss */
-.pt3 {
+.pt3, footer {
   padding-top: 1.5rem !important;
 }
 
@@ -11999,10 +11999,10 @@ a[class*="link"] {
 }
 /* line 93, ../scss/partials/_components.scss */
 .profile .profile-bio {
-  -moz-transform: translateX(111%);
-  -ms-transform: translateX(111%);
-  -webkit-transform: translateX(111%);
-  transform: translateX(111%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
   background-color: rgba(60, 71, 80, 0.9);
   color: #fff;
   bottom: 0px;
@@ -12028,7 +12028,7 @@ a[class*="link"] {
 /* line 113, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle {
   bottom: 0px;
-  top: 0px;
+  top: 0.625rem;
   right: 0;
   left: -40px;
   background-color: rgba(60, 71, 80, 0.9);
@@ -12716,7 +12716,7 @@ a[href*="facebook"].icon--brandColors,
 footer {
   background-color: #3c4750;
 }
-/* line 15, ../scss/partials/_footer.scss */
+/* line 16, ../scss/partials/_footer.scss */
 footer .footer-link {
   color: #888f95;
 }
@@ -12724,7 +12724,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Credit Info 
 \*------------------------------------*/
-/* line 38, ../scss/partials/_footer.scss */
+/* line 39, ../scss/partials/_footer.scss */
 .footer-siteInfo a {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -12734,14 +12734,14 @@ footer .footer-link {
 }
 
 @media (min-width: 760px) {
-  /* line 51, ../scss/partials/_footer.scss */
+  /* line 52, ../scss/partials/_footer.scss */
   [rel*="copyright"] {
     float: left;
   }
 }
 
 @media (min-width: 760px) {
-  /* line 61, ../scss/partials/_footer.scss */
+  /* line 62, ../scss/partials/_footer.scss */
   [rel*="credit"] {
     float: right;
   }

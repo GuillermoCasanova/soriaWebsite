@@ -91,7 +91,7 @@
     @extend %position--relative; 
 
     .profile-bio {
-        @include transform(translateX(111%)); 
+        @include transform(translateX(100%)); 
         background-color: rgba(60, 71, 80, 0.9); 
         color: #fff; 
         bottom: 0px; 
@@ -112,7 +112,7 @@
 
     .profile-bio-toggle {
         bottom: 0px;
-        top: 0px;
+        top: rem-calc(10px);
         right: 0;
         left: -40px;
         background-color: rgba(60, 71, 80, 0.9); 

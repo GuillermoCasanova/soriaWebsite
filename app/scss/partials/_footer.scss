@@ -7,6 +7,7 @@ footer {
   background-color: $secondaryColor; 
   @extend %text-left; 
   @extend %text--white; 
+  @extend %pt3; 
   
   .footer-title {
     @extend %text--white;
