@@ -70,7 +70,7 @@ $(document).on('ready', function() {
             // Characteristics - Tween 
             var fadeIn = TweenMax.staggerFrom('.fade-in', 0.5, {
                     opacity: 0
-            }, 1.2);
+            }, 1);
 
             // Characteristics - Scene
             var characteristics = new ScrollMagic.Scene({
@@ -94,6 +94,19 @@ $(document).on('ready', function() {
         }
 
 
+        if($("#list-fadeIn").length > 0) {
+
+            // Characteristics - Tween 
+            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.2, {
+                    opacity: 0
+            }, 0.2);
+
+            // Characteristics - Scene
+            var characteristics = new ScrollMagic.Scene({
+                    triggerElement: "#list-fadeIn",
+                    reverse: false
+            }).setTween(fadeIn).addTo(controller); 
+        }
 
         //Checks to see if required trigger is available for scrolling 
         if($('.smoothScroll').length > 0) {
@@ -166,7 +179,13 @@ $(document).on('ready', function() {
 
     //Animation for flip-containers to active on click 
     $('.flip-container').on('click', function(){
+        event.stopPropagation();
         $(this).toggleClass('hover');
+    });
+
+    // Code for profiles to show bios on click 
+    $('.profile-bio-toggle').on('click', function(e) {
+        $(this).parents('.profile').toggleClass('is-showing'); 
     });
 
    // ontouchstart="this.classList.toggle('hover');

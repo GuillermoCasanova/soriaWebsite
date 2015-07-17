@@ -10171,12 +10171,12 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-section ul li.top-bar-link, .top-bar-container.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .relative, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .image-wrap, .section--header, .section--header .header-content {
+.top-bar-section ul li.top-bar-link, .top-bar-container.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .image-wrap, .section--header, .section--header .header-content {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backtotop:before, .absolute, .front, .back, .section--alt .section--alt-bg, .regular,
+.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .absolute, .front, .back, .section--alt .section--alt-bg, .regular,
 .blurred, .section--header .section-backgroundImage {
   position: absolute;
 }
@@ -10329,7 +10329,7 @@ footer {
 }
 
 /* line 232, ../scss/modules/_generics.scss */
-.pt2 {
+.profile .profile-bio, .pt2 {
   padding-top: 0.75rem !important;
 }
 
@@ -10364,7 +10364,7 @@ footer {
 }
 
 /* line 265, ../scss/modules/_generics.scss */
-.pb3 {
+.profile .profile-bio, .pb3 {
   padding-bottom: 1.5rem !important;
 }
 
@@ -10466,7 +10466,7 @@ footer {
 }
 
 /* line 365, ../scss/modules/_generics.scss */
-.pr3, .accordion-title {
+.profile .profile-bio, .pr3, .accordion-title {
   padding-right: 1.5rem !important;
 }
 
@@ -10496,7 +10496,7 @@ footer {
 }
 
 /* line 394, ../scss/modules/_generics.scss */
-.pl3, .accordion-title {
+.profile .profile-bio, .pl3, .accordion-title {
   padding-left: 1.5rem !important;
 }
 
@@ -10551,7 +10551,7 @@ footer {
 }
 
 /* line 455, ../scss/modules/_generics.scss */
-.mt2, .slick-dots {
+.profile-bio .body, .mt2, .slick-dots {
   margin-top: 0.75rem !important;
 }
 
@@ -11331,9 +11331,9 @@ a[class*="link"] {
 /* line 433, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
-  width: 22.5rem;
+  width: 12.5rem;
   right: 2.5rem;
-  top: 9.375rem;
+  top: 8.125rem;
   z-index: 100;
 }
 /* line 442, ../scss/partials/_navs.scss */
@@ -11380,31 +11380,38 @@ a[class*="link"] {
     display: block;
   }
 }
+@media only screen and (min-width: 64.0625em) {
+  /* line 433, ../scss/partials/_navs.scss */
+  .secondaryNav--fixed {
+    width: 21.25rem;
+    right: 3.125rem;
+  }
+}
 
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 499, ../scss/partials/_navs.scss */
+/* line 505, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 503, ../scss/partials/_navs.scss */
+/* line 509, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 503, ../scss/partials/_navs.scss */
+  /* line 509, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 514, ../scss/partials/_navs.scss */
+/* line 520, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 517, ../scss/partials/_navs.scss */
+/* line 523, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -11413,7 +11420,7 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 528, ../scss/partials/_navs.scss */
+/* line 534, ../scss/partials/_navs.scss */
 .top-bar-container {
   z-index: 999;
   display: none;
@@ -11427,22 +11434,22 @@ a[class*="link"] {
   transition: transform, 0.3s, ease-in-out;
 }
 @media (min-width: 900px) {
-  /* line 528, ../scss/partials/_navs.scss */
+  /* line 534, ../scss/partials/_navs.scss */
   .top-bar-container {
     display: block;
   }
 }
 
-/* line 547, ../scss/partials/_navs.scss */
+/* line 553, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar {
   background-color: #fff;
 }
-/* line 550, ../scss/partials/_navs.scss */
+/* line 556, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
 
-/* line 557, ../scss/partials/_navs.scss */
+/* line 563, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11451,7 +11458,7 @@ a[class*="link"] {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 557, ../scss/partials/_navs.scss */
+  /* line 563, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -11459,7 +11466,7 @@ a[class*="link"] {
   }
 }
 
-/* line 571, ../scss/partials/_navs.scss */
+/* line 577, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
@@ -11990,8 +11997,94 @@ a[class*="link"] {
 }
 
 /*------------------------------------*\
-    #Instagram Stream 
+    #Profile Bios
 \*------------------------------------*/
+/* line 85, ../scss/partials/_components.scss */
+.profile {
+  overflow: hidden;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 93, ../scss/partials/_components.scss */
+.profile .profile-bio {
+  -moz-transform: translateX(400px);
+  -ms-transform: translateX(400px);
+  -webkit-transform: translateX(400px);
+  transform: translateX(400px);
+  background-color: rgba(60, 71, 80, 0.9);
+  color: #fff;
+  bottom: 0px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  text-align: left;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 112, ../scss/partials/_components.scss */
+.profile .profile-bio-toggle {
+  bottom: 0px;
+  top: 0px;
+  right: 0;
+  left: -40px;
+  background-color: rgba(60, 71, 80, 0.9);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+/* line 125, ../scss/partials/_components.scss */
+.profile .profile-bio-toggle:hover .icon {
+  color: #fff;
+}
+/* line 130, ../scss/partials/_components.scss */
+.profile .profile-bio-toggle .icon {
+  color: #ef8111;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -moz-transform-origin: center 50%;
+  -ms-transform-origin: center 50%;
+  -webkit-transform-origin: center 50%;
+  transform-origin: center 50%;
+}
+
+/* line 146, ../scss/partials/_components.scss */
+.profile-bio .title {
+  color: #fff;
+}
+/* line 150, ../scss/partials/_components.scss */
+.profile-bio .body {
+  color: #fff;
+}
+
+/* line 162, ../scss/partials/_components.scss */
+.profile.is-showing .profile-bio {
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+/* line 166, ../scss/partials/_components.scss */
+.profile.is-showing .profile-bio-toggle .icon {
+  top: 0.5rem;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 /*------------------------------------*\
     #Images
 \*------------------------------------*/

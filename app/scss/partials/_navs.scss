@@ -432,9 +432,9 @@
 
 .secondaryNav--fixed {
     display: none; 
-    width: rem-calc(360px);
+    width: rem-calc(200px);
     right: rem-calc(40px); 
-    top: rem-calc(150px); 
+    top: rem-calc(130px); 
     z-index: 100; 
     @extend %position--fixed; 
 
@@ -481,6 +481,12 @@
 
     @media #{$medium-up} {
         display: block;
+    }
+
+    @media #{$large-up} {
+        width: rem-calc(340px); 
+        right: rem-calc(50px); 
+
     }
 }
 
