@@ -48,6 +48,8 @@ $(document).on('ready', function() {
 
         }
 
+
+        //Checks to see if required trigger is available for scrolling 
         if($("#header-fadeIn").length > 0) {
 
             // Header - Tween 
@@ -65,6 +67,8 @@ $(document).on('ready', function() {
 
         }
 
+
+        //Checks to see if required trigger is available for scrolling 
         if($("#characteristics").length > 0) {
 
             // Characteristics - Tween 
@@ -74,38 +78,42 @@ $(document).on('ready', function() {
 
             // Characteristics - Scene
             var characteristics = new ScrollMagic.Scene({
-                    triggerElement: "#characteristics"
-            }).setTween(fadeIn).addTo(controller); 
-        }
-
-
-        if($("#list-fadeIn").length > 0) {
-
-            // Characteristics - Tween 
-            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.2, {
-                    opacity: 0
-            }, 0.2);
-
-            // Characteristics - Scene
-            var characteristics = new ScrollMagic.Scene({
-                    triggerElement: "#list-fadeIn",
+                    triggerElement: "#characteristics",
                     reverse: false
             }).setTween(fadeIn).addTo(controller); 
         }
 
 
+        //Checks to see if required trigger is available for scrolling 
         if($("#list-fadeIn").length > 0) {
 
-            // Characteristics - Tween 
+            // List 1 - Tween 
             var fadeIn = TweenMax.staggerFrom('.fade-in', 0.2, {
                     opacity: 0
             }, 0.2);
 
-            // Characteristics - Scene
-            var characteristics = new ScrollMagic.Scene({
+            // List 1 - Scene
+            var listFadeIn = new ScrollMagic.Scene({
                     triggerElement: "#list-fadeIn",
+                    duration: 400, 
                     reverse: false
-            }).setTween(fadeIn).addTo(controller); 
+            }).setTween(fadeIn).addTo(controller);
+        }
+
+        //Checks to see if required trigger is available for scrolling 
+        if($("#list-fadeIn2").length > 0) {
+
+            // List 2 - Tween 
+            var fadeIn2 = TweenMax.staggerFrom('.fade-in2', 0.2, {
+                    opacity: 0
+            }, 0.2)
+
+            // List 2 - Scene
+            var listFadeIn2 = new ScrollMagic.Scene({
+                    triggerElement: "#list-fadeIn2",
+                    duration: 400, 
+                    reverse: false
+            }).setTween(fadeIn2).addTo(controller);
         }
 
         //Checks to see if required trigger is available for scrolling 

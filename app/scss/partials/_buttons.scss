@@ -136,6 +136,7 @@
     @extend %position--fixed; 
 
     .link {
+        @include single-transition(all, 0.2s, ease-in-out); 
         opacity: 0; 
     }
 

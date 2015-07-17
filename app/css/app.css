@@ -11058,21 +11058,25 @@ a[class*="link"] {
 }
 /* line 138, ../scss/partials/_buttons.scss */
 .fixedTab .link {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 142, ../scss/partials/_buttons.scss */
+/* line 143, ../scss/partials/_buttons.scss */
 .fixedTab a {
   color: #3c4750;
 }
-/* line 145, ../scss/partials/_buttons.scss */
+/* line 146, ../scss/partials/_buttons.scss */
 .fixedTab a:hover {
   color: #fff;
 }
-/* line 150, ../scss/partials/_buttons.scss */
+/* line 151, ../scss/partials/_buttons.scss */
 .fixedTab:hover {
   width: 20.25rem;
 }
-/* line 153, ../scss/partials/_buttons.scss */
+/* line 154, ../scss/partials/_buttons.scss */
 .fixedTab:hover .link {
   opacity: 1;
 }
