@@ -15,7 +15,8 @@ $homepage_program__camp: "../images/circle_youthcamps1.jpg";
 $firstvisit_step3: "../images/firstvisit/step3.png";
 
 @mixin image--circle($dimensions) {
-  @include border-radius(9999px);
+  @include border-radius(100%);
+  overflow: hidden; 
   width: $dimensions;
   height: $dimensions; 
 }

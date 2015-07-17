@@ -9999,7 +9999,7 @@ h2,
 
 /* line 73, ../scss/modules/_typography.scss */
 h3,
-.h3, .list--h4 > li, .pricingtable-title, .panel--information .panel-title:before {
+.h3, .pricingtable-title, .panel--information .panel-title:before {
   font-size: 1.5rem;
   line-height: 1.3;
 }
@@ -10036,7 +10036,7 @@ h6,
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
 .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
-.topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
+.topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
 }
@@ -10132,17 +10132,9 @@ h6,
 /*------------------------------------*\
     #Lists
 \*------------------------------------*/
-/* line 7, ../scss/modules/_lists.scss */
-.list, .list--bullet {
-  list-style-type: none;
-}
-/* line 9, ../scss/modules/_lists.scss */
+/* line 8, ../scss/modules/_lists.scss */
 .list li, .list--bullet li {
   margin-bottom: 0.75rem;
-}
-/* line 12, ../scss/modules/_lists.scss */
-.list ul, .list--bullet ul {
-  list-style-type: none;
 }
 
 /*------------------------------------*\
@@ -10509,7 +10501,7 @@ footer {
 }
 
 /* line 398, ../scss/modules/_generics.scss */
-.list--bullet li, .pl4 {
+.pl4 {
   padding-left: 2.25rem !important;
 }
 
@@ -11963,27 +11955,30 @@ a[class*="link"] {
 \*------------------------------------*/
 /* line 7, ../scss/partials/_photos.scss */
 .image--circle.small {
-  -moz-border-radius: 9999px;
-  -webkit-border-radius: 9999px;
-  border-radius: 9999px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
   width: 7.5em;
   height: 7.5em;
 }
 
 /* line 11, ../scss/partials/_photos.scss */
 .image--circle.medium {
-  -moz-border-radius: 9999px;
-  -webkit-border-radius: 9999px;
-  border-radius: 9999px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
   width: 12.5em;
   height: 12.5em;
 }
 
 /* line 15, ../scss/partials/_photos.scss */
 .image--circle.big {
-  -moz-border-radius: 9999px;
-  -webkit-border-radius: 9999px;
-  border-radius: 9999px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
   width: 22.5em;
   height: 22.5em;
 }
@@ -12010,27 +12005,41 @@ a[class*="link"] {
 /*------------------------------------*\
     #Lists  
 \*------------------------------------*/
-/* line 12, ../scss/partials/_lists.scss */
+/* line 8, ../scss/partials/_lists.scss */
+li,
+ul {
+  list-style: none;
+}
+
+/* line 20, ../scss/partials/_lists.scss */
 .list--inline > li {
   display: inline-block;
 }
 
-/* line 32, ../scss/partials/_lists.scss */
+/* line 29, ../scss/partials/_lists.scss */
+.list--bullet > li:before {
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -1.25rem;
+  top: -0.125rem;
+  color: #ef8111;
+  font-size: 1.25rem;
+}
+
+/* line 44, ../scss/partials/_lists.scss */
 .list--siteMap [class*="list-item"]:hover {
   text-decoration: underline;
 }
-/* line 36, ../scss/partials/_lists.scss */
+/* line 48, ../scss/partials/_lists.scss */
 .list--siteMap .list-item {
   color: #191919;
 }
-/* line 40, ../scss/partials/_lists.scss */
+/* line 52, ../scss/partials/_lists.scss */
 .list--siteMap .list-item-subItem {
   color: #888f95;
-}
-
-/* line 46, ../scss/partials/_lists.scss */
-.list--h4 > li {
-  line-height: 2rem;
 }
 
 /*------------------------------------*\

@@ -33,7 +33,6 @@ $(document).on('ready', function() {
 
         // Checks to see if required trigger is on page
         if($('#scene').length > 0) {
-
             // Sevices - Tween 
                var tween = TweenMax.staggerFrom('.enter-in', .5, {
                     opacity: 0,
@@ -43,8 +42,26 @@ $(document).on('ready', function() {
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
-                        triggerElement: "#scene"
+                        triggerElement: "#scene",
+                        reverse: false
             }).setTween(tween).addTo(controller);    
+
+        }
+
+        if($("#header-fadeIn").length > 0) {
+
+            // Header - Tween 
+               var headerFadeIn = TweenMax.staggerFrom('.header-enter-in', .5, {
+                    opacity: 0,
+                    y: 300
+
+            }, 0.3); 
+
+            // Header - Scene
+            var scene = new ScrollMagic.Scene({
+                        triggerElement: "#header-fadeIn",
+                        reverse: false
+            }).setTween(headerFadeIn).addTo(controller);    
 
         }
 
@@ -60,6 +77,22 @@ $(document).on('ready', function() {
                     triggerElement: "#characteristics"
             }).setTween(fadeIn).addTo(controller); 
         }
+
+
+        if($("#list-fadeIn").length > 0) {
+
+            // Characteristics - Tween 
+            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.2, {
+                    opacity: 0
+            }, 0.2);
+
+            // Characteristics - Scene
+            var characteristics = new ScrollMagic.Scene({
+                    triggerElement: "#list-fadeIn",
+                    reverse: false
+            }).setTween(fadeIn).addTo(controller); 
+        }
+
 
 
         //Checks to see if required trigger is available for scrolling 
