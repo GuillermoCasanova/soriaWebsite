@@ -35,16 +35,30 @@ $(document).on('ready', function() {
         if($('#scene').length > 0) {
 
             // Sevices - Tween 
-               var tween = TweenMax.staggerFrom('.enter-in', 2, {
-                    opacity: 0
-            }, 2); 
+               var tween = TweenMax.staggerFrom('.enter-in', .5, {
+                    opacity: 0,
+                    y: 300
+
+            }, 0.3); 
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
-                        triggerElement: "#scene",
-                        duration: 400
+                        triggerElement: "#scene"
             }).setTween(tween).addTo(controller);    
 
+        }
+
+        if($("#characteristics").length > 0) {
+
+            // Characteristics - Tween 
+            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.5, {
+                    opacity: 0
+            }, 1.2);
+
+            // Characteristics - Scene
+            var characteristics = new ScrollMagic.Scene({
+                    triggerElement: "#characteristics"
+            }).setTween(fadeIn).addTo(controller); 
         }
 
 
@@ -126,7 +140,7 @@ $(document).on('ready', function() {
 
     //Binds blur effect to scroll
     //TODO: Optimize this method for medium effect to prevent lag 
-    $(document).on('scroll', fader); 
+    //$(document).on('scroll', fader); 
 
     (function($){
 
