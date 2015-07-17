@@ -10176,7 +10176,7 @@ h6,
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .absolute, .front, .back, .section--alt .section--alt-bg, .regular,
+.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .regular,
 .blurred, .section--header .section-backgroundImage {
   position: absolute;
 }
@@ -10291,7 +10291,7 @@ footer {
 }
 
 /* line 207, ../scss/modules/_generics.scss */
-.ptrbl3 {
+.profile .profile-bio, .ptrbl3 {
   padding: 1.5rem !important;
 }
 
@@ -10316,7 +10316,7 @@ footer {
 }
 
 /* line 232, ../scss/modules/_generics.scss */
-.fixedTab, .profile .profile-bio, .pt2 {
+.fixedTab, .pt2 {
   padding-top: 0.75rem !important;
 }
 
@@ -10351,7 +10351,7 @@ footer {
 }
 
 /* line 265, ../scss/modules/_generics.scss */
-.profile .profile-bio, .pb3 {
+.pb3 {
   padding-bottom: 1.5rem !important;
 }
 
@@ -10453,7 +10453,7 @@ footer {
 }
 
 /* line 365, ../scss/modules/_generics.scss */
-.profile .profile-bio, .pr3, .accordion-title {
+.pr3, .accordion-title {
   padding-right: 1.5rem !important;
 }
 
@@ -10483,7 +10483,7 @@ footer {
 }
 
 /* line 394, ../scss/modules/_generics.scss */
-.profile .profile-bio, .pl3, .accordion-title {
+.pl3, .accordion-title {
   padding-left: 1.5rem !important;
 }
 
@@ -12006,10 +12006,10 @@ a[class*="link"] {
   background-color: rgba(60, 71, 80, 0.9);
   color: #fff;
   bottom: 0px;
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
-  width: 90%;
+  width: 100%;
   text-align: left;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -12025,7 +12025,7 @@ a[class*="link"] {
     transform: translateX(400px);
   }
 }
-/* line 115, ../scss/partials/_components.scss */
+/* line 113, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle {
   bottom: 0px;
   top: 0px;
@@ -12036,11 +12036,11 @@ a[class*="link"] {
   width: 40px;
   cursor: pointer;
 }
-/* line 128, ../scss/partials/_components.scss */
+/* line 126, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle:hover .icon {
   color: #fff;
 }
-/* line 133, ../scss/partials/_components.scss */
+/* line 131, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle .icon {
   color: #ef8111;
   top: 0.3125rem;
@@ -12049,39 +12049,35 @@ a[class*="link"] {
   -o-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
-  -moz-transform-origin: center 50%;
-  -ms-transform-origin: center 50%;
-  -webkit-transform-origin: center 50%;
-  transform-origin: center 50%;
+}
+/* line 140, ../scss/partials/_components.scss */
+.profile .profile-bio-close {
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  width: 40px;
+}
+/* line 147, ../scss/partials/_components.scss */
+.profile .profile-bio-close .icon {
+  top: 0.3125rem;
+  left: 0.3125rem;
 }
 
-/* line 149, ../scss/partials/_components.scss */
+/* line 158, ../scss/partials/_components.scss */
 .profile-bio .title {
   color: #fff;
 }
-/* line 153, ../scss/partials/_components.scss */
+/* line 162, ../scss/partials/_components.scss */
 .profile-bio .body {
   color: #fff;
 }
 
-/* line 165, ../scss/partials/_components.scss */
+/* line 174, ../scss/partials/_components.scss */
 .profile.is-showing .profile-bio {
-  -moz-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  -webkit-transform: translateX(50px);
-  transform: translateX(50px);
-}
-/* line 169, ../scss/partials/_components.scss */
-.profile.is-showing .profile-bio-toggle .icon {
-  top: 0.5rem;
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 /*------------------------------------*\

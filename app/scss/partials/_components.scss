@@ -95,17 +95,15 @@
         background-color: rgba(60, 71, 80, 0.9); 
         color: #fff; 
         bottom: 0px; 
-        top: 20px; 
+        top: 0px; 
         left: 0; 
         right: 0; 
-        width: 90%;
+        width: 100%;
         text-align: left; 
         @include single-transition(all, 0.2s, ease-in-out);
         @extend %position--absolute;  
-        @extend %pb3;
-        @extend %pr3;
-        @extend %pl3; 
-        @extend %pt2; 
+        @extend %ptrbl3; 
+
         //Hides it with pixels on larger formats, since it needs 111% on smaller devices 
         @media #{$medium-up} {
             @include transform(translateX(400px)); 
@@ -135,12 +133,23 @@
             top: rem-calc(5px); 
             left: rem-calc(5px); 
             @include single-transition(all, 0.6s, ease-in-out); 
-            @include transform(rotate(0)); 
-            @include transform-origin(center); 
             @extend %position--absolute; 
-
         }
     } 
+
+    .profile-bio-close {
+        right: 0px; 
+        top: 0px; 
+        height: 40px;
+        width: 40px;
+        @extend %position--absolute; 
+
+        .icon {
+            top: rem-calc(5px); 
+            left: rem-calc(5px); 
+        }
+
+    }
 }
 
 
@@ -163,11 +172,7 @@
     // -webkit-filter: grayscale(0); 
 
     .profile-bio {
-        @include transform(translateX(50px)); 
+        @include transform(translateX(0px)); 
     }
 
-    .profile-bio-toggle .icon {
-        top: rem-calc(8px); 
-        @include transform(rotate(180deg)); 
-    }
 }
