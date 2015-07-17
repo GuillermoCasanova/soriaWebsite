@@ -11999,10 +11999,10 @@ a[class*="link"] {
 }
 /* line 93, ../scss/partials/_components.scss */
 .profile .profile-bio {
-  -moz-transform: translateX(400px);
-  -ms-transform: translateX(400px);
-  -webkit-transform: translateX(400px);
-  transform: translateX(400px);
+  -moz-transform: translateX(111%);
+  -ms-transform: translateX(111%);
+  -webkit-transform: translateX(111%);
+  transform: translateX(111%);
   background-color: rgba(60, 71, 80, 0.9);
   color: #fff;
   bottom: 0px;
@@ -12016,7 +12016,16 @@ a[class*="link"] {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 112, ../scss/partials/_components.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 93, ../scss/partials/_components.scss */
+  .profile .profile-bio {
+    -moz-transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+}
+/* line 115, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle {
   bottom: 0px;
   top: 0px;
@@ -12027,11 +12036,11 @@ a[class*="link"] {
   width: 40px;
   cursor: pointer;
 }
-/* line 125, ../scss/partials/_components.scss */
+/* line 128, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle:hover .icon {
   color: #fff;
 }
-/* line 130, ../scss/partials/_components.scss */
+/* line 133, ../scss/partials/_components.scss */
 .profile .profile-bio-toggle .icon {
   color: #ef8111;
   top: 0.3125rem;
@@ -12050,23 +12059,23 @@ a[class*="link"] {
   transform-origin: center 50%;
 }
 
-/* line 146, ../scss/partials/_components.scss */
+/* line 149, ../scss/partials/_components.scss */
 .profile-bio .title {
   color: #fff;
 }
-/* line 150, ../scss/partials/_components.scss */
+/* line 153, ../scss/partials/_components.scss */
 .profile-bio .body {
   color: #fff;
 }
 
-/* line 162, ../scss/partials/_components.scss */
+/* line 165, ../scss/partials/_components.scss */
 .profile.is-showing .profile-bio {
   -moz-transform: translateX(50px);
   -ms-transform: translateX(50px);
   -webkit-transform: translateX(50px);
   transform: translateX(50px);
 }
-/* line 166, ../scss/partials/_components.scss */
+/* line 169, ../scss/partials/_components.scss */
 .profile.is-showing .profile-bio-toggle .icon {
   top: 0.5rem;
   -moz-transform: rotate(180deg);
@@ -13429,7 +13438,7 @@ p,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 87, ../scss/partials/_panels.scss */
+/* line 77, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -13442,8 +13451,11 @@ p,
 }
 
 /* flip the pane when clicked through jQuery Class Toggle */
-/* line 97, ../scss/partials/_panels.scss */
+/* line 87, ../scss/partials/_panels.scss */
 .flip-container.hover .flipper {
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -13451,16 +13463,8 @@ p,
 }
 
 /* increase pane size on hover */
-/* line 102, ../scss/partials/_panels.scss */
-.flip-container:hover {
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
 /* flip speed goes here */
-/* line 107, ../scss/partials/_panels.scss */
+/* line 98, ../scss/partials/_panels.scss */
 .flipper {
   position: relative;
   -moz-transition: all 0.2s ease-in-out;
@@ -13470,10 +13474,13 @@ p,
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -moz-perspective: 600px;
+  -webkit-perspective: 600px;
+  perspective: 600px;
 }
 
 /* hide back of pane during swap */
-/* line 114, ../scss/partials/_panels.scss */
+/* line 107, ../scss/partials/_panels.scss */
 .front, .back {
   top: 0;
   left: 0;
@@ -13483,7 +13490,7 @@ p,
 }
 
 /* front pane, placed above back */
-/* line 122, ../scss/partials/_panels.scss */
+/* line 115, ../scss/partials/_panels.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -13494,7 +13501,7 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 129, ../scss/partials/_panels.scss */
+/* line 122, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13502,7 +13509,7 @@ p,
   transform: rotateY(180deg);
 }
 
-/* line 133, ../scss/partials/_panels.scss */
+/* line 126, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13510,13 +13517,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 146, ../scss/partials/_panels.scss */
+/* line 139, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 150, ../scss/partials/_panels.scss */
+/* line 143, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;

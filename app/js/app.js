@@ -7,12 +7,10 @@ var app = (function(document, $) {
 		},
 		_init = function() {
 			$(document).foundation();
-            // needed to use joyride
-            // doc: http://foundation.zurb.com/docs/components/joyride.html
-            $(document).on('click', '#start-jr', function () {
-                $(document).foundation('joyride', 'start');
-            });
 			_userAgentInit();
+            $(function() {
+                FastClick.attach(document.body);
+            });
 		};
 	return {
 		init: _init
@@ -186,13 +184,16 @@ $(document).on('ready', function() {
 
 
     //Animation for flip-containers to active on click 
-    $('.flip-container').on('click', function(){
-        event.stopPropagation();
+    $('.flip-container').on('click  ontouchstart', function(e){
+        e.stopPropagation();
+        e.preventDefault();
         $(this).toggleClass('hover');
     });
 
     // Code for profiles to show bios on click 
     $('.profile-bio-toggle').on('click', function(e) {
+        e.stopPropagation(); 
+        e.preventDefault();
         $(this).parents('.profile').toggleClass('is-showing'); 
     });
 

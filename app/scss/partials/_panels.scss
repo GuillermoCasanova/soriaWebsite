@@ -64,16 +64,6 @@
 }
 
 
-// .panel--asButton {
-//     cursor: pointer; 
-
-//     @include single-transition(all, 0.2s, ease-in-out); 
-
-//     &:hover {
-//         @extend %fwb; 
-//         @include transform(scale(1.1)); 
-//     }
-// }
 
 
 
@@ -95,12 +85,13 @@
 
 /* flip the pane when clicked through jQuery Class Toggle */
 .flip-container.hover .flipper {
+    @include transform-style(preserve-3d); 
     @include transform(rotateY(180deg));
 }
 
 /* increase pane size on hover */
 .flip-container:hover {
-    @include transform(scale(1.05)); 
+    //@include transform(scale(1.05)); 
 }
 
 /* flip speed goes here */
@@ -108,6 +99,8 @@
     position: relative;
     @include single-transition(all, 0.2s, ease-in-out); 
     @include transform-style(preserve-3d); 
+    @include perspective(600px); 
+    
 }
 
 /* hide back of pane during swap */

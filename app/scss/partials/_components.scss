@@ -91,7 +91,7 @@
     @extend %position--relative; 
 
     .profile-bio {
-        @include transform(translateX(400px)); 
+        @include transform(translateX(111%)); 
         background-color: rgba(60, 71, 80, 0.9); 
         color: #fff; 
         bottom: 0px; 
@@ -106,7 +106,10 @@
         @extend %pr3;
         @extend %pl3; 
         @extend %pt2; 
-    
+        //Hides it with pixels on larger formats, since it needs 111% on smaller devices 
+        @media #{$medium-up} {
+            @include transform(translateX(400px)); 
+        }
     }  
 
     .profile-bio-toggle {
