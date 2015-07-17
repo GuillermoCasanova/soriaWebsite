@@ -385,14 +385,13 @@
 
 
 /*------------------------------------*\
-    #Side Nav 
+    #Secondary Nav
 \*------------------------------------*/
 
 
 .secondaryNav {
     background-color: #fff;
     @extend %dropshadow1;
-
 }
 
 .secondaryNav-list {
@@ -407,35 +406,79 @@
     }
 
     li.link {
-        @extend %fwb; 
 
         a {
             width: 100%; 
             display: block; 
             @extend %pl2; 
             @extend %mtb1; 
-            @extend %ptb1; 
             
             &:hover {
-                background-color: $grey--mid; 
-
+                background-color: $grey--light;                 
             }
         }
     }
 
-    li:last-child {
-        @extend %pb2; 
-    }
 }
+
+
+
+
+
+/*------------------------------------*\
+    #Secondary Nav -- Fixed  
+\*------------------------------------*/
 
 
 .secondaryNav--fixed {
     display: none; 
-    width: rem-calc(400px);
+    width: rem-calc(360px);
+    right: rem-calc(40px); 
+    top: rem-calc(150px); 
     z-index: 100; 
-    right: 40px; 
     @extend %position--fixed; 
-    
+
+
+    .secondaryNav-list {
+        background-color: #FFF;
+        
+        li.title {
+            @extend %mtb2; 
+            @extend %h5; 
+        }
+
+        li.link {
+            border-left: 4px solid #fff; 
+            overflow: hidden; 
+            @extend %h4; 
+            @include single-transition(all, .2s, ease-in-out);
+            
+             &:hover {
+                border-left: 4px solid $primaryColor; 
+                background-color: transparent;                 
+             }
+
+                            
+            a {
+                line-height: rem-calc(44) !important; 
+                padding-left: rem-calc(16) !important; 
+                padding-right: rem-calc(16) !important; 
+                color: $secondaryColor; 
+                @include single-transition(all, .2s, ease-in-out); 
+
+                &:hover{
+                    background-color: transparent; 
+                    color: $primaryColor; 
+                    @include transform(translateX(4px)); 
+
+                }
+            }
+
+        }
+
+
+    }
+
     @media #{$medium-up} {
         display: block;
     }

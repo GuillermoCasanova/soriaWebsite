@@ -9955,7 +9955,7 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Font Weights 
 \*------------------------------------*/
 /* line 31, ../scss/modules/_typography.scss */
-.button, .secondaryNav-list li.link, .pricingtable-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title {
+.button, .pricingtable-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title {
   font-weight: 700;
 }
 
@@ -10006,14 +10006,14 @@ h3,
 
 /* line 78, ../scss/modules/_typography.scss */
 h4,
-.h4, .icon--medium, .panel-title {
+.h4, .secondaryNav--fixed .secondaryNav-list li.link, .icon--medium, .panel-title {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
 /* line 83, ../scss/modules/_typography.scss */
 h5,
-.h5, .icon--small {
+.h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small {
   font-size: 1.125rem;
   line-height: 1.333;
 }
@@ -10359,7 +10359,7 @@ footer {
 }
 
 /* line 261, ../scss/modules/_generics.scss */
-.secondaryNav-list li:last-child, .pb2 {
+.pb2 {
   padding-bottom: 0.75rem !important;
 }
 
@@ -10385,7 +10385,7 @@ footer {
 }
 
 /* line 288, ../scss/modules/_generics.scss */
-.secondaryNav-list li.link a, .ptb1 {
+.ptb1 {
   padding-top: 0.375rem !important;
   padding-bottom: 0.375rem !important;
 }
@@ -10613,7 +10613,7 @@ footer {
 }
 
 /* line 516, ../scss/modules/_generics.scss */
-.mtb2 {
+.secondaryNav--fixed .secondaryNav-list li.title, .mtb2 {
   margin-top: 0.75rem !important;
   margin-bottom: 0.75rem !important;
 }
@@ -11299,41 +11299,83 @@ a[class*="link"] {
 }
 
 /*------------------------------------*\
-    #Side Nav 
+    #Secondary Nav
 \*------------------------------------*/
 /* line 392, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
 
-/* line 398, ../scss/partials/_navs.scss */
+/* line 397, ../scss/partials/_navs.scss */
 .secondaryNav-list {
   background-color: #f5f5f5;
 }
-/* line 402, ../scss/partials/_navs.scss */
+/* line 401, ../scss/partials/_navs.scss */
 .secondaryNav-list li.title {
   color: #888f95;
   display: block;
 }
-/* line 412, ../scss/partials/_navs.scss */
+/* line 410, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a {
   width: 100%;
   display: block;
 }
-/* line 419, ../scss/partials/_navs.scss */
+/* line 416, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a:hover {
-  background-color: #dfdfdf;
+  background-color: #f5f5f5;
 }
 
-/* line 432, ../scss/partials/_navs.scss */
+/*------------------------------------*\
+    #Secondary Nav -- Fixed  
+\*------------------------------------*/
+/* line 433, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
-  width: 25rem;
+  width: 22.5rem;
+  right: 2.5rem;
+  top: 9.375rem;
   z-index: 100;
-  right: 40px;
+}
+/* line 442, ../scss/partials/_navs.scss */
+.secondaryNav--fixed .secondaryNav-list {
+  background-color: #FFF;
+}
+/* line 450, ../scss/partials/_navs.scss */
+.secondaryNav--fixed .secondaryNav-list li.link {
+  border-left: 4px solid #fff;
+  overflow: hidden;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 456, ../scss/partials/_navs.scss */
+.secondaryNav--fixed .secondaryNav-list li.link:hover {
+  border-left: 4px solid #ef8111;
+  background-color: transparent;
+}
+/* line 462, ../scss/partials/_navs.scss */
+.secondaryNav--fixed .secondaryNav-list li.link a {
+  line-height: 2.75rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  color: #3c4750;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 469, ../scss/partials/_navs.scss */
+.secondaryNav--fixed .secondaryNav-list li.link a:hover {
+  background-color: transparent;
+  color: #ef8111;
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 432, ../scss/partials/_navs.scss */
+  /* line 433, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     display: block;
   }
@@ -11342,27 +11384,27 @@ a[class*="link"] {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 456, ../scss/partials/_navs.scss */
+/* line 499, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 460, ../scss/partials/_navs.scss */
+/* line 503, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 460, ../scss/partials/_navs.scss */
+  /* line 503, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 471, ../scss/partials/_navs.scss */
+/* line 514, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 474, ../scss/partials/_navs.scss */
+/* line 517, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -11371,7 +11413,7 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 485, ../scss/partials/_navs.scss */
+/* line 528, ../scss/partials/_navs.scss */
 .top-bar-container {
   z-index: 999;
   display: none;
@@ -11385,22 +11427,22 @@ a[class*="link"] {
   transition: transform, 0.3s, ease-in-out;
 }
 @media (min-width: 900px) {
-  /* line 485, ../scss/partials/_navs.scss */
+  /* line 528, ../scss/partials/_navs.scss */
   .top-bar-container {
     display: block;
   }
 }
 
-/* line 504, ../scss/partials/_navs.scss */
+/* line 547, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar {
   background-color: #fff;
 }
-/* line 507, ../scss/partials/_navs.scss */
+/* line 550, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
 
-/* line 514, ../scss/partials/_navs.scss */
+/* line 557, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11409,7 +11451,7 @@ a[class*="link"] {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 514, ../scss/partials/_navs.scss */
+  /* line 557, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -11417,7 +11459,7 @@ a[class*="link"] {
   }
 }
 
-/* line 528, ../scss/partials/_navs.scss */
+/* line 571, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
