@@ -156,44 +156,16 @@ a {
 		@extend %text-center; 
 }
 
-.header--secondary {
-    color: $secondaryColor; 
-}
-
 
 
 
 /*------------------------------------*\
-    #Section--Alt Type Styles 
+    #Font Color Classes 
 \*------------------------------------*/
 
-.section--alt {
-	
-	.section--alt-subTitle {
-            @extend %fwb;
-			@extend %text--white; 
-	}
-
-	.section--alt-text {
-		@extend %text--white;
-
-		&:hover {
-				@extend %text--white; 
-			}
-	}
-
-	.section--alt-link {
-			padding: rem-calc(2); 
-			&:hover {
-					background-color: #fff; 
-			}
-	}
+.txtc3 {
+    color: $primaryColor; 
 }
-
-
-//
-//Font Colors and Typefaces
-//
 
 .txtc2 {
 	color: $secondaryColor; 

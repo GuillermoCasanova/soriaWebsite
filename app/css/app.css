@@ -526,7 +526,7 @@ body {
 /* line 438, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
 body {
   background: #fff;
-  color: #222;
+  color: #3c4750;
   cursor: auto;
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -8306,7 +8306,7 @@ p aside {
 /* Default header styles */
 /* line 252, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #3c4750;
   font-family: "Asar";
   font-style: normal;
   font-weight: normal;
@@ -8317,7 +8317,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 262, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  color: #6f6f6f;
+  color: #768898;
   font-size: 60%;
   line-height: 0;
 }
@@ -8355,7 +8355,7 @@ h6 {
 /* line 276, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #768898;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8491,7 +8491,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #3c4750;
   cursor: help;
 }
 
@@ -8515,7 +8515,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: #607281;
 }
 /* line 408, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -8524,14 +8524,14 @@ blockquote cite:before {
 /* line 412, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #607281;
 }
 
 /* line 418, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #768898;
 }
 
 /* Microformats */
@@ -9955,7 +9955,7 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Font Weights 
 \*------------------------------------*/
 /* line 31, ../scss/modules/_typography.scss */
-.button, .section--alt .section--alt-subTitle, .secondaryNav-list li.link, .pricingtable-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title {
+.button, .secondaryNav-list li.link, .pricingtable-title, .tabs-title.active, .tabs-title:hover, .tabs-title:active, .panel-title {
   font-weight: 700;
 }
 
@@ -10026,7 +10026,7 @@ h6,
 }
 
 /* line 93, ../scss/modules/_typography.scss */
-.text--micro, [class*="copyright"], [class*="credit"] {
+.text--micro, [rel*="copyright"], [rel*="credit"] {
   font-size: 0.75rem;
   line-height: 2;
 }
@@ -10035,7 +10035,7 @@ h6,
     #Text Colors 
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
-.section--alt .section--alt-subTitle, .section--alt .section--alt-text, .section--alt .section--alt-text:hover, .imageButton .imageButton-txt, .topContactBar .topContactBar-item,
+.imageButton .imageButton-txt, .topContactBar .topContactBar-item,
 .topContactBar .topContactBar-item a, .list--whiteText li, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
 .section--header .header-subTitle {
   color: #fff;
@@ -10171,7 +10171,7 @@ h6,
 }
 
 /* line 39, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .name, .navBar-logo, .footer-nav li, [class*="copyright"], [class*="credit"], .slick-slider, .tabs-content .content.active, .section--header .header-content {
+.blockquote--bubble p:after, .name, .navBar-logo, .footer-nav li, [rel*="copyright"], [rel*="credit"], .slick-slider, .tabs-content .content.active, .section--header .header-content {
   display: block;
 }
 
@@ -10347,7 +10347,7 @@ footer {
 }
 
 /* line 240, ../scss/modules/_generics.scss */
-.pt4, footer {
+.pt4 {
   padding-top: 2.25rem !important;
 }
 
@@ -10584,7 +10584,7 @@ footer {
 }
 
 /* line 480, ../scss/modules/_generics.scss */
-.header--standout, .mb1, [class*="copyright"], [class*="credit"], .section--header .header-title {
+.header--standout, .mb1, [rel*="copyright"], [rel*="credit"], .section--header .header-title {
   margin-bottom: 0.375rem !important;
 }
 
@@ -10848,24 +10848,15 @@ a[class*="link"] {
 /*------------------------------------*\
     #Headers
 \*------------------------------------*/
-/* line 159, ../scss/partials/_typography.scss */
-.header--secondary {
-  color: #3c4750;
-}
-
 /*------------------------------------*\
-    #Section--Alt Type Styles 
+    #Font Color Classes 
 \*------------------------------------*/
-/* line 185, ../scss/partials/_typography.scss */
-.section--alt .section--alt-link {
-  padding: 0.125rem;
-}
-/* line 187, ../scss/partials/_typography.scss */
-.section--alt .section--alt-link:hover {
-  background-color: #fff;
+/* line 166, ../scss/partials/_typography.scss */
+.txtc3 {
+  color: #ef8111;
 }
 
-/* line 198, ../scss/partials/_typography.scss */
+/* line 170, ../scss/partials/_typography.scss */
 .txtc2 {
   color: #3c4750;
 }
@@ -12565,7 +12556,7 @@ a[href*="facebook"].icon--brandColors,
 footer {
   background-color: #3c4750;
 }
-/* line 16, ../scss/partials/_footer.scss */
+/* line 15, ../scss/partials/_footer.scss */
 footer .footer-link {
   color: #888f95;
 }
@@ -12573,7 +12564,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Credit Info 
 \*------------------------------------*/
-/* line 39, ../scss/partials/_footer.scss */
+/* line 38, ../scss/partials/_footer.scss */
 .footer-siteInfo a {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -12583,15 +12574,15 @@ footer .footer-link {
 }
 
 @media (min-width: 760px) {
-  /* line 52, ../scss/partials/_footer.scss */
-  [class*="copyright"] {
+  /* line 51, ../scss/partials/_footer.scss */
+  [rel*="copyright"] {
     float: left;
   }
 }
 
 @media (min-width: 760px) {
-  /* line 62, ../scss/partials/_footer.scss */
-  [class*="credit"] {
+  /* line 61, ../scss/partials/_footer.scss */
+  [rel*="credit"] {
     float: right;
   }
 }
@@ -13260,12 +13251,21 @@ p,
 .panel--information .panel-title:before {
   color: #f5b471;
 }
+/* line 45, ../scss/partials/_panels.scss */
+.panel--information:hover .icon {
+  fill: #ace63c;
+}
 
-/* line 46, ../scss/partials/_panels.scss */
+/* line 52, ../scss/partials/_panels.scss */
+.icon:hover {
+  fill: #ef8111;
+}
+
+/* line 58, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 49, ../scss/partials/_panels.scss */
+/* line 61, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -13274,7 +13274,7 @@ p,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 75, ../scss/partials/_panels.scss */
+/* line 87, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -13287,7 +13287,7 @@ p,
 }
 
 /* flip the pane when clicked through jQuery Class Toggle */
-/* line 85, ../scss/partials/_panels.scss */
+/* line 97, ../scss/partials/_panels.scss */
 .flip-container.hover .flipper {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13296,7 +13296,7 @@ p,
 }
 
 /* increase pane size on hover */
-/* line 90, ../scss/partials/_panels.scss */
+/* line 102, ../scss/partials/_panels.scss */
 .flip-container:hover {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -13305,7 +13305,7 @@ p,
 }
 
 /* flip speed goes here */
-/* line 95, ../scss/partials/_panels.scss */
+/* line 107, ../scss/partials/_panels.scss */
 .flipper {
   position: relative;
   -moz-transition: all 0.2s ease-in-out;
@@ -13318,7 +13318,7 @@ p,
 }
 
 /* hide back of pane during swap */
-/* line 102, ../scss/partials/_panels.scss */
+/* line 114, ../scss/partials/_panels.scss */
 .front, .back {
   top: 0;
   left: 0;
@@ -13328,7 +13328,7 @@ p,
 }
 
 /* front pane, placed above back */
-/* line 110, ../scss/partials/_panels.scss */
+/* line 122, ../scss/partials/_panels.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -13339,7 +13339,7 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 117, ../scss/partials/_panels.scss */
+/* line 129, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13347,7 +13347,7 @@ p,
   transform: rotateY(180deg);
 }
 
-/* line 121, ../scss/partials/_panels.scss */
+/* line 133, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13355,13 +13355,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 134, ../scss/partials/_panels.scss */
+/* line 146, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 138, ../scss/partials/_panels.scss */
+/* line 150, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;
@@ -13390,32 +13390,31 @@ p,
   color: #fff;
 }
 
-/* line 24, ../scss/partials/_sections.scss */
-.section--highlighted--noBorderTop {
-  border-top: 0;
-}
-
-/* line 28, ../scss/partials/_sections.scss */
+/* line 26, ../scss/partials/_sections.scss */
 .section--normal {
   background-color: #fff;
 }
 
-/* line 32, ../scss/partials/_sections.scss */
+/* line 31, ../scss/partials/_sections.scss */
 .section--alt {
   overflow: hidden;
   width: 100%;
   background-color: #3c4750;
 }
-/* line 41, ../scss/partials/_sections.scss */
+/* line 40, ../scss/partials/_sections.scss */
+.section--alt .section-title {
+  color: #fff;
+}
+/* line 44, ../scss/partials/_sections.scss */
 .section--alt .section-text {
   color: #fff;
   text-shadow: black 0 1px 0;
 }
-/* line 46, ../scss/partials/_sections.scss */
+/* line 49, ../scss/partials/_sections.scss */
 .section--alt .section-text--highlight {
   color: #0d3d64;
 }
-/* line 50, ../scss/partials/_sections.scss */
+/* line 53, ../scss/partials/_sections.scss */
 .section--alt .section--alt-bg {
   min-width: 50rem;
   opacity: .3;
@@ -13426,29 +13425,29 @@ p,
   width: 100%;
 }
 @media (min-width: 100px) and (max-width: 460px) {
-  /* line 50, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section--alt-bg {
     margin-left: -50%;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 50, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section--alt-bg {
     min-width: 60rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 50, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section--alt-bg {
     min-width: 80rem;
   }
 }
 
-/* line 74, ../scss/partials/_sections.scss */
+/* line 80, ../scss/partials/_sections.scss */
 .section--primary {
   background-color: #ef8111;
 }
-/* line 77, ../scss/partials/_sections.scss */
+/* line 83, ../scss/partials/_sections.scss */
 .section--primary .section-text {
   color: #fff;
 }
@@ -13456,12 +13455,12 @@ p,
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 90, ../scss/partials/_sections.scss */
+/* line 96, ../scss/partials/_sections.scss */
 .image-wrap {
   overflow: hidden;
 }
 
-/* line 96, ../scss/partials/_sections.scss */
+/* line 102, ../scss/partials/_sections.scss */
 .regular,
 .blurred {
   width: 100%;
@@ -13472,12 +13471,12 @@ p,
   transform: translate3d(0, 0, 0);
 }
 
-/* line 104, ../scss/partials/_sections.scss */
+/* line 111, ../scss/partials/_sections.scss */
 .regular {
   opacity: 1;
 }
 
-/* line 108, ../scss/partials/_sections.scss */
+/* line 116, ../scss/partials/_sections.scss */
 .blurred {
   opacity: 0;
 }
@@ -13485,39 +13484,37 @@ p,
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 120, ../scss/partials/_sections.scss */
+/* line 128, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
-  min-height: 10rem;
-  overflow: hidden;
 }
 @media (min-width: 760px) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 128, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 16.875rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 128, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 19.375rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 128, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 23.75rem;
   }
 }
 @media (min-width: 1300) {
-  /* line 120, ../scss/partials/_sections.scss */
+  /* line 128, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 28.125rem;
   }
 }
-/* line 147, ../scss/partials/_sections.scss */
+/* line 154, ../scss/partials/_sections.scss */
 .section--header .section-backgroundImage {
   left: 0;
   margin: 0 auto;
@@ -13528,18 +13525,18 @@ p,
   z-index: 10;
 }
 @media (min-width: 760px) {
-  /* line 147, ../scss/partials/_sections.scss */
+  /* line 154, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 55rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 147, ../scss/partials/_sections.scss */
+  /* line 154, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 90rem;
   }
 }
-/* line 166, ../scss/partials/_sections.scss */
+/* line 173, ../scss/partials/_sections.scss */
 .section--header .header-content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -13548,7 +13545,7 @@ p,
   z-index: 100;
 }
 @media (min-width: 760px) {
-  /* line 166, ../scss/partials/_sections.scss */
+  /* line 173, ../scss/partials/_sections.scss */
   .section--header .header-content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -13556,12 +13553,12 @@ p,
     float: left;
   }
 }
-/* line 179, ../scss/partials/_sections.scss */
+/* line 186, ../scss/partials/_sections.scss */
 .section--header .header-title {
   white-space: nowrap;
 }
 @media (min-width: 100px) and (max-width: 460px) {
-  /* line 179, ../scss/partials/_sections.scss */
+  /* line 186, ../scss/partials/_sections.scss */
   .section--header .header-title {
     font-size: 2rem;
   }

@@ -6,7 +6,6 @@
 footer {
   background-color: $secondaryColor; 
   @extend %text-left; 
-  @extend %pt4;
   @extend %text--white; 
   
   .footer-title {
@@ -49,7 +48,7 @@ footer {
 }
 
 
-[class*="copyright"] {
+[rel*="copyright"] {
   @extend %mb1; 
   @extend %display--block; 
   @extend %text--micro;  
@@ -59,7 +58,7 @@ footer {
   }
 }
   
-[class*="credit"] {  
+[rel*="credit"] {  
   @extend %mb1; 
   @extend %display--block; 
   @extend %text--micro; 

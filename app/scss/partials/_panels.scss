@@ -39,8 +39,20 @@
 .panel--information {
     @include panel($primaryColor, false);
     border-top: 4px solid $primaryColor;
-    background-color: #fff;  
+    background-color: #fff; 
+
+    &:hover {
+        .icon {
+            fill:  #ace63c; 
+        }
+    } 
 }
+
+
+.icon:hover {
+    fill: $primaryColor; 
+}
+
 
 
 .panel--alt {

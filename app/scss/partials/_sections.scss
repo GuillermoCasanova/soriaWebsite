@@ -19,15 +19,14 @@
     .section-text {
         color: #fff; 
     }
+
 }
 
-.section--highlighted--noBorderTop { 
-    border-top: 0; 
-}
 
 .section--normal {
     background-color: #fff;   
 }
+
 
 .section--alt {
     overflow: hidden;
@@ -36,6 +35,10 @@
 
     & > .row { 
       @extend %position--relative; 
+    }
+
+    & .section-title {
+        color: #fff; 
     }
 
     & .section-text {
@@ -68,8 +71,11 @@
         @media #{$large-up} {
             min-width: rem-calc(1280);
         }
+
     }
+
 }
+
 
 .section--primary {
     background-color: $primaryColor; 
@@ -101,9 +107,11 @@
     @include transform(translate3d(0,0,0));
 }
 
+
 .regular {
     opacity: 1; 
 }
+
 
 .blurred {
     opacity:0; 
@@ -121,8 +129,7 @@
     @extend %flexb; 
     @extend %position--relative; 
     @include single-box-shadow(0, -1px, 6px, 1px, rgba(0, 0, 0, .2), inset);
-    min-height: rem-calc(160);
-    overflow: hidden;
+
     
     @include breakpoint(teenBear) {
         min-height: rem-calc(270);
