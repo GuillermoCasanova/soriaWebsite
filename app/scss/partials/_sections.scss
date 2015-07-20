@@ -43,7 +43,7 @@
 
     & .section-text {
         color: #fff; 
-        @include text-shadow--title($secondaryColor);  
+        //@include text-shadow--title($secondaryColor);  
     }
 
     & .section-text--highlight {

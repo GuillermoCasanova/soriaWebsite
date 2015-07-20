@@ -106,7 +106,7 @@
 
         //Hides it with pixels on larger formats, since it needs 111% on smaller devices 
         @media #{$medium-up} {
-            @include transform(translateX(400px)); 
+            @include transform(translateX(100%)); 
         }
     }  
 

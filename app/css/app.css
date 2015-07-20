@@ -647,7 +647,7 @@ select {
 }
 /* line 238, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
-  margin: 0 -0.9375rem;
+  margin: 0 -0.625rem;
   max-width: none;
   width: auto;
 }
@@ -679,8 +679,8 @@ select {
 /* line 243, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
   width: 100%;
   float: left;
 }
@@ -875,8 +875,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 
@@ -1057,8 +1057,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 }
@@ -1235,8 +1235,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 
@@ -1417,8 +1417,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 
@@ -1763,8 +1763,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 
@@ -1945,8 +1945,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     float: left;
   }
 
@@ -2156,7 +2156,7 @@ select {
 /* line 146, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content, .accordion dd > .content {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.625rem;
 }
 /* line 149, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
@@ -6578,7 +6578,7 @@ table tr td {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.9375rem 0;
+  padding: 0.625rem 0;
   width: 100%;
 }
 /* line 95, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -6588,7 +6588,7 @@ table tr td {
 }
 /* line 99, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content > .content.contained {
-  padding: 0.9375rem;
+  padding: 0.625rem;
 }
 /* line 104, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical {
@@ -6596,7 +6596,7 @@ table tr td {
 }
 /* line 107, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical > .content {
-  padding: 0 0.9375rem;
+  padding: 0 0.625rem;
 }
 
 @media only screen and (min-width: 40.0625em) {
@@ -10212,7 +10212,7 @@ footer {
     #Dropshadows 
 \*------------------------------------*/
 /* line 102, ../scss/modules/_generics.scss */
-.image--border, .dropshadow, .panel {
+.image--border, .dropshadow {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px;
@@ -12027,10 +12027,10 @@ hr.secondary {
 @media only screen and (min-width: 40.0625em) {
   /* line 93, ../scss/partials/_components.scss */
   .profile .profile-bio {
-    -moz-transform: translateX(400px);
-    -ms-transform: translateX(400px);
-    -webkit-transform: translateX(400px);
-    transform: translateX(400px);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 /* line 113, ../scss/partials/_components.scss */
@@ -13265,7 +13265,7 @@ footer .footer-link {
 /* line 21, ../scss/partials/_accordions.scss */
 .accordion .content {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.625rem;
 }
 /* line 120, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .content.active {
@@ -13574,7 +13574,6 @@ p,
 /* line 44, ../scss/partials/_sections.scss */
 .section--alt .section-text {
   color: #fff;
-  text-shadow: black 0 1px 0;
 }
 /* line 49, ../scss/partials/_sections.scss */
 .section--alt .section-text--highlight {
@@ -13704,8 +13703,8 @@ p,
 }
 /* line 173, ../scss/partials/_sections.scss */
 .section--header .header-content {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
   width: 100%;
   float: left;
   z-index: 100;
@@ -13713,8 +13712,8 @@ p,
 @media (min-width: 760px) {
   /* line 173, ../scss/partials/_sections.scss */
   .section--header .header-content {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     width: 50%;
     float: left;
   }
