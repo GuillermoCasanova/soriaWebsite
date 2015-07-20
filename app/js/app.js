@@ -27,16 +27,31 @@ $(document).on('ready', function() {
     //* Scroll Magic *//
     var controller = new ScrollMagic.Controller();
 
+
+    // get all slides
+    var slides = document.querySelectorAll(".section--pinned");
+    // create scene for every slide
+    for (var i=0; i<slides.length; i++) {
+        new ScrollMagic.Scene({
+                triggerElement: slides[i],
+                triggerHook: 'onLeave'
+            })
+            .setPin(slides[i])
+            .addTo(controller);
+    }
+
+
+
     $(function() {
 
         //Checks to see if required trigger is on page
         if($('#scene').length > 0) {
             // Sevices - Tween 
-               var tween = TweenMax.staggerFrom('.enter-in', .5, {
+               var tween = TweenMax.staggerFrom('.enter-in', .4, {
                     opacity: 0,
                     y: 300
 
-            }, 0.3); 
+            }, 0.2); 
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
@@ -145,42 +160,16 @@ $(document).on('ready', function() {
 
 
     });
+    
 
+    //Blur Effect for Hero Header 
 
-    //Code for blur effect scroll 
-    // function fader() {
+    $(window).on('scroll', function() {
+        var blurImg = $(".blur");
+        var oVal = $(window).scrollTop() / 240;
+        blurImg.css("opacity", oVal);
+    });
 
-    //     var r = $('.blurred'),
-    //         wh = $(window).height(),
-    //         dt = $(document).scrollTop(), 
-    //         elView, 
-    //         opacity; 
-
-    //         //Loop ELements with class "blurred"
-    //         r.each(function() {
-
-    //             elView = wh - ($(this).offset().top - dt + 200);
-
-    //             //Top of Div above bottom window
-    //             if(elView > 0) { 
-
-    //                 opacity = 1 / (wh + $(this).height()) * elView * 2;
-
-    //                 if(opacity < 1) {
-    //                     $(this).css('opacity', opacity); 
-    //                 }
-    //             }
-
-    //             if($(document).scrollTop() === 0) {
-    //                 $(this).css('opacity', 0); 
-    //             }
-
-
-    //         });
-
-       
-
-    // }
 
 
     //Animation for flip-containers to active on click 
@@ -198,10 +187,6 @@ $(document).on('ready', function() {
         bioProfile.toggleClass('is-showing'); 
     });
 
-
-    //Binds blur effect to scroll
-    //TODO: Optimize this method for medium effect to prevent lag 
-    //$(document).on('scroll', fader); 
 
     // Checks to see if there is a top-bar-container to hide/show
     // Essentially prevents it from working on small devices. 

@@ -352,6 +352,10 @@
 	@extend %opacity_hover;
 	.toggle-topbar span, {
 	color: $off-black;}
+
+    .logo--alt {
+        display: none; 
+    }
 }
 
 .name {
@@ -555,6 +559,16 @@
         @extend %dropshadow1; 
         .top-bar-section ul li.top-bar-link > a {
             color: $secondaryColor; 
+        }
+        
+        .title-area {
+            .navBar-logo {
+                display: none; 
+            }
+
+            .logo--alt {
+                display: block; 
+            }
         }
     }
 

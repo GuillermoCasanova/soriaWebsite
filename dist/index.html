@@ -15,6 +15,17 @@
 
     <script src="js/vendor/modernizr.min.js"></script>
 
+    <style type="text/css">
+        .parallaxParent {
+            height: 100vh;
+            overflow: hidden;
+        }
+        .parallaxParent > * {
+            height: 200%;
+            position: relative;
+            top: -100%;
+        }
+    </style>
 
   </head>
 
@@ -140,9 +151,9 @@
 
 
             <!--Introduction Header --> 
-            <div class="section  section--alt  vh100  image-wrap">
+            <div class="section  section--alt  vh100  image-wrap  parallaxParent"  id="parallax1">
                 
-                <div class="section--alt-bg">
+<!--                 <div class="section--alt-bg">
 
                     <div class="  vh100  regular" style="background:url(images/business11.jpg) no-repeat center center; background-size: cover;">
                         
@@ -153,7 +164,7 @@
                      </div>
 
                 </div>
-
+ -->
                 <div class="row  vertical-align">
                             
                     <div class="small-12 medium-11 small-centered columns">

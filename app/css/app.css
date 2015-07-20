@@ -10171,13 +10171,12 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-section ul li.top-bar-link, .top-bar-container.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .image-wrap, .section--header, .section--header .header-content {
+.top-bar-section ul li.top-bar-link, .top-bar-container.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .section--header, .section--header .header-content {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .regular,
-.blurred, .section--header .section-backgroundImage {
+.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .section--header .section-backgroundImage {
   position: absolute;
 }
 
@@ -11272,25 +11271,29 @@ hr.secondary {
 .title-area .toggle-topbar span {
   color: #191919;
 }
+/* line 356, ../scss/partials/_navs.scss */
+.title-area .logo--alt {
+  display: none;
+}
 
-/* line 357, ../scss/partials/_navs.scss */
+/* line 361, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 362, ../scss/partials/_navs.scss */
+/* line 366, ../scss/partials/_navs.scss */
 .navBar-logo {
   display: block;
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 362, ../scss/partials/_navs.scss */
+  /* line 366, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 377, ../scss/partials/_navs.scss */
+/* line 381, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -11299,26 +11302,26 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 392, ../scss/partials/_navs.scss */
+/* line 396, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
 
-/* line 397, ../scss/partials/_navs.scss */
+/* line 401, ../scss/partials/_navs.scss */
 .secondaryNav-list {
   background-color: #f5f5f5;
 }
-/* line 401, ../scss/partials/_navs.scss */
+/* line 405, ../scss/partials/_navs.scss */
 .secondaryNav-list li.title {
   color: #888f95;
   display: block;
 }
-/* line 410, ../scss/partials/_navs.scss */
+/* line 414, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a {
   width: 100%;
   display: block;
 }
-/* line 416, ../scss/partials/_navs.scss */
+/* line 420, ../scss/partials/_navs.scss */
 .secondaryNav-list li.link a:hover {
   background-color: #f5f5f5;
 }
@@ -11326,7 +11329,7 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 433, ../scss/partials/_navs.scss */
+/* line 437, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 12.5rem;
@@ -11334,11 +11337,11 @@ hr.secondary {
   top: 8.125rem;
   z-index: 100;
 }
-/* line 442, ../scss/partials/_navs.scss */
+/* line 446, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 450, ../scss/partials/_navs.scss */
+/* line 454, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.link {
   border-left: 4px solid #fff;
   overflow: hidden;
@@ -11347,12 +11350,12 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 456, ../scss/partials/_navs.scss */
+/* line 460, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
   background-color: transparent;
 }
-/* line 462, ../scss/partials/_navs.scss */
+/* line 466, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.link a {
   line-height: 2.75rem !important;
   padding-left: 1rem !important;
@@ -11363,7 +11366,7 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 469, ../scss/partials/_navs.scss */
+/* line 473, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.link a:hover {
   background-color: transparent;
   color: #ef8111;
@@ -11373,13 +11376,13 @@ hr.secondary {
   transform: translateX(4px);
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 433, ../scss/partials/_navs.scss */
+  /* line 437, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 433, ../scss/partials/_navs.scss */
+  /* line 437, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 21.25rem;
     right: 3.125rem;
@@ -11389,27 +11392,27 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 505, ../scss/partials/_navs.scss */
+/* line 509, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 509, ../scss/partials/_navs.scss */
+/* line 513, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 509, ../scss/partials/_navs.scss */
+  /* line 513, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 520, ../scss/partials/_navs.scss */
+/* line 524, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 523, ../scss/partials/_navs.scss */
+/* line 527, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -11418,7 +11421,7 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 534, ../scss/partials/_navs.scss */
+/* line 538, ../scss/partials/_navs.scss */
 .top-bar-container {
   z-index: 999;
   display: none;
@@ -11432,22 +11435,30 @@ hr.secondary {
   transition: transform, 0.3s, ease-in-out;
 }
 @media (min-width: 900px) {
-  /* line 534, ../scss/partials/_navs.scss */
+  /* line 538, ../scss/partials/_navs.scss */
   .top-bar-container {
     display: block;
   }
 }
 
-/* line 553, ../scss/partials/_navs.scss */
+/* line 557, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar {
   background-color: #fff;
 }
-/* line 556, ../scss/partials/_navs.scss */
+/* line 560, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
+/* line 565, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar .title-area .navBar-logo {
+  display: none;
+}
+/* line 569, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar .title-area .logo--alt {
+  display: block;
+}
 
-/* line 563, ../scss/partials/_navs.scss */
+/* line 577, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11456,7 +11467,7 @@ hr.secondary {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 563, ../scss/partials/_navs.scss */
+  /* line 577, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -11464,7 +11475,7 @@ hr.secondary {
   }
 }
 
-/* line 577, ../scss/partials/_navs.scss */
+/* line 591, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
@@ -13620,66 +13631,46 @@ p,
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 96, ../scss/partials/_sections.scss */
-.image-wrap {
-  overflow: hidden;
-}
-
-/* line 102, ../scss/partials/_sections.scss */
-.regular,
-.blurred {
-  width: 100%;
-  min-height: 100vh;
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-/* line 111, ../scss/partials/_sections.scss */
-.regular {
-  opacity: 1;
-}
-
-/* line 116, ../scss/partials/_sections.scss */
-.blurred {
+/* line 118, ../scss/partials/_sections.scss */
+.blur {
   opacity: 0;
+  z-index: 4;
 }
 
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 128, ../scss/partials/_sections.scss */
+/* line 132, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 760px) {
-  /* line 128, ../scss/partials/_sections.scss */
+  /* line 132, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 16.875rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 128, ../scss/partials/_sections.scss */
+  /* line 132, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 19.375rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 128, ../scss/partials/_sections.scss */
+  /* line 132, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 23.75rem;
   }
 }
 @media (min-width: 1300) {
-  /* line 128, ../scss/partials/_sections.scss */
+  /* line 132, ../scss/partials/_sections.scss */
   .section--header {
     min-height: 28.125rem;
   }
 }
-/* line 154, ../scss/partials/_sections.scss */
+/* line 158, ../scss/partials/_sections.scss */
 .section--header .section-backgroundImage {
   left: 0;
   margin: 0 auto;
@@ -13690,18 +13681,18 @@ p,
   z-index: 10;
 }
 @media (min-width: 760px) {
-  /* line 154, ../scss/partials/_sections.scss */
+  /* line 158, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 55rem;
   }
 }
 @media (min-width: 1180px) {
-  /* line 154, ../scss/partials/_sections.scss */
+  /* line 158, ../scss/partials/_sections.scss */
   .section--header .section-backgroundImage {
     min-width: 90rem;
   }
 }
-/* line 173, ../scss/partials/_sections.scss */
+/* line 177, ../scss/partials/_sections.scss */
 .section--header .header-content {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -13710,7 +13701,7 @@ p,
   z-index: 100;
 }
 @media (min-width: 760px) {
-  /* line 173, ../scss/partials/_sections.scss */
+  /* line 177, ../scss/partials/_sections.scss */
   .section--header .header-content {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
@@ -13718,12 +13709,12 @@ p,
     float: left;
   }
 }
-/* line 186, ../scss/partials/_sections.scss */
+/* line 190, ../scss/partials/_sections.scss */
 .section--header .header-title {
   white-space: nowrap;
 }
 @media (min-width: 100px) and (max-width: 460px) {
-  /* line 186, ../scss/partials/_sections.scss */
+  /* line 190, ../scss/partials/_sections.scss */
   .section--header .header-title {
     font-size: 2rem;
   }
