@@ -42,6 +42,57 @@
 
 
 /*------------------------------------*\
+    #Top Contact bar 
+\*------------------------------------*/
+
+//By using a list of items we can create a border of different colors 
+.highlightBorder {
+    
+    width: 100%; 
+    font-size: 0; 
+
+    ul {
+        list-style: none; 
+        width: 100%;
+        font-size: 0; 
+        @extend %display--inlineBlock; 
+        @extend %mtrbl0; 
+
+        li {
+            width: 20%; 
+            height: rem-calc(12);
+            @extend %display--inlineBlock; 
+            @extend %mtrbl0; 
+
+        }
+
+        li:nth-child(1) {
+            background-color: $accentColor; 
+        }
+
+        li:nth-child(2) {
+            background-color: $secondaryColor;
+        }
+
+        li:nth-child(3) {
+            background-color: $grey--dark;
+        }
+
+        li:nth-child(4) {
+            background-color: $primaryColor; 
+        }
+
+        li:nth-child(5) {
+            background-color: $primaryColor--dark; 
+        }
+    }
+
+}
+
+
+
+
+/*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
 
