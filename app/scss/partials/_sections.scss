@@ -88,9 +88,29 @@
 
 
 
+
 .section--pinned {
     width: 100%; 
+    height: 100vh; 
 }
+
+
+.section--home {
+    @extend %position--relative; 
+}
+
+
+.section--callToAction {
+
+    cursor: pointer; 
+    @include single-transition(all, 0.2s, cubic-bezier(.175,.885,.32,1.275)); 
+    &:hover {
+
+        @include transform(scale(.95)); 
+
+    }
+}
+
 
 
 

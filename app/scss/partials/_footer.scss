@@ -7,8 +7,8 @@ footer {
   background-color: $secondaryColor; 
   @extend %text-left; 
   @extend %text--white; 
-  @extend %pt3; 
-  
+  @extend %position--relative; 
+
   .footer-title {
     @extend %text--white;
   }

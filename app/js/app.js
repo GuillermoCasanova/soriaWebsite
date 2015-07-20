@@ -61,7 +61,6 @@ $(document).on('ready', function() {
 
         }
 
-
         //Checks to see if required trigger is available for scrolling 
         if($("#header-fadeIn").length > 0) {
 
@@ -98,17 +97,16 @@ $(document).on('ready', function() {
 
 
         //Checks to see if required trigger is available for scrolling 
-        if($("#list-fadeIn").length > 0) {
+        if($(".list-fadeIn").length > 0) {
 
             // List 1 - Tween 
-            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.2, {
+            var fadeIn = TweenMax.staggerFrom('.fadeIn', 0.6, {
                     opacity: 0
             }, 0.2);
 
             // List 1 - Scene
             var listFadeIn = new ScrollMagic.Scene({
-                    triggerElement: "#list-fadeIn",
-                    duration: 400, 
+                    triggerElement: ".list-fadeIn",
                     reverse: false
             }).setTween(fadeIn).addTo(controller);
         }
@@ -146,9 +144,6 @@ $(document).on('ready', function() {
                 if ($(id).length > 0) {
                     e.preventDefault();
 
-                    // trigger scroll
-                    controller.scrollTo(id);
-
                         // if supported by the browser we can even update the URL.
                     if (window.history && window.history.pushState) {
                         history.pushState("", document.title, id);
@@ -158,12 +153,41 @@ $(document).on('ready', function() {
         }
 
 
+        // Fixed navigation indicators of corresponding section 
+        // Checks to see if required trigger is available for scrolling
+        if($('.secondaryNav--fixed').length > 0) {
+
+            // Gets the navigation for use when creating scenes  
+            var fixedNav = $('.secondaryNav--fixed');
+
+            // Gets all links in order to create scenes for each one
+            var sections = document.querySelectorAll("a.smoothScroll");
+
+            // Create scene for every section link 
+            for (var i=0, l = sections.length; i < l; i++) { 
+
+                //Gets the section id's from the links in the secondaryNav--fixed list 
+                var section = $(sections[i]).attr("href");
+
+                //Gets the height of the correspnding section 
+                var sectionHeight = $(section).height(); 
+
+                console.log(sectionHeight); 
+
+                new ScrollMagic.Scene({
+                        triggerElement: section,
+                        duration: sectionHeight
+                    })
+                    .setClassToggle(section + "-anchor", "active") 
+                    .addTo(controller);
+            }
+        };
+
 
     });
     
 
     //Blur Effect for Hero Header 
-
     $(window).on('scroll', function() {
         var blurImg = $(".blur");
         var oVal = $(window).scrollTop() / 240;

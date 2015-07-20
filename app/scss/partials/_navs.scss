@@ -521,7 +521,8 @@
                 color: $secondaryColor; 
                 @include single-transition(all, .2s, ease-in-out); 
 
-                &:hover{
+                &:hover, 
+                &.active {
                     background-color: transparent; 
                     color: $primaryColor; 
                     @include transform(translateX(4px)); 
