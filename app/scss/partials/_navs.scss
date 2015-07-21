@@ -487,11 +487,11 @@
 
 .secondaryNav--fixed {
     display: none; 
-    width: rem-calc(200px);
-    right: rem-calc(40px); 
-    top: rem-calc(30%); 
+    width: rem-calc(12 * 14);
+    right: rem-calc(12 * 3); 
     z-index: 100; 
     @extend %br1; 
+    @extend %mt5; 
     @extend %position--fixed; 
 
 
@@ -537,11 +537,12 @@
     }
 
     @media #{$medium-up} {
+        width: rem-calc(12 * 20); 
         display: block;
     }
 
     @media #{$large-up} {
-        width: rem-calc(340px); 
+        width: rem-calc(12 * 24); 
         right: rem-calc(50px); 
 
     }

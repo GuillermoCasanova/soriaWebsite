@@ -9866,14 +9866,13 @@ th.hide-for-touch {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  text-transform: uppercase;
 }
-/* line 23, ../scss/modules/_buttons.scss */
+/* line 22, ../scss/modules/_buttons.scss */
 .button a {
   color: #fff;
 }
 
-/* line 51, ../scss/modules/_buttons.scss */
+/* line 50, ../scss/modules/_buttons.scss */
 a, .button--primary, .button--primary.secondaryAction, .button--secondary, .button--secondary.secondaryAction, .button--tetriary, .button--tetriary.secondaryAction {
   outline: 0;
   -webkit-tap-highlight-color: transparent;
@@ -9899,8 +9898,8 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
 \*------------------------------------*/
 @font-face {
   font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?56922354");
-  src: url("../fonts/fontello--soriallc.eot?56922354#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?56922354") format("woff"), url("../fonts/fontello--soriallc.ttf?56922354") format("truetype"), url("../fonts/fontello--soriallc.svg?56922354#fontello--soriallc") format("svg");
+  src: url("../fonts/fontello--soriallc.eot?66118239");
+  src: url("../fonts/fontello--soriallc.eot?66118239#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?66118239") format("woff"), url("../fonts/fontello--soriallc.ttf?66118239") format("truetype"), url("../fonts/fontello--soriallc.svg?66118239#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -10079,8 +10078,8 @@ h6,
 \*------------------------------------*/
 @font-face {
   font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?56922354");
-  src: url("../fonts/fontello--soriallc.eot?56922354#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?56922354") format("woff"), url("../fonts/fontello--soriallc.ttf?56922354") format("truetype"), url("../fonts/fontello--soriallc.svg?56922354#fontello--soriallc") format("svg");
+  src: url("../fonts/fontello--soriallc.eot?66118239");
+  src: url("../fonts/fontello--soriallc.eot?66118239#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?66118239") format("woff"), url("../fonts/fontello--soriallc.ttf?66118239") format("truetype"), url("../fonts/fontello--soriallc.svg?66118239#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -10176,12 +10175,12 @@ h6,
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backtotop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .section--header .section-backgroundImage {
+.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .section--header .section-backgroundImage {
   position: absolute;
 }
 
 /* line 59, ../scss/modules/_generics.scss */
-.button--backtotop, .fixedTab, .secondaryNav--fixed, .top-bar-container, .top-bar-container.is-hidden {
+.fixedTab, .button--backToTop, .secondaryNav--fixed, .top-bar-container, .top-bar-container.is-hidden {
   position: fixed;
 }
 
@@ -10559,7 +10558,7 @@ footer {
 }
 
 /* line 486, ../scss/modules/_generics.scss */
-.mt5 {
+.secondaryNav--fixed, .mt5 {
   margin-top: 3rem !important;
 }
 
@@ -10865,11 +10864,11 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 91, ../scss/modules/_buttons.scss */
+/* line 90, ../scss/modules/_buttons.scss */
 .button--primary:hover {
   background-color: #f1902e;
 }
-/* line 96, ../scss/modules/_buttons.scss */
+/* line 95, ../scss/modules/_buttons.scss */
 .button--primary:active, .button--primary:focus {
   background-color: #f18e29;
 }
@@ -10881,11 +10880,11 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 91, ../scss/modules/_buttons.scss */
+/* line 90, ../scss/modules/_buttons.scss */
 .button--primary.secondaryAction:hover {
   background-color: #495761;
 }
-/* line 96, ../scss/modules/_buttons.scss */
+/* line 95, ../scss/modules/_buttons.scss */
 .button--primary.secondaryAction:active, .button--primary.secondaryAction:focus {
   background-color: #47545f;
 }
@@ -10903,12 +10902,12 @@ hr.secondary {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 111, ../scss/modules/_buttons.scss */
+/* line 110, ../scss/modules/_buttons.scss */
 .button--secondary:hover {
   color: #fff;
   background-color: #ef8111;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 116, ../scss/modules/_buttons.scss */
 .button--secondary:active, .button--secondary:focus {
   background-color: #ef8111;
 }
@@ -10925,12 +10924,12 @@ hr.secondary {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 111, ../scss/modules/_buttons.scss */
+/* line 110, ../scss/modules/_buttons.scss */
 .button--secondary.secondaryAction:hover {
   color: #fff;
   background-color: #3c4750;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 116, ../scss/modules/_buttons.scss */
 .button--secondary.secondaryAction:active, .button--secondary.secondaryAction:focus {
   background-color: #3c4750;
 }
@@ -10948,12 +10947,12 @@ hr.secondary {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 111, ../scss/modules/_buttons.scss */
+/* line 110, ../scss/modules/_buttons.scss */
 .button--tetriary:hover {
   color: #fff;
   background-color: #ef8111;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 116, ../scss/modules/_buttons.scss */
 .button--tetriary:active, .button--tetriary:focus {
   background-color: #ef8111;
 }
@@ -10970,12 +10969,12 @@ hr.secondary {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 111, ../scss/modules/_buttons.scss */
+/* line 110, ../scss/modules/_buttons.scss */
 .button--tetriary.secondaryAction:hover {
   color: #fff;
   background-color: #0d3d64;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 116, ../scss/modules/_buttons.scss */
 .button--tetriary.secondaryAction:active, .button--tetriary.secondaryAction:focus {
   background-color: #0d3d64;
 }
@@ -10986,10 +10985,64 @@ hr.secondary {
 }
 
 /*------------------------------------*\
+    #Button Classes
+\*------------------------------------*/
+/* line 50, ../scss/partials/_buttons.scss */
+.button--expanded {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    #Tab Buttons
+\*------------------------------------*/
+/* line 63, ../scss/partials/_buttons.scss */
+.fixedTab {
+  background-color: #ef8111;
+  color: #fff;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  z-index: 101;
+  font-size: 1.125rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 12.5rem;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 82, ../scss/partials/_buttons.scss */
+.fixedTab .link {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+/* line 87, ../scss/partials/_buttons.scss */
+.fixedTab a {
+  color: #3c4750;
+}
+/* line 90, ../scss/partials/_buttons.scss */
+.fixedTab a:hover {
+  color: #fff;
+}
+/* line 95, ../scss/partials/_buttons.scss */
+.fixedTab:hover {
+  width: 20.25rem;
+}
+/* line 98, ../scss/partials/_buttons.scss */
+.fixedTab:hover .link {
+  opacity: 1;
+}
+
+/*------------------------------------*\
     #Back To Top Button  
 \*------------------------------------*/
-/* line 51, ../scss/partials/_buttons.scss */
-.button--backtotop {
+/* line 113, ../scss/partials/_buttons.scss */
+.button--backToTop {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -11011,16 +11064,16 @@ hr.secondary {
   z-index: 999;
   opacity: 0;
 }
-/* line 69, ../scss/partials/_buttons.scss */
-.button--backtotop:hover, .button--backtotop:active {
+/* line 131, ../scss/partials/_buttons.scss */
+.button--backToTop:hover, .button--backToTop:active {
   background-color: #191919;
 }
-/* line 73, ../scss/partials/_buttons.scss */
-.button--backtotop:hover:before, .button--backtotop:active:before {
+/* line 135, ../scss/partials/_buttons.scss */
+.button--backToTop:hover:before, .button--backToTop:active:before {
   color: #fff;
 }
 /* line 135, ../scss/modules/_icons.scss */
-.button--backtotop:before {
+.button--backToTop:before {
   content: "";
   font-family: "fontello--soriallc";
   font-style: normal;
@@ -11036,62 +11089,8 @@ hr.secondary {
   height: 100%;
   width: 100%;
 }
-/* line 91, ../scss/partials/_buttons.scss */
-.button--backtotop.showing {
-  opacity: 1;
-}
-
-/*------------------------------------*\
-    #Button Classes
-\*------------------------------------*/
-/* line 106, ../scss/partials/_buttons.scss */
-.button--expanded {
-  width: 100%;
-}
-
-/*------------------------------------*\
-    #Fixed Tab Button
-\*------------------------------------*/
-/* line 119, ../scss/partials/_buttons.scss */
-.fixedTab {
-  background-color: #ef8111;
-  color: #fff;
-  bottom: 0;
-  left: 20px;
-  right: 0;
-  z-index: 101;
-  font-size: 1.125rem;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 12.5rem;
-  cursor: pointer;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 138, ../scss/partials/_buttons.scss */
-.fixedTab .link {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-}
-/* line 143, ../scss/partials/_buttons.scss */
-.fixedTab a {
-  color: #3c4750;
-}
-/* line 146, ../scss/partials/_buttons.scss */
-.fixedTab a:hover {
-  color: #fff;
-}
-/* line 151, ../scss/partials/_buttons.scss */
-.fixedTab:hover {
-  width: 20.25rem;
-}
-/* line 154, ../scss/partials/_buttons.scss */
-.fixedTab:hover .link {
+/* line 153, ../scss/partials/_buttons.scss */
+.button--backToTop.showing {
   opacity: 1;
 }
 
@@ -11379,9 +11378,8 @@ hr.secondary {
 /* line 488, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
-  width: 12.5rem;
-  right: 2.5rem;
-  top: 1.875rem;
+  width: 10.5rem;
+  right: 2.25rem;
   z-index: 100;
 }
 /* line 498, ../scss/partials/_navs.scss */
@@ -11425,13 +11423,14 @@ hr.secondary {
 @media only screen and (min-width: 40.0625em) {
   /* line 488, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
+    width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
   /* line 488, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
-    width: 21.25rem;
+    width: 18rem;
     right: 3.125rem;
   }
 }
@@ -11439,27 +11438,27 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 562, ../scss/partials/_navs.scss */
+/* line 563, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 566, ../scss/partials/_navs.scss */
+/* line 567, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 566, ../scss/partials/_navs.scss */
+  /* line 567, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 577, ../scss/partials/_navs.scss */
+/* line 578, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 580, ../scss/partials/_navs.scss */
+/* line 581, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -11468,7 +11467,7 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 591, ../scss/partials/_navs.scss */
+/* line 592, ../scss/partials/_navs.scss */
 .top-bar-container {
   z-index: 999;
   display: none;
@@ -11482,30 +11481,30 @@ hr.secondary {
   transition: transform, 0.3s, ease-in-out;
 }
 @media (min-width: 900px) {
-  /* line 591, ../scss/partials/_navs.scss */
+  /* line 592, ../scss/partials/_navs.scss */
   .top-bar-container {
     display: block;
   }
 }
 
-/* line 610, ../scss/partials/_navs.scss */
+/* line 611, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar {
   background-color: #fff;
 }
-/* line 613, ../scss/partials/_navs.scss */
+/* line 614, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
-/* line 618, ../scss/partials/_navs.scss */
+/* line 619, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .navBar-logo {
   display: none;
 }
-/* line 622, ../scss/partials/_navs.scss */
+/* line 623, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .logo--alt {
   display: block;
 }
 
-/* line 630, ../scss/partials/_navs.scss */
+/* line 631, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11514,7 +11513,7 @@ hr.secondary {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 630, ../scss/partials/_navs.scss */
+  /* line 631, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -11522,7 +11521,7 @@ hr.secondary {
   }
 }
 
-/* line 644, ../scss/partials/_navs.scss */
+/* line 645, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
@@ -12098,7 +12097,7 @@ hr.secondary {
 /* line 147, ../scss/partials/_components.scss */
 .profile .profile-bio-close .icon {
   top: 0.3125rem;
-  left: 0.3125rem;
+  right: 0.3125rem;
 }
 
 /* line 158, ../scss/partials/_components.scss */
@@ -12217,11 +12216,12 @@ ul {
     #Sizes 
 \*------------------------------------*/
 /* line 13, ../scss/partials/_icons.scss */
-.icon--jumbo {
-  font-size: 5.625rem;
+.icon--mega {
+  font-size: 6.25rem;
+  line-height: 1;
 }
 
-/* line 29, ../scss/partials/_icons.scss */
+/* line 30, ../scss/partials/_icons.scss */
 .icon--tiny {
   margin: 0.25rem;
   font-size: 0.75rem;
@@ -12230,7 +12230,7 @@ ul {
 /*------------------------------------*\
     #Classes  
 \*------------------------------------*/
-/* line 42, ../scss/partials/_icons.scss */
+/* line 43, ../scss/partials/_icons.scss */
 .icon--opacityHover {
   -moz-transition: 0.1s, ease-in-out;
   -o-transition: 0.1s, ease-in-out;
@@ -12238,12 +12238,12 @@ ul {
   transition: 0.1s, ease-in-out;
   opacity: .7;
 }
-/* line 46, ../scss/partials/_icons.scss */
+/* line 47, ../scss/partials/_icons.scss */
 .icon--opacityHover:hover {
   opacity: 1;
 }
 
-/* line 52, ../scss/partials/_icons.scss */
+/* line 53, ../scss/partials/_icons.scss */
 .hasNoIcon:before, .hasNoIcon:after {
   content: "" !important;
 }
@@ -12280,7 +12280,7 @@ ul {
   margin-right: 0.25rem;
   margin-right: 10px;
 }
-/* line 84, ../scss/partials/_icons.scss */
+/* line 85, ../scss/partials/_icons.scss */
 [rel*="location"].icon--brandColors {
   color: #e0274f;
 }
@@ -12336,7 +12336,7 @@ a[href*="facebook"]:before,
   vertical-align: middle;
   margin-right: 0.25rem;
 }
-/* line 128, ../scss/partials/_icons.scss */
+/* line 129, ../scss/partials/_icons.scss */
 a[href*="facebook"].icon--brandColors,
 .icon--facebook.icon--brandColors {
   color: #3b5998;
@@ -12375,6 +12375,270 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Misc 
 \*------------------------------------*/
+/* line 168, ../scss/partials/_icons.scss */
+.icon--left-open-big:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 169, ../scss/partials/_icons.scss */
+.icon--right-open-big:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 170, ../scss/partials/_icons.scss */
+.icon--plus-circled:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 171, ../scss/partials/_icons.scss */
+.icon--minus-circled:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 172, ../scss/partials/_icons.scss */
+.icon--linkedin:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 173, ../scss/partials/_icons.scss */
+.icon--facebook:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 174, ../scss/partials/_icons.scss */
+.icon--facebook-circled:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 175, ../scss/partials/_icons.scss */
+.icon--linkedin-circled:before {
+  content: '\e807';
+}
+
+/* '' */
+/* line 176, ../scss/partials/_icons.scss */
+.icon--hourglass:before {
+  content: '\e808';
+}
+
+/* '' */
+/* line 177, ../scss/partials/_icons.scss */
+.icon--clock:before {
+  content: '\e809';
+}
+
+/* '' */
+/* line 178, ../scss/partials/_icons.scss */
+.icon--cancel:before {
+  content: '\e80a';
+}
+
+/* '' */
+/* line 179, ../scss/partials/_icons.scss */
+.icon--compass:before {
+  content: '\e80c';
+}
+
+/* '' */
+/* line 180, ../scss/partials/_icons.scss */
+.icon--chat:before {
+  content: '\e80d';
+}
+
+/* '' */
+/* line 181, ../scss/partials/_icons.scss */
+.icon--search:before {
+  content: '\e80e';
+}
+
+/* '' */
+/* line 182, ../scss/partials/_icons.scss */
+.icon--flow-tree:before {
+  content: '\e810';
+}
+
+/* '' */
+/* line 183, ../scss/partials/_icons.scss */
+.icon--chart-pie:before {
+  content: '\e811';
+}
+
+/* '' */
+/* line 184, ../scss/partials/_icons.scss */
+.icon--up-open-big:before {
+  content: '\e812';
+}
+
+/* '' */
+/* line 185, ../scss/partials/_icons.scss */
+.icon--down-open-big:before {
+  content: '\e813';
+}
+
+/* '' */
+/* line 186, ../scss/partials/_icons.scss */
+.icon--location:before {
+  content: '\e814';
+}
+
+/* '' */
+/* line 187, ../scss/partials/_icons.scss */
+.icon--linkedin-rect:before {
+  content: '\e815';
+}
+
+/* '' */
+/* line 188, ../scss/partials/_icons.scss */
+.icon--facebook-rect:before {
+  content: '\e816';
+}
+
+/* '' */
+/* line 189, ../scss/partials/_icons.scss */
+.icon--right-circled2:before {
+  content: '\e817';
+}
+
+/* '' */
+/* line 190, ../scss/partials/_icons.scss */
+.icon--left-circled2:before {
+  content: '\e818';
+}
+
+/* '' */
+/* line 191, ../scss/partials/_icons.scss */
+.icon--phone:before {
+  content: '\e819';
+}
+
+/* '' */
+/* line 192, ../scss/partials/_icons.scss */
+.icon--graph-up:before {
+  content: '\e81b';
+}
+
+/* '' */
+/* line 193, ../scss/partials/_icons.scss */
+.icon--law:before {
+  content: '\e81c';
+}
+
+/* '' */
+/* line 194, ../scss/partials/_icons.scss */
+.icon--gearHead:before {
+  content: '\e81d';
+}
+
+/* '' */
+/* line 195, ../scss/partials/_icons.scss */
+.icon--group:before {
+  content: '\e81e';
+}
+
+/* '' */
+/* line 196, ../scss/partials/_icons.scss */
+.icon--puzzle-piece:before {
+  content: '\e81f';
+}
+
+/* '' */
+/* line 197, ../scss/partials/_icons.scss */
+.icon--magnify-money:before {
+  content: '\e820';
+}
+
+/* '' */
+/* line 198, ../scss/partials/_icons.scss */
+.icon--magnify-person:before {
+  content: '\e821';
+}
+
+/* '' */
+/* line 199, ../scss/partials/_icons.scss */
+.icon--contract:before {
+  content: '\e822';
+}
+
+/* '' */
+/* line 200, ../scss/partials/_icons.scss */
+.icon--person-connections:before {
+  content: '\e823';
+}
+
+/* '' */
+/* line 201, ../scss/partials/_icons.scss */
+.icon--litigation:before {
+  content: '\e824';
+}
+
+/* '' */
+/* line 202, ../scss/partials/_icons.scss */
+.icon--shield:before {
+  content: '\e825';
+}
+
+/* '' */
+/* line 203, ../scss/partials/_icons.scss */
+.icon--tablet:before {
+  content: '\e826';
+}
+
+/* '' */
+/* line 204, ../scss/partials/_icons.scss */
+.icon--team:before {
+  content: '\e827';
+}
+
+/* '' */
+/* line 205, ../scss/partials/_icons.scss */
+.icon--wallet:before {
+  content: '\e828';
+}
+
+/* '' */
+/* line 206, ../scss/partials/_icons.scss */
+.icon--target:before {
+  content: '\e829';
+}
+
+/* '' */
+/* line 207, ../scss/partials/_icons.scss */
+.icon--handshake:before {
+  content: '\e82a';
+}
+
+/* '' */
+/* line 208, ../scss/partials/_icons.scss */
+.icon--podium:before {
+  content: '\e82b';
+}
+
+/* '' */
+/* line 209, ../scss/partials/_icons.scss */
+.icon--envelope:before {
+  content: '\e82c';
+}
+
+/* '' */
+/* line 210, ../scss/partials/_icons.scss */
+.icon--scales:before {
+  content: '\e82d';
+}
+
+/* '' */
+/* line 211, ../scss/partials/_icons.scss */
+.icon--buildings:before {
+  content: '\e82e';
+}
+
+/* '' */
 /*------------------------------------*\
     #Pricing Tables 
 \*------------------------------------*/
@@ -13449,21 +13713,47 @@ p,
 .panel--information .panel-title:before {
   color: #f5b471;
 }
-/* line 45, ../scss/partials/_panels.scss */
+/* line 46, ../scss/partials/_panels.scss */
 .panel--information:hover .icon {
   fill: #ace63c;
 }
 
-/* line 52, ../scss/partials/_panels.scss */
+/* line 55, ../scss/partials/_panels.scss */
+.panel--information.front .panel-body {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 59, ../scss/partials/_panels.scss */
+.panel--information.front .panel-body .icon {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 70, ../scss/partials/_panels.scss */
+.panel--information.front:hover .panel-body {
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+/* line 74, ../scss/partials/_panels.scss */
+.panel--information.front:hover .panel-body .icon {
+  color: #ef8111;
+}
+
+/* line 85, ../scss/partials/_panels.scss */
 .icon:hover {
   fill: #ef8111;
 }
 
-/* line 58, ../scss/partials/_panels.scss */
+/* line 91, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 61, ../scss/partials/_panels.scss */
+/* line 95, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -13472,7 +13762,7 @@ p,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 77, ../scss/partials/_panels.scss */
+/* line 112, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -13485,7 +13775,7 @@ p,
 }
 
 /* flip the pane when clicked through jQuery Class Toggle */
-/* line 87, ../scss/partials/_panels.scss */
+/* line 122, ../scss/partials/_panels.scss */
 .flip-container.hover .flipper {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -13498,7 +13788,7 @@ p,
 
 /* increase pane size on hover */
 /* flip speed goes here */
-/* line 98, ../scss/partials/_panels.scss */
+/* line 133, ../scss/partials/_panels.scss */
 .flipper {
   position: relative;
   -moz-transition: all 0.2s ease-in-out;
@@ -13514,7 +13804,7 @@ p,
 }
 
 /* hide back of pane during swap */
-/* line 107, ../scss/partials/_panels.scss */
+/* line 142, ../scss/partials/_panels.scss */
 .front, .back {
   top: 0;
   left: 0;
@@ -13524,7 +13814,7 @@ p,
 }
 
 /* front pane, placed above back */
-/* line 115, ../scss/partials/_panels.scss */
+/* line 150, ../scss/partials/_panels.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -13535,7 +13825,7 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 122, ../scss/partials/_panels.scss */
+/* line 157, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -13543,7 +13833,7 @@ p,
   transform: rotateY(180deg);
 }
 
-/* line 126, ../scss/partials/_panels.scss */
+/* line 161, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13551,13 +13841,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 139, ../scss/partials/_panels.scss */
+/* line 174, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 143, ../scss/partials/_panels.scss */
+/* line 178, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;

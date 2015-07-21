@@ -42,10 +42,43 @@
     background-color: #fff; 
 
     &:hover {
+
         .icon {
             fill:  #ace63c; 
         }
     } 
+}
+
+
+.panel--information.front {
+
+    .panel-body {
+    
+        @include single-transition(all, .2s, ease-in-out); 
+        
+        .icon {
+            
+            @include single-transition(all, .2s, ease-in-out); 
+
+        }
+
+
+    }
+
+    &:hover {
+    
+        .panel-body {
+
+            @include transform(translateY(-4px)); 
+
+            .icon {
+
+                color: $primaryColor; 
+
+            }
+        }
+
+    }
 }
 
 
@@ -56,11 +89,13 @@
 
 
 .panel--alt {
+
     background-color: $secondaryColor; 
 
     .panel-body {
         color: #fff; 
     }
+    
 }
 
 
