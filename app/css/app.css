@@ -9899,8 +9899,8 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
 \*------------------------------------*/
 @font-face {
   font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?32878312");
-  src: url("../fonts/fontello--soriallc.eot?32878312#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?32878312") format("woff"), url("../fonts/fontello--soriallc.ttf?32878312") format("truetype"), url("../fonts/fontello--soriallc.svg?32878312#fontello--soriallc") format("svg");
+  src: url("../fonts/fontello--soriallc.eot?56922354");
+  src: url("../fonts/fontello--soriallc.eot?56922354#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?56922354") format("woff"), url("../fonts/fontello--soriallc.ttf?56922354") format("truetype"), url("../fonts/fontello--soriallc.svg?56922354#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -10079,8 +10079,8 @@ h6,
 \*------------------------------------*/
 @font-face {
   font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?32878312");
-  src: url("../fonts/fontello--soriallc.eot?32878312#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?32878312") format("woff"), url("../fonts/fontello--soriallc.ttf?32878312") format("truetype"), url("../fonts/fontello--soriallc.svg?32878312#fontello--soriallc") format("svg");
+  src: url("../fonts/fontello--soriallc.eot?56922354");
+  src: url("../fonts/fontello--soriallc.eot?56922354#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?56922354") format("woff"), url("../fonts/fontello--soriallc.ttf?56922354") format("truetype"), url("../fonts/fontello--soriallc.svg?56922354#fontello--soriallc") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11012,7 +11012,7 @@ hr.secondary {
 .button--backtotop:hover:before, .button--backtotop:active:before {
   color: #fff;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .button--backtotop:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12244,7 +12244,7 @@ ul {
 /*------------------------------------*\
     #Communications 
 \*------------------------------------*/
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="email"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12254,7 +12254,7 @@ ul {
   margin-right: 10px;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="phone"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12264,7 +12264,7 @@ ul {
   margin-right: 10px;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="location"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12281,7 +12281,7 @@ ul {
 /*------------------------------------*\
     #Arrows 
 \*------------------------------------*/
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="prev"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12290,7 +12290,7 @@ ul {
   margin-right: 0.25rem;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="next"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12299,7 +12299,7 @@ ul {
   margin-right: 0.25rem;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="up"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12308,7 +12308,7 @@ ul {
   margin-right: 0.25rem;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="down"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12320,7 +12320,7 @@ ul {
 /*------------------------------------*\
     #Social media 
 \*------------------------------------*/
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 a[href*="facebook"]:before,
 .icon--facebook:before {
   content: "";
@@ -12335,7 +12335,7 @@ a[href*="facebook"].icon--brandColors,
   color: #3b5998;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .icon--linkedIn:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12347,7 +12347,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Plus and Negative 
 \*------------------------------------*/
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="plus"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -12356,7 +12356,7 @@ a[href*="facebook"].icon--brandColors,
   margin-right: 0.25rem;
 }
 
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 [rel*="neg"]:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -13009,7 +13009,7 @@ footer .footer-link {
 .slick-prev {
   left: -3%;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .slick-prev:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -13024,7 +13024,7 @@ footer .footer-link {
 .slick-next {
   right: -3%;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .slick-next:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -13295,7 +13295,7 @@ footer .footer-link {
   background: #FFFFFF;
   display: block;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .accordion > dd.active .accordion-title-icon:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -13331,7 +13331,7 @@ footer .footer-link {
 .accordion-title .accordion-title-icon {
   margin-left: 0.375rem;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .accordion-title .accordion-title-icon:before {
   content: "";
   font-family: "fontello--soriallc";
@@ -13438,7 +13438,7 @@ p,
   border-top: 4px solid #ef8111;
   background-color: #fff;
 }
-/* line 119, ../scss/modules/_icons.scss */
+/* line 135, ../scss/modules/_icons.scss */
 .panel--information .panel-title:before {
   color: #f5b471;
 }
