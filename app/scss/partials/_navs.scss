@@ -446,35 +446,63 @@
 
 .secondaryNav {
     background-color: #fff;
+    @extend %mt5; 
+    @extend %br1; 
     @extend %dropshadow1;
-}
+    @extend %position--relative; 
 
-.secondaryNav-list {
-    background-color: $grey--light;
-    @extend %ml0; 
-
-    li.title {
-        color: $grey--dark;
-        display: block;
-        @extend %pt1; 
-        @extend %pl2; 
-    }
-
-    li.link {
-
-        a {
+    .secondaryNav-list {
+        background-color: #FFF;
+        @extend %ml0; 
+        @extend %pb2; 
+        
+        li.title--alt {
+            background-color: $primaryColor; 
             width: 100%; 
-            display: block; 
-            @extend %pl2; 
-            @extend %mtb1; 
-            
+            text-align: center; 
+            color: #fff; 
+            @extend %ptb2; 
+            @extend %mb2; 
+            @extend %h4; 
+        }
+
+        li.link {
+
+            border-left: 4px solid #fff; 
+            overflow: hidden; 
+            @extend %h4; 
+            @include single-transition(all, .2s, ease-in-out);
+
             &:hover {
-                background-color: $grey--light;                 
+                border-left: 4px solid $primaryColor; 
+                background-color: transparent;                 
+            }
+
+            a {
+                width: 100%; 
+                line-height: rem-calc(44) !important; 
+                padding-left: rem-calc(16) !important; 
+                padding-right: rem-calc(16) !important;
+                color: $secondaryColor;  
+                @extend %mtb1; 
+                @extend %display--block; 
+                @include single-transition(all, .2s, ease-in-out); 
+
+                &:hover, 
+                &.active {
+                    background-color: transparent; 
+                    color: $primaryColor; 
+                    @include transform(translateX(4px)); 
+
+                }
+
             }
         }
-    }
 
+    }
 }
+
+
 
 
 
@@ -490,49 +518,19 @@
     width: rem-calc(12 * 14);
     right: rem-calc(12 * 3); 
     z-index: 100; 
-    @extend %br1; 
-    @extend %mt5; 
     @extend %position--fixed; 
 
-
     .secondaryNav-list {
-        background-color: #FFF;
-        
+
         li.title {
+            color: $grey--dark;
             @extend %mtb2; 
+            @extend %pt1; 
+            @extend %pl2; 
+            @extend %display--block; 
             @extend %h5; 
-        }
-
-        li.link {
-            border-left: 4px solid #fff; 
-            overflow: hidden; 
-            @extend %h4; 
-            @include single-transition(all, .2s, ease-in-out);
-            
-             &:hover {
-                border-left: 4px solid $primaryColor; 
-                background-color: transparent;                 
-             }
-
-                            
-            a {
-                line-height: rem-calc(44) !important; 
-                padding-left: rem-calc(16) !important; 
-                padding-right: rem-calc(16) !important; 
-                color: $secondaryColor; 
-                @include single-transition(all, .2s, ease-in-out); 
-
-                &:hover, 
-                &.active {
-                    background-color: transparent; 
-                    color: $primaryColor; 
-                    @include transform(translateX(4px)); 
-
-                }
-            }
 
         }
-
 
     }
 
