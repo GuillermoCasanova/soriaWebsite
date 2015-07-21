@@ -489,8 +489,9 @@
     display: none; 
     width: rem-calc(200px);
     right: rem-calc(40px); 
-    top: rem-calc(130px); 
+    top: rem-calc(30%); 
     z-index: 100; 
+    @extend %br1; 
     @extend %position--fixed; 
 
 
