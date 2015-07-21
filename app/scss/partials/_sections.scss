@@ -154,32 +154,37 @@
 
 
 .section--header {
+    @include single-box-shadow(0, -1px, 6px, 1px, rgba(0, 0, 0, .2), inset);
     @extend %flexb; 
     @extend %position--relative; 
-    @include single-box-shadow(0, -1px, 6px, 1px, rgba(0, 0, 0, .2), inset);
 
+    @media #{$small-up} {
+        height: rem-calc(12 * 10);
+    }
+
+    @media  #{$medium-up} {
+        height: rem-calc(12 * 18);
+    }
     
-    @include breakpoint(teenBear) {
-        min-height: rem-calc(270);
+    .header-content {
+        z-index: 100;
+        width: 89%; 
+        margin-left: auto;
+        margin-right: auto;
+        @extend %text--white; 
+        @extend %display--block; 
+        @extend %position--relative; 
     }
 
-    @include breakpoint(mamaBear) {
-        min-height: rem-calc(310);
+    .header-title {
+      bottom: 0; 
+      @extend %text--white; 
+      @extend %position--absolute; 
+      @extend %mb1; 
+
     }
 
-    @include breakpoint(papaBear) {
-        min-height: rem-calc(380);
-    }
-
-    @include breakpoint(godBear) {
-        min-height: rem-calc(450);
-    }
-
-    p {
-        @extend %text--white;
-    }
-
-    .section-backgroundImage {
+    .section-bg {
         @extend %position--absolute; 
         left: 0; 
         margin: 0 auto;
@@ -189,39 +194,14 @@
         width: 100%; 
         z-index: 10; 
         
-        @include breakpoint(teenBear) {
+        @media #{$medium-up} {
           min-width: rem-calc(880);
         }
 
-        @include breakpoint(papaBear) {
+        @media #{$large-up}  {
           min-width: rem-calc(1440);
         }
+
     }
 
-    .header-content {
-        @extend %text--white; 
-        @extend %ptb2; 
-        @extend %display--block; 
-        @extend %position--relative; 
-        @include grid-column(12);
-        z-index: 100;
-
-        @include breakpoint(teenBear) {
-            @include grid-column(6);
-        }
-    }
-
-    .header-title {
-      @extend %mb1; 
-      white-space: nowrap; 
-        
-      @include breakpoint(mobileOnly) {
-        font-size: rem-calc(32);
-      }
-    }
-
-    .header-title, 
-    .header-subTitle {
-        @extend %text--white; 
-    }
 }

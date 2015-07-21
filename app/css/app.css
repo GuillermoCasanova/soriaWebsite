@@ -622,7 +622,7 @@ select {
 /* line 228, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
 .row {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 80rem;
   width: 100%;
 }
 /* line 172, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -5908,7 +5908,7 @@ ul.pagination li {
   .reveal-modal {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 80%;
   }
@@ -5936,7 +5936,7 @@ ul.pagination li {
   .reveal-modal.tiny {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 30%;
   }
@@ -5946,7 +5946,7 @@ ul.pagination li {
   .reveal-modal.small {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 40%;
   }
@@ -5956,7 +5956,7 @@ ul.pagination li {
   .reveal-modal.medium {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 60%;
   }
@@ -5966,7 +5966,7 @@ ul.pagination li {
   .reveal-modal.large {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 70%;
   }
@@ -5976,7 +5976,7 @@ ul.pagination li {
   .reveal-modal.xlarge {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 95%;
   }
@@ -5996,7 +5996,7 @@ ul.pagination li {
   .reveal-modal.full {
     left: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
     right: 0;
     width: 100%;
   }
@@ -7821,7 +7821,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 75rem;
+    max-width: 80rem;
   }
 
   /* line 528, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -10035,8 +10035,7 @@ h6,
 \*------------------------------------*/
 /* line 107, ../scss/modules/_typography.scss */
 .topContactBar .topContactBar-item,
-.topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header p, .section--header .header-content, .section--header .header-title,
-.section--header .header-subTitle {
+.topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header .header-content, .section--header .header-title {
   color: #fff;
 }
 
@@ -10170,17 +10169,17 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-section ul li.top-bar-link, .secondaryNav, .top-bar-container.is-fixed, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .section--home, .section--header, .section--header .header-content {
+.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .section--home, .section--header, .section--header .header-content {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .section--header .section-backgroundImage {
+.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front, .back, .section--alt .section--alt-bg, .section--header .header-title, .section--header .section-bg {
   position: absolute;
 }
 
 /* line 59, ../scss/modules/_generics.scss */
-.fixedTab, .button--backToTop, .secondaryNav--fixed, .top-bar-container, .top-bar-container.is-hidden {
+.fixedTab, .button--backToTop, .top-bar-container, .top-bar-container.is-hidden, .secondaryNav--fixed {
   position: fixed;
 }
 
@@ -10224,7 +10223,7 @@ footer {
 }
 
 /* line 110, ../scss/modules/_generics.scss */
-.tab-bar, .secondaryNav, .top-bar-container.is-alt .top-bar {
+.top-bar-container.is-alt .top-bar, .tab-bar, .secondaryNav {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
@@ -10383,7 +10382,7 @@ footer {
 }
 
 /* line 312, ../scss/modules/_generics.scss */
-.secondaryNav .secondaryNav-list li.title--alt, .pricingtable-title, .ptb2, .tabs-title a, .accordion .content, .accordion--contained .accordion-title, .section--header .header-content {
+.secondaryNav .secondaryNav-list li.title--alt, .pricingtable-title, .ptb2, .tabs-title a, .accordion .content, .accordion--contained .accordion-title {
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
@@ -10558,7 +10557,7 @@ footer {
 }
 
 /* line 486, ../scss/modules/_generics.scss */
-.secondaryNav, .mt5 {
+.secondaryNav--fixed, .mt5 {
   margin-top: 3rem !important;
 }
 
@@ -11120,7 +11119,7 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Top Contact bar 
+    #Multi-colored Bar 
 \*------------------------------------*/
 /* line 49, ../scss/partials/_navs.scss */
 .highlightBorder {
@@ -11160,9 +11159,78 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Top Bar Styles 
+    #Top Bar Hiding/Showing Container   
 \*------------------------------------*/
 /* line 101, ../scss/partials/_navs.scss */
+.top-bar-container {
+  z-index: 999;
+  display: none;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  left: 0px;
+  -moz-transition: -moz-transform, 0.3s, ease-in-out;
+  -o-transition: -o-transform, 0.3s, ease-in-out;
+  -webkit-transition: -webkit-transform, 0.3s, ease-in-out;
+  transition: transform, 0.3s, ease-in-out;
+}
+@media (min-width: 900px) {
+  /* line 101, ../scss/partials/_navs.scss */
+  .top-bar-container {
+    display: block;
+  }
+}
+
+/* line 119, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar {
+  background-color: #fff;
+}
+/* line 122, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
+  color: #3c4750;
+}
+/* line 127, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar .title-area .navBar-logo {
+  display: none;
+}
+/* line 131, ../scss/partials/_navs.scss */
+.top-bar-container.is-alt .top-bar .title-area .logo--alt {
+  display: block;
+}
+
+/* line 139, ../scss/partials/_navs.scss */
+.top-bar-container.is-fixed {
+  width: 100%;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+@media (min-width: 900px) {
+  /* line 139, ../scss/partials/_navs.scss */
+  .top-bar-container.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+/* line 153, ../scss/partials/_navs.scss */
+.top-bar-container.is-hidden {
+  -moz-transform: translateY(-130px);
+  -ms-transform: translateY(-130px);
+  -webkit-transform: translateY(-130px);
+  transform: translateY(-130px);
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+/*------------------------------------*\
+    #Top Bar Styles 
+\*------------------------------------*/
+/* line 172, ../scss/partials/_navs.scss */
 .top-bar {
   z-index: 950;
   -moz-transition: all 0.4s ease-in-out;
@@ -11171,22 +11239,17 @@ hr.secondary {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 143, ../scss/partials/_navs.scss */
-.attached .top-bar {
-  background-color: #FFF;
-}
-
 /*------------------------------------*\
     #Top Bar Links 
 \*------------------------------------*/
-/* line 155, ../scss/partials/_navs.scss */
+/* line 186, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 160, ../scss/partials/_navs.scss */
+/* line 191, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:after {
   opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
@@ -11194,22 +11257,22 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 166, ../scss/partials/_navs.scss */
+/* line 197, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 167, ../scss/partials/_navs.scss */
+/* line 198, ../scss/partials/_navs.scss */
 .top-bar.is-normal .top-bar-section ul li.top-bar-link a {
   color: #3c4750;
 }
-/* line 175, ../scss/partials/_navs.scss */
+/* line 206, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover a {
   color: #ef8111;
 }
-/* line 180, ../scss/partials/_navs.scss */
+/* line 211, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover:after {
   height: 4px;
   right: 0;
@@ -11225,18 +11288,18 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Dropdown 
+    #Top Bar Dropdowns 
 \*------------------------------------*/
-/* line 217, ../scss/partials/_navs.scss */
+/* line 240, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 221, ../scss/partials/_navs.scss */
+/* line 244, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 225, ../scss/partials/_navs.scss */
+/* line 248, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11246,12 +11309,12 @@ hr.secondary {
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 231, ../scss/partials/_navs.scss */
+/* line 254, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link:hover {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 238, ../scss/partials/_navs.scss */
+/* line 261, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11261,7 +11324,7 @@ hr.secondary {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-/* line 244, ../scss/partials/_navs.scss */
+/* line 267, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a:hover {
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
@@ -11271,16 +11334,16 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Mobile Nav Styles 
+    #Small Nav Styles 
 \*------------------------------------*/
-/* line 332, ../scss/partials/_navs.scss */
+/* line 290, ../scss/partials/_navs.scss */
 .off-canvas-list li {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 338, ../scss/partials/_navs.scss */
+/* line 296, ../scss/partials/_navs.scss */
 .off-canvas-list li:hover > a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11291,13 +11354,13 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Off Canvas Nav Hamburger Icon 
+    #Small Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 360, ../scss/partials/_navs.scss */
+/* line 318, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 365, ../scss/partials/_navs.scss */
+/* line 323, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11305,7 +11368,7 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 378, ../scss/partials/_navs.scss */
+/* line 336, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -11313,33 +11376,32 @@ hr.secondary {
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 404, ../scss/partials/_navs.scss */
+/* line 363, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
-/* line 407, ../scss/partials/_navs.scss */
+/* line 369, ../scss/partials/_navs.scss */
 .title-area .logo--alt {
   display: none;
 }
 
-/* line 412, ../scss/partials/_navs.scss */
+/* line 377, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 417, ../scss/partials/_navs.scss */
+/* line 384, ../scss/partials/_navs.scss */
 .navBar-logo {
-  display: block;
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 417, ../scss/partials/_navs.scss */
+  /* line 384, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 432, ../scss/partials/_navs.scss */
+/* line 398, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -11348,22 +11410,22 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 447, ../scss/partials/_navs.scss */
+/* line 413, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
-/* line 454, ../scss/partials/_navs.scss */
+/* line 419, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 459, ../scss/partials/_navs.scss */
+/* line 424, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.title--alt {
   background-color: #ef8111;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-/* line 469, ../scss/partials/_navs.scss */
+/* line 434, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
   border-left: 4px solid #fff;
   overflow: hidden;
@@ -11372,12 +11434,12 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 476, ../scss/partials/_navs.scss */
+/* line 441, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
   background-color: transparent;
 }
-/* line 481, ../scss/partials/_navs.scss */
+/* line 446, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
   line-height: 2.75rem !important;
@@ -11389,7 +11451,7 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 491, ../scss/partials/_navs.scss */
+/* line 456, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a:hover, .secondaryNav .secondaryNav-list li.link a.active {
   background-color: transparent;
   color: #ef8111;
@@ -11402,26 +11464,26 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 516, ../scss/partials/_navs.scss */
+/* line 481, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
   right: 2.25rem;
   z-index: 100;
 }
-/* line 525, ../scss/partials/_navs.scss */
+/* line 491, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.title {
   color: #888f95;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 516, ../scss/partials/_navs.scss */
+  /* line 481, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 516, ../scss/partials/_navs.scss */
+  /* line 481, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
@@ -11431,99 +11493,33 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 561, ../scss/partials/_navs.scss */
+/* line 527, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 565, ../scss/partials/_navs.scss */
+/* line 531, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 565, ../scss/partials/_navs.scss */
+  /* line 531, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 576, ../scss/partials/_navs.scss */
+/* line 542, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 579, ../scss/partials/_navs.scss */
+/* line 545, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-/* line 590, ../scss/partials/_navs.scss */
-.top-bar-container {
-  z-index: 999;
-  display: none;
-  top: 0px;
-  width: 100%;
-  z-index: 99;
-  left: 0px;
-  -moz-transition: -moz-transform, 0.3s, ease-in-out;
-  -o-transition: -o-transform, 0.3s, ease-in-out;
-  -webkit-transition: -webkit-transform, 0.3s, ease-in-out;
-  transition: transform, 0.3s, ease-in-out;
-}
-@media (min-width: 900px) {
-  /* line 590, ../scss/partials/_navs.scss */
-  .top-bar-container {
-    display: block;
-  }
-}
-
-/* line 609, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar {
-  background-color: #fff;
-}
-/* line 612, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
-  color: #3c4750;
-}
-/* line 617, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .title-area .navBar-logo {
-  display: none;
-}
-/* line 621, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .title-area .logo--alt {
-  display: block;
-}
-
-/* line 629, ../scss/partials/_navs.scss */
-.top-bar-container.is-fixed {
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  width: 100%;
-}
-@media (min-width: 900px) {
-  /* line 629, ../scss/partials/_navs.scss */
-  .top-bar-container.is-fixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-}
-
-/* line 643, ../scss/partials/_navs.scss */
-.top-bar-container.is-hidden {
-  -moz-transform: translateY(-130px);
-  -ms-transform: translateY(-130px);
-  -webkit-transform: translateY(-130px);
-  transform: translateY(-130px);
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 99;
 }
 
 /*------------------------------------*\
@@ -13970,32 +13966,31 @@ p,
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 760px) {
+@media only screen {
   /* line 156, ../scss/partials/_sections.scss */
   .section--header {
-    min-height: 16.875rem;
+    height: 7.5rem;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 40.0625em) {
   /* line 156, ../scss/partials/_sections.scss */
   .section--header {
-    min-height: 19.375rem;
+    height: 13.5rem;
   }
 }
-@media (min-width: 1180px) {
-  /* line 156, ../scss/partials/_sections.scss */
-  .section--header {
-    min-height: 23.75rem;
-  }
+/* line 169, ../scss/partials/_sections.scss */
+.section--header .header-content {
+  z-index: 100;
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (min-width: 1300) {
-  /* line 156, ../scss/partials/_sections.scss */
-  .section--header {
-    min-height: 28.125rem;
-  }
+/* line 179, ../scss/partials/_sections.scss */
+.section--header .header-title {
+  bottom: 0;
 }
-/* line 182, ../scss/partials/_sections.scss */
-.section--header .section-backgroundImage {
+/* line 187, ../scss/partials/_sections.scss */
+.section--header .section-bg {
   left: 0;
   margin: 0 auto;
   opacity: .2;
@@ -14004,43 +13999,16 @@ p,
   width: 100%;
   z-index: 10;
 }
-@media (min-width: 760px) {
-  /* line 182, ../scss/partials/_sections.scss */
-  .section--header .section-backgroundImage {
+@media only screen and (min-width: 40.0625em) {
+  /* line 187, ../scss/partials/_sections.scss */
+  .section--header .section-bg {
     min-width: 55rem;
   }
 }
-@media (min-width: 1180px) {
-  /* line 182, ../scss/partials/_sections.scss */
-  .section--header .section-backgroundImage {
+@media only screen and (min-width: 64.0625em) {
+  /* line 187, ../scss/partials/_sections.scss */
+  .section--header .section-bg {
     min-width: 90rem;
-  }
-}
-/* line 201, ../scss/partials/_sections.scss */
-.section--header .header-content {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  width: 100%;
-  float: left;
-  z-index: 100;
-}
-@media (min-width: 760px) {
-  /* line 201, ../scss/partials/_sections.scss */
-  .section--header .header-content {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    width: 50%;
-    float: left;
-  }
-}
-/* line 214, ../scss/partials/_sections.scss */
-.section--header .header-title {
-  white-space: nowrap;
-}
-@media (min-width: 100px) and (max-width: 460px) {
-  /* line 214, ../scss/partials/_sections.scss */
-  .section--header .header-title {
-    font-size: 2rem;
   }
 }
 

@@ -42,7 +42,7 @@
 
 
 /*------------------------------------*\
-    #Top Contact bar 
+    #Multi-colored Bar 
 \*------------------------------------*/
 
 //By using a list of items we can create a border of different colors 
@@ -92,57 +92,88 @@
 
 
 
+
+/*------------------------------------*\
+    #Top Bar Hiding/Showing Container   
+\*------------------------------------*/
+
+//Container for Navigation bar that hides and changes the state of .top-bar
+.top-bar-container {
+    z-index: 999;
+    display: none;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    left: 0px;
+    @extend %position--fixed; 
+    @include transition(transform, .3s, ease-in-out);     
+
+    @include breakpoint(mamaBear) {
+        display: block; 
+    }
+
+}
+
+.top-bar-container.is-alt {
+    
+    .top-bar {
+        background-color: #fff; 
+        @extend %dropshadow1; 
+        .top-bar-section ul li.top-bar-link > a {
+            color: $secondaryColor; 
+        }
+        
+        .title-area {
+            .navBar-logo {
+                display: none; 
+            }
+
+            .logo--alt {
+                display: block; 
+            }
+        }
+    }
+
+}
+
+.top-bar-container.is-fixed {
+    width: 100%;
+    @include translateY(0);
+    @extend %position--relative; 
+    
+    @include breakpoint(mamaBear) {
+        position: fixed; 
+        left: 0;
+        top: 0;
+    }
+
+}
+
+
+.top-bar-container.is-hidden{
+    @include translateY(-130px); 
+    width: 100%;
+    left: 0;
+    @extend %position--fixed; 
+    top: 0;
+    z-index: 99;
+
+}
+
+
+
+
+
 /*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
 
 
-
 .top-bar {
     z-index: 950;
     @include single-transition(all, 0.4s, ease-in-out); 
-    
-
-   //  &.hover, &.not-click:hover {
-   //      & > .dropdown {
-   //          opacity: 1; //Add this line.
-   //      }
-   //  }
-
-   //  .dropdown {
-   //      opacity: 0; //Add this line.
-   //      @include single-transition(opacity, 500ms, ease); //Add this line.
-   //  }
-
-   // .top-bar-section {
-   //      .has-dropdown {
-   //          &:hover,
-   //          &:active {
-   //              & > .dropdown {
-   //                  @include single-transition(opacity, 500ms, ease); //Add this line.
-   //                  opacity: 1; //Add this line.
-   //              }
-   //          }
-   //      }
-   //  }
 }
 
-
-//
-//Nav Container Styles
-//
-
-// .top-bar-section ul.right {
-//   background-color: #fff; 
-//   color: $off-black; 
-//   font-weight: $normal;
-//   text-align: center;
-// }
-
-
-.attached .top-bar {
-    background-color: #FFF; 
-}
 
 
 
@@ -195,20 +226,12 @@
 
 }
 
-// .top-bar-section li.hover > a:not(.button):active {
-//     background-color: red; 
-// }
 
-// .mainContainer.pushed {
-//         padding-top: 0; 
 
-//     @include breakpoint(mamaBear) {
-//         padding-top: 118px; 
-//     }
-// }
+
 
 /*------------------------------------*\
-    #Dropdown 
+    #Top Bar Dropdowns 
 \*------------------------------------*/
 
 
@@ -253,77 +276,12 @@
     } 
 }
 
-//
-//Sets the height of the dropdown buttons
-//
-// .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-//  	line-height: 45px; 
-
-//   &:hover {
-//     background-color: transparent; 
-//   }
-// }
-
-
-
-
-//
-//Triangle Above Drop-downs
-//
-
-// .top-bar-section ul.dropdown:after {
-// 	content: "";
-// 	position: absolute;
-// 	display: block;
-// 	top: -14px;
-// 	bottom: -14px;
-// 	bottom: auto;
-// 	left: 0;
-// 	right: 0;
-// 	margin: 0 auto; 
-// 	width: 0; 
-// 	border-width: 0 14px 14px;
-// 	border-style: solid;
-// 	border-color: $dropDown-color transparent;
-// }
-
-
-//
-//Triangle Next To link that are dropdowns 
-//
-
-// .top-bar-section .right .has-dropdown > a:after {
-//     -moz-border-bottom-colors: none;
-//     -moz-border-left-colors: none;
-//     -moz-border-right-colors: none;
-//     -moz-border-top-colors: none;
-//     border-color: $grey--mid transparent transparent;
-//     border-image: none;
-//     border-right: 5px inset transparent;
-//     border-style: solid inset inset;
-//     border-width: 5px;
-//     content: "";
-//     display: block;
-//     height: 0;
-//     margin-top: -2.5px;
-//     right: -8px; 
-//     top: 42.5px;
-//     width: 0;
-// }	
-
-// .top-bar-section .right .has-dropdown > a {
-//   padding-right: rem-calc(20) !important;
-// }
-
-
-
-
 
 
 
 
 /*------------------------------------*\
-    #Mobile Nav Styles 
+    #Small Nav Styles 
 \*------------------------------------*/
 
 
@@ -353,7 +311,7 @@
 
 
 /*------------------------------------*\
-    #Off Canvas Nav Hamburger Icon 
+    #Small Nav Hamburger Icon 
 \*------------------------------------*/
 
 
@@ -401,23 +359,31 @@
 .title-area { 
     @extend %ml2; 
 	@extend %opacity_hover;
-	.toggle-topbar span, {
-	color: $off-black;}
+
+	.toggle-topbar span {
+
+	   color: $off-black;
+
+    }
 
     .logo--alt {
+
         display: none; 
+
     }
 }
 
+
 .name {
-	@extend %display--block;  
     height: 100%; 
+    @extend %display--block;  
+
 }
 
+
 .navBar-logo {
-    @extend %display--block;  
-    display: block; 
     width: rem-calc(110); 
+    @extend %display--block;  
 
     @media #{$medium-up} {
         width: rem-calc(180);
@@ -446,7 +412,6 @@
 
 .secondaryNav {
     background-color: #fff;
-    @extend %mt5; 
     @extend %br1; 
     @extend %dropshadow1;
     @extend %position--relative; 
@@ -518,6 +483,7 @@
     width: rem-calc(12 * 14);
     right: rem-calc(12 * 3); 
     z-index: 100; 
+    @extend %mt5; 
     @extend %position--fixed; 
 
     .secondaryNav-list {
@@ -586,67 +552,73 @@
 
 
 
-//Container for Navigation bar that hides and changes the state of .top-bar
-.top-bar-container {
-    z-index: 999;
-    display: none;
-    top: 0px;
-    width: 100%;
-    z-index: 99;
-    left: 0px;
-    // @extend %dropshadow--darker; 
-    @extend %position--fixed; 
-    @include transition(transform, .3s, ease-in-out);     
-
-    @include breakpoint(mamaBear) {
-        display: block; 
-    }
-
-}
-
-.top-bar-container.is-alt {
-    
-    .top-bar {
-        background-color: #fff; 
-        @extend %dropshadow1; 
-        .top-bar-section ul li.top-bar-link > a {
-            color: $secondaryColor; 
-        }
-        
-        .title-area {
-            .navBar-logo {
-                display: none; 
-            }
-
-            .logo--alt {
-                display: block; 
-            }
-        }
-    }
-
-}
-
-.top-bar-container.is-fixed {
-    @include translateY(0);
-    @extend %position--relative; 
-    width: 100%;
-    
-    @include breakpoint(mamaBear) {
-        position: fixed; 
-        left: 0;
-        top: 0;
-    }
-
-}
 
 
-.top-bar-container.is-hidden{
-    @include translateY(-130px); 
-    width: 100%;
-    left: 0;
-    @extend %position--fixed; 
-    top: 0;
-    z-index: 99;
 
-}
+//
+//Sets the height of the dropdown buttons
+//
+// .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+//      line-height: 45px; 
+
+//   &:hover {
+//     background-color: transparent; 
+//   }
+// }
+
+
+
+
+//
+//Triangle Above Drop-downs
+//
+
+// .top-bar-section ul.dropdown:after {
+//  content: "";
+//  position: absolute;
+//  display: block;
+//  top: -14px;
+//  bottom: -14px;
+//  bottom: auto;
+//  left: 0;
+//  right: 0;
+//  margin: 0 auto; 
+//  width: 0; 
+//  border-width: 0 14px 14px;
+//  border-style: solid;
+//  border-color: $dropDown-color transparent;
+// }
+
+
+//
+//Triangle Next To link that are dropdowns 
+//
+
+// .top-bar-section .right .has-dropdown > a:after {
+//     -moz-border-bottom-colors: none;
+//     -moz-border-left-colors: none;
+//     -moz-border-right-colors: none;
+//     -moz-border-top-colors: none;
+//     border-color: $grey--mid transparent transparent;
+//     border-image: none;
+//     border-right: 5px inset transparent;
+//     border-style: solid inset inset;
+//     border-width: 5px;
+//     content: "";
+//     display: block;
+//     height: 0;
+//     margin-top: -2.5px;
+//     right: -8px; 
+//     top: 42.5px;
+//     width: 0;
+// }    
+
+// .top-bar-section .right .has-dropdown > a {
+//   padding-right: rem-calc(20) !important;
+// }
+
+
+
+
+
 
