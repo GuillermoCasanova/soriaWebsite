@@ -60,7 +60,7 @@
 
         li {
             width: 20%; 
-            height: rem-calc(12);
+            height: rem-calc(8);
             @extend %display--inlineBlock; 
             @extend %mtrbl0; 
 
@@ -124,6 +124,7 @@
         }
         
         .title-area {
+            
             .navBar-logo {
                 display: none; 
             }
