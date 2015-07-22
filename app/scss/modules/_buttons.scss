@@ -5,7 +5,6 @@
 
 
 %button {
-		@extend %fwb; 
 		@extend %base-font-family;
 		@include border-radius(4px);
 		font-size: rem-calc(16);

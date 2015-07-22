@@ -63,8 +63,8 @@
 .fixedTab {
     background-color: $primaryColor;
     color: #fff; 
-    bottom: 0; 
-    left: 20px;
+    bottom: rem-calc(40px); 
+    left: 0;
     right: 0;  
     z-index: 101; 
     font-size: rem-calc(18); 
@@ -73,7 +73,7 @@
     width: rem-calc(200px); 
     cursor: pointer; 
     @include single-transition(all, 0.2s, ease-in-out); 
-    @include transform(translateY(80px)); 
+    @include transform(translateX(-200px)); 
     @extend %pr2;
     @extend %pl2;  
     @extend %pt2; 
@@ -82,7 +82,7 @@
 
 
     &.is-visible {
-        @include transform(translateY(0)); 
+        @include transform(translateX(0)); 
     }
 
     .link {

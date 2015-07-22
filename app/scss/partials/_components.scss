@@ -83,9 +83,6 @@
 
 
 .profile {
-    // filter: grayscale(100%);
-    // -moz-filter:  grayscale(100%); 
-    // -webkit-filter: grayscale(100%);
     overflow: hidden;
     @include single-transition(all, 0.2s, ease-in-out); 
     @extend %position--relative; 
@@ -173,6 +170,17 @@
 
     .profile-bio {
         @include transform(translateX(0px)); 
+    }
+
+}
+
+
+[data-ui-component*="contact-info"] {
+    @include single-transition(all, 0.4s, ease-in-out); 
+
+    &.is-hidden {
+        opacity: 0; 
+        @include transform(translateY(100%)); 
     }
 
 }

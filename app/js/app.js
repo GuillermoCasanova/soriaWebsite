@@ -45,9 +45,9 @@ $(document).on('ready', function() {
 
         // Checks to see if required trigger is on page
         // Fixed Tab hidding/showing
-        if($('.fixedTab').length > 0) {
+        if($('.fixedTab').length > 0 && $("[data-action='show-fixedTab']").length > 0) {
 
-            new ScrollMagic.Scene({triggerElement: "[data-action='show-fixedTab'"})
+            new ScrollMagic.Scene({triggerElement: "[data-action='show-fixedTab']"})
                             .setClassToggle('.fixedTab', 'is-visible')
                             .addTo(controller); 
         }
@@ -216,6 +216,25 @@ $(document).on('ready', function() {
         e.stopPropagation(); 
         e.preventDefault();
         bioProfile.toggleClass('is-showing'); 
+    });
+
+    // Code for showing/hiding map on Contact Page
+    $('[data-action="toggle-map"]').on('click', function(e) {
+        e.stopPropagation(); 
+        e.preventDefault();
+        // Stores the fixed tab dom element
+        var fixedTab = $('.fixedTab'); 
+        $('.section-bg--map').toggleClass('is-visible'); 
+        $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
+        // Makes the tab to back to contact info visible 
+        if(fixedTab.hasClass('is-visible')) {
+              fixedTab.toggleClass('is-visible'); 
+        } else {
+           setTimeout(function() {
+              fixedTab.toggleClass('is-visible'); 
+            }, 500)         
+        }
+
     });
 
 

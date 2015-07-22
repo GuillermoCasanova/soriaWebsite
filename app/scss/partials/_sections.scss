@@ -37,21 +37,19 @@
       @extend %position--relative; 
     }
 
-    & .section-title {
+    .section-title {
         color: #fff; 
     }
 
-    & .section-text {
+    .section-text {
         color: #fff; 
-        //@include text-shadow--title($secondaryColor);  
     }
 
-    & .section-text--highlight {
+    .section-text--highlight {
         color: $accentColor;
     }
 
-    & .section--alt-bg {
-        @extend %position--absolute; 
+    .section--alt-bg {
         min-width: rem-calc(800);
         opacity: .3;
         top: 0; 
@@ -59,6 +57,8 @@
         right: 0; 
         bottom: 0; 
         width: 100%;
+        @extend %position--absolute; 
+        @include filter(grayscale(100%)); 
 
         @include breakpoint(mobileOnly) {
             margin-left: -50%; 
@@ -111,6 +111,33 @@
     }
 }
 
+
+
+
+
+/*------------------------------------*\
+    #Map Section 
+\*------------------------------------*/
+
+
+.section-bg--map {
+
+    opacity: .3;
+    top: 0; 
+    left:0; 
+    right: 0; 
+    bottom: 0; 
+    width: 100%;
+    @include filter(grayscale(100%)); 
+    @include single-transition(all, 0.2s, ease-in-out); 
+    @extend %position--absolute; 
+
+    &.is-visible {
+        opacity: 1; 
+        @include filter(grayscale(0%)); 
+    }
+
+}
 
 
 
