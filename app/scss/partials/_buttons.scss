@@ -73,11 +73,17 @@
     width: rem-calc(200px); 
     cursor: pointer; 
     @include single-transition(all, 0.2s, ease-in-out); 
+    @include transform(translateY(80px)); 
     @extend %pr2;
     @extend %pl2;  
     @extend %pt2; 
     @extend %pb2; 
     @extend %position--fixed; 
+
+
+    &.is-visible {
+        @include transform(translateY(0)); 
+    }
 
     .link {
         @include single-transition(all, 0.2s, ease-in-out); 

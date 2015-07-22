@@ -151,9 +151,9 @@ a {
 
 
 .header--standout {
-		@extend %mt1; 
-		@extend %mb1; 
-		@extend %text-center; 
+	@extend %mt1; 
+	@extend %mb1; 
+	@extend %text-center; 
 }
 
 
@@ -163,12 +163,12 @@ a {
     #Font Color Classes 
 \*------------------------------------*/
 
-.txtc3 {
-    color: $primaryColor; 
+.txtc2 {
+    color: $grey--dark; 
 }
 
-.txtc2 {
-	color: $secondaryColor; 
+.txtc3 {
+    color: $primaryColor; 
 }
 
 

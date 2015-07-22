@@ -28,9 +28,9 @@ $(document).on('ready', function() {
     var controller = new ScrollMagic.Controller();
 
 
-    // get all slides
+    // Pins section--pinned sections for natural wipe up 
     var slides = document.querySelectorAll(".section--pinned");
-    // create scene for every slide
+    // Create scene for every slide
     for (var i=0; i<slides.length; i++) {
         new ScrollMagic.Scene({
                 triggerElement: slides[i],
@@ -40,9 +40,17 @@ $(document).on('ready', function() {
             .addTo(controller);
     }
 
-
-
     $(function() {
+
+
+        // Checks to see if required trigger is on page
+        // Fixed Tab hidding/showing
+        if($('.fixedTab').length > 0) {
+
+            new ScrollMagic.Scene({triggerElement: "[data-action='show-fixedTab'"})
+                            .setClassToggle('.fixedTab', 'is-visible')
+                            .addTo(controller); 
+        }
 
         //Checks to see if required trigger is on page
         if($('#scene').length > 0) {
@@ -172,8 +180,6 @@ $(document).on('ready', function() {
 
                 //Gets the height of the correspnding section 
                 var sectionHeight = $(section).height(); 
-
-                console.log(sectionHeight); 
 
                 new ScrollMagic.Scene({
                         triggerElement: section,

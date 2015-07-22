@@ -10835,13 +10835,13 @@ a[class*="link"] {
     #Font Color Classes 
 \*------------------------------------*/
 /* line 166, ../scss/partials/_typography.scss */
-.txtc3 {
-  color: #ef8111;
+.txtc2 {
+  color: #888f95;
 }
 
 /* line 170, ../scss/partials/_typography.scss */
-.txtc2 {
-  color: #3c4750;
+.txtc3 {
+  color: #ef8111;
 }
 
 /*------------------------------------*\
@@ -11011,8 +11011,19 @@ hr.secondary {
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -webkit-transform: translateY(80px);
+  transform: translateY(80px);
 }
-/* line 82, ../scss/partials/_buttons.scss */
+/* line 84, ../scss/partials/_buttons.scss */
+.fixedTab.is-visible {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 88, ../scss/partials/_buttons.scss */
 .fixedTab .link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11020,19 +11031,19 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 87, ../scss/partials/_buttons.scss */
+/* line 93, ../scss/partials/_buttons.scss */
 .fixedTab a {
   color: #3c4750;
 }
-/* line 90, ../scss/partials/_buttons.scss */
+/* line 96, ../scss/partials/_buttons.scss */
 .fixedTab a:hover {
   color: #fff;
 }
-/* line 95, ../scss/partials/_buttons.scss */
+/* line 101, ../scss/partials/_buttons.scss */
 .fixedTab:hover {
   width: 20.25rem;
 }
-/* line 98, ../scss/partials/_buttons.scss */
+/* line 104, ../scss/partials/_buttons.scss */
 .fixedTab:hover .link {
   opacity: 1;
 }
@@ -11040,7 +11051,7 @@ hr.secondary {
 /*------------------------------------*\
     #Back To Top Button  
 \*------------------------------------*/
-/* line 113, ../scss/partials/_buttons.scss */
+/* line 119, ../scss/partials/_buttons.scss */
 .button--backToTop {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -11063,11 +11074,11 @@ hr.secondary {
   z-index: 999;
   opacity: 0;
 }
-/* line 131, ../scss/partials/_buttons.scss */
+/* line 137, ../scss/partials/_buttons.scss */
 .button--backToTop:hover, .button--backToTop:active {
   background-color: #191919;
 }
-/* line 135, ../scss/partials/_buttons.scss */
+/* line 141, ../scss/partials/_buttons.scss */
 .button--backToTop:hover:before, .button--backToTop:active:before {
   color: #fff;
 }
@@ -11088,7 +11099,7 @@ hr.secondary {
   height: 100%;
   width: 100%;
 }
-/* line 153, ../scss/partials/_buttons.scss */
+/* line 159, ../scss/partials/_buttons.scss */
 .button--backToTop.showing {
   opacity: 1;
 }
@@ -12575,7 +12586,7 @@ a[href*="facebook"].icon--brandColors,
 
 /* '' */
 /* line 203, ../scss/partials/_icons.scss */
-.icon--tablet:before {
+.icon--clipboard:before {
   content: '\e826';
 }
 
