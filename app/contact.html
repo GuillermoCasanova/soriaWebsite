@@ -158,197 +158,207 @@
         
             <!--Contact Copy --> 
             <section class="section  section--alt">
+                
+                <!-- Google Map - Medium Up --> 
+                <div class="section-bg--map show-for-medium-up" data-ui-component="map">
                     
-                    <div class="section-bg--map show-for-medium-up" data-ui-component="map">
-                        
-                        <div data-action="toggle-map" class="mb0 fixedTab" >
-                            Back to Contact
-                        </div>
+                    <button data-action="toggle-map" class="[ large  button  button--secondary ] map-toggleButton" >
+                        Back to Contact
+                    </button>
 
-                        <iframe
-                          width="100%"
-                          height="100%"
-                          frameborder="0" style="border:0"
-                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKJ09v5oD57k9SlsyHtcyaaPsFA6AvSvA
-                            &q=Space+Needle,Seattle+WA" allowfullscreen>
-                        </iframe>  
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKJ09v5oD57k9SlsyHtcyaaPsFA6AvSvA
+                        &q=Space+Needle,Seattle+WA" allowfullscreen>
+                    </iframe>  
 
-                     
-
-                    </div>
-
-                    <div class="section--normal  dropshadow1 show-for-medium-up [ small-12 medium-10  large-7 columns medium-push-1 ] "  data-ui-component="contact-info">
-
-                        <div class="row  ptrbl2">
-
-                            <h1>Let's talk</h1>
+                </div>
+        
+                <div class="show-for-medium-up  map-cover">
                     
-                            <p class="pb2">Have questons or a case in mind? Get in touch below:</p>
-                        
-                            <div class="small-12 medium-7 large-6  columns">
+                </div>
+                <!-- End Map Components --> 
 
-                                <form action="submit" >
+
+                <!--Contact info - Medium Up --> 
+                <div class="section--normal  dropshadow1 show-for-medium-up [ small-12 medium-10  large-7 columns medium-push-1 ] "  data-ui-component="contact-info">
+
+                    <div class="row  ptrbl2">
+
+                        <h1>Let's talk</h1>
+                
+                        <p class="pb2">Have questons or a case in mind? Get in touch below:</p>
+                    
+                        <div class="small-12 medium-7 large-6  columns">
+
+                            <form action="submit" >
+                    
+                    
+                                <label for="name">Full Name</label>
+                                <input type="text" placeholder="Your full name please">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Please enter a valid e-mail address">
+                                <label for="subject">Subject</label>
+                                <input type="text" placeholder="Subject">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="" cols="30" rows="7" placeholder="">
+                                    
+                                </textarea>
                         
-                        
-                                    <label for="name">Full Name</label>
-                                    <input type="text" placeholder="Your full name please">
-                                    <label for="email">Email</label>
-                                    <input type="email" placeholder="Please enter a valid e-mail address">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" placeholder="Subject">
-                                    <label for="message">Your Message</label>
-                                    <textarea name="message" id="" cols="30" rows="7" placeholder="">
-                                        
-                                    </textarea>
+                            </form>
                             
-                                </form>
-                                
-                                <button class="[ medium  button  button--primary ]  right">Submit</button>
-                        
-                            </div>
-                        
-                            <div class="small-12 medium-5 large-6  columns  ">
-                        
-                                <ul>
-                        
-                                    <li class="h4  mb3">
-                                        <span class="txtc3  [ icon--large  icon icon--envelope ] ">
-                                        
-                                        </span> 
-                                        eduardo@soriallc.com
-                                    </li>
-                        
-                                    <li class="h4  mb3">
-                                        <span class="txtc3  [ icon--large  icon icon--phone ] ">
-                                        
-                                        </span>  
-                                        (787) 630-9443
-                                    </li>
-                        
-                                    <li class="h4  mb3">
-                        
-                                        <span class="txtc3  [ icon--large  icon icon--buildings ] ">
-                                        
-                                        </span>  
-                        
-                                        (939) 338-3934
-                        
-                                    </li>
-                        
-                                </ul>
-
-                                <ul class="h4">
-
-                                    <span class="txtc3  left [ icon--large  icon icon--location ] ">
+                            <button class="[ medium  button  button--primary ]  right">Submit</button>
+                    
+                        </div>
+                    
+                        <div class="small-12 medium-5 large-6  columns  ">
+                    
+                            <ul>
+                    
+                                <li class="h4  mb3">
+                                    <span class="txtc3  [ icon--large  icon icon--envelope ] ">
+                                    
+                                    </span> 
+                                    eduardo@soriallc.com
+                                </li>
+                    
+                                <li class="h4  mb3">
+                                    <span class="txtc3  [ icon--large  icon icon--phone ] ">
                                     
                                     </span>  
-
-                                    <div class="cf">
-                                        <li>MCS Plaza</li>
-                                        <li>255 Ponce de León Avenue</li>
-                                        <li>Suite 808</li>
-                                        <li class="mb2">Hato Rey, Puerto Rico</li>
-                                        <li>
-                                            <a data-action="toggle-map">Show on Map  
-                                            </a>
-                                        </li>
-                                    </div>
-                                    
-                                </ul>   
-                        
-                            </div>
-                        
-                        </div>
-
-                    </div>
-
-                    <div class="show-for-small-only small-12 columns" >
-
-                        <div class="row  ptrbl2">
-
-                            <h1 class="section-text">Let's talk</h1>
+                                    (787) 630-9443
+                                </li>
                     
-                            <p class="section-text  pb2">Have questons or a case in mind? Get in touch below:</p>
-                        
-                            <div class="small-12 medium-7 large-6  columns  mb3">
-
-                                <form action="submit" >
-                        
-                        
-                                    <label class="section-text" for="name">Full Name</label>
-                                    <input type="text" placeholder="Your full name please">
-                                    <label class="section-text" for="email">Email</label>
-                                    <input type="email" placeholder="Please enter a valid e-mail address">
-                                    <label class="section-text" for="subject">Subject</label>
-                                    <input type="text" placeholder="Subject">
-                                    <label class="section-text" for="message">Your Message</label>
-                                    <textarea name="message" id="" cols="30" rows="7" placeholder="">
-                                        
-                                    </textarea>
-                            
-                                </form>
-                                
-                                <button class="[ medium  button  button--primary  button--expanded ]">Submit</button>
-                        
-                            </div>
-                        
-                            <div class="small-12 medium-5 large-6  columns  section-text">
-                        
-                                <ul>
-                        
-                                    <li class="h4  mb3">
-                                        <span class="txtc3  [ icon--large  icon icon--envelope ] ">
-                                        
-                                        </span> 
-                                        eduardo@soriallc.com
-                                    </li>
-                        
-                                    <li class="h4  mb3">
-                                        <span class="txtc3  [ icon--large  icon icon--phone ] ">
-                                        
-                                        </span>  
-                                        (787) 630-9443
-                                    </li>
-                        
-                                    <li class="h4  mb3">
-                        
-                                        <span class="txtc3  [ icon--large  icon icon--buildings ] ">
-                                        
-                                        </span>  
-                        
-                                        (939) 338-3934
-                        
-                                    </li>
-                        
-                                </ul>
-
-                                <ul class="h4">
-
-                                    <span class="txtc3  left [ icon--large  icon icon--location ] ">
+                                <li class="h4  mb3">
+                    
+                                    <span class="txtc3  [ icon--large  icon icon--buildings ] ">
                                     
                                     </span>  
+                    
+                                    (939) 338-3934
+                    
+                                </li>
+                    
+                            </ul>
 
-                                    <div class="cf">
-                                        <li>MCS Plaza</li>
-                                        <li>255 Ponce de León Avenue</li>
-                                        <li>Suite 808</li>
-                                        <li class="mb2">Hato Rey, Puerto Rico</li>
-                                        <li>
-                                            <a href="">Show on Map  
-                                            </a>
-                                        </li>
-                                    </div>
-                                    
-                                </ul>   
-                        
-                            </div>
-                        
+                            <ul class="h4">
+
+                                <span class="txtc3  left [ icon--large  icon icon--location ] ">
+                                
+                                </span>  
+
+                                <div class="cf">
+                                    <li>MCS Plaza</li>
+                                    <li>255 Ponce de León Avenue</li>
+                                    <li>Suite 808</li>
+                                    <li class="mb2">Hato Rey, Puerto Rico</li>
+                                    <li>
+                                        <a data-action="toggle-map">Show on Map  
+                                        </a>
+                                    </li>
+                                </div>
+                                
+                            </ul>   
+                    
                         </div>
-
+                    
                     </div>
+
+                </div>
+                    
+
+                <!--Contact info - Small Only--> 
+                <div class="show-for-small-only small-12 columns" >
+
+                    <div class="row  ptrbl2">
+
+                        <h1 class="section-text">Let's talk</h1>
+                
+                        <p class="section-text  pb2">Have questons or a case in mind? Get in touch below:</p>
+                    
+                        <div class="small-12 medium-7 large-6  columns  mb3">
+
+                            <form action="submit" >
+                    
+                    
+                                <label class="section-text" for="name">Full Name</label>
+                                <input type="text" placeholder="Your full name please">
+                                <label class="section-text" for="email">Email</label>
+                                <input type="email" placeholder="Please enter a valid e-mail address">
+                                <label class="section-text" for="subject">Subject</label>
+                                <input type="text" placeholder="Subject">
+                                <label class="section-text" for="message">Your Message</label>
+                                <textarea name="message" id="" cols="30" rows="7" placeholder="">
+                                    
+                                </textarea>
+                        
+                            </form>
+                            
+                            <button class="[ medium  button  button--primary  button--expanded ]">Submit</button>
+                    
+                        </div>
+                    
+                        <div class="small-12 medium-5 large-6  columns  section-text">
+                    
+                            <ul>
+                    
+                                <li class="h4  mb3">
+                                    <span class="txtc3  [ icon--large  icon icon--envelope ] ">
+                                    
+                                    </span> 
+                                    eduardo@soriallc.com
+                                </li>
+                    
+                                <li class="h4  mb3">
+                                    <span class="txtc3  [ icon--large  icon icon--phone ] ">
+                                    
+                                    </span>  
+                                    (787) 630-9443
+                                </li>
+                    
+                                <li class="h4  mb3">
+                    
+                                    <span class="txtc3  [ icon--large  icon icon--buildings ] ">
+                                    
+                                    </span>  
+                    
+                                    (939) 338-3934
+                    
+                                </li>
+                    
+                            </ul>
+
+                            <ul class="h4">
+
+                                <span class="txtc3  left [ icon--large  icon icon--location ] ">
+                                
+                                </span>  
+
+                                <div class="cf">
+                                    <li>MCS Plaza</li>
+                                    <li>255 Ponce de León Avenue</li>
+                                    <li>Suite 808</li>
+                                    <li class="mb2">Hato Rey, Puerto Rico</li>
+                                    <li>
+                                        <a href="https://www.google.com.pr/maps/place/MCS+Plaza/@18.4263598,-66.0564049,18z/data=!4m2!3m1!1s0x0000000000000000:0xef4654344b2951d0" target="_blank">Show on Map  
+                                        </a>
+                                    </li>
+                                </div>
+                                
+                            </ul>   
+                    
+                        </div>
+                    
+                    </div>
+
+                </div>
 
             </section>
 
+
+            <!-- Footer --> 
             <footer class="show-for-medium-up  pt2">
 
                 <div class="row">

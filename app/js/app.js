@@ -223,8 +223,9 @@ $(document).on('ready', function() {
         e.stopPropagation(); 
         e.preventDefault();
         // Stores the fixed tab dom element
-        var fixedTab = $('.fixedTab'); 
+        var fixedTab = $('.map-toggleButton'); 
         $('.section-bg--map').toggleClass('is-visible'); 
+        $('.map-cover').toggleClass('is-hidden'); 
         $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
         // Makes the tab to back to contact info visible 
         if(fixedTab.hasClass('is-visible')) {

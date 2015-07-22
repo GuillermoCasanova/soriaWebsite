@@ -116,7 +116,7 @@
 
 
 /*------------------------------------*\
-    #Map Section 
+    #Map Section  
 \*------------------------------------*/
 
 
@@ -128,6 +128,7 @@
     right: 0; 
     bottom: 0; 
     width: 100%;
+    z-index: 0; 
     @include filter(grayscale(100%)); 
     @include single-transition(all, 0.2s, ease-in-out); 
     @extend %position--absolute; 
@@ -138,6 +139,34 @@
     }
 
 }
+
+.map-toggleButton {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    opacity: 0; 
+    z-index: 2; 
+    @extend %position--absolute;
+    @include transform(translate(-50%, -50%));
+
+    &.is-visible {
+        opacity: 1;
+        z-index: 3; 
+    }
+}
+
+.map-cover {
+    width: 100%; 
+    height: 100%; 
+    z-index: 1; 
+    @extend %position--absolute; 
+
+    &.is-hidden {
+        display: none !important; 
+    }
+}
+
+
 
 
 
@@ -212,7 +241,6 @@
     }
 
     .section-bg {
-        @extend %position--absolute; 
         left: 0; 
         margin: 0 auto;
         opacity: .2;
@@ -220,6 +248,7 @@
         top: 0;
         width: 100%; 
         z-index: 10; 
+        @extend %position--absolute; 
         
         @media #{$medium-up} {
           min-width: rem-calc(880);
