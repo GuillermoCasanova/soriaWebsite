@@ -3,16 +3,14 @@
     #Panels
 \*------------------------------------*/
 
-@mixin panel($color, $icon)
-{
-  @extend %ptrbl2; 
+%panel {
   background-color: $grey--light;  
+  @extend %mt1; 
+  @extend %ptrbl2; 
 
   .panel-title {
-    @include icon($icon) {
-      @extend %h3; 
-      @extend %mr2; 
-      color: lighten($color, 20%);
-    }
+      @extend %fwb;
+      @extend %h4; 
+      @extend %mb0;  
   }
 }

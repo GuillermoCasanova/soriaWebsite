@@ -157,10 +157,10 @@
 
         
             <!--Contact Copy --> 
-            <section class="section  section--alt">
+            <section class="section  section--alt  ">
                 
                 <!-- Google Map - Medium Up --> 
-                <div class="section-bg--map show-for-medium-up" data-ui-component="map">
+                <div class="section-bg--map show-for-medium-up vh100" data-ui-component="map">
                     
                     <button data-action="toggle-map" class="[ large  button  button--secondary ] map-toggleButton" >
                         Back to Contact
@@ -183,36 +183,52 @@
 
 
                 <!--Contact info - Medium Up --> 
-                <div class="section--normal  dropshadow1 show-for-medium-up [ small-12 medium-10  large-7 columns medium-push-1 ] "  data-ui-component="contact-info">
+                <div class="section--normal  dropshadow1 show-for-medium-up  [ small-12 medium-11 medium-centered  large-uncentered large-7 columns large-push-1 ] "  data-ui-component="contact-info">
 
                     <div class="row  ptrbl2">
 
                         <h1>Let's talk</h1>
                 
-                        <p class="pb2">Have questons or a case in mind? Get in touch below:</p>
+                        <p class="pb2">Have questions or a case we could help you with? Please get in touch below:</p>
                     
                         <div class="small-12 medium-7 large-6  columns">
 
-                            <form action="submit" >
+                            <!-- Form - uses mailer.php file for action attribute --> 
+                            <form id="contact-form"  method="post" action="../mailer.php">
                     
-                    
-                                <label for="name">Full Name</label>
-                                <input type="text" placeholder="Your full name please">
+                                <label for="fullName">Full Name</label>
+                                <input name="fullName" id="fullName" type="text" placeholder="Your full name please" required>
+
                                 <label for="email">Email</label>
-                                <input type="email" placeholder="Please enter a valid e-mail address">
+                                <input name="email" id="email" type="email" placeholder="Please enter a valid e-mail address" required>
+
                                 <label for="subject">Subject</label>
-                                <input type="text" placeholder="Subject">
+                                <input name="" id="subject" type="text" placeholder="Subject" required>
+
                                 <label for="message">Your Message</label>
-                                <textarea name="message" id="" cols="30" rows="7" placeholder="">
-                                    
+                                <textarea name="message" id="message" cols="30" rows="7" placeholder="" required>
                                 </textarea>
-                        
+                              
+                                <button type="submit" class="[ medium  button  button--primary ]  right">Submit</button>
+
                             </form>
                             
-                            <button class="[ medium  button  button--primary ]  right">Submit</button>
-                    
+                            <!-- Success or Error Message for contact form --> 
+                            <div id="form-message" class="panel  panel--success  ">
+
+                                <div class="panel-body">
+
+                                    <h1 class="panel-title">Success!</h1>
+
+                                    <p>Your message has been succesfully sent to us!</p>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                    
+                        
+                        <!-- Contact information -->
                         <div class="small-12 medium-5 large-6  columns  ">
                     
                             <ul>
@@ -242,7 +258,8 @@
                                 </li>
                     
                             </ul>
-
+                            
+                            <!-- Address information -->
                             <ul class="h4">
 
                                 <span class="txtc3  left [ icon--large  icon icon--location ] ">

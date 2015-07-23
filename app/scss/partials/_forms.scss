@@ -19,7 +19,7 @@ input[type="tel"],
 input[type="time"], 
 input[type="url"], 
 input[type="color"] {
-    min-height: rem-calc(50x); 
+    min-height: rem-calc(40px); 
 }
 
 input[type="text"], 
@@ -36,7 +36,6 @@ input[type="tel"],
 input[type="time"], 
 input[type="url"], 
 input[type="color"], textarea {
-
-    @include border-radius(10px); 
+    @extend %br1; 
 
 }
