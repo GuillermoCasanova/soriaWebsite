@@ -215,7 +215,12 @@ $(document).on('ready', function() {
     $('.flip-container').on('click  ontouchstart', function(e){
         e.stopPropagation();
         e.preventDefault();
-        $(this).toggleClass('hover');
+        if(!$(this).is('a')) {
+            console.log('lot a link');
+            $(this).toggleClass('is-selected');
+
+
+        }
     });
 
     // Code for profiles to show bios on click 

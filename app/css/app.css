@@ -13800,23 +13800,16 @@ p,
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 75, ../scss/partials/_panels.scss */
-.panel--information.front:hover .panel-body {
-  -moz-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  -webkit-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
-/* line 79, ../scss/partials/_panels.scss */
+/* line 77, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body .icon {
-  color: #ef8111;
+  color: #3c4750;
 }
 
-/* line 90, ../scss/partials/_panels.scss */
+/* line 88, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 94, ../scss/partials/_panels.scss */
+/* line 92, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -13825,7 +13818,7 @@ p,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 111, ../scss/partials/_panels.scss */
+/* line 109, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -13840,25 +13833,33 @@ p,
   transition: all 0.2s ease-in-out;
 }
 
-/* flip the pane when clicked through jQuery Class Toggle */
-/* line 123, ../scss/partials/_panels.scss */
-.flip-container.hover .back {
+/* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
+/* line 121, ../scss/partials/_panels.scss */
+.flip-container.is-selected .back {
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 127, ../scss/partials/_panels.scss */
-.flip-container.hover .front {
+/* line 125, ../scss/partials/_panels.scss */
+.flip-container.is-selected .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-/* increase pane size on hover */
+/* increase pane size on hover on non-touch devices */
+/* line 135, ../scss/partials/_panels.scss */
+.no-touch .flip-container:hover {
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
 /* flip speed goes here */
-/* line 140, ../scss/partials/_panels.scss */
+/* line 142, ../scss/partials/_panels.scss */
 .flipper {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -13870,7 +13871,7 @@ p,
 }
 
 /* hide back of pane during swap */
-/* line 148, ../scss/partials/_panels.scss */
+/* line 150, ../scss/partials/_panels.scss */
 .front,
 .back {
   top: 0;
@@ -13888,9 +13889,8 @@ p,
 }
 
 /* front pane, placed above back */
-/* line 159, ../scss/partials/_panels.scss */
+/* line 161, ../scss/partials/_panels.scss */
 .front {
-  z-index: 2;
   /* for firefox 31 */
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
@@ -13899,7 +13899,7 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 166, ../scss/partials/_panels.scss */
+/* line 167, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
@@ -13907,7 +13907,7 @@ p,
   transform: rotateY(-180deg);
 }
 
-/* line 170, ../scss/partials/_panels.scss */
+/* line 171, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13915,13 +13915,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 183, ../scss/partials/_panels.scss */
+/* line 184, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 187, ../scss/partials/_panels.scss */
+/* line 188, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;

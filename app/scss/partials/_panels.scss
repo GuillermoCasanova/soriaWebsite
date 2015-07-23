@@ -74,11 +74,9 @@
     
         .panel-body {
 
-            @include transform(translateY(-4px)); 
-
             .icon {
 
-                color: $primaryColor; 
+                color: $secondaryColor; 
 
             }
         }
@@ -117,8 +115,8 @@
 }
 
 
-/* flip the pane when clicked through jQuery Class Toggle */
-.flip-container.hover {
+/* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
+.flip-container.is-selected {
 
     .back {
         @include transform(rotateY(0deg));
@@ -131,9 +129,13 @@
 
 }
 
-/* increase pane size on hover */
-// .flip-container:hover {
-//     //@include transform(scale(1.05)); 
+/* increase pane size on hover on non-touch devices */
+// .no-touch {
+
+//    .flip-container:hover {
+//         @include transform(scale(1.02)); 
+//     }
+
 // }
 
 /* flip speed goes here */
@@ -157,7 +159,6 @@
 
 /* front pane, placed above back */
 .front {
-    z-index: 2;
     /* for firefox 31 */
     @include transform(rotateY(0deg));
 }
