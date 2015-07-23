@@ -214,13 +214,7 @@ $(document).on('ready', function() {
     //Animation for flip-containers to active on click 
     $('.flip-container').on('click  ontouchstart', function(e){
         e.stopPropagation();
-        e.preventDefault();
-        if(!$(this).is('a')) {
-            console.log('lot a link');
-            $(this).toggleClass('is-selected');
-
-
-        }
+        $(this).toggleClass('is-selected');
     });
 
     // Code for profiles to show bios on click 
