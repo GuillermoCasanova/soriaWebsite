@@ -10,8 +10,7 @@
 
 
 .panel-body {
-  font-size: rem-calc(14);
-  line-height: 1.5;  
+ @extend %h7; 
 }
 
 
@@ -112,37 +111,47 @@
 .flip-container {
     cursor: pointer; 
     @include perspective(600px); 
+    @include transform-style(preserve-3d); 
     @include single-transition(all, 0.2s, ease-in-out); 
-    @extend %position--relative;  
     @extend %mb3; 
 }
 
 
 /* flip the pane when clicked through jQuery Class Toggle */
-.flip-container.hover .flipper {
-    @include transform-style(preserve-3d); 
-    @include transform(rotateY(180deg));
+.flip-container.hover {
+
+    .back {
+        @include transform(rotateY(0deg));
+    }
+
+    .front {
+        @include transform(rotateY(180deg));
+
+    }
+
 }
 
 /* increase pane size on hover */
-.flip-container:hover {
-    //@include transform(scale(1.05)); 
-}
+// .flip-container:hover {
+//     //@include transform(scale(1.05)); 
+// }
 
 /* flip speed goes here */
 .flipper {
-    position: relative;
     @include single-transition(all, 0.2s, ease-in-out); 
     @include transform-style(preserve-3d); 
-    @include perspective(600px); 
+    @extend %position--relative; 
     
 }
 
 /* hide back of pane during swap */
-.front, .back {
+.front, 
+.back {
     top: 0;
     left: 0;
     @include backface-visibility(hidden);
+    @include transform-style(preserve-3d);
+    @include single-transition(all, 0.2s, ease-in-out);  
     @extend %position--absolute; 
 }
 
@@ -155,7 +164,7 @@
 
 /* back, initially hidden pane */
 .back {
-    @include transform(rotateY(180deg));
+    @include transform(rotateY(-180deg));
 }
 
 .enter-in {
@@ -197,3 +206,5 @@
 //     }
 
 // }
+
+

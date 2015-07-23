@@ -53,11 +53,14 @@ $base-font-weight: $normal;
 
 
 %text--mega {
+    font-size: rem-calc(40); 
+	line-height: 1.333; 
+    font-family: $font-family-serif; 
 
-		font-size: rem-calc(62);
-		line-height: 1.333; 
-        font-size: 4vw; 
-        font-family: $font-family-serif; 
+    @media #{$medium-up} {
+        font-size: rem-calc(60);
+
+    }
 }
 
 %h1 {
@@ -88,6 +91,11 @@ $base-font-weight: $normal;
 %h6 {
 		font-size: rem-calc(16);
 		line-height: 1.5; 
+}
+
+%h7 {
+        font-size: rem-calc(14);
+        line-height: 1.5; 
 }
 
 %text--micro {

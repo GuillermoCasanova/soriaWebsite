@@ -135,15 +135,15 @@
     } 
 
     .profile-bio-close {
-        right: 0px; 
+        right: rem-calc(5px); 
         top: 0px; 
-        height: 40px;
-        width: 40px;
+        height: rem-calc(40px);
+        width: rem-calc(40px);
         @extend %position--absolute; 
 
         .icon {
             top: rem-calc(5px); 
-            right: rem-calc(5px); 
+            right: rem-calc(10px); 
         }
 
     }
@@ -159,6 +159,7 @@
     .body {
         color: #fff; 
         @extend %mt2; 
+        @extend %h7; 
     }
 
 }

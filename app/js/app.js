@@ -22,6 +22,13 @@ var app = (function(document, $) {
 })();
 
 
+//Code to load html component of secondaryNav for services 
+if($('#services').length > 0) {
+    $('#services').load("components/nav--services.html");
+};
+
+
+
 $(document).on('ready', function() {
 
     //* Scroll Magic *//
@@ -39,6 +46,7 @@ $(document).on('ready', function() {
             .setPin(slides[i])
             .addTo(controller);
     }
+
 
     $(function() {
 
@@ -237,6 +245,7 @@ $(document).on('ready', function() {
         }
 
     });
+
 
 
     // Checks to see if there is a top-bar-container to hide/show

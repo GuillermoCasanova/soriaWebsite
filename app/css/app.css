@@ -9977,55 +9977,66 @@ footer {
 \*------------------------------------*/
 /* line 55, ../scss/modules/_typography.scss */
 .text--mega {
-  font-size: 3.875rem;
+  font-size: 2.5rem;
   line-height: 1.333;
-  font-size: 4vw;
   font-family: "Asar";
 }
+@media only screen and (min-width: 40.0625em) {
+  /* line 55, ../scss/modules/_typography.scss */
+  .text--mega {
+    font-size: 3.75rem;
+  }
+}
 
-/* line 63, ../scss/modules/_typography.scss */
+/* line 66, ../scss/modules/_typography.scss */
 h1,
 .h1, .icon--large {
   font-size: 2.25rem;
   line-height: 1.333;
 }
 
-/* line 68, ../scss/modules/_typography.scss */
+/* line 71, ../scss/modules/_typography.scss */
 h2,
 .h2 {
   font-size: 1.75rem;
   line-height: 1.125;
 }
 
-/* line 73, ../scss/modules/_typography.scss */
+/* line 76, ../scss/modules/_typography.scss */
 h3,
 .h3, .pricingtable-title {
   font-size: 1.5rem;
   line-height: 1.3;
 }
 
-/* line 78, ../scss/modules/_typography.scss */
+/* line 81, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
 .h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-/* line 83, ../scss/modules/_typography.scss */
+/* line 86, ../scss/modules/_typography.scss */
 h5,
 .h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small {
   font-size: 1.125rem;
   line-height: 1.333;
 }
 
-/* line 88, ../scss/modules/_typography.scss */
+/* line 91, ../scss/modules/_typography.scss */
 h6,
 .h6 {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* line 93, ../scss/modules/_typography.scss */
+/* line 96, ../scss/modules/_typography.scss */
+.profile-bio .body, .panel-body {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* line 101, ../scss/modules/_typography.scss */
 .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-size: 0.75rem;
   line-height: 2;
@@ -10034,7 +10045,7 @@ h6,
 /*------------------------------------*\
     #Text Colors 
 \*------------------------------------*/
-/* line 107, ../scss/modules/_typography.scss */
+/* line 115, ../scss/modules/_typography.scss */
 .topContactBar .topContactBar-item,
 .topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header .header-content, .section--header .header-title {
   color: #fff;
@@ -10043,11 +10054,11 @@ h6,
 /*------------------------------------*\
     #Links 
 \*------------------------------------*/
-/* line 118, ../scss/modules/_typography.scss */
+/* line 126, ../scss/modules/_typography.scss */
 .footer-siteInfo a {
   text-decoration: underline;
 }
-/* line 121, ../scss/modules/_typography.scss */
+/* line 129, ../scss/modules/_typography.scss */
 .footer-siteInfo a:hover {
   text-decoration: none;
 }
@@ -10055,14 +10066,14 @@ h6,
 /*------------------------------------*\
     #Hovers 
 \*------------------------------------*/
-/* line 134, ../scss/modules/_typography.scss */
+/* line 142, ../scss/modules/_typography.scss */
 .title-area {
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 136, ../scss/modules/_typography.scss */
+/* line 144, ../scss/modules/_typography.scss */
 .title-area:hover {
   opacity: .7;
 }
@@ -10171,12 +10182,13 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flip-container, .section, .section--alt > .row, .section--home, .section--header, .section--header .header-content {
+.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flipper, .section, .section--alt > .row, .section--home, .section--header, .section--header .header-content {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .panel--success, .front, .back, .section--alt .section--alt-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .header-title, .section--header .section-bg {
+.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .panel--success, .front,
+.back, .section--alt .section--alt-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .header-title, .section--header .section-bg {
   position: absolute;
 }
 
@@ -10802,7 +10814,7 @@ body, html {
 /*------------------------------------*\
     #Blockquotes 
 \*------------------------------------*/
-/* line 151, ../scss/modules/_typography.scss */
+/* line 159, ../scss/modules/_typography.scss */
 .blockquote--bubble p {
   -moz-border-radius: 0.375em;
   -webkit-border-radius: 0.375em;
@@ -10811,7 +10823,7 @@ body, html {
   padding: 0.875em;
   margin-bottom: 0.875em;
 }
-/* line 158, ../scss/modules/_typography.scss */
+/* line 166, ../scss/modules/_typography.scss */
 .blockquote--bubble p:after {
   content: "";
   bottom: auto;
@@ -10822,14 +10834,14 @@ body, html {
   border-right: 24px solid transparent;
   border-top: 30px #63c7dc solid;
 }
-/* line 173, ../scss/modules/_typography.scss */
+/* line 181, ../scss/modules/_typography.scss */
 .blockquote--bubble cite {
   padding-bottom: 0.25em;
   text-align: right;
   font-weight: 700;
   font-style: normal;
 }
-/* line 179, ../scss/modules/_typography.scss */
+/* line 187, ../scss/modules/_typography.scss */
 .blockquote--bubble cite:before {
   content: none;
 }
@@ -11172,7 +11184,7 @@ hr.secondary {
 /* line 61, ../scss/partials/_navs.scss */
 .highlightBorder ul li {
   width: 20%;
-  height: 0.75rem;
+  height: 0.5rem;
 }
 /* line 69, ../scss/partials/_navs.scss */
 .highlightBorder ul li:nth-child(1) {
@@ -11226,16 +11238,16 @@ hr.secondary {
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
-/* line 127, ../scss/partials/_navs.scss */
+/* line 128, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .navBar-logo {
   display: none;
 }
-/* line 131, ../scss/partials/_navs.scss */
+/* line 132, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .logo--alt {
   display: block;
 }
 
-/* line 139, ../scss/partials/_navs.scss */
+/* line 140, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   width: 100%;
   -moz-transform: translateY(0);
@@ -11244,7 +11256,7 @@ hr.secondary {
   transform: translateY(0);
 }
 @media (min-width: 900px) {
-  /* line 139, ../scss/partials/_navs.scss */
+  /* line 140, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -11252,7 +11264,7 @@ hr.secondary {
   }
 }
 
-/* line 153, ../scss/partials/_navs.scss */
+/* line 154, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   -moz-transform: translateY(-130px);
   -ms-transform: translateY(-130px);
@@ -11267,7 +11279,7 @@ hr.secondary {
 /*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
-/* line 172, ../scss/partials/_navs.scss */
+/* line 173, ../scss/partials/_navs.scss */
 .top-bar {
   z-index: 950;
   -moz-transition: all 0.4s ease-in-out;
@@ -11279,14 +11291,14 @@ hr.secondary {
 /*------------------------------------*\
     #Top Bar Links 
 \*------------------------------------*/
-/* line 190, ../scss/partials/_navs.scss */
+/* line 191, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 195, ../scss/partials/_navs.scss */
+/* line 196, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:after {
   opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
@@ -11294,22 +11306,22 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 201, ../scss/partials/_navs.scss */
+/* line 202, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 202, ../scss/partials/_navs.scss */
+/* line 203, ../scss/partials/_navs.scss */
 .top-bar.is-normal .top-bar-section ul li.top-bar-link a {
   color: #3c4750;
 }
-/* line 210, ../scss/partials/_navs.scss */
+/* line 211, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover a {
   color: #ef8111;
 }
-/* line 215, ../scss/partials/_navs.scss */
+/* line 216, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover:after {
   height: 4px;
   right: 0;
@@ -11327,16 +11339,16 @@ hr.secondary {
 /*------------------------------------*\
     #Top Bar Dropdowns 
 \*------------------------------------*/
-/* line 244, ../scss/partials/_navs.scss */
+/* line 245, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 248, ../scss/partials/_navs.scss */
+/* line 249, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 252, ../scss/partials/_navs.scss */
+/* line 253, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11346,12 +11358,12 @@ hr.secondary {
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 258, ../scss/partials/_navs.scss */
+/* line 259, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link:hover {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 265, ../scss/partials/_navs.scss */
+/* line 266, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11361,7 +11373,7 @@ hr.secondary {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-/* line 271, ../scss/partials/_navs.scss */
+/* line 272, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a:hover {
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
@@ -11373,14 +11385,14 @@ hr.secondary {
 /*------------------------------------*\
     #Small Nav Styles 
 \*------------------------------------*/
-/* line 294, ../scss/partials/_navs.scss */
+/* line 295, ../scss/partials/_navs.scss */
 .off-canvas-list li {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 300, ../scss/partials/_navs.scss */
+/* line 301, ../scss/partials/_navs.scss */
 .off-canvas-list li:hover > a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11393,11 +11405,11 @@ hr.secondary {
 /*------------------------------------*\
     #Small Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 322, ../scss/partials/_navs.scss */
+/* line 323, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 327, ../scss/partials/_navs.scss */
+/* line 328, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11405,7 +11417,7 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 340, ../scss/partials/_navs.scss */
+/* line 341, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -11413,32 +11425,32 @@ hr.secondary {
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 367, ../scss/partials/_navs.scss */
+/* line 368, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
-/* line 373, ../scss/partials/_navs.scss */
+/* line 374, ../scss/partials/_navs.scss */
 .title-area .logo--alt {
   display: none;
 }
 
-/* line 381, ../scss/partials/_navs.scss */
+/* line 382, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 388, ../scss/partials/_navs.scss */
+/* line 389, ../scss/partials/_navs.scss */
 .navBar-logo {
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 388, ../scss/partials/_navs.scss */
+  /* line 389, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 402, ../scss/partials/_navs.scss */
+/* line 403, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -11447,22 +11459,22 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 417, ../scss/partials/_navs.scss */
+/* line 418, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
-/* line 423, ../scss/partials/_navs.scss */
+/* line 424, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 428, ../scss/partials/_navs.scss */
+/* line 429, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.title--alt {
   background-color: #ef8111;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-/* line 438, ../scss/partials/_navs.scss */
+/* line 439, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
   border-left: 4px solid #fff;
   overflow: hidden;
@@ -11471,12 +11483,12 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 445, ../scss/partials/_navs.scss */
+/* line 446, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
   background-color: transparent;
 }
-/* line 450, ../scss/partials/_navs.scss */
+/* line 451, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
   line-height: 2.75rem !important;
@@ -11488,7 +11500,7 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 460, ../scss/partials/_navs.scss */
+/* line 461, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a:hover, .secondaryNav .secondaryNav-list li.link a.active {
   background-color: transparent;
   color: #ef8111;
@@ -11501,26 +11513,26 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 485, ../scss/partials/_navs.scss */
+/* line 486, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
   right: 2.25rem;
   z-index: 100;
 }
-/* line 495, ../scss/partials/_navs.scss */
+/* line 496, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.title {
   color: #888f95;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 485, ../scss/partials/_navs.scss */
+  /* line 486, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 485, ../scss/partials/_navs.scss */
+  /* line 486, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
@@ -11530,27 +11542,27 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 531, ../scss/partials/_navs.scss */
+/* line 532, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 535, ../scss/partials/_navs.scss */
+/* line 536, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 535, ../scss/partials/_navs.scss */
+  /* line 536, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 546, ../scss/partials/_navs.scss */
+/* line 547, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 549, ../scss/partials/_navs.scss */
+/* line 550, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -12115,15 +12127,15 @@ hr.secondary {
 }
 /* line 137, ../scss/partials/_components.scss */
 .profile .profile-bio-close {
-  right: 0px;
+  right: 0.3125rem;
   top: 0px;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 /* line 144, ../scss/partials/_components.scss */
 .profile .profile-bio-close .icon {
   top: 0.3125rem;
-  right: 0.3125rem;
+  right: 0.625rem;
 }
 
 /* line 155, ../scss/partials/_components.scss */
@@ -12135,7 +12147,7 @@ hr.secondary {
   color: #fff;
 }
 
-/* line 168, ../scss/partials/_components.scss */
+/* line 169, ../scss/partials/_components.scss */
 .profile.is-showing .profile-bio {
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
@@ -12146,7 +12158,7 @@ hr.secondary {
 /*------------------------------------*\
     #Contact Info Container 
 \*------------------------------------*/
-/* line 185, ../scss/partials/_components.scss */
+/* line 186, ../scss/partials/_components.scss */
 [data-ui-component*="contact-info"] {
   z-index: 2;
   -moz-transition: all 0.4s ease-in-out;
@@ -12154,7 +12166,7 @@ hr.secondary {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 189, ../scss/partials/_components.scss */
+/* line 190, ../scss/partials/_components.scss */
 [data-ui-component*="contact-info"].is-hidden {
   opacity: 0;
   -moz-transform: translateY(100%);
@@ -13740,16 +13752,10 @@ p,
 /*------------------------------------*\
     #Panels
 \*------------------------------------*/
-/* line 12, ../scss/partials/_panels.scss */
-.panel-body {
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
 /*------------------------------------*\
     #Panel Types 
 \*------------------------------------*/
-/* line 26, ../scss/partials/_panels.scss */
+/* line 25, ../scss/partials/_panels.scss */
 .panel--success {
   opacity: 0;
   display: none;
@@ -13761,56 +13767,56 @@ p,
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 35, ../scss/partials/_panels.scss */
+/* line 34, ../scss/partials/_panels.scss */
 .panel--success .panel-body {
   color: #fff;
 }
-/* line 39, ../scss/partials/_panels.scss */
+/* line 38, ../scss/partials/_panels.scss */
 .panel--success.is-visible {
   opacity: 1;
 }
 
-/* line 46, ../scss/partials/_panels.scss */
+/* line 45, ../scss/partials/_panels.scss */
 .panel--information {
   border-top: 4px solid #ef8111;
   background-color: #fff;
 }
-/* line 52, ../scss/partials/_panels.scss */
+/* line 51, ../scss/partials/_panels.scss */
 .panel--information:hover .icon {
   fill: #ace63c;
 }
 
-/* line 61, ../scss/partials/_panels.scss */
+/* line 60, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 65, ../scss/partials/_panels.scss */
+/* line 64, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body .icon {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 76, ../scss/partials/_panels.scss */
+/* line 75, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body {
   -moz-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
 }
-/* line 80, ../scss/partials/_panels.scss */
+/* line 79, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body .icon {
   color: #ef8111;
 }
 
-/* line 91, ../scss/partials/_panels.scss */
+/* line 90, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 95, ../scss/partials/_panels.scss */
+/* line 94, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -13819,12 +13825,15 @@ p,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 112, ../scss/partials/_panels.scss */
+/* line 111, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
   -webkit-perspective: 600px;
   perspective: 600px;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -13832,11 +13841,15 @@ p,
 }
 
 /* flip the pane when clicked through jQuery Class Toggle */
-/* line 122, ../scss/partials/_panels.scss */
-.flip-container.hover .flipper {
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+/* line 123, ../scss/partials/_panels.scss */
+.flip-container.hover .back {
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+/* line 127, ../scss/partials/_panels.scss */
+.flip-container.hover .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -13845,9 +13858,8 @@ p,
 
 /* increase pane size on hover */
 /* flip speed goes here */
-/* line 133, ../scss/partials/_panels.scss */
+/* line 140, ../scss/partials/_panels.scss */
 .flipper {
-  position: relative;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -13855,23 +13867,28 @@ p,
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -moz-perspective: 600px;
-  -webkit-perspective: 600px;
-  perspective: 600px;
 }
 
 /* hide back of pane during swap */
-/* line 142, ../scss/partials/_panels.scss */
-.front, .back {
+/* line 148, ../scss/partials/_panels.scss */
+.front,
+.back {
   top: 0;
   left: 0;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* front pane, placed above back */
-/* line 150, ../scss/partials/_panels.scss */
+/* line 159, ../scss/partials/_panels.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -13882,15 +13899,15 @@ p,
 }
 
 /* back, initially hidden pane */
-/* line 157, ../scss/partials/_panels.scss */
+/* line 166, ../scss/partials/_panels.scss */
 .back {
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
-/* line 161, ../scss/partials/_panels.scss */
+/* line 170, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -13898,13 +13915,13 @@ p,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 174, ../scss/partials/_panels.scss */
+/* line 183, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 178, ../scss/partials/_panels.scss */
+/* line 187, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;
