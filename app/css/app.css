@@ -9977,7 +9977,7 @@ footer {
 \*------------------------------------*/
 /* line 55, ../scss/modules/_typography.scss */
 .text--mega {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.333;
   font-family: "Asar";
 }
@@ -13001,7 +13001,13 @@ a[href*="facebook"].icon--brandColors,
 
 /* line 225, ../scss/partials/_generics.scss */
 .vh100 {
-  height: 100vh;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 225, ../scss/partials/_generics.scss */
+  .vh100 {
+    height: 100vh;
+  }
 }
 
 /*------------------------------------*\
@@ -13010,7 +13016,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Margins
 \*------------------------------------*/
-/* line 251, ../scss/partials/_generics.scss */
+/* line 256, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -13024,7 +13030,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 255, ../scss/partials/_generics.scss */
+/* line 260, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -13041,7 +13047,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Paddings
 \*------------------------------------*/
-/* line 412, ../scss/partials/_generics.scss */
+/* line 417, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -13055,7 +13061,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 416, ../scss/partials/_generics.scss */
+/* line 421, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -13850,14 +13856,6 @@ p,
 }
 
 /* increase pane size on hover on non-touch devices */
-/* line 135, ../scss/partials/_panels.scss */
-.no-touch .flip-container:hover {
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
-}
-
 /* flip speed goes here */
 /* line 142, ../scss/partials/_panels.scss */
 .flipper {
@@ -14200,36 +14198,28 @@ p,
 /*------------------------------------*\
     #Animations
 \*------------------------------------*/
-/* line 6, ../scss/partials/_animations.scss */
-[class*="Anim"] {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+/*------------------------------------*\
+    #Fade In Animation
+\*------------------------------------*/
+/* line 13, ../scss/partials/_animations.scss */
+.a-fadeIn {
+  opacity: 0;
+  animation: fadeIn .2s ease-in-out;
 }
 
-/* line 11, ../scss/partials/_animations.scss */
-.buttonHoverAnim1:hover {
-  -moz-transform: translateX(8px);
-  -ms-transform: translateX(8px);
-  -webkit-transform: translateX(8px);
-  transform: translateX(8px);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-/* line 17, ../scss/partials/_animations.scss */
-.buttonHoverAnim1--alt:hover {
-  -moz-transform: translateX(-8px);
-  -ms-transform: translateX(-8px);
-  -webkit-transform: translateX(-8px);
-  transform: translateX(-8px);
-}
-
-/* line 23, ../scss/partials/_animations.scss */
-.hoverAnim2:hover {
-  -moz-transform: translateY(8px);
-  -ms-transform: translateY(8px);
-  -webkit-transform: translateY(8px);
-  transform: translateY(8px);
+/* line 32, ../scss/partials/_animations.scss */
+.header-enter-in,
+.fade-in,
+.fadeIn {
+  opacity: 0;
 }
 
 /*------------------------------------*\

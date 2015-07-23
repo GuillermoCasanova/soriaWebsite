@@ -3,27 +3,34 @@
     #Animations
 \*------------------------------------*/
 
-[class*="Anim"] {
-    @include transition(all .2s ease-in-out);
+
+
+/*------------------------------------*\
+    #Fade In Animation
+\*------------------------------------*/
+
+
+.a-fadeIn {
+    opacity: 0; 
+    animation: fadeIn .2s ease-in-out; 
 }
 
-.buttonHoverAnim1 {
-    &:hover {
-        @include translateX(8px);
+
+@keyframes fadeIn { 
+    0% {
+        opacity: 0;
     }
-}
-
-.buttonHoverAnim1--alt {
-    &:hover {
-        @include translateX(-8px);
+    100% {
+        opacity: 1; 
     }
-}
 
-.hoverAnim2 {
-    &:hover {
-        @include translateY(8px);
-    }
 }
 
 
 
+// Sets all enter-in and fade-in classes start at zero to avoid FOUT
+.header-enter-in,
+.fade-in,
+.fadeIn {
+    opacity: 0; 
+}

@@ -23,8 +23,8 @@ var app = (function(document, $) {
 
 
 //Code to load html component of secondaryNav for services 
-if($('#services').length > 0) {
-    $('#services').load("components/nav--services.html");
+if($('#services-nav-container').length > 0) {
+    $('#services-nav-container').load("components/nav--services.html");
 };
 
 
@@ -61,9 +61,9 @@ $(document).on('ready', function() {
         }
 
         //Checks to see if required trigger is on page
-        if($('#scene').length > 0) {
+        if($('#services').length > 0) {
             // Sevices - Tween 
-               var tween = TweenMax.staggerFrom('.enter-in', .4, {
+            var tween = TweenMax.staggerFrom('#services .enter-from-bottom', .4, {
                     opacity: 0,
                     y: 300
 
@@ -71,7 +71,7 @@ $(document).on('ready', function() {
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
-                        triggerElement: "#scene",
+                        triggerElement: "#services",
                         reverse: false
             }).setTween(tween).addTo(controller);    
 
@@ -81,11 +81,10 @@ $(document).on('ready', function() {
         if($("#header-fadeIn").length > 0) {
 
             // Header - Tween 
-               var headerFadeIn = TweenMax.staggerFrom('.header-enter-in', .5, {
-                    opacity: 0,
-                    y: 300
-
-            }, 0.3); 
+               var headerFadeIn = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .4, 
+                    {opacity:0, y: 300}, 
+                    {opacity: 1, y: 0},
+                     0.2); 
 
             // Header - Scene
             var scene = new ScrollMagic.Scene({
@@ -100,8 +99,8 @@ $(document).on('ready', function() {
         if($("#characteristics").length > 0) {
 
             // Characteristics - Tween 
-            var fadeIn = TweenMax.staggerFrom('.fade-in', 0.5, {
-                    opacity: 0
+            var fadeIn = TweenMax.staggerTo('.fade-in', 0.5, {
+                    opacity: 1
             }, 0.6);
 
             // Characteristics - Scene
@@ -116,8 +115,8 @@ $(document).on('ready', function() {
         if($(".list-fadeIn").length > 0) {
 
             // List 1 - Tween 
-            var fadeIn = TweenMax.staggerFrom('.fadeIn', 0.6, {
-                    opacity: 0
+            var fadeIn = TweenMax.staggerTo('.fadeIn', 0.6, {
+                    opacity: 1
             }, 0.2);
 
             // List 1 - Scene
@@ -127,21 +126,6 @@ $(document).on('ready', function() {
             }).setTween(fadeIn).addTo(controller);
         }
 
-        //Checks to see if required trigger is available for scrolling 
-        if($("#list-fadeIn2").length > 0) {
-
-            // List 2 - Tween 
-            var fadeIn2 = TweenMax.staggerFrom('.fade-in2', 0.2, {
-                    opacity: 0
-            }, 0.2)
-
-            // List 2 - Scene
-            var listFadeIn2 = new ScrollMagic.Scene({
-                    triggerElement: "#list-fadeIn2",
-                    duration: 400, 
-                    reverse: false
-            }).setTween(fadeIn2).addTo(controller);
-        }
 
         //Checks to see if required trigger is available for scrolling 
         if($('.smoothScroll').length > 0) {

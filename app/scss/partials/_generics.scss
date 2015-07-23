@@ -222,8 +222,13 @@
 }
 
 
-.vh100 {
-    height: 100vh;
+.vh100 {    
+    
+    min-height: 100vh; 
+    
+    @media #{$medium-up} {
+        height: 100vh;
+    }
 }
 
 
