@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soria, LLC | Lawyer & Accountant Consultation Organization</title>
-    <link rel="stylesheet" href="css/libraries.min.css">
+
     <link rel="stylesheet" href="css/app.min.css">
 
 
@@ -198,13 +198,13 @@
                 
                 <div class="section--alt-bg">
 
-                    <div class="vh100" style="background:url(images/business11.jpg) no-repeat center center; background-size: cover;">
+                    <div class="vh100" data-interchange="[images/header1--small.jpg, (default)], [images/header1--medium.jpg, (medium)], [images/header1--large.jpg, (large)]" style="background:url(images/header1--small.jpg) no-repeat center center; background-size: cover;">
                         
                     </div>
-                    
+<!--                     
                      <div class="vh100  blur" style="background:url(images/business11--blurred.jpg)no-repeat center center; background-size: cover;">
                          
-                     </div>
+                     </div> -->
 
                 </div>
 
@@ -222,11 +222,11 @@
 
 
     <!--Services--> 
-    <div class="section  section--highlighted" id="scene">
+    <div class="section  section--highlighted" id="services">
         
         <div class="row">
 
-            <div class="[ small-12  medium-9  medium-centered columns  ] mb3 text-center enter-in">
+            <div class="[ small-12  medium-9  medium-centered columns  ] mb3 text-center enter-from-bottom">
 
                  <h1>Attorneys & Accountants</h1>
 
@@ -238,7 +238,7 @@
 
 
         <!--Services - Cards -->
-        <div class="row  enter-in">
+        <div class="row  enter-from-bottom">
 
             <div class="small-12  columns">
             
@@ -278,14 +278,15 @@
                                     
                                         <p class="panel-body">
                                             Since markets and the economy are in constant flux, Business Valuations are no longer an option but a necessity. Business valuations is a set of procedures geared towards estimating the economic value of a business, part of a business or a specific asset.
+
+
+                                            <a class="h5 text-center" href="business-valuations.html">
+                                                Learn More
+
+                                            </a>
+                            
                                         </p>
 
-                                        <a href="business-valuations.html">
-
-                                            <button class="right  button--secondary tiny  button--expanded">Learn More</button>
-
-                                        </a>
-                            
                                 </div>
                             
                             </div>
@@ -657,9 +658,10 @@
 
                                 </div>
 
-                                <img class="" 
-                                     src="images/eduardo.jpg" 
-                                     alt="Eduardo Iglesias" title="Eduardo Iglesias" width="600" >
+                                <img class="lazy"
+                                     src="images/emptyImage.gif"
+                                     data-original="images/eduardo.jpg" 
+                                     alt="Eduardo Iglesias" title="Eduardo Iglesias" width="600" height="857" >
 
                             </div>
 
@@ -708,9 +710,10 @@
 
                                 </div>
 
-                                <img class="" 
-                                     src="images/carlos.jpg" 
-                                     alt="Carlos Iglesias" title="Carlos Iglesias" width="600" >
+                                <img class="lazy" 
+                                     src="images/emptyImage.gif"
+                                     data-original="images/carlos.jpg" 
+                                     alt="Carlos Iglesias" title="Carlos Iglesias" width="600" height="857" >
                                 
                             </div>
 
@@ -728,20 +731,24 @@
 
 
     <!--Call To Action - Contact -->
-    <div class="ptb5   text-center  section  section--alt">
+    <div class="ptb5   text-center  section  section--alt" id="call-to-contact">
 
-        <div class="section--alt-bg" style="background:url(images/business13.jpg) no-repeat center center; background-size: cover;" alt=""></div>
+        <div class="section--alt-bg" 
+             style="background:url(images/communication--small.jpg) no-repeat center center; background-size: cover;" data-interchange="[images/communication--small.jpg, (default)], [images/communication--medium.jpg, (medium)], [images/communication--large.jpg, (large)]"></div>
 
-        <div class="row">
+        <div class="row ">
             
             <div class="small-12  medium-9 columns small-centered ptb5  mtb3">
 
+                <h1 class="section-text  mb4  enter-from-bottom">We demonstrate our commitment to client satisfaction through <b>consistent</b> & <b>proactive</b> communication.</h1>
 
-                <h1 class="section-text  mb4 ">We demonstrate our commitment to client satisfaction through <b>consistent</b> & <b>proactive</b> communication.</h1>
+                <a href="contact.html">
 
+                    <button class="button  button--secondary large  enter-from-bottom" >Get in touch 
+                        <i class="icon--"  rel="next"></i>
+                    </button>
 
-
-                <a href="contact.html"><button class="button  button--secondary large" >Get in touch <i class="icon--"  rel="next"></i></button></a>
+                </a>
 
             </div>
 

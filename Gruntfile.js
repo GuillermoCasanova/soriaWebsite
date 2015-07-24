@@ -48,14 +48,8 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
+					src: ['fonts/**', '**/*.html', '**/*.php', '!**/*.scss', '!bower_components/**'],
 					dest: '<%= dist %>/'
-				} , {
-					expand: true,
-					flatten: true,
-					src: ['<%= app %>/bower_components/font-awesome/fonts/**'],
-					dest: '<%= dist %>/fonts/',
-					filter: 'isFile'
 				} ]
 			},
 		},
@@ -139,7 +133,6 @@ module.exports = function(grunt) {
 				],
 				exclude: [
 					'modernizr',
-					'font-awesome',
 					'jquery-placeholder',
 					'foundation'
 				]
@@ -158,8 +151,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-     grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'concat', 'cssmin', 'uglify', 'usemin']);
+    // grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'concat', 'cssmin', 'uglify', 'usemin']);
 	
-	//grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

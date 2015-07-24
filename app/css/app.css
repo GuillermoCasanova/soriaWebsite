@@ -14216,7 +14216,7 @@ p,
   }
 }
 /* line 32, ../scss/partials/_animations.scss */
-.header-enter-in,
+.enter-from-bottom,
 .fade-in,
 .fadeIn {
   opacity: 0;

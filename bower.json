@@ -2,23 +2,22 @@
   "name": "SoriaLLC_website",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.3.0",
     "gsap": "~1.17.0",
-    "ScrollMagic": "~2.0.5"
+    "ScrollMagic": "~2.0.5",
+    "jquery.lazyload": "~1.9.5"
   },
   "overrides": {
-        "ScrollMagic" : {
-            "main" : [
-                "scrollmagic/uncompressed/ScrollMagic.js",
-                "scrollmagic/uncompressed/plugins/animation.gsap.js"  
-             ]
-        },
-        "gsap" : {
-            "main" : [
-                "src/uncompressed/TweenMax.js",
-                "src/uncompressed/plugins/ScrollToPlugin.js"  
-             ]
-        }
-
+    "ScrollMagic": {
+      "main": [
+        "scrollmagic/uncompressed/ScrollMagic.js",
+        "scrollmagic/uncompressed/plugins/animation.gsap.js"
+      ]
+    },
+    "gsap": {
+      "main": [
+        "src/uncompressed/TweenMax.js",
+        "src/uncompressed/plugins/ScrollToPlugin.js"
+      ]
     }
+  }
 }

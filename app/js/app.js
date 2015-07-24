@@ -22,10 +22,21 @@ var app = (function(document, $) {
 })();
 
 
-//Code to load html component of secondaryNav for services 
+
+
+
+
+
+
+// Code to load html component of secondaryNav for services 
 if($('#services-nav-container').length > 0) {
     $('#services-nav-container').load("components/nav--services.html");
 };
+
+
+
+
+
 
 
 
@@ -63,17 +74,16 @@ $(document).on('ready', function() {
         //Checks to see if required trigger is on page
         if($('#services').length > 0) {
             // Sevices - Tween 
-            var tween = TweenMax.staggerFrom('#services .enter-from-bottom', .4, {
-                    opacity: 0,
-                    y: 300
-
-            }, 0.2); 
+             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', .4, 
+                    {opacity:0, y: 300}, 
+                    {opacity: 1, y: 0},
+                     0.2); 
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
                         triggerElement: "#services",
                         reverse: false
-            }).setTween(tween).addTo(controller);    
+            }).setTween(enterFromBottom).addTo(controller);    
 
         }
 
@@ -81,7 +91,7 @@ $(document).on('ready', function() {
         if($("#header-fadeIn").length > 0) {
 
             // Header - Tween 
-               var headerFadeIn = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .4, 
+            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .4, 
                     {opacity:0, y: 300}, 
                     {opacity: 1, y: 0},
                      0.2); 
@@ -90,7 +100,41 @@ $(document).on('ready', function() {
             var scene = new ScrollMagic.Scene({
                         triggerElement: "#header-fadeIn",
                         reverse: false
-            }).setTween(headerFadeIn).addTo(controller);    
+            }).setTween(enterFromBottom).addTo(controller);    
+
+        }
+
+
+            //Checks to see if required trigger is available for scrolling 
+        if($("#call-to-contact").length > 0) {
+
+            // Call To Contact - Tween 
+           var enterFromBottom = TweenMax.staggerFromTo('#call-to-contact .enter-from-bottom', .4, 
+                {opacity:0, y: 300}, 
+                {opacity: 1, y: 0},
+                 0.2); 
+
+            // Call To Contact - Scene
+            var scene = new ScrollMagic.Scene({
+                        triggerElement: "#call-to-contact",
+                        reverse: false
+            }).setTween(enterFromBottom).addTo(controller);    
+
+        }
+
+        if($("#biografia").length > 0) {
+
+            // Header - Tween 
+           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', .4, 
+                {opacity:0, y: 300}, 
+                {opacity: 1, y: 0},
+                 0.2); 
+
+            // Header - Scene
+            var scene = new ScrollMagic.Scene({
+                        triggerElement: "#biografia",
+                        reverse: false
+            }).setTween(enterFromBottom).addTo(controller);    
 
         }
 
@@ -99,9 +143,9 @@ $(document).on('ready', function() {
         if($("#characteristics").length > 0) {
 
             // Characteristics - Tween 
-            var fadeIn = TweenMax.staggerTo('.fade-in', 0.5, {
+            var fadeIn = TweenMax.staggerTo('.fade-in', 0.4, {
                     opacity: 1
-            }, 0.6);
+            }, 0.4);
 
             // Characteristics - Scene
             var characteristics = new ScrollMagic.Scene({
@@ -186,7 +230,7 @@ $(document).on('ready', function() {
     });
     
 
-    //Blur Effect for Hero Header 
+    // Blur Effect for Hero Header 
     $(window).on('scroll', function() {
         var blurImg = $(".blur");
         var oVal = $(window).scrollTop() / 240;
@@ -195,39 +239,11 @@ $(document).on('ready', function() {
 
 
 
-    //Animation for flip-containers to active on click 
-    $('.flip-container').on('click  ontouchstart', function(e){
-        e.stopPropagation();
-        $(this).toggleClass('is-selected');
-    });
 
-    // Code for profiles to show bios on click 
-    $('[data-action="toggle-profile-bio"]').on('click', function(e) {
-        var bioProfile = $(this).parents('.profile');
-        e.stopPropagation(); 
-        e.preventDefault();
-        bioProfile.toggleClass('is-showing'); 
-    });
 
-    // Code for showing/hiding map on Contact Page
-    $('[data-action="toggle-map"]').on('click', function(e) {
-        e.stopPropagation(); 
-        e.preventDefault();
-        // Stores the fixed tab dom element
-        var fixedTab = $('.map-toggleButton'); 
-        $('.section-bg--map').toggleClass('is-visible'); 
-        $('.map-cover').toggleClass('is-hidden'); 
-        $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
-        // Makes the tab to back to contact info visible 
-        if(fixedTab.hasClass('is-visible')) {
-              fixedTab.toggleClass('is-visible'); 
-        } else {
-           setTimeout(function() {
-              fixedTab.toggleClass('is-visible'); 
-            }, 500)         
-        }
 
-    });
+
+
 
 
 
@@ -291,7 +307,64 @@ $(document).on('ready', function() {
         })(jQuery);
     }
 
+
+
+
+
+
+    // Lazy Load for images Code 
+    $('img.lazy').lazyload({
+        threshold: 200, 
+        effect: "fadeIn"
+
+    });
+
+
+    // Animations for components that gogle hidden/viewing 
+
+
+
+    // Animation for flip-containers to active on click 
+    $('.flip-container').on('click  ontouchstart', function(e){
+        e.stopPropagation();
+        $(this).toggleClass('is-selected');
+    });
+
+    // Code for profiles to show bios on click 
+    $('[data-action="toggle-profile-bio"]').on('click', function(e) {
+        var bioProfile = $(this).parents('.profile');
+        e.stopPropagation(); 
+        e.preventDefault();
+        bioProfile.toggleClass('is-showing'); 
+    });
+
+    // Code for showing/hiding map on Contact Page
+    $('[data-action="toggle-map"]').on('click', function(e) {
+        e.stopPropagation(); 
+        e.preventDefault();
+        // Stores the fixed tab dom element
+        var fixedTab = $('.map-toggleButton'); 
+        $('.section-bg--map').toggleClass('is-visible'); 
+        $('.map-cover').toggleClass('is-hidden'); 
+        $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
+        // Makes the tab to back to contact info visible 
+        if(fixedTab.hasClass('is-visible')) {
+              fixedTab.toggleClass('is-visible'); 
+        } else {
+           setTimeout(function() {
+              fixedTab.toggleClass('is-visible'); 
+            }, 500)         
+        }
+
+    });
+
+    
 });
+
+
+
+
+
 
 
 // Code for Contact Form 
@@ -333,3 +406,6 @@ $(function() {
         })
 
     });  
+
+
+

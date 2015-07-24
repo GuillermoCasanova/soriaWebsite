@@ -4,11 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soria, LLC | Lawyer & Accountant Consultation Organization</title>
-    <!-- build:css css/libraries.min.css -->
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+
     <!-- build:css css/app.min.css -->
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/app_override.css">
@@ -207,13 +203,13 @@
                 
                 <div class="section--alt-bg">
 
-                    <div class="vh100" style="background:url(images/business11.jpg) no-repeat center center; background-size: cover;">
+                    <div class="vh100" data-interchange="[images/header1--small.jpg, (default)], [images/header1--medium.jpg, (medium)], [images/header1--large.jpg, (large)]" style="background:url(images/header1--small.jpg) no-repeat center center; background-size: cover;">
                         
                     </div>
-                    
+<!--                     
                      <div class="vh100  blur" style="background:url(images/business11--blurred.jpg)no-repeat center center; background-size: cover;">
                          
-                     </div>
+                     </div> -->
 
                 </div>
 
@@ -259,11 +255,9 @@
 
                             <div class="flipper">
                             
-                                <div class="[ panel  panel--information  ]   front">
+                                <div class="[ panel  panel--information  ]  front">
                                 
-                                    <div class="vertical-align ">
-
-                                        <div class="panel-body">
+                                        <div class="vertical-align  panel-body">
 
                                             <span class="icon  icon--handshake  icon--mega txtc2">
                                                 
@@ -278,8 +272,6 @@
                                             </div>
 
                                         </div>
-
-                                    </div>
                                 
                                 </div>
                             
@@ -667,9 +659,10 @@
 
                                 </div>
 
-                                <img class="" 
-                                     src="images/eduardo.jpg" 
-                                     alt="Eduardo Iglesias" title="Eduardo Iglesias" width="600" >
+                                <img class="lazy"
+                                     src="images/emptyImage.gif"
+                                     data-original="images/eduardo.jpg" 
+                                     alt="Eduardo Iglesias" title="Eduardo Iglesias" width="600" height="857" >
 
                             </div>
 
@@ -718,9 +711,10 @@
 
                                 </div>
 
-                                <img class="" 
-                                     src="images/carlos.jpg" 
-                                     alt="Carlos Iglesias" title="Carlos Iglesias" width="600" >
+                                <img class="lazy" 
+                                     src="images/emptyImage.gif"
+                                     data-original="images/carlos.jpg" 
+                                     alt="Carlos Iglesias" title="Carlos Iglesias" width="600" height="857" >
                                 
                             </div>
 
@@ -738,20 +732,24 @@
 
 
     <!--Call To Action - Contact -->
-    <div class="ptb5   text-center  section  section--alt">
+    <div class="ptb5   text-center  section  section--alt" id="call-to-contact">
 
-        <div class="section--alt-bg" style="background:url(images/business13.jpg) no-repeat center center; background-size: cover;" alt=""></div>
+        <div class="section--alt-bg" 
+             style="background:url(images/communication--small.jpg) no-repeat center center; background-size: cover;" data-interchange="[images/communication--small.jpg, (default)], [images/communication--medium.jpg, (medium)], [images/communication--large.jpg, (large)]"></div>
 
-        <div class="row">
+        <div class="row ">
             
             <div class="small-12  medium-9 columns small-centered ptb5  mtb3">
 
+                <h1 class="section-text  mb4  enter-from-bottom">We demonstrate our commitment to client satisfaction through <b>consistent</b> & <b>proactive</b> communication.</h1>
 
-                <h1 class="section-text  mb4 ">We demonstrate our commitment to client satisfaction through <b>consistent</b> & <b>proactive</b> communication.</h1>
+                <a href="contact.html">
 
+                    <button class="button  button--secondary large  enter-from-bottom" >Get in touch 
+                        <i class="icon--"  rel="next"></i>
+                    </button>
 
-
-                <a href="contact.html"><button class="button  button--secondary large" >Get in touch <i class="icon--"  rel="next"></i></button></a>
+                </a>
 
             </div>
 
@@ -831,6 +829,8 @@
     <script src="bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
     <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="bower_components/jquery.lazyload/jquery.lazyload.js"></script>
+    <script src="bower_components/jquery.lazyload/jquery.scrollstop.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
