@@ -74,10 +74,10 @@ $(document).on('ready', function() {
         //Checks to see if required trigger is on page
         if($('#services').length > 0) {
             // Sevices - Tween 
-             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', .4, 
+             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', .6, 
                     {opacity:0, y: 300}, 
                     {opacity: 1, y: 0},
-                     0.2); 
+                     .3); 
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
@@ -91,10 +91,10 @@ $(document).on('ready', function() {
         if($("#header-fadeIn").length > 0) {
 
             // Header - Tween 
-            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .4, 
+            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .6, 
                     {opacity:0, y: 300}, 
                     {opacity: 1, y: 0},
-                     0.2); 
+                     .3); 
 
             // Header - Scene
             var scene = new ScrollMagic.Scene({
@@ -109,10 +109,10 @@ $(document).on('ready', function() {
         if($("#call-to-contact").length > 0) {
 
             // Call To Contact - Tween 
-           var enterFromBottom = TweenMax.staggerFromTo('#call-to-contact .enter-from-bottom', .4, 
+           var enterFromBottom = TweenMax.staggerFromTo('#call-to-contact .enter-from-bottom', .6, 
                 {opacity:0, y: 300}, 
                 {opacity: 1, y: 0},
-                 0.2); 
+                 .2); 
 
             // Call To Contact - Scene
             var scene = new ScrollMagic.Scene({
@@ -125,10 +125,10 @@ $(document).on('ready', function() {
         if($("#biografia").length > 0) {
 
             // Header - Tween 
-           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', .4, 
+           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', .6, 
                 {opacity:0, y: 300}, 
                 {opacity: 1, y: 0},
-                 0.2); 
+                 .3); 
 
             // Header - Scene
             var scene = new ScrollMagic.Scene({
@@ -143,9 +143,9 @@ $(document).on('ready', function() {
         if($("#characteristics").length > 0) {
 
             // Characteristics - Tween 
-            var fadeIn = TweenMax.staggerTo('.fade-in', 0.4, {
+            var fadeIn = TweenMax.staggerTo('.fade-in', .6, {
                     opacity: 1
-            }, 0.4);
+            }, .3);
 
             // Characteristics - Scene
             var characteristics = new ScrollMagic.Scene({
@@ -161,7 +161,7 @@ $(document).on('ready', function() {
             // List 1 - Tween 
             var fadeIn = TweenMax.staggerTo('.fadeIn', 0.6, {
                     opacity: 1
-            }, 0.2);
+            }, 0.3);
 
             // List 1 - Scene
             var listFadeIn = new ScrollMagic.Scene({
@@ -179,7 +179,7 @@ $(document).on('ready', function() {
 
             // Tells Controller to smoothly go to position with TweenMax
             controller.scrollTo(function (newpos) {
-                TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+                TweenMax.to(window, 0.6, {scrollTo: {y: newpos}});
             });
 
             // Bing scroll animation to links with .smoothScroll class
@@ -211,17 +211,20 @@ $(document).on('ready', function() {
             // Create scene for every section link 
             for (var i=0, l = sections.length; i < l; i++) { 
 
-                //Gets the section id's from the links in the secondaryNav--fixed list 
+                // Gets the section id's from the links in the secondaryNav--fixed list 
                 var section = $(sections[i]).attr("href");
 
-                //Gets the height of the correspnding section 
+                // Gets the height of the correspnding section 
                 var sectionHeight = $(section).height(); 
+
+                // Gets li's of anchor links to give them the 'active' class 
+                var anchorLink = $(section + "-anchor").parent().get(0);
 
                 new ScrollMagic.Scene({
                         triggerElement: section,
                         duration: sectionHeight
                     })
-                    .setClassToggle(section + "-anchor", "active") 
+                    .setClassToggle(anchorLink, "is-active") 
                     .addTo(controller);
             }
         };

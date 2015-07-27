@@ -647,7 +647,7 @@ select {
 }
 /* line 238, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
-  margin: 0 -0.625rem;
+  margin: 0 -0.75rem;
   max-width: none;
   width: auto;
 }
@@ -679,8 +679,8 @@ select {
 /* line 243, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   width: 100%;
   float: left;
 }
@@ -875,8 +875,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1057,8 +1057,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 }
@@ -1235,8 +1235,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1417,8 +1417,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1763,8 +1763,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1945,8 +1945,8 @@ select {
   /* line 218, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -2156,7 +2156,7 @@ select {
 /* line 146, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content, .accordion dd > .content {
   display: none;
-  padding: 0.625rem;
+  padding: 0.75rem;
 }
 /* line 149, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
@@ -6578,7 +6578,7 @@ table tr td {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.625rem 0;
+  padding: 0.75rem 0;
   width: 100%;
 }
 /* line 95, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -6588,7 +6588,7 @@ table tr td {
 }
 /* line 99, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content > .content.contained {
-  padding: 0.625rem;
+  padding: 0.75rem;
 }
 /* line 104, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical {
@@ -6596,7 +6596,7 @@ table tr td {
 }
 /* line 107, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical > .content {
-  padding: 0 0.625rem;
+  padding: 0 0.75rem;
 }
 
 @media only screen and (min-width: 40.0625em) {
@@ -8285,7 +8285,7 @@ a img {
 /* line 234, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 p {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: normal;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -8293,7 +8293,7 @@ p {
 }
 /* line 242, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
 p.lead {
-  font-size: 1.21875rem;
+  font-size: 1.31875rem;
   line-height: 1.6;
 }
 /* line 244, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8409,7 +8409,7 @@ ul,
 ol,
 dl {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   list-style-position: outside;
   margin-bottom: 1.25rem;
@@ -10174,7 +10174,7 @@ h6,
 }
 
 /* line 39, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .name, .navBar-logo, .secondaryNav .secondaryNav-list li.link a, .secondaryNav--fixed .secondaryNav-list li.title, .footer-nav li, [rel*="copyright"], [rel*="credit"], .slick-slider, .tabs-content .content.active, .panel--success.is-visible, .section--header .header-content {
+.blockquote--bubble p:after, .name, .navBar-logo, .secondaryNav .secondaryNav-list li.link a, .secondaryNav--fixed .secondaryNav-list li.title, .footer-nav li, [rel*="copyright"], [rel*="credit"], .slick-slider, .tabs-content .content.active, .panel--success.is-visible {
   display: block;
 }
 
@@ -10182,13 +10182,13 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flipper, .section, .section--alt > .row, .section--home, .section--header, .section--header .header-content {
+.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .choiceWithIcon .choiceWithIcon-icon:hover, .choiceWithIcon .choiceWithIcon-icon:active, .profile, .relative, footer, .slick-slider, .slick-track, .tabs-title, .tabs-content, .tabs-content .content.active, .flipper, .section, .section--alt > .row, .section--home, .section--header {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
 .blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .panel--success, .front,
-.back, .section--alt .section--alt-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .header-title, .section--header .section-bg {
+.back, .section--alt .section--alt-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
 
@@ -10200,12 +10200,6 @@ h6,
 /*------------------------------------*\
     #Flexbox 
 \*------------------------------------*/
-/* line 72, ../scss/modules/_generics.scss */
-.section--header {
-  display: -webkit-flex;
-  display: flex;
-}
-
 /*------------------------------------*\
     #Flexbox 
 \*------------------------------------*/
@@ -10383,7 +10377,7 @@ footer {
 }
 
 /* line 286, ../scss/modules/_generics.scss */
-.ptb1 {
+.secondaryNav .secondaryNav-list li.link a, .ptb1 {
   padding-top: 0.375rem !important;
   padding-bottom: 0.375rem !important;
 }
@@ -10574,7 +10568,7 @@ footer {
 }
 
 /* line 478, ../scss/modules/_generics.scss */
-.header--standout, .mb1, [rel*="copyright"], [rel*="credit"], .section--header .header-title {
+.header--standout, .mb1, [rel*="copyright"], [rel*="credit"] {
   margin-bottom: 0.375rem !important;
 }
 
@@ -10605,7 +10599,7 @@ footer {
 }
 
 /* line 509, ../scss/modules/_generics.scss */
-.secondaryNav .secondaryNav-list li.link a, .mtb1 {
+.mtb1 {
   margin-top: 0.375rem !important;
   margin-bottom: 0.375rem !important;
 }
@@ -10748,29 +10742,23 @@ ul {
 /* line 7, ../scss/partials/_typography.scss */
 body, html {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 0.9375rem;
-}
-@media (min-width: 760px) {
-  /* line 7, ../scss/partials/_typography.scss */
-  body, html {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 
 /*------------------------------------*\
     #Text Weights 
 \*------------------------------------*/
-/* line 25, ../scss/partials/_typography.scss */
+/* line 21, ../scss/partials/_typography.scss */
 .fwn {
   font-weight: 400;
 }
 
-/* line 26, ../scss/partials/_typography.scss */
+/* line 22, ../scss/partials/_typography.scss */
 .fwb {
   font-weight: 700;
 }
 
-/* line 27, ../scss/partials/_typography.scss */
+/* line 23, ../scss/partials/_typography.scss */
 .uc {
   text-transform: uppercase;
 }
@@ -10778,19 +10766,19 @@ body, html {
 /*------------------------------------*\
     #Text Alignments  
 \*------------------------------------*/
-/* line 38, ../scss/partials/_typography.scss */
+/* line 34, ../scss/partials/_typography.scss */
 .text-center, .pricingtable.is-halfofcontainer.text-center .pricingtable-subtitle,
 .pricingtable.is-halfofcontainer.text-center [class*="pricingtable-item--"], .pricingtable.is-thirdofcontainer.text-center .pricingtable-subtitle,
 .pricingtable.is-thirdofcontainer.text-center [class*="pricingtable-item--"] {
   text-align: center;
 }
 
-/* line 39, ../scss/partials/_typography.scss */
+/* line 35, ../scss/partials/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 40, ../scss/partials/_typography.scss */
+/* line 36, ../scss/partials/_typography.scss */
 .text-right {
   text-align: right;
 }
@@ -10801,12 +10789,12 @@ body, html {
 /*------------------------------------*\
     #Paragraph Sizes
 \*------------------------------------*/
-/* line 98, ../scss/partials/_typography.scss */
+/* line 94, ../scss/partials/_typography.scss */
 .par--subText {
   font-size: 0.875rem;
 }
 
-/* line 102, ../scss/partials/_typography.scss */
+/* line 98, ../scss/partials/_typography.scss */
 .par--important {
   font-size: 1.125rem;
 }
@@ -10849,7 +10837,7 @@ body, html {
 /*------------------------------------*\
     #Links
 \*------------------------------------*/
-/* line 130, ../scss/partials/_typography.scss */
+/* line 126, ../scss/partials/_typography.scss */
 a[class*="link"] {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -10857,11 +10845,11 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 137, ../scss/partials/_typography.scss */
+/* line 133, ../scss/partials/_typography.scss */
 .link--underline {
   text-decoration: underline;
 }
-/* line 140, ../scss/partials/_typography.scss */
+/* line 136, ../scss/partials/_typography.scss */
 .link--underline:hover {
   text-decoration: none;
 }
@@ -10872,12 +10860,12 @@ a[class*="link"] {
 /*------------------------------------*\
     #Font Color Classes 
 \*------------------------------------*/
-/* line 166, ../scss/partials/_typography.scss */
+/* line 162, ../scss/partials/_typography.scss */
 .txtc2 {
   color: #888f95;
 }
 
-/* line 170, ../scss/partials/_typography.scss */
+/* line 166, ../scss/partials/_typography.scss */
 .txtc3 {
   color: #ef8111;
 }
@@ -10885,7 +10873,7 @@ a[class*="link"] {
 /*------------------------------------*\
     #hrs 
 \*------------------------------------*/
-/* line 183, ../scss/partials/_typography.scss */
+/* line 179, ../scss/partials/_typography.scss */
 hr.secondary {
   border-color: #262d33;
 }
@@ -11045,29 +11033,23 @@ hr.secondary {
   white-space: nowrap;
   width: 12.5rem;
   cursor: pointer;
+  opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -moz-transform: translateX(-200px);
-  -ms-transform: translateX(-200px);
-  -webkit-transform: translateX(-200px);
-  transform: translateX(-200px);
 }
 /* line 84, ../scss/partials/_buttons.scss */
 .fixedTab.is-visible {
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+  opacity: 1;
 }
 /* line 88, ../scss/partials/_buttons.scss */
 .fixedTab .link {
+  opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  opacity: 0;
 }
 /* line 93, ../scss/partials/_buttons.scss */
 .fixedTab a {
@@ -11218,10 +11200,10 @@ hr.secondary {
   width: 100%;
   z-index: 99;
   left: 0px;
-  -moz-transition: -moz-transform, 0.3s, ease-in-out;
-  -o-transition: -o-transform, 0.3s, ease-in-out;
-  -webkit-transition: -webkit-transform, 0.3s, ease-in-out;
-  transition: transform, 0.3s, ease-in-out;
+  -moz-transition: -moz-transform, 0.6s, ease-in-out;
+  -o-transition: -o-transform, 0.6s, ease-in-out;
+  -webkit-transition: -webkit-transform, 0.6s, ease-in-out;
+  transition: transform, 0.6s, ease-in-out;
 }
 @media (min-width: 900px) {
   /* line 101, ../scss/partials/_navs.scss */
@@ -11476,8 +11458,8 @@ hr.secondary {
 }
 /* line 439, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
-  border-left: 4px solid #fff;
   overflow: hidden;
+  border-left: 4px solid #fff;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -11486,14 +11468,14 @@ hr.secondary {
 /* line 446, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
-  background-color: transparent;
+  background-color: #f5f5f5;
 }
 /* line 451, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
-  line-height: 2.75rem !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  line-height: 2.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: #3c4750;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11501,7 +11483,21 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
 }
 /* line 461, ../scss/partials/_navs.scss */
-.secondaryNav .secondaryNav-list li.link a:hover, .secondaryNav .secondaryNav-list li.link a.active {
+.secondaryNav .secondaryNav-list li.link a:hover {
+  background-color: transparent;
+  color: #ef8111;
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+/* line 470, ../scss/partials/_navs.scss */
+.secondaryNav .secondaryNav-list li.link.is-active {
+  border-left: 4px solid #ef8111;
+  background-color: #f5f5f5;
+}
+/* line 475, ../scss/partials/_navs.scss */
+.secondaryNav .secondaryNav-list li.link.is-active a {
   background-color: transparent;
   color: #ef8111;
   -moz-transform: translateX(4px);
@@ -11513,26 +11509,26 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 486, ../scss/partials/_navs.scss */
+/* line 495, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
   right: 2.25rem;
   z-index: 100;
 }
-/* line 496, ../scss/partials/_navs.scss */
+/* line 505, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.title {
   color: #888f95;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 486, ../scss/partials/_navs.scss */
+  /* line 495, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 486, ../scss/partials/_navs.scss */
+  /* line 495, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
@@ -11542,27 +11538,27 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 532, ../scss/partials/_navs.scss */
+/* line 541, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 536, ../scss/partials/_navs.scss */
+/* line 545, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 536, ../scss/partials/_navs.scss */
+  /* line 545, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 547, ../scss/partials/_navs.scss */
+/* line 556, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 550, ../scss/partials/_navs.scss */
+/* line 559, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
@@ -12161,10 +12157,10 @@ hr.secondary {
 /* line 186, ../scss/partials/_components.scss */
 [data-ui-component*="contact-info"] {
   z-index: 2;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 /* line 190, ../scss/partials/_components.scss */
 [data-ui-component*="contact-info"].is-hidden {
@@ -13623,7 +13619,7 @@ footer .footer-link {
 /* line 21, ../scss/partials/_accordions.scss */
 .accordion .content {
   display: none;
-  padding: 0.625rem;
+  padding: 0.75rem;
 }
 /* line 120, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .content.active {
@@ -14053,10 +14049,10 @@ p,
   z-index: 0;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 /* line 144, ../scss/partials/_sections.scss */
 .section-bg--map.is-visible {
@@ -14115,7 +14111,7 @@ p,
 @media only screen {
   /* line 220, ../scss/partials/_sections.scss */
   .section--header {
-    height: 7.5rem;
+    height: 10.5rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
@@ -14124,18 +14120,11 @@ p,
     height: 13.5rem;
   }
 }
-/* line 233, ../scss/partials/_sections.scss */
+/* line 232, ../scss/partials/_sections.scss */
 .section--header .header-content {
   z-index: 100;
-  width: 89%;
-  margin-left: auto;
-  margin-right: auto;
 }
-/* line 243, ../scss/partials/_sections.scss */
-.section--header .header-title {
-  bottom: 0;
-}
-/* line 251, ../scss/partials/_sections.scss */
+/* line 241, ../scss/partials/_sections.scss */
 .section--header .section-bg {
   left: 0;
   margin: 0 auto;
@@ -14146,13 +14135,13 @@ p,
   z-index: 10;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 251, ../scss/partials/_sections.scss */
+  /* line 241, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 55rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 251, ../scss/partials/_sections.scss */
+  /* line 241, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 90rem;
   }

@@ -72,8 +72,8 @@
     white-space: nowrap; 
     width: rem-calc(200px); 
     cursor: pointer; 
+    opacity: 0; 
     @include single-transition(all, 0.2s, ease-in-out); 
-    @include transform(translateX(-200px)); 
     @extend %pr2;
     @extend %pl2;  
     @extend %pt2; 
@@ -82,12 +82,12 @@
 
 
     &.is-visible {
-        @include transform(translateX(0)); 
+        opacity: 1; 
     }
 
     .link {
-        @include single-transition(all, 0.2s, ease-in-out); 
         opacity: 0; 
+        @include single-transition(all, 0.2s, ease-in-out); 
     }
 
     a {

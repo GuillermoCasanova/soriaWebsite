@@ -106,7 +106,7 @@
     z-index: 99;
     left: 0px;
     @extend %position--fixed; 
-    @include transition(transform, .3s, ease-in-out);     
+    @include transition(transform, .6s, ease-in-out);     
 
     @include breakpoint(mamaBear) {
         display: block; 
@@ -438,42 +438,51 @@
 
         li.link {
 
-            border-left: 4px solid #fff; 
             overflow: hidden; 
+            border-left: 4px solid #fff; 
             @extend %h4; 
             @include single-transition(all, .2s, ease-in-out);
 
             &:hover {
                 border-left: 4px solid $primaryColor; 
-                background-color: transparent;                 
+                background-color: $grey--light;  
             }
 
             a {
                 width: 100%; 
-                line-height: rem-calc(44) !important; 
-                padding-left: rem-calc(16) !important; 
-                padding-right: rem-calc(16) !important;
+                line-height: rem-calc(44); 
+                padding-left: rem-calc(16); 
+                padding-right: rem-calc(16);
                 color: $secondaryColor;  
-                @extend %mtb1; 
+                @extend %ptb1; 
                 @extend %display--block; 
                 @include single-transition(all, .2s, ease-in-out); 
 
-                &:hover, 
-                &.active {
+                &:hover {
                     background-color: transparent; 
                     color: $primaryColor; 
                     @include transform(translateX(4px)); 
-
                 }
 
             }
+            
+            // Sets classes for links when is-active is applied
+            &.is-active {
+                    
+                border-left: 4px solid $primaryColor; 
+                background-color: $grey--light;  
+
+                a {
+                    background-color: transparent; 
+                    color: $primaryColor; 
+                    @include transform(translateX(4px));          
+                }
+            }
+
         }
 
     }
 }
-
-
-
 
 
 
@@ -555,26 +564,6 @@
 }
 
 
-
-
-
-
-
-//
-//Sets the height of the dropdown buttons
-//
-// .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-//      line-height: 45px; 
-
-//   &:hover {
-//     background-color: transparent; 
-//   }
-// }
-
-
-
-
-//
 //Triangle Above Drop-downs
 //
 

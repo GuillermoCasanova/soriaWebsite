@@ -185,7 +185,7 @@
 
 [data-ui-component*="contact-info"] {
     z-index: 2; 
-    @include single-transition(all, 0.4s, ease-in-out); 
+    @include single-transition(all, 0.6s, ease-in-out); 
 
     &.is-hidden {
         opacity: 0; 
