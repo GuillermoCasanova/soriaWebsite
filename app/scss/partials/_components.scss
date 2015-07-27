@@ -17,66 +17,6 @@
 
 
 
-
-/*------------------------------------*\
-    #Choice With Icon Object
-\*------------------------------------*/
-
-
-.choiceWithIcon {
-	@extend %text-center; 
-
-	.choiceWithIcon-icon {
-		left: 0;
-		margin: 0 auto;
-		right: 0;
-		top: 0;
-        height: rem-calc(80px);
-        width: rem-calc(80px); 
-
-		@include single-transition(all, .2s, ease-in-out);
-		
-		&:hover,
-		&:active {
-           @extend %position--relative; 
-           top: -1px;
-  	    } 
-	}
-
-	.bd {
-		@extend %horizontal-align; 
-	}
-
-}
-
-.choiceWithIcon--card {
-    height: rem-calc(200px); 
-}
-
-
-
-/*------------------------------------*\
-    #Newsposts
-\*------------------------------------*/
-
-
-.post-thumbnail {
-    @extend %mb2; 
-    width: 90%;
-    height: auto;
-}
-
-
-
-.post-body {
-    font-family: 'Open Sans', $base-font-family, sans-serif; 
-}
-
-
-
-
-
-
 /*------------------------------------*\
     #Profile Bios
 \*------------------------------------*/
@@ -188,9 +128,9 @@
     @include single-transition(all, 0.6s, ease-in-out); 
 
     &.is-hidden {
+        z-index: 0; 
         opacity: 0; 
-        @include transform(translateY(100%)); 
+        @include transform(translateY(140%)); 
     }
-
 
 }
