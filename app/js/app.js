@@ -373,9 +373,9 @@ $(document).on('ready', function() {
 // Code for Contact Form 
 $(function() {
     
-    var form = $('#contact-form'); 
+    var form = $('.contact-form'); 
 
-    var formMessages = $('#form-message');
+    var formMessages = $('.form-message');
 
     $(form).submit(function(e) {
 

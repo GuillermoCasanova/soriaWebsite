@@ -1,0 +1,105 @@
+
+<!--Contact info - Medium Up --> 
+<div class="section--normal  dropshadow1 show-for-medium-up  [ small-12 medium-11 medium-centered  large-uncentered large-7 columns large-push-1 ] "  data-ui-component="contact-info">
+
+    <div class="row  ptrbl2">
+
+        <h1>Let's Talk</h1>
+
+        <p class="pb2">Have questions or a case we could help you with? Please get in touch below:</p>
+
+    
+        <div class="small-12 medium-7 large-6  columns">
+
+            <!-- Form - uses mailer.php file for action attribute --> 
+            <form data-ui-component="contact-form"  method="post" action="../mailer.php">
+    
+                <label for="fullName">Full Name</label>
+                <input name="fullName" id="fullName" type="text" placeholder="Your full name please" required>
+
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Please enter a valid e-mail address" required>
+
+                <label for="subject">Subject</label>
+                <input name="" id="subject" type="text" placeholder="Subject" required>
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="7" placeholder="" required>
+                </textarea>
+              
+                <button type="submit" class="[ medium  button  button--primary ]  right">Submit</button>
+
+            </form>
+            
+            <!-- Success or Error Message for contact form --> 
+            <div class="panel  panel--success" data-ui-component="form-message">
+
+                <div class="panel-body">
+
+                    <h1 class="panel-title">Success!</h1>
+
+                    <p>Your message has been succesfully sent to us.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!-- Contact information -->
+        <div class="small-12 medium-5 large-6  columns  ">
+    
+            <ul>
+    
+                <li class="h4  mb3">
+                    <span class="txtc3  [ icon--large  icon icon--envelope ] ">
+                    
+                    </span> 
+                    eduardo@soriallc.com
+                </li>
+    
+                <li class="h4  mb3">
+                    <span class="txtc3  [ icon--large  icon icon--phone ] ">
+                    
+                    </span>  
+                    (787) 630-9443
+                </li>
+    
+                <li class="h4  mb3">
+    
+                    <span class="txtc3  [ icon--large  icon icon--buildings ] ">
+                    
+                    </span>  
+    
+                    (939) 338-3934
+    
+                </li>
+    
+            </ul>
+            
+            <!-- Address information -->
+            <ul class="h4">
+
+                <span class="txtc3  left [ icon--large  icon icon--location ] ">
+                
+                </span>  
+
+                <div class="cf">
+                    <li>MCS Plaza</li>
+                    <li>255 Ponce de León Avenue</li>
+                    <li>Suite 808</li>
+                    <li class="mb2">Hato Rey, Puerto Rico</li>
+                    <li>
+                        <a data-action="toggle-map">Show on Map  
+                        </a>
+                    </li>
+                </div>
+                
+            </ul>   
+    
+        </div>
+    
+    </div>
+
+</div>
+    
