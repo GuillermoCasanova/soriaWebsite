@@ -418,7 +418,7 @@
 .secondaryNav {
     background-color: #fff;
     @extend %br1; 
-    @extend %dropshadow1;
+    @extend %dropshadow2;
     @extend %position--relative; 
 
     .secondaryNav-list {

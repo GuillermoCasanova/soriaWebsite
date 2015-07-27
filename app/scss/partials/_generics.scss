@@ -44,12 +44,6 @@
   margin-right: auto;
 }
 
-.vertical-align-middle {
-  position: absolute; 
-  top: 50%; 
-  display: table-cell; 
-  vertical-align: middle;
-}
 
 .vertical-align {
     @extend %vertical-align; 
@@ -200,28 +194,10 @@
 
 
 /*------------------------------------*\
-    #Width Classes 
+    #Height Classes 
 \*------------------------------------*/
 
-
-.width100 {width: 100%; }
-
-.width60 {
-  width: 100%;
-
-  @include breakpoint(teenBear) {
-    width: 60%;
-  }
-}
-
-.expand-on-small {
-  width: 100%; 
-  @include breakpoint(mamaBear) {
-    width: auto; 
-  }
-}
-
-
+// Gives the element 100% height of viewport on large 
 .vh100 {    
     
     min-height: 100vh; 
@@ -241,9 +217,6 @@
   @extend %dropshadow1;
 }
 
-.dropshadow--darker {
-  @extend %dropshadow--darker;
-}
 
 
 

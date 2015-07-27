@@ -1,8 +1,7 @@
 {
   "name": "SoriaLLC_website",
-  "description": "Website for Soria, LLC",
-  "version": "0.0.1",
   "description": "",
+  "version": "0.0.1",
   "homepage": "",
   "author": {
     "name": "Guillermo Martinez",
@@ -28,5 +27,8 @@
     "grunt-usemin": "~3.0.0",
     "grunt-contrib-imagemin": "0.9.4",
     "grunt-newer": "~1.1.0"
+  },
+  "dependencies": {
+    "grunt-uncss": "^0.4.3"
   }
 }

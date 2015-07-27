@@ -129,14 +129,6 @@
 
 }
 
-/* increase pane size on hover on non-touch devices */
-// .no-touch {
-
-//    .flip-container:hover {
-//         @include transform(scale(1.02)); 
-//     }
-
-// }
 
 /* flip speed goes here */
 .flipper {
@@ -155,6 +147,7 @@
     @include transform-style(preserve-3d);
     @include single-transition(all, 0.2s, ease-in-out);  
     @extend %position--absolute; 
+    @extend %dropshadow2;
 }
 
 /* front pane, placed above back */

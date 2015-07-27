@@ -16,18 +16,12 @@
 		@include image--circle(em-calc(360));
 }
 
-.image--border {
-		@include image--border(#fff, em-calc(12));
-}
-
-
-
 
 
 
 
 /*------------------------------------*\
-    #Classes
+    #Image Utility Classes 
 \*------------------------------------*/
 
 
@@ -35,6 +29,7 @@
   margin: rem-calc(12);
 }
 
+// Makes images responsive 
 .image--responsive {
 		max-width: 100%; 
 		height: auto; 

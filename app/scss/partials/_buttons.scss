@@ -23,21 +23,6 @@
     }   
 }
 
-.button--tetriary {
-  @include button--outline($primaryColor);
-
-  &.secondaryAction {
-        @include button--outline($accentColor);  
-    }   
-}
-
-
-
-.button--back {
-  &:before {
-    content: "← BACK"
-  }
-}
 
 
 
@@ -160,34 +145,3 @@
         opacity: 1; 
     }
 }
-
-
-
-
-
-//
-//Function to  make 3d buttons of all colors 
-//
-// @each $val in $aiguilleColors {
-
-//     $colorName: nth($val, 1);
-//     $code: nth($val, 2);
-
-//     .button--3d--#{$colorName} {
-//       @include button--3d($code); 
-//     }
-// }
-
-
-//
-//Function to make flat buttons of all colors
-//
-// @each $val in $aiguilleColors {
-
-//   $colorName: nth($val, 1);
-//   $code: nth($val, 2);
-
-//   .button--flat--#{$colorName} {
-//     @include button--flat($code);
-//   }
-// }

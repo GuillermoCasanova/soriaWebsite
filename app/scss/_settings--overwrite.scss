@@ -330,7 +330,7 @@ $paragraph-font-size: 1.1rem;
 // 01. Accordion
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-accordion-classes: $include-html-classes;
+$include-html-accordion-classes: false;
 
 // $accordion-navigation-padding: rem-calc(16);
 // $accordion-navigation-bg-color: $silver;
@@ -346,7 +346,7 @@ $paragraph-font-size: 1.1rem;
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-alert-classes: $include-html-classes;
+ $include-html-alert-classes: false;
 
 // We use this to control alert padding.
 // $alert-padding-top: rem-calc(14);
@@ -388,7 +388,7 @@ $paragraph-font-size: 1.1rem;
 // 03. Block Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-block-grid-classes: $include-html-classes;
+$include-html-block-grid-classes: false;
 // $include-xl-html-block-grid-classes: false;
 
 // We use this to control the maximum number of block grid elements per row
@@ -404,7 +404,7 @@ $paragraph-font-size: 1.1rem;
 // 04. Breadcrumbs
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-nav-classes: $include-html-classes;
+$include-html-nav-classes: false;
 
 // We use this to set the background color for the breadcrumb container.
 // $crumb-bg: scale-color($secondary-color, $lightness: 55%);
@@ -489,7 +489,7 @@ $paragraph-font-size: 1.1rem;
 // 06. Button Groups
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+ $include-html-button-classes: false;
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 // $button-bar-margin-opposite: rem-calc(10);
@@ -498,7 +498,7 @@ $paragraph-font-size: 1.1rem;
 // 07. Clearing
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-clearing-classes: $include-html-classes;
+ $include-html-clearing-classes: $include-html-classes;
 
 // We use these to set the background colors for parts of Clearing.
 // $clearing-bg: $oil;
@@ -528,7 +528,7 @@ $paragraph-font-size: 1.1rem;
 // 08. Dropdown
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-dropdown-classes: $include-html-classes;
+$include-html-dropdown-classes: false;
 
 // We use these to controls height and width styles.
 // $f-dropdown-max-width: 200px;
@@ -579,7 +579,7 @@ $paragraph-font-size: 1.1rem;
 // 09. Dropdown Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+$include-html-button-classes: false;
 
 // We use these to set the color of the pip in dropdown buttons
 // $dropdown-button-pip-color: $white;
@@ -618,7 +618,7 @@ $paragraph-font-size: 1.1rem;
 // 10. Flex Video
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-media-classes: $include-html-classes;
+$include-html-media-classes: false;
 
 // We use these to control video container padding and margins
 // $flex-video-padding-top: rem-calc(25);
@@ -752,7 +752,7 @@ $input-border-radius: 20px;
 // 14. Joyride
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-joyride-classes: $include-html-classes;
+$include-html-joyride-classes: false;
 
 // Controlling default Joyride styles
 // $joyride-tip-bg: $oil;
@@ -786,7 +786,7 @@ $input-border-radius: 20px;
 // 15. Keystrokes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-keystroke-classes: $include-html-classes;
+$include-html-keystroke-classes: false;
 
 // We use these to control text styles.
 // $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
@@ -808,7 +808,7 @@ $input-border-radius: 20px;
 // 16. Labels
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-label-classes: $include-html-classes;
+ $include-html-label-classes: false;
 
 // We use these to style the labels
 // $label-padding: rem-calc(4 8 4);
@@ -824,7 +824,7 @@ $input-border-radius: 20px;
 // 17. Magellan
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-magellan-classes: $include-html-classes;
+$include-html-magellan-classes: false;
 
 // $magellan-bg: $white;
 // $magellan-padding: 10px;
@@ -907,7 +907,7 @@ $menu-slide: "transform 400ms ease-in-out";
 // 19. Orbit
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-orbit-classes: $include-html-classes;
+$include-html-orbit-classes: false;
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
@@ -950,7 +950,7 @@ $menu-slide: "transform 400ms ease-in-out";
 // 20. Pagination
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-pagination-classes: $include-html-classes;
+$include-pagination-classes: false;
 
 // We use these to control the pagination container
 // $pagination-height: rem-calc(24);
@@ -983,7 +983,7 @@ $menu-slide: "transform 400ms ease-in-out";
 // 21. Panels
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-panel-classes: $include-html-classes;
+$include-html-panel-classes: false;
 
 // We use these to control the background and border styles
 // $panel-bg: scale-color($white, $lightness: -5%);
@@ -1009,7 +1009,7 @@ $menu-slide: "transform 400ms ease-in-out";
 // 22. Pricing Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-pricing-classes: $include-html-classes;
+$include-html-pricing-classes: false;
 
 // We use this to control the border color
 // $price-table-border: solid 1px $gainsboro;
