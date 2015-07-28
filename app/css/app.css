@@ -5523,6 +5523,9 @@ h6,
     #Photos
 \*------------------------------------*/
 /*------------------------------------*\
+    #Mixin for creating circle photos
+\*------------------------------------*/
+/*------------------------------------*\
     #Page Colors 
 \*------------------------------------*/
 /*------------------------------------*\
@@ -5561,8 +5564,8 @@ h6,
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .panel--success, .front,
-.back, .section--alt .section--alt-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
+.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front,
+.back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
 
@@ -5598,7 +5601,7 @@ footer {
 }
 
 /* line 106, ../scss/modules/_generics.scss */
-.secondaryNav, .front,
+.secondaryNav, .dropshadow2, .front,
 .back {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px;
@@ -7079,9 +7082,19 @@ hr.secondary {
 }
 
 /*------------------------------------*\
-    #Images
+    #Images *Includes from _photos.scss module
 \*------------------------------------*/
-/* line 7, ../scss/partials/_photos.scss */
+/* line 6, ../scss/partials/_photos.scss */
+.image--circle.tiny {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 5em;
+  height: 5em;
+}
+
+/* line 10, ../scss/partials/_photos.scss */
 .image--circle.small {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -7091,7 +7104,7 @@ hr.secondary {
   height: 7.5em;
 }
 
-/* line 11, ../scss/partials/_photos.scss */
+/* line 14, ../scss/partials/_photos.scss */
 .image--circle.medium {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -7101,7 +7114,7 @@ hr.secondary {
   height: 12.5em;
 }
 
-/* line 15, ../scss/partials/_photos.scss */
+/* line 18, ../scss/partials/_photos.scss */
 .image--circle.big {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -7114,12 +7127,12 @@ hr.secondary {
 /*------------------------------------*\
     #Image Utility Classes 
 \*------------------------------------*/
-/* line 28, ../scss/partials/_photos.scss */
+/* line 31, ../scss/partials/_photos.scss */
 [class*="image--"] {
   margin: 0.75rem;
 }
 
-/* line 33, ../scss/partials/_photos.scss */
+/* line 36, ../scss/partials/_photos.scss */
 .image--responsive {
   max-width: 100%;
   height: auto;
@@ -7766,7 +7779,7 @@ a[href*="facebook"].icon--brandColors,
 \*------------------------------------*/
 /* line 201, ../scss/partials/_generics.scss */
 .vh100 {
-  min-height: 100vh;
+  height: 120vh;
 }
 @media only screen and (min-width: 40.0625em) {
   /* line 201, ../scss/partials/_generics.scss */
@@ -7781,7 +7794,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Margins
 \*------------------------------------*/
-/* line 229, ../scss/partials/_generics.scss */
+/* line 233, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -7795,7 +7808,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 233, ../scss/partials/_generics.scss */
+/* line 237, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -7812,7 +7825,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Paddings
 \*------------------------------------*/
-/* line 390, ../scss/partials/_generics.scss */
+/* line 394, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -7826,7 +7839,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 394, ../scss/partials/_generics.scss */
+/* line 398, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -7905,50 +7918,50 @@ footer .footer-link {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 34, ../scss/partials/_panels.scss */
+/* line 33, ../scss/partials/_panels.scss */
 .panel--success .panel-body,
 .panel--success .panel-title {
   color: #fff;
 }
-/* line 39, ../scss/partials/_panels.scss */
+/* line 38, ../scss/partials/_panels.scss */
 .panel--success.is-visible {
   opacity: 1;
 }
 
-/* line 46, ../scss/partials/_panels.scss */
+/* line 45, ../scss/partials/_panels.scss */
 .panel--information {
   border-top: 4px solid #ef8111;
   background-color: #fff;
 }
-/* line 52, ../scss/partials/_panels.scss */
+/* line 51, ../scss/partials/_panels.scss */
 .panel--information:hover .icon {
   fill: #ace63c;
 }
 
-/* line 61, ../scss/partials/_panels.scss */
+/* line 60, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 65, ../scss/partials/_panels.scss */
+/* line 64, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body .icon {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 78, ../scss/partials/_panels.scss */
+/* line 77, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body .icon {
   color: #3c4750;
 }
 
-/* line 89, ../scss/partials/_panels.scss */
+/* line 88, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 93, ../scss/partials/_panels.scss */
+/* line 92, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -7957,7 +7970,7 @@ footer .footer-link {
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 110, ../scss/partials/_panels.scss */
+/* line 109, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -7973,14 +7986,14 @@ footer .footer-link {
 }
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
-/* line 122, ../scss/partials/_panels.scss */
+/* line 121, ../scss/partials/_panels.scss */
 .flip-container.is-selected .back {
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 126, ../scss/partials/_panels.scss */
+/* line 125, ../scss/partials/_panels.scss */
 .flip-container.is-selected .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -7989,7 +8002,7 @@ footer .footer-link {
 }
 
 /* flip speed goes here */
-/* line 135, ../scss/partials/_panels.scss */
+/* line 134, ../scss/partials/_panels.scss */
 .flipper {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -8001,7 +8014,7 @@ footer .footer-link {
 }
 
 /* hide back of pane during swap */
-/* line 143, ../scss/partials/_panels.scss */
+/* line 142, ../scss/partials/_panels.scss */
 .front,
 .back {
   top: 0;
@@ -8019,7 +8032,7 @@ footer .footer-link {
 }
 
 /* front pane, placed above back */
-/* line 155, ../scss/partials/_panels.scss */
+/* line 154, ../scss/partials/_panels.scss */
 .front {
   /* for firefox 31 */
   -moz-transform: rotateY(0deg);
@@ -8029,7 +8042,7 @@ footer .footer-link {
 }
 
 /* back, initially hidden pane */
-/* line 161, ../scss/partials/_panels.scss */
+/* line 160, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
@@ -8037,7 +8050,7 @@ footer .footer-link {
   transform: rotateY(-180deg);
 }
 
-/* line 165, ../scss/partials/_panels.scss */
+/* line 164, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -8045,13 +8058,13 @@ footer .footer-link {
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 178, ../scss/partials/_panels.scss */
+/* line 177, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 182, ../scss/partials/_panels.scss */
+/* line 181, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;
@@ -8107,7 +8120,7 @@ footer .footer-link {
   color: #0d3d64;
 }
 /* line 57, ../scss/partials/_sections.scss */
-.section--alt .section--alt-bg {
+.section--alt .section-bg {
   min-width: 50rem;
   opacity: .3;
   top: 0;
@@ -8120,19 +8133,19 @@ footer .footer-link {
 }
 @media (min-width: 100px) and (max-width: 460px) {
   /* line 57, ../scss/partials/_sections.scss */
-  .section--alt .section--alt-bg {
+  .section--alt .section-bg {
     margin-left: -50%;
   }
 }
 @media only screen and (min-width: 40.0625em) {
   /* line 57, ../scss/partials/_sections.scss */
-  .section--alt .section--alt-bg {
+  .section--alt .section-bg {
     min-width: 60rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
   /* line 57, ../scss/partials/_sections.scss */
-  .section--alt .section--alt-bg {
+  .section--alt .section-bg {
     min-width: 80rem;
   }
 }

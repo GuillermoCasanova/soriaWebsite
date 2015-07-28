@@ -200,7 +200,7 @@
 // Gives the element 100% height of viewport on large 
 .vh100 {    
     
-    min-height: 100vh; 
+    height: 120vh; 
     
     @media #{$medium-up} {
         height: 100vh;
@@ -214,7 +214,11 @@
 
 
 .dropshadow1 {
-  @extend %dropshadow1;
+    @extend %dropshadow1;
+}
+
+.dropshadow2 {
+    @extend %dropshadow2; 
 }
 
 

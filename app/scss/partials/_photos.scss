@@ -1,19 +1,22 @@
 
 /*------------------------------------*\
-    #Images
+    #Images *Includes from _photos.scss module
 \*------------------------------------*/
 
+.image--circle.tiny {
+    @include image--circle(em-calc(80));
+}
 
 .image--circle.small {
-		@include image--circle(em-calc(120));
+	@include image--circle(em-calc(120));
 }
 
 .image--circle.medium {
-		@include image--circle(em-calc(200));
+	@include image--circle(em-calc(200));
 }
 
 .image--circle.big {
-		@include image--circle(em-calc(360));
+	@include image--circle(em-calc(360));
 }
 
 

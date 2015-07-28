@@ -28,7 +28,6 @@
     color: #fff; 
     background-color: $primaryColor; 
     border: 0; 
-    @extend %position--absolute; 
     @include single-transition(all, 0.4s, ease-in-out); 
 
     .panel-body,
