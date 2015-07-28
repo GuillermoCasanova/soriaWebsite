@@ -8182,12 +8182,18 @@ footer .footer-link {
 .section--pinned {
   width: 100%;
   height: 100vh;
+  z-index: 0;
+}
+
+/* line 123, ../scss/partials/_sections.scss */
+.section--pinnedCovered {
+  z-index: 2;
 }
 
 /*------------------------------------*\
     #Map Section  
 \*------------------------------------*/
-/* line 131, ../scss/partials/_sections.scss */
+/* line 135, ../scss/partials/_sections.scss */
 .section-bg--map {
   opacity: .3;
   top: 0;
@@ -8203,14 +8209,14 @@ footer .footer-link {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 144, ../scss/partials/_sections.scss */
+/* line 148, ../scss/partials/_sections.scss */
 .section-bg--map.is-visible {
   opacity: 1;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-/* line 151, ../scss/partials/_sections.scss */
+/* line 155, ../scss/partials/_sections.scss */
 .map-toggleButton {
   position: absolute;
   bottom: 10%;
@@ -8222,19 +8228,19 @@ footer .footer-link {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 160, ../scss/partials/_sections.scss */
+/* line 164, ../scss/partials/_sections.scss */
 .map-toggleButton.is-visible {
   opacity: 1;
   z-index: 3;
 }
 
-/* line 166, ../scss/partials/_sections.scss */
+/* line 170, ../scss/partials/_sections.scss */
 .map-cover {
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-/* line 172, ../scss/partials/_sections.scss */
+/* line 176, ../scss/partials/_sections.scss */
 .map-cover.is-hidden {
   display: none !important;
 }
@@ -8242,7 +8248,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 206, ../scss/partials/_sections.scss */
+/* line 210, ../scss/partials/_sections.scss */
 .blur {
   opacity: 0;
   z-index: 4;
@@ -8251,29 +8257,29 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 220, ../scss/partials/_sections.scss */
+/* line 224, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 @media only screen {
-  /* line 220, ../scss/partials/_sections.scss */
+  /* line 224, ../scss/partials/_sections.scss */
   .section--header {
     height: 10.5rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 220, ../scss/partials/_sections.scss */
+  /* line 224, ../scss/partials/_sections.scss */
   .section--header {
     height: 13.5rem;
   }
 }
-/* line 232, ../scss/partials/_sections.scss */
+/* line 236, ../scss/partials/_sections.scss */
 .section--header .header-content {
   z-index: 100;
 }
-/* line 241, ../scss/partials/_sections.scss */
+/* line 245, ../scss/partials/_sections.scss */
 .section--header .section-bg {
   left: 0;
   margin: 0 auto;
@@ -8284,13 +8290,13 @@ footer .footer-link {
   z-index: 10;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 241, ../scss/partials/_sections.scss */
+  /* line 245, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 55rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 241, ../scss/partials/_sections.scss */
+  /* line 245, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 90rem;
   }

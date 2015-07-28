@@ -46,16 +46,21 @@ $(document).on('ready', function() {
     var controller = new ScrollMagic.Controller();
 
 
-    // Pins section--pinned sections for natural wipe up 
-    var slides = document.querySelectorAll(".section--pinned");
-    // Create scene for every slide
-    for (var i=0; i<slides.length; i++) {
-        new ScrollMagic.Scene({
-                triggerElement: slides[i],
-                triggerHook: 'onLeave'
-            })
-            .setPin(slides[i])
-            .addTo(controller);
+    //Checks if there is a section--pinned to pin and it is not a touch device
+    if($('.section--pinned') && !$('html').hasClass('touch')) {
+
+          // Pins section--pinned sections for natural wipe up 
+        var slides = document.querySelectorAll(".section--pinned");
+        // Create scene for every slide
+        for (var i=0; i<slides.length; i++) {
+            new ScrollMagic.Scene({
+                    triggerElement: slides[i],
+                    triggerHook: 'onLeave'
+                })
+                .setPin(slides[i])
+                .addTo(controller);
+        }
+      
     }
 
 
@@ -232,17 +237,6 @@ $(document).on('ready', function() {
 
     });
     
-
-    // Blur Effect for Hero Header 
-    $(window).on('scroll', function() {
-        var blurImg = $(".blur");
-        var oVal = $(window).scrollTop() / 240;
-        blurImg.css("opacity", oVal);
-    });
-
-
-
-
 
 
 
