@@ -124,3 +124,22 @@
     }
 
 }
+
+
+
+
+
+/*------------------------------------*\
+    #Contact Form States (It's used when a message is sent) 
+\*------------------------------------*/
+
+
+[data-ui-component*="contact-form"] {
+
+    &.is-hidden {
+
+        opacity: 0; 
+        display: none; 
+
+    }
+}

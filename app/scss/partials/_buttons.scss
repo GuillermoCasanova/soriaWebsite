@@ -58,7 +58,7 @@
     width: rem-calc(200px); 
     cursor: pointer; 
     opacity: 0; 
-    @include single-transition(all, 0.2s, ease-in-out); 
+    @include single-transition(all, 0.3s, ease-in-out); 
     @extend %pr2;
     @extend %pl2;  
     @extend %pt2; 
@@ -72,7 +72,7 @@
 
     .link {
         opacity: 0; 
-        @include single-transition(all, 0.2s, ease-in-out); 
+        @include single-transition(all, 0.3s, ease-in-out); 
     }
 
     a {
@@ -89,59 +89,5 @@
         .link {
             opacity: 1; 
         }
-    }
-}
-
-
-
-
-
-/*------------------------------------*\
-    #Back To Top Button  
-\*------------------------------------*/
-
-
-.button--backToTop {
-    @include border-radius(50%);
-    @include single-transition(all, .2s, ease-in-out); 
-    @extend %position--fixed; 
-    background-color: #2b2b2b;
-    border: 0;
-    bottom: em-calc(30); 
-    box-shadow: none; 
-    cursor: pointer; 
-    display: absolute;
-    height: em-calc(40);
-    outline: none; 
-    padding: 0; 
-    right: em-calc(20); 
-    width: em-calc(40);
-    z-index: 999;
-    opacity: 0;  
-
-    &:hover,
-    &:active {
-        background-color: $off-black; 
-    
-        &:before {
-                color: #fff;
-        }
-    }
-
-    @include icon($icon--arrowup) {
-    @extend %position--absolute; 
-        color: $grey--dark; 
-        font-size: em-calc(30);
-        left: 0;
-        right: 0; 
-        top: 0; 
-        padding-top: 8%; 
-        margin: 0 auto;  
-        height: 100%;
-        width: 100%;
-    }
-
-    &.showing {
-        opacity: 1; 
     }
 }

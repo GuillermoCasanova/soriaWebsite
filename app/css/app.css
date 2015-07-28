@@ -4004,11 +4004,11 @@ blockquote p {
 .inner-wrap {
   position: relative;
   width: 100%;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  -moz-transition: -moz-transform 400ms ease-in-out;
-  -ms-transition: -ms-transform 400ms ease-in-out;
-  -o-transition: -o-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -ms-transition: -ms-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
 }
 /* line 172, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_global.scss */
 .inner-wrap:before, .inner-wrap:after {
@@ -4411,11 +4411,11 @@ ul.off-canvas-list li a:active {
   -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   left: 0;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  -moz-transition: -moz-transform 400ms ease-in-out;
-  -ms-transition: -ms-transform 400ms ease-in-out;
-  -o-transition: -o-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -ms-transition: -ms-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
 }
 /* line 292, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-submenu * {
@@ -4475,11 +4475,11 @@ ul.off-canvas-list li a:active {
   -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   right: 0;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  -moz-transition: -moz-transform 400ms ease-in-out;
-  -ms-transition: -ms-transform 400ms ease-in-out;
-  -o-transition: -o-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -ms-transition: -ms-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
 }
 /* line 292, /Users/Casanova/DevProjects/soriaLLC/app/bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-submenu * {
@@ -5564,13 +5564,13 @@ h6,
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .button--backToTop:before, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front,
+.blockquote--bubble p:after, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front,
 .back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
 
 /* line 59, ../scss/modules/_generics.scss */
-.fixedTab, .button--backToTop, .top-bar-container, .top-bar-container.is-hidden, .secondaryNav--fixed {
+.fixedTab, .top-bar-container, .top-bar-container.is-hidden, .secondaryNav--fixed {
   position: fixed;
 }
 
@@ -6332,10 +6332,10 @@ hr.secondary {
   width: 12.5rem;
   cursor: pointer;
   opacity: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 /* line 69, ../scss/partials/_buttons.scss */
 .fixedTab.is-visible {
@@ -6344,10 +6344,10 @@ hr.secondary {
 /* line 73, ../scss/partials/_buttons.scss */
 .fixedTab .link {
   opacity: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 /* line 78, ../scss/partials/_buttons.scss */
 .fixedTab a {
@@ -6363,62 +6363,6 @@ hr.secondary {
 }
 /* line 89, ../scss/partials/_buttons.scss */
 .fixedTab:hover .link {
-  opacity: 1;
-}
-
-/*------------------------------------*\
-    #Back To Top Button  
-\*------------------------------------*/
-/* line 104, ../scss/partials/_buttons.scss */
-.button--backToTop {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #2b2b2b;
-  border: 0;
-  bottom: 1.875em;
-  box-shadow: none;
-  cursor: pointer;
-  display: absolute;
-  height: 2.5em;
-  outline: none;
-  padding: 0;
-  right: 1.25em;
-  width: 2.5em;
-  z-index: 999;
-  opacity: 0;
-}
-/* line 122, ../scss/partials/_buttons.scss */
-.button--backToTop:hover, .button--backToTop:active {
-  background-color: #191919;
-}
-/* line 126, ../scss/partials/_buttons.scss */
-.button--backToTop:hover:before, .button--backToTop:active:before {
-  color: #fff;
-}
-/* line 135, ../scss/modules/_icons.scss */
-.button--backToTop:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  color: #888f95;
-  font-size: 1.875em;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding-top: 8%;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-}
-/* line 144, ../scss/partials/_buttons.scss */
-.button--backToTop.showing {
   opacity: 1;
 }
 
@@ -7079,6 +7023,15 @@ hr.secondary {
   -ms-transform: translateY(140%);
   -webkit-transform: translateY(140%);
   transform: translateY(140%);
+}
+
+/*------------------------------------*\
+    #Contact Form States (It's used when a message is sent) 
+\*------------------------------------*/
+/* line 139, ../scss/partials/_components.scss */
+[data-ui-component*="contact-form"].is-hidden {
+  opacity: 0;
+  display: none;
 }
 
 /*------------------------------------*\
@@ -7779,7 +7732,8 @@ a[href*="facebook"].icon--brandColors,
 \*------------------------------------*/
 /* line 201, ../scss/partials/_generics.scss */
 .vh100 {
-  height: 120vh;
+  min-height: 110vh;
+  height: 100%;
 }
 @media only screen and (min-width: 40.0625em) {
   /* line 201, ../scss/partials/_generics.scss */
@@ -7794,7 +7748,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Margins
 \*------------------------------------*/
-/* line 233, ../scss/partials/_generics.scss */
+/* line 234, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -7808,7 +7762,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 237, ../scss/partials/_generics.scss */
+/* line 238, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -7825,7 +7779,7 @@ a[href*="facebook"].icon--brandColors,
 /*------------------------------------*\
     #Paddings
 \*------------------------------------*/
-/* line 394, ../scss/partials/_generics.scss */
+/* line 395, ../scss/partials/_generics.scss */
 .media--fr {
   overflow: auto;
   zoom: 1;
@@ -7839,7 +7793,7 @@ a[href*="facebook"].icon--brandColors,
   overflow: auto;
 }
 
-/* line 398, ../scss/partials/_generics.scss */
+/* line 399, ../scss/partials/_generics.scss */
 .media--fl {
   overflow: auto;
   zoom: 1;
@@ -8204,22 +8158,23 @@ footer .footer-link {
   z-index: 0;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 /* line 148, ../scss/partials/_sections.scss */
 .section-bg--map.is-visible {
   opacity: 1;
+  z-index: 4;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-/* line 155, ../scss/partials/_sections.scss */
+/* line 156, ../scss/partials/_sections.scss */
 .map-toggleButton {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   opacity: 0;
   z-index: 2;
@@ -8228,19 +8183,19 @@ footer .footer-link {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 164, ../scss/partials/_sections.scss */
+/* line 165, ../scss/partials/_sections.scss */
 .map-toggleButton.is-visible {
   opacity: 1;
   z-index: 3;
 }
 
-/* line 170, ../scss/partials/_sections.scss */
+/* line 171, ../scss/partials/_sections.scss */
 .map-cover {
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-/* line 176, ../scss/partials/_sections.scss */
+/* line 177, ../scss/partials/_sections.scss */
 .map-cover.is-hidden {
   display: none !important;
 }
@@ -8248,7 +8203,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 210, ../scss/partials/_sections.scss */
+/* line 211, ../scss/partials/_sections.scss */
 .blur {
   opacity: 0;
   z-index: 4;
@@ -8257,29 +8212,29 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 224, ../scss/partials/_sections.scss */
+/* line 225, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 @media only screen {
-  /* line 224, ../scss/partials/_sections.scss */
+  /* line 225, ../scss/partials/_sections.scss */
   .section--header {
-    height: 10.5rem;
+    height: 12rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 224, ../scss/partials/_sections.scss */
+  /* line 225, ../scss/partials/_sections.scss */
   .section--header {
     height: 13.5rem;
   }
 }
-/* line 236, ../scss/partials/_sections.scss */
+/* line 237, ../scss/partials/_sections.scss */
 .section--header .header-content {
   z-index: 100;
 }
-/* line 245, ../scss/partials/_sections.scss */
+/* line 246, ../scss/partials/_sections.scss */
 .section--header .section-bg {
   left: 0;
   margin: 0 auto;
@@ -8290,28 +8245,16 @@ footer .footer-link {
   z-index: 10;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 245, ../scss/partials/_sections.scss */
+  /* line 246, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 55rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 245, ../scss/partials/_sections.scss */
+  /* line 246, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 90rem;
   }
-}
-
-/*------------------------------------*\
-    #Visibility Classes 
-\*------------------------------------*/
-/*------------------------------------*\
-    #is-hidden / is-visible 
-\*------------------------------------*/
-/* line 12, ../scss/partials/_visibilityClasses.scss */
-.is-hidden {
-  opacity: 0;
-  display: none;
 }
 
 /*------------------------------------*\

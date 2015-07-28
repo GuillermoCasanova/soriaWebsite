@@ -200,7 +200,8 @@
 // Gives the element 100% height of viewport on large 
 .vh100 {    
     
-    height: 120vh; 
+    min-height: 110vh; 
+    height: 100%; 
     
     @media #{$medium-up} {
         height: 100vh;

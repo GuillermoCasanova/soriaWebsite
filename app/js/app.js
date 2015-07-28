@@ -1,10 +1,13 @@
 'use strict';
 
 var app = (function(document, $) {
+
 	var docElem = document.documentElement,
+
 		_userAgentInit = function() {
 			docElem.setAttribute('data-useragent', navigator.userAgent);
 		},
+
 		_init = function() {
 			$(document).foundation();
 			_userAgentInit();
@@ -12,13 +15,17 @@ var app = (function(document, $) {
                 FastClick.attach(document.body);
             });
 		};
+
 	return {
 		init: _init
 	};
+
 })(document, jQuery);
 
 (function() {
 	app.init();
+    // Initializes Back to Top button 
+    initBackToTopButton(); 
 })();
 
 
@@ -79,10 +86,10 @@ $(document).on('ready', function() {
         //Checks to see if required trigger is on page
         if($('#services').length > 0) {
             // Sevices - Tween 
-             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', .6, 
+             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', 0.6, 
                     {opacity:0, y: 300}, 
                     {opacity: 1, y: 0},
-                     .3); 
+                     0.4); 
 
             // Services - Scene
             var scene = new ScrollMagic.Scene({
@@ -96,10 +103,10 @@ $(document).on('ready', function() {
         if($("#header-fadeIn").length > 0) {
 
             // Header - Tween 
-            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', .6, 
+            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', 0.6, 
                     {opacity:0, y: 300}, 
                     {opacity: 1, y: 0},
-                     .3); 
+                     0.4); 
 
             // Header - Scene
             var scene = new ScrollMagic.Scene({
@@ -109,31 +116,13 @@ $(document).on('ready', function() {
 
         }
 
-
-            //Checks to see if required trigger is available for scrolling 
-        if($("#call-to-contact").length > 0) {
-
-            // Call To Contact - Tween 
-           var enterFromBottom = TweenMax.staggerFromTo('#call-to-contact .enter-from-bottom', .6, 
-                {opacity:0, y: 300}, 
-                {opacity: 1, y: 0},
-                 .2); 
-
-            // Call To Contact - Scene
-            var scene = new ScrollMagic.Scene({
-                        triggerElement: "#call-to-contact",
-                        reverse: false
-            }).setTween(enterFromBottom).addTo(controller);    
-
-        }
-
         if($("#biografia").length > 0) {
 
             // Header - Tween 
-           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', .6, 
+           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', 0.6, 
                 {opacity:0, y: 300}, 
                 {opacity: 1, y: 0},
-                 .3); 
+                 0.4); 
 
             // Header - Scene
             var scene = new ScrollMagic.Scene({
@@ -150,7 +139,7 @@ $(document).on('ready', function() {
             // Characteristics - Tween 
             var fadeIn = TweenMax.staggerTo('.fade-in', .6, {
                     opacity: 1
-            }, .3);
+            }, 0.4);
 
             // Characteristics - Scene
             var characteristics = new ScrollMagic.Scene({
@@ -166,13 +155,28 @@ $(document).on('ready', function() {
             // List 1 - Tween 
             var fadeIn = TweenMax.staggerTo('.fadeIn', 0.6, {
                     opacity: 1
-            }, 0.3);
+            }, 0.4);
 
             // List 1 - Scene
             var listFadeIn = new ScrollMagic.Scene({
                     triggerElement: ".list-fadeIn",
                     reverse: false
             }).setTween(fadeIn).addTo(controller);
+        }
+
+        //Checks to see if required trigger is available for scrolling 
+        if($("[data-action='fade-in-copy']").length > 0) {
+
+            // List 1 - Tween 
+            var fadeInCopy = TweenMax.staggerTo('.fadeIn', 0.6, {
+                    opacity: 1
+            }, 0.4);
+
+            // List 1 - Scene
+            new ScrollMagic.Scene({
+                    triggerElement: "[data-action='fadeInCopy']",
+                    reverse: false
+            }).setTween(fadeInCopy).addTo(controller);
         }
 
 
@@ -306,19 +310,12 @@ $(document).on('ready', function() {
 
 
 
-
-
-
     // Lazy Load for images Code 
     $('img.lazy').lazyload({
         threshold: 200, 
         effect: "fadeIn"
 
     });
-
-
-    // Animations for components that gogle hidden/viewing 
-
 
 
     // Animation for flip-containers to active on click 
@@ -402,7 +399,21 @@ $(function() {
             });
         })
 
-    });  
+});  
+
+
+// Back to top Button  
+function initBackToTopButton() {
+
+    var backToTopBtn = $('[data-action="go-to-top"]');
+
+    backToTopBtn.on('click', function() {
+        $("body, html").animate({
+            scrollTop: 0
+        }, 800)
+        return false;
+    }); 
+};
 
 
 
