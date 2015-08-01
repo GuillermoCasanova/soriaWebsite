@@ -5601,8 +5601,7 @@ footer {
 }
 
 /* line 106, ../scss/modules/_generics.scss */
-.secondaryNav, .dropshadow2, .front,
-.back {
+.secondaryNav, .dropshadow2 {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px;
@@ -6049,6 +6048,7 @@ footer {
 /* line 6, ../scss/modules/_panels.scss */
 .panel {
   background-color: #f5f5f5;
+  border: 1px solid #dfdfdf;
 }
 
 /*------------------------------------*\
@@ -7986,7 +7986,7 @@ footer .footer-link {
 }
 
 /* front pane, placed above back */
-/* line 154, ../scss/partials/_panels.scss */
+/* line 153, ../scss/partials/_panels.scss */
 .front {
   /* for firefox 31 */
   -moz-transform: rotateY(0deg);
@@ -7996,7 +7996,7 @@ footer .footer-link {
 }
 
 /* back, initially hidden pane */
-/* line 160, ../scss/partials/_panels.scss */
+/* line 159, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
@@ -8004,7 +8004,7 @@ footer .footer-link {
   transform: rotateY(-180deg);
 }
 
-/* line 164, ../scss/partials/_panels.scss */
+/* line 163, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -8012,13 +8012,13 @@ footer .footer-link {
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 177, ../scss/partials/_panels.scss */
+/* line 176, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.5rem;
 }
-/* line 181, ../scss/partials/_panels.scss */
+/* line 180, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;

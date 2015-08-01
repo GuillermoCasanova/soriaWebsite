@@ -147,7 +147,6 @@
     @include transform-style(preserve-3d);
     @include single-transition(all, 0.2s, ease-in-out);  
     @extend %position--absolute; 
-    @extend %dropshadow2;
 }
 
 /* front pane, placed above back */
