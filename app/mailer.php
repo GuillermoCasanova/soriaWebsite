@@ -1,51 +1,65 @@
 <?php
 
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["fullName"]));
-                $name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
+// $email and $message are the data that is being
+// posted to this page from our html contact form
+$email = $_REQUEST['email'] ;
+$message = $_REQUEST['message'] ;
 
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
+// When we unzipped PHPMailer, it unzipped to
+// public_html/PHPMailer_5.2.0
+require("phpMailer/PHPMailerAutoload.php");
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "eduardo@soriallc.com";
+$mail = new PHPMailer(true);
 
-        // Set the email subject.
-        $subject = "New message from $name";
+// set mailer to use SMTP
+$mail->IsSMTP();
+$mail->CharSet = 'UTF-8';                                     // set mailer to use SMTP
 
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
+// As this email.php script lives on the same server as our email server
+// we are setting the HOST to localhost
+$mail->Host = "localhost";  // specify main and backup server
 
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
+$mail->SMTPAuth = true;     // turn on SMTP authentication
 
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
+// When sending email using PHPMailer, you need to send from a valid email address
+// In this case, we setup a test email account with the following credentials:
+// email: send_from_PHPMailer@bradm.inmotiontesting.com
+// pass: password
+$mail->SMTPSecure = 'tls';
+$mail->Username = "mail@soriallc.com";  // SMTP username
+$mail->Password = "soria1234"; // SMTP password
+$mail->Port = 587;
 
-    } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
 
+// $email is the user's email address the specified
+// on our contact us page. We set this variable at
+// the top of this page with:
+// $email = $_REQUEST['email'] ;
+$mail->From = $email;
+
+// below we want to set the email address we will be sending our email to.
+$mail->AddAddress("angel@soriallc.com", "Angel Montalvo");
+
+// set word wrap to 50 characters
+$mail->WordWrap = 50;
+// set email format to HTML
+$mail->IsHTML(true);
+
+$mail->Subject = "New message from $email";
+
+// $message is the user's message they typed in
+// on our contact us page. We set this variable at
+// the top of this page with:
+// $message = $_REQUEST['message'] ;
+$mail->Body    = $message;
+$mail->AltBody = $message;
+
+if(!$mail->Send())
+{
+   echo "Message could not be sent. <p>";
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
+}
+
+echo "Message has been sent";
 ?>
