@@ -38,7 +38,7 @@ $mail->Port = 587;
 $mail->From = $email;
 
 // below we want to set the email address we will be sending our email to.
-$mail->AddAddress("angel@soriallc.com", "Angel Montalvo");
+$mail->AddAddress("soriallc808@gmail.com", "Eduardo Soria");
 
 // set word wrap to 50 characters
 $mail->WordWrap = 50;
