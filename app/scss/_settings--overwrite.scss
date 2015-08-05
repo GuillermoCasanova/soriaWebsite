@@ -1062,7 +1062,7 @@ $include-html-pricing-classes: false;
 // 23. Progress Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-media-classes: $include-html-classes;
+$include-html-media-classes: false;
 
 // We use this to set the progress bar height
 // $progress-bar-height: rem-calc(25);
@@ -1086,7 +1086,7 @@ $include-html-pricing-classes: false;
 // 24. Range Slider
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-range-slider-classes: $include-html-classes;
+$include-html-range-slider-classes: false;
 
 // These variables define the slider bar styles
 // $range-slider-bar-width: 100%;
@@ -1123,7 +1123,7 @@ $include-html-pricing-classes: false;
 // 25. Reveal
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-reveal-classes: $include-html-classes;
+$include-html-reveal-classes: false; 
 
 // We use these to control the style of the reveal overlay.
 // $reveal-overlay-bg: rgba($black, .45);
@@ -1159,7 +1159,7 @@ $include-html-pricing-classes: false;
 // 26. Side Nav
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-nav-classes: $include-html-classes;
+ $include-html-nav-classes: false;
 
 // We use this to control padding.
 // $side-nav-padding: rem-calc(14 0);
@@ -1196,7 +1196,7 @@ $include-html-pricing-classes: false;
 // 27. Split Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+$include-html-button-classes: false;
 
 // We use these to control different shared styles for Split Buttons
 // $split-button-function-factor: 10%;
@@ -1236,7 +1236,7 @@ $include-html-pricing-classes: false;
 // 28. Sub Nav
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-nav-classes: $include-html-classes;
+ $include-html-nav-classes: false;
 
 // We use these to control margin and padding
 // $sub-nav-list-margin: rem-calc(-4 0 18);
@@ -1268,7 +1268,7 @@ $include-html-pricing-classes: false;
 // 29. Switch
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-form-classes: $include-html-classes;
+$include-html-form-classes: false;
 
 // Controlling background color for the switch container
 // $switch-bg: $gainsboro;
@@ -1289,7 +1289,7 @@ $include-html-pricing-classes: false;
 // 30. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-table-classes: $include-html-classes;
+$include-html-table-classes: false;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
@@ -1335,7 +1335,7 @@ $include-html-pricing-classes: false;
 // 31. Tabs
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-tabs-classes: $include-html-classes;
+ $include-html-tabs-classes: false;
 
 // $tabs-navigation-padding: rem-calc(16);
 // $tabs-navigation-bg-color: $silver;
@@ -1354,7 +1354,7 @@ $include-html-pricing-classes: false;
 // 32. Thumbnails
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-media-classes: $include-html-classes;
+$include-html-media-classes: false;
 
 // We use these to control border styles
 // $thumb-border-style: solid;
@@ -1370,7 +1370,7 @@ $include-html-pricing-classes: false;
 // 33. Tooltips
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-tooltip-classes: $include-html-classes;
+$include-html-tooltip-classes: false; 
 
 // $has-tip-border-bottom: dotted 1px $iron;
 // $has-tip-font-weight: $font-weight-bold;
