@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -5279,55 +5278,8 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Media Queries 
 \*------------------------------------*/
 /*------------------------------------*\
-    #Icons  (codes for icons.scss partial)
+    #Icons  
 \*------------------------------------*/
-@font-face {
-  font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?66118239");
-  src: url("../fonts/fontello--soriallc.eot?66118239#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?66118239") format("woff"), url("../fonts/fontello--soriallc.ttf?66118239") format("truetype"), url("../fonts/fontello--soriallc.svg?66118239#fontello--soriallc") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello--soriallc';
-    src: url('../font/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
-  }
-}
-*/
-/* line 28, ../scss/modules/_icons.scss */
-[class^="icon--"]:before, [class*=" icon--"]:before {
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  vertical-align: middle;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
 /*------------------------------------*\
     #Typography
 \*------------------------------------*/
@@ -5470,55 +5422,8 @@ h6,
     #Components
 \*------------------------------------*/
 /*------------------------------------*\
-    #Icons  (codes for icons.scss partial)
+    #Icons  
 \*------------------------------------*/
-@font-face {
-  font-family: 'fontello--soriallc';
-  src: url("../fonts/fontello--soriallc.eot?66118239");
-  src: url("../fonts/fontello--soriallc.eot?66118239#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?66118239") format("woff"), url("../fonts/fontello--soriallc.ttf?66118239") format("truetype"), url("../fonts/fontello--soriallc.svg?66118239#fontello--soriallc") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello--soriallc';
-    src: url('../font/fontello--soriallc.svg?32878312#fontello--soriallc') format('svg');
-  }
-}
-*/
-/* line 28, ../scss/modules/_icons.scss */
-[class^="icon--"]:before, [class*=" icon--"]:before {
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  vertical-align: middle;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
 /*------------------------------------*\
     #Photos
 \*------------------------------------*/
@@ -7132,435 +7037,295 @@ ul {
 }
 
 /*------------------------------------*\
-    #Icons (Extends from modules/partials.scss)
+    #Icons 
 \*------------------------------------*/
 /*------------------------------------*\
-    #Sizes 
+    #Fon-face font-family  
 \*------------------------------------*/
-/* line 13, ../scss/partials/_icons.scss */
-.icon--mega {
-  font-size: 6.25rem;
-  line-height: 1;
+@font-face {
+  font-family: 'fontello--soriallc';
+  src: url("../fonts/fontello--soriallc.eot?66118239");
+  src: url("../fonts/fontello--soriallc.eot?66118239#iefix") format("embedded-opentype"), url("../fonts/fontello--soriallc.woff?66118239") format("woff"), url("../fonts/fontello--soriallc.ttf?66118239") format("truetype"), url("../fonts/fontello--soriallc.svg?66118239#fontello--soriallc") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-/* line 30, ../scss/partials/_icons.scss */
-.icon--tiny {
-  margin: 0.25rem;
-  font-size: 0.75rem;
-}
-
 /*------------------------------------*\
-    #Classes  
+    #Master Icon Class  (Applies to all icons)
 \*------------------------------------*/
-/* line 43, ../scss/partials/_icons.scss */
-.icon--opacityHover {
-  -moz-transition: 0.1s, ease-in-out;
-  -o-transition: 0.1s, ease-in-out;
-  -webkit-transition: 0.1s, ease-in-out;
-  transition: 0.1s, ease-in-out;
-  opacity: .7;
-}
-/* line 47, ../scss/partials/_icons.scss */
-.icon--opacityHover:hover {
-  opacity: 1;
-}
-
-/* line 53, ../scss/partials/_icons.scss */
-.hasNoIcon:before, .hasNoIcon:after {
-  content: "" !important;
-}
-
-/*------------------------------------*\
-    #Communications 
-\*------------------------------------*/
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="email"]:before {
-  content: "";
+/* line 36, ../scss/partials/_icons.scss */
+[class^="icon--"]:before, [class*="icon--"]:before {
   font-family: "fontello--soriallc";
   font-style: normal;
+  font-weight: normal;
+  speak: none;
   vertical-align: middle;
-  margin-right: 0.25rem;
-  margin-right: 10px;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="phone"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  margin-right: 10px;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="location"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-  margin-right: 10px;
-}
-/* line 85, ../scss/partials/_icons.scss */
-[rel*="location"].icon--brandColors {
-  color: #e0274f;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*------------------------------------*\
     #Arrows 
 \*------------------------------------*/
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="prev"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="next"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="up"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="down"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/*------------------------------------*\
-    #Social media 
-\*------------------------------------*/
-/* line 135, ../scss/modules/_icons.scss */
-a[href*="facebook"]:before,
-.icon--facebook:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-/* line 129, ../scss/partials/_icons.scss */
-a[href*="facebook"].icon--brandColors,
-.icon--facebook.icon--brandColors {
-  color: #3b5998;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-.icon--linkedIn:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/*------------------------------------*\
-    #Plus and Negative 
-\*------------------------------------*/
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="plus"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/* line 135, ../scss/modules/_icons.scss */
-[rel*="neg"]:before {
-  content: "";
-  font-family: "fontello--soriallc";
-  font-style: normal;
-  vertical-align: middle;
-  margin-right: 0.25rem;
-}
-
-/*------------------------------------*\
-    #Misc 
-\*------------------------------------*/
-/* line 168, ../scss/partials/_icons.scss */
+/* line 72, ../scss/partials/_icons.scss */
 .icon--left-open-big:before {
   content: '\e800';
 }
 
-/* '' */
-/* line 169, ../scss/partials/_icons.scss */
+/* line 73, ../scss/partials/_icons.scss */
 .icon--right-open-big:before {
   content: '\e801';
 }
 
-/* '' */
-/* line 170, ../scss/partials/_icons.scss */
-.icon--plus-circled:before {
-  content: '\e802';
-}
-
-/* '' */
-/* line 171, ../scss/partials/_icons.scss */
-.icon--minus-circled:before {
-  content: '\e803';
-}
-
-/* '' */
-/* line 172, ../scss/partials/_icons.scss */
-.icon--linkedin:before {
-  content: '\e804';
-}
-
-/* '' */
-/* line 173, ../scss/partials/_icons.scss */
-.icon--facebook:before {
-  content: '\e805';
-}
-
-/* '' */
-/* line 174, ../scss/partials/_icons.scss */
-.icon--facebook-circled:before {
-  content: '\e806';
-}
-
-/* '' */
-/* line 175, ../scss/partials/_icons.scss */
-.icon--linkedin-circled:before {
-  content: '\e807';
-}
-
-/* '' */
-/* line 176, ../scss/partials/_icons.scss */
-.icon--hourglass:before {
-  content: '\e808';
-}
-
-/* '' */
-/* line 177, ../scss/partials/_icons.scss */
-.icon--clock:before {
-  content: '\e809';
-}
-
-/* '' */
-/* line 178, ../scss/partials/_icons.scss */
-.icon--cancel:before {
-  content: '\e80a';
-}
-
-/* '' */
-/* line 179, ../scss/partials/_icons.scss */
-.icon--compass:before {
-  content: '\e80c';
-}
-
-/* '' */
-/* line 180, ../scss/partials/_icons.scss */
-.icon--chat:before {
-  content: '\e80d';
-}
-
-/* '' */
-/* line 181, ../scss/partials/_icons.scss */
-.icon--search:before {
-  content: '\e80e';
-}
-
-/* '' */
-/* line 182, ../scss/partials/_icons.scss */
-.icon--flow-tree:before {
-  content: '\e810';
-}
-
-/* '' */
-/* line 183, ../scss/partials/_icons.scss */
-.icon--chart-pie:before {
-  content: '\e811';
-}
-
-/* '' */
-/* line 184, ../scss/partials/_icons.scss */
-.icon--up-open-big:before {
-  content: '\e812';
-}
-
-/* '' */
-/* line 185, ../scss/partials/_icons.scss */
-.icon--down-open-big:before {
-  content: '\e813';
-}
-
-/* '' */
-/* line 186, ../scss/partials/_icons.scss */
-.icon--location:before {
-  content: '\e814';
-}
-
-/* '' */
-/* line 187, ../scss/partials/_icons.scss */
-.icon--linkedin-rect:before {
-  content: '\e815';
-}
-
-/* '' */
-/* line 188, ../scss/partials/_icons.scss */
-.icon--facebook-rect:before {
-  content: '\e816';
-}
-
-/* '' */
-/* line 189, ../scss/partials/_icons.scss */
+/* line 74, ../scss/partials/_icons.scss */
 .icon--right-circled2:before {
   content: '\e817';
 }
 
-/* '' */
-/* line 190, ../scss/partials/_icons.scss */
+/* line 75, ../scss/partials/_icons.scss */
 .icon--left-circled2:before {
   content: '\e818';
 }
 
-/* '' */
-/* line 191, ../scss/partials/_icons.scss */
+/* line 76, ../scss/partials/_icons.scss */
+.icon--up-open-big:before {
+  content: '\e812';
+}
+
+/* line 77, ../scss/partials/_icons.scss */
+.icon--down-open-big:before {
+  content: '\e813';
+}
+
+/*------------------------------------*\
+    #Plus, Minus, Cancel 
+\*------------------------------------*/
+/* line 88, ../scss/partials/_icons.scss */
+.icon--plus-circled:before {
+  content: '\e802';
+}
+
+/* line 89, ../scss/partials/_icons.scss */
+.icon--minus-circled:before {
+  content: '\e803';
+}
+
+/* line 90, ../scss/partials/_icons.scss */
+.icon--cancel:before {
+  content: '\e80a';
+}
+
+/*------------------------------------*\
+    #Social Media 
+\*------------------------------------*/
+/* line 102, ../scss/partials/_icons.scss */
+.icon--linkedin:before {
+  content: '\e804';
+}
+
+/* line 103, ../scss/partials/_icons.scss */
+.icon--facebook:before {
+  content: '\e805';
+}
+
+/* line 104, ../scss/partials/_icons.scss */
+.icon--facebook-circled:before {
+  content: '\e806';
+}
+
+/* line 105, ../scss/partials/_icons.scss */
+.icon--linkedin-circled:before {
+  content: '\e807';
+}
+
+/* line 106, ../scss/partials/_icons.scss */
+.icon--linkedin-rect:before {
+  content: '\e815';
+}
+
+/* line 107, ../scss/partials/_icons.scss */
+.icon--facebook-rect:before {
+  content: '\e816';
+}
+
+/*------------------------------------*\
+    #Contact  
+\*------------------------------------*/
+/* line 119, ../scss/partials/_icons.scss */
 .icon--phone:before {
   content: '\e819';
 }
 
-/* '' */
-/* line 192, ../scss/partials/_icons.scss */
-.icon--graph-up:before {
-  content: '\e81b';
-}
-
-/* '' */
-/* line 193, ../scss/partials/_icons.scss */
-.icon--law:before {
-  content: '\e81c';
-}
-
-/* '' */
-/* line 194, ../scss/partials/_icons.scss */
-.icon--gearHead:before {
-  content: '\e81d';
-}
-
-/* '' */
-/* line 195, ../scss/partials/_icons.scss */
-.icon--group:before {
-  content: '\e81e';
-}
-
-/* '' */
-/* line 196, ../scss/partials/_icons.scss */
-.icon--puzzle-piece:before {
-  content: '\e81f';
-}
-
-/* '' */
-/* line 197, ../scss/partials/_icons.scss */
-.icon--magnify-money:before {
-  content: '\e820';
-}
-
-/* '' */
-/* line 198, ../scss/partials/_icons.scss */
-.icon--magnify-person:before {
-  content: '\e821';
-}
-
-/* '' */
-/* line 199, ../scss/partials/_icons.scss */
-.icon--contract:before {
-  content: '\e822';
-}
-
-/* '' */
-/* line 200, ../scss/partials/_icons.scss */
-.icon--person-connections:before {
-  content: '\e823';
-}
-
-/* '' */
-/* line 201, ../scss/partials/_icons.scss */
-.icon--litigation:before {
-  content: '\e824';
-}
-
-/* '' */
-/* line 202, ../scss/partials/_icons.scss */
-.icon--shield:before {
-  content: '\e825';
-}
-
-/* '' */
-/* line 203, ../scss/partials/_icons.scss */
-.icon--clipboard:before {
-  content: '\e826';
-}
-
-/* '' */
-/* line 204, ../scss/partials/_icons.scss */
-.icon--team:before {
-  content: '\e827';
-}
-
-/* '' */
-/* line 205, ../scss/partials/_icons.scss */
-.icon--wallet:before {
-  content: '\e828';
-}
-
-/* '' */
-/* line 206, ../scss/partials/_icons.scss */
-.icon--target:before {
-  content: '\e829';
-}
-
-/* '' */
-/* line 207, ../scss/partials/_icons.scss */
-.icon--handshake:before {
-  content: '\e82a';
-}
-
-/* '' */
-/* line 208, ../scss/partials/_icons.scss */
-.icon--podium:before {
-  content: '\e82b';
-}
-
-/* '' */
-/* line 209, ../scss/partials/_icons.scss */
-.icon--envelope:before {
-  content: '\e82c';
-}
-
-/* '' */
-/* line 210, ../scss/partials/_icons.scss */
-.icon--scales:before {
-  content: '\e82d';
-}
-
-/* '' */
-/* line 211, ../scss/partials/_icons.scss */
+/* line 120, ../scss/partials/_icons.scss */
 .icon--buildings:before {
   content: '\e82e';
 }
 
-/* '' */
+/* line 121, ../scss/partials/_icons.scss */
+.icon--location:before {
+  content: '\e814';
+}
+
+/* line 122, ../scss/partials/_icons.scss */
+.icon--envelope:before {
+  content: '\e82c';
+}
+
+/*------------------------------------*\
+    #Services, Law & Finance
+\*------------------------------------*/
+/* line 133, ../scss/partials/_icons.scss */
+.icon--hourglass:before {
+  content: '\e808';
+}
+
+/* line 134, ../scss/partials/_icons.scss */
+.icon--clock:before {
+  content: '\e809';
+}
+
+/* line 135, ../scss/partials/_icons.scss */
+.icon--compass:before {
+  content: '\e80c';
+}
+
+/* line 136, ../scss/partials/_icons.scss */
+.icon--chat:before {
+  content: '\e80d';
+}
+
+/* line 137, ../scss/partials/_icons.scss */
+.icon--search:before {
+  content: '\e80e';
+}
+
+/* line 138, ../scss/partials/_icons.scss */
+.icon--flow-tree:before {
+  content: '\e810';
+}
+
+/* line 139, ../scss/partials/_icons.scss */
+.icon--chart-pie:before {
+  content: '\e811';
+}
+
+/* line 140, ../scss/partials/_icons.scss */
+.icon--graph-up:before {
+  content: '\e81b';
+}
+
+/* line 141, ../scss/partials/_icons.scss */
+.icon--law:before {
+  content: '\e81c';
+}
+
+/* line 142, ../scss/partials/_icons.scss */
+.icon--gearHead:before {
+  content: '\e81d';
+}
+
+/* line 143, ../scss/partials/_icons.scss */
+.icon--group:before {
+  content: '\e81e';
+}
+
+/* line 144, ../scss/partials/_icons.scss */
+.icon--puzzle-piece:before {
+  content: '\e81f';
+}
+
+/* line 145, ../scss/partials/_icons.scss */
+.icon--magnify-money:before {
+  content: '\e820';
+}
+
+/* line 146, ../scss/partials/_icons.scss */
+.icon--magnify-person:before {
+  content: '\e821';
+}
+
+/* line 147, ../scss/partials/_icons.scss */
+.icon--contract:before {
+  content: '\e822';
+}
+
+/* line 148, ../scss/partials/_icons.scss */
+.icon--person-connections:before {
+  content: '\e823';
+}
+
+/* line 149, ../scss/partials/_icons.scss */
+.icon--litigation:before {
+  content: '\e824';
+}
+
+/* line 150, ../scss/partials/_icons.scss */
+.icon--shield:before {
+  content: '\e825';
+}
+
+/* line 151, ../scss/partials/_icons.scss */
+.icon--clipboard:before {
+  content: '\e826';
+}
+
+/* line 152, ../scss/partials/_icons.scss */
+.icon--team:before {
+  content: '\e827';
+}
+
+/* line 153, ../scss/partials/_icons.scss */
+.icon--wallet:before {
+  content: '\e828';
+}
+
+/* line 154, ../scss/partials/_icons.scss */
+.icon--target:before {
+  content: '\e829';
+}
+
+/* line 155, ../scss/partials/_icons.scss */
+.icon--handshake:before {
+  content: '\e82a';
+}
+
+/* line 156, ../scss/partials/_icons.scss */
+.icon--podium:before {
+  content: '\e82b';
+}
+
+/* line 157, ../scss/partials/_icons.scss */
+.icon--scales:before {
+  content: '\e82d';
+}
+
+/*------------------------------------*\
+    #Icon Sizes 
+\*------------------------------------*/
+/* line 169, ../scss/partials/_icons.scss */
+.icon--mega {
+  font-size: 6.25rem;
+  line-height: 1;
+}
+
+/* line 186, ../scss/partials/_icons.scss */
+.icon--tiny {
+  margin: 0.25rem;
+  font-size: 0.75rem;
+}
+
 /*------------------------------------*\
     #Generics 
 \*------------------------------------*/
@@ -7848,7 +7613,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Grids
 \*------------------------------------*/
-/* line 8, ../scss/partials/_grids.scss */
+/* line 9, ../scss/partials/_grids.scss */
 .row,
 .columns {
   overflow: visible;
