@@ -78,18 +78,22 @@ $(document).on('ready', function() {
       
     }
 
+    /*------------------------------------*\
+        #Scroll animations on index.html page 
+    \*------------------------------------*/
+
 
     //Checks to see if required trigger is on page
     if($("[data-action='bring-in-services']").length > 0) {
         // Sevices - Tween 
-         var enterFromBottom = TweenMax.staggerFromTo('[data-action="bring-in-header"] .enter-from-bottom', 0.6, 
+         var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', 0.6, 
                 {opacity:0, y: 300}, 
                 {opacity: 1, y: 0},
                  0.4); 
 
         // Services - Scene
         var scene = new ScrollMagic.Scene({
-                    triggerElement: "[data-action='bring-in-header']",
+                    triggerElement: "[data-action='bring-in-services']",
                     reverse: false
         }).setTween(enterFromBottom).addTo(controller);    
 
@@ -159,7 +163,7 @@ $(document).on('ready', function() {
 
         // ccpa.html List 1 - Tween 
         // has contents stagger fade in from the bottom 
-        var fadeIn = TweenMax.staggerTo('.fadeIn', 0.6, {
+        var fadeIn = TweenMax.staggerTo('#plan .fadeIn', 0.6, {
                 opacity: 1
         }, 0.4);
 
@@ -381,8 +385,8 @@ $(document).on('ready', function() {
         e.stopPropagation(); 
         e.preventDefault();
         // Stores the button
-        var toggleMapButton = $(this); 
-        $('[data-ui-component="section-bg--map"]').toggleClass('is-visible'); 
+        var toggleMapButton = $('[data-ui-component="toggle-map-button"]'); 
+        $('[data-ui-component="map"]').toggleClass('is-visible'); 
         $('[data-ui-component="map-cover"]').toggleClass('is-hidden'); 
         $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
         // Hides/Shows the toggleMapButton 
