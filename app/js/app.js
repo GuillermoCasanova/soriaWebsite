@@ -4,16 +4,22 @@ var app = (function(document, $) {
 
 	var docElem = document.documentElement,
 
+        // Defines client's devices on the <html> element's data-useragent attr
 		_userAgentInit = function() {
 			docElem.setAttribute('data-useragent', navigator.userAgent);
 		},
 
 		_init = function() {
+            // Initializes Foundation
 			$(document).foundation();
 			_userAgentInit();
+            // Initializes fast click on the document
             $(function() {
                 FastClick.attach(document.body);
             });
+            // Initializes back to top button
+            initBackToTopButton(); 
+
 		};
 
 	return {
@@ -22,10 +28,9 @@ var app = (function(document, $) {
 
 })(document, jQuery);
 
+
 (function() {
 	app.init();
-    // Initializes Back to Top button 
-    initBackToTopButton(); 
 })();
 
 
