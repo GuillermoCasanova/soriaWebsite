@@ -58,7 +58,7 @@
 
 
     <!--Main Navigation for Medium Up --> 
-    <div class="top-bar-container  show-for-medium-up">
+    <div data-action="toggle-top-bar" class="top-bar-container  show-for-medium-up">
 
         <nav class="top-bar  show-for-medium-up" data-topbar   data-options="is_hover: false">
         
@@ -192,7 +192,8 @@
         
             
             <!-- Introduction header --> 
-            <section class="section  section--alt vh100 section--pinned">
+            <section class="section  section--alt vh100 section--pinned"
+                     data-action="pin-element-to-top">
                 
                 <div class="section-bg">
 
@@ -216,7 +217,7 @@
 
 
             <!--Services--> 
-            <section class="section  section--highlighted" id="services">
+            <section class="section  section--highlighted" data-action="bring-in-services">
                 
                 <div class="row">
             
@@ -536,7 +537,7 @@
             
             
             <!--Characteristics-->
-            <section class="section section--alt" id="characteristics">
+            <section class="section section--alt" data-action="bring-in-characteristics">
                     
                 <ul class="row ptb4">
             
@@ -584,7 +585,7 @@
             
             
             <!--Our Team--> 
-            <section class="section section--highlighted"  data-action="show-fixedTab">
+            <section class="section section--highlighted"  data-action="show-fixed-tab">
             
                 <div class="row">
                     
@@ -631,7 +632,7 @@
             
                                         </div>
             
-                                        <img class="lazy"
+                                        <img data-action="lazy-load-img"
                                              src="images/emptyImage.gif"
                                              data-original="images/eduardo.jpg" 
                                              alt="Eduardo Iglesias" title="Eduardo Iglesias" width="600" height="857" >
@@ -679,7 +680,7 @@
             
                                         </div>
             
-                                        <img class="lazy" 
+                                        <img data-action="lazy-load-img" 
                                              src="images/emptyImage.gif"
                                              data-original="images/carlos.jpg" 
                                              alt="Carlos Iglesias" title="Carlos Iglesias" width="600" height="857" >
@@ -772,7 +773,8 @@
     
 
                 <!-- CCPA Campaign Button -->    
-                <div class="fixedTab">
+                <div data-ui-component="fixed-tab"
+                     class="fixedTab">
                     
                     <span class="fwb">Eduardo Soria for CCPA</span>
 
