@@ -3,16 +3,23 @@
     #Typography
 \*------------------------------------*/
 
+/* Base Typefaces */
 
-//Base Font Family
+// Base Font Family
 $base-font-family: 'Roboto Condensed', sans-serif;; 
 
-//FallBack Font Family 
-$fallBack-font-family: 'Asar'; 
+// Serif Fonft Family
+$serif-font-family: 'Asar', 'Times New Roman', serif;
+
 
 %base-font-family {
 	font-family:  $base-font-family; 
 }
+
+%serif-font-family {
+    font-family: $serif-font-family; 
+}
+
 
 
 
@@ -51,56 +58,81 @@ $base-font-weight: $normal;
     #Text Sizes and Hn sizes 
 \*------------------------------------*/
 
+// "Magic" numberis 24, line heights and font sizes must be multiples of 12----*/
 
 %text--mega {
     font-size: rem-calc(36); 
-	line-height: 1.333; 
-    font-family: $font-family-serif; 
+	line-height: 0.6; 
+    @extend %serif-font-family;  
 
     @media #{$medium-up} {
         font-size: rem-calc(60);
-
+        line-height: 0.4; 
     }
 }
 
 %h1 {
-		font-size: rem-calc(36); 
-		line-height: 1.333; 
+	font-size: rem-calc(36); 
+	line-height: 1.333; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h2 {
-		font-size: rem-calc(28); 
-		line-height: 1.125; 
+	font-size: rem-calc(28); 
+	line-height: .85; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h3 {
-		font-size: rem-calc(24); 
-		line-height: 1.3; 
+	font-size: rem-calc(24); 
+	line-height: 1; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h4 {
-		font-size: rem-calc(20);
-		line-height: 1.2; 
+	font-size: rem-calc(20);
+	line-height: 1.2; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h5 {
-		font-size: rem-calc(18);
-		line-height: 1.333; 
+	font-size: rem-calc(18);
+	line-height: 1.333; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h6 {
-		font-size: rem-calc(16);
-		line-height: 1.5; 
+	font-size: rem-calc(16);
+	line-height: 1.5; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %h7 {
-        font-size: rem-calc(14);
-        line-height: 1.5; 
+    font-size: rem-calc(14);
+    line-height: 1.71; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 %text--micro {
-		font-size: rem-calc(12); 
-		line-height: 2; 
+	font-size: rem-calc(12); 
+	line-height: 2; 
+    margin-bottom: rem-calc(24px);
+    @extend %serif-font-family;  
+    @extend %fwn; 
 }
 
 
@@ -114,21 +146,26 @@ $base-font-weight: $normal;
 
 %text--white { color: #fff;}
 
+//Text Shadow Mixin 
+@mixin text-shadow--title ($color)
+{
+    @include text-shadow(rgba(darken($color, 30%), 1) 0 1px 0);
+}
 
 
 
 
 /*------------------------------------*\
-    #Links 
+    #Link Types 
 \*------------------------------------*/
 
 
 %link--underline {
-		text-decoration: underline; 
+	text-decoration: underline; 
 
-		&:hover {
-				text-decoration: none; 
-		}
+	&:hover {
+			text-decoration: none; 
+	}
 }
 
 
@@ -140,10 +177,13 @@ $base-font-weight: $normal;
 \*------------------------------------*/
 
  %opacity_hover {
- 	@include single-transition(all, 0.1s, ease-in-out);
+
+ 	@include single-transition(all, 0.3s, ease-in-out);
+
  	&:hover {
  		opacity: .7;
  	}
+
  }
 
 
@@ -157,12 +197,12 @@ $base-font-weight: $normal;
 @mixin blockquote($color) {
 
 	p {
-	@include border-radius(em-calc(6));
 	background-color: $blue--light; 
 	padding: em-calc(14);
 	margin-bottom: em-calc(14);
-	
+    @include border-radius(em-calc(6));
 
+	
 	&:after {
 		@extend %position--absolute; 
 		@extend %display--block; 
@@ -188,10 +228,4 @@ $base-font-weight: $normal;
 			content: none; 
 		}
 	}
-}
-
-//Text Shadow Mixin 
-@mixin text-shadow--title ($color)
-{
-	@include text-shadow(rgba(darken($color, 30%), 1) 0 1px 0);
 }

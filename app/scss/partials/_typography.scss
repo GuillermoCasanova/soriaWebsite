@@ -3,14 +3,26 @@
     #Typography 
 \*------------------------------------*/
 
+/*  Base font sizes, margin-bottoms, and properties */
 
 body, html {	
 	font-family: $base-font-family; 
 	font-size: rem-calc(16);
+    line-height: 1.5; //24px 
 }
 
+// 24px magic number, all line heights and margin bottoms will be multiples of this
+// to maintain vertical and line  height rhythm 
 
-
+/* Common margin-bottom for vertical rhythm. */
+ul,ol,dl,
+fieldset,
+p,
+table,
+pre,
+hr{
+    margin-bottom: rem-calc(24px);
+}
 
 
 /*------------------------------------*\
@@ -89,6 +101,7 @@ h6,
 /*------------------------------------*\
     #Paragraph Sizes
 \*------------------------------------*/
+
 
 
 .par--subText {
