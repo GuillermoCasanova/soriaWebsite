@@ -52,8 +52,8 @@ a{ text-decoration: none;
 
 body, html {	
 	font-family: $base-font-family; 
-	font-size: rem-calc(16);
-    line-height: 1.5; //24px 
+	font-size: $base-font-size; 
+    line-height: $base-font-line-height; //24px 
 }
 
 // 24px magic number, all line heights and margin bottoms will be multiples of this

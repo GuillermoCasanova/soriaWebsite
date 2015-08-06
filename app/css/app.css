@@ -4197,15 +4197,15 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
     #Typography
 \*------------------------------------*/
 /* Base Typefaces */
-/* line 15, ../scss/modules/_typography.scss */
+/* line 17, ../scss/modules/_typography.scss */
 .button {
   font-family: "Roboto Condensed", sans-serif;
 }
 
 /*------------------------------------*\
-    #Font Weights 
+    #Font Weights & Styles 
 \*------------------------------------*/
-/* line 37, ../scss/modules/_typography.scss */
+/* line 39, ../scss/modules/_typography.scss */
 h1,
 .h1, .icon--large, h2,
 .h2, h3,
@@ -4216,20 +4216,20 @@ h1,
   font-weight: 400;
 }
 
-/* line 38, ../scss/modules/_typography.scss */
+/* line 40, ../scss/modules/_typography.scss */
 .panel .panel-title {
   font-weight: 700;
 }
 
 /*------------------------------------*\
-    #Font Weights 
+    #Text Alignments 
 \*------------------------------------*/
-/* line 49, ../scss/modules/_typography.scss */
+/* line 53, ../scss/modules/_typography.scss */
 .footer-nav, .footer-siteInfo {
   text-align: center;
 }
 
-/* line 50, ../scss/modules/_typography.scss */
+/* line 54, ../scss/modules/_typography.scss */
 footer {
   text-align: left;
 }
@@ -4237,69 +4237,69 @@ footer {
 /*------------------------------------*\
     #Text Sizes and Hn sizes 
 \*------------------------------------*/
-/* line 65, ../scss/modules/_typography.scss */
+/* line 69, ../scss/modules/_typography.scss */
 h1,
 .h1, .icon--large {
   font-size: 2.25rem;
   line-height: 1.333;
 }
 
-/* line 71, ../scss/modules/_typography.scss */
+/* line 75, ../scss/modules/_typography.scss */
 h2,
 .h2 {
   font-size: 1.75rem;
   line-height: .85;
 }
 
-/* line 77, ../scss/modules/_typography.scss */
+/* line 81, ../scss/modules/_typography.scss */
 h3,
 .h3 {
   font-size: 1.5rem;
   line-height: 1;
 }
 
-/* line 83, ../scss/modules/_typography.scss */
+/* line 87, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
 .h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-/* line 89, ../scss/modules/_typography.scss */
+/* line 93, ../scss/modules/_typography.scss */
 h5,
 .h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small {
   font-size: 1.125rem;
   line-height: 1.333;
 }
 
-/* line 95, ../scss/modules/_typography.scss */
+/* line 99, ../scss/modules/_typography.scss */
 h6,
 .h6 {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* line 101, ../scss/modules/_typography.scss */
+/* line 105, ../scss/modules/_typography.scss */
 .par--subText, .profile-bio .body, .panel-body {
   font-size: 0.875rem;
   line-height: 1.71;
 }
 
 /* Sizes for text too small or too large for a header tag */
-/* line 108, ../scss/modules/_typography.scss */
+/* line 112, ../scss/modules/_typography.scss */
 .text--mega {
   font-size: 2.25rem;
   line-height: 1.333;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 108, ../scss/modules/_typography.scss */
+  /* line 112, ../scss/modules/_typography.scss */
   .text--mega {
     font-size: 3.75rem;
     line-height: 1.5;
   }
 }
 
-/* line 120, ../scss/modules/_typography.scss */
+/* line 124, ../scss/modules/_typography.scss */
 .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-size: 0.75rem;
   line-height: 2;
@@ -4308,7 +4308,7 @@ h6,
 /*------------------------------------*\
     #Text Colors 
 \*------------------------------------*/
-/* line 135, ../scss/modules/_typography.scss */
+/* line 139, ../scss/modules/_typography.scss */
 .topContactBar .topContactBar-item,
 .topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header .header-content, .section--header .header-title {
   color: #fff;
@@ -4317,11 +4317,11 @@ h6,
 /*------------------------------------*\
     #Link Types 
 \*------------------------------------*/
-/* line 151, ../scss/modules/_typography.scss */
+/* line 156, ../scss/modules/_typography.scss */
 .footer-siteInfo a {
   text-decoration: underline;
 }
-/* line 154, ../scss/modules/_typography.scss */
+/* line 159, ../scss/modules/_typography.scss */
 .footer-siteInfo a:hover {
   text-decoration: none;
 }
@@ -4329,14 +4329,14 @@ h6,
 /*------------------------------------*\
     #Hovers 
 \*------------------------------------*/
-/* line 167, ../scss/modules/_typography.scss */
+/* line 172, ../scss/modules/_typography.scss */
 .title-area {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 171, ../scss/modules/_typography.scss */
+/* line 176, ../scss/modules/_typography.scss */
 .title-area:hover {
   opacity: .7;
 }
@@ -5007,7 +5007,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*\
     #Blockquotes 
 \*------------------------------------*/
-/* line 187, ../scss/modules/_typography.scss */
+/* line 192, ../scss/modules/_typography.scss */
 .blockquote--bubble p {
   background-color: #63c7dc;
   padding: 0.875em;
@@ -5016,7 +5016,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 0.375em;
   border-radius: 0.375em;
 }
-/* line 194, ../scss/modules/_typography.scss */
+/* line 199, ../scss/modules/_typography.scss */
 .blockquote--bubble p:after {
   content: "";
   bottom: auto;
@@ -5027,14 +5027,14 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 24px solid transparent;
   border-top: 30px #63c7dc solid;
 }
-/* line 209, ../scss/modules/_typography.scss */
+/* line 214, ../scss/modules/_typography.scss */
 .blockquote--bubble cite {
   padding-bottom: 0.25em;
   text-align: right;
   font-weight: 700;
   font-style: normal;
 }
-/* line 215, ../scss/modules/_typography.scss */
+/* line 220, ../scss/modules/_typography.scss */
 .blockquote--bubble cite:before {
   content: none;
 }
