@@ -49,12 +49,12 @@
 .highlightBorder {
     
     width: 100%; 
-    font-size: 0; 
+    font-size: 0;  // Removes all padding/margin from having a font size on the list
 
     ul {
         list-style: none; 
         width: 100%;
-        font-size: 0; 
+        font-size: 0; // Removes all padding/margin from having a font size on the list
         @extend %display--inlineBlock; 
         @extend %mtrbl0; 
 
@@ -119,6 +119,7 @@
     .top-bar {
         background-color: #fff; 
         @extend %dropshadow1; 
+
         .top-bar-section ul li.top-bar-link > a {
             color: $secondaryColor; 
         }
@@ -152,12 +153,12 @@
 
 
 .top-bar-container.is-hidden{
-    @include translateY(-130px); 
     width: 100%;
     left: 0;
-    @extend %position--fixed; 
     top: 0;
     z-index: 99;
+    @extend %position--fixed; 
+    @include translateY(-130px); 
 
 }
 
