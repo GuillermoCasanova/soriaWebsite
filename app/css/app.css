@@ -4202,17 +4202,6 @@ a, .button--primary, .button--primary.secondaryAction, .button--secondary, .butt
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* line 19, ../scss/modules/_typography.scss */
-.text--mega, h1,
-.h1, .icon--large, h2,
-.h2, h3,
-.h3, .panel .panel-title, h4,
-.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium, h5,
-.h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small, h6,
-.h6, .profile-bio .body, .panel-body, .text--micro, [rel*="copyright"], [rel*="credit"] {
-  font-family: "Asar", "Times New Roman", serif;
-}
-
 /*------------------------------------*\
     #Font Weights 
 \*------------------------------------*/
@@ -4223,7 +4212,7 @@ h1,
 .h3, .panel .panel-title, h4,
 .h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium, h5,
 .h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small, h6,
-.h6, .profile-bio .body, .panel-body, .text--micro, [rel*="copyright"], [rel*="credit"] {
+.h6, .par--subText, .profile-bio .body, .panel-body, .text--mega, .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-weight: 400;
 }
 
@@ -4236,7 +4225,7 @@ h1,
     #Font Weights 
 \*------------------------------------*/
 /* line 49, ../scss/modules/_typography.scss */
-.header--standout, .footer-nav, .footer-siteInfo {
+.footer-nav, .footer-siteInfo {
   text-align: center;
 }
 
@@ -4248,85 +4237,78 @@ footer {
 /*------------------------------------*\
     #Text Sizes and Hn sizes 
 \*------------------------------------*/
-/* line 63, ../scss/modules/_typography.scss */
-.text--mega {
-  font-size: 2.25rem;
-  line-height: 0.6;
-}
-@media only screen and (min-width: 40.0625em) {
-  /* line 63, ../scss/modules/_typography.scss */
-  .text--mega {
-    font-size: 3.75rem;
-    line-height: 0.4;
-  }
-}
-
-/* line 74, ../scss/modules/_typography.scss */
+/* line 65, ../scss/modules/_typography.scss */
 h1,
 .h1, .icon--large {
   font-size: 2.25rem;
   line-height: 1.333;
-  margin-bottom: 1.5rem;
 }
 
-/* line 82, ../scss/modules/_typography.scss */
+/* line 71, ../scss/modules/_typography.scss */
 h2,
 .h2 {
   font-size: 1.75rem;
   line-height: .85;
-  margin-bottom: 1.5rem;
 }
 
-/* line 90, ../scss/modules/_typography.scss */
+/* line 77, ../scss/modules/_typography.scss */
 h3,
 .h3 {
   font-size: 1.5rem;
   line-height: 1;
-  margin-bottom: 1.5rem;
 }
 
-/* line 98, ../scss/modules/_typography.scss */
+/* line 83, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
 .h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
 }
 
-/* line 106, ../scss/modules/_typography.scss */
+/* line 89, ../scss/modules/_typography.scss */
 h5,
 .h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small {
   font-size: 1.125rem;
   line-height: 1.333;
-  margin-bottom: 1.5rem;
 }
 
-/* line 114, ../scss/modules/_typography.scss */
+/* line 95, ../scss/modules/_typography.scss */
 h6,
 .h6 {
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
 }
 
-/* line 122, ../scss/modules/_typography.scss */
-.profile-bio .body, .panel-body {
+/* line 101, ../scss/modules/_typography.scss */
+.par--subText, .profile-bio .body, .panel-body {
   font-size: 0.875rem;
   line-height: 1.71;
-  margin-bottom: 1.5rem;
 }
 
-/* line 130, ../scss/modules/_typography.scss */
+/* Sizes for text too small or too large for a header tag */
+/* line 108, ../scss/modules/_typography.scss */
+.text--mega {
+  font-size: 2.25rem;
+  line-height: 1.333;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 108, ../scss/modules/_typography.scss */
+  .text--mega {
+    font-size: 3.75rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 120, ../scss/modules/_typography.scss */
 .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-size: 0.75rem;
   line-height: 2;
-  margin-bottom: 1.5rem;
 }
 
 /*------------------------------------*\
     #Text Colors 
 \*------------------------------------*/
-/* line 147, ../scss/modules/_typography.scss */
+/* line 135, ../scss/modules/_typography.scss */
 .topContactBar .topContactBar-item,
 .topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header .header-content, .section--header .header-title {
   color: #fff;
@@ -4335,11 +4317,11 @@ h6,
 /*------------------------------------*\
     #Link Types 
 \*------------------------------------*/
-/* line 163, ../scss/modules/_typography.scss */
+/* line 151, ../scss/modules/_typography.scss */
 .footer-siteInfo a {
   text-decoration: underline;
 }
-/* line 166, ../scss/modules/_typography.scss */
+/* line 154, ../scss/modules/_typography.scss */
 .footer-siteInfo a:hover {
   text-decoration: none;
 }
@@ -4347,14 +4329,14 @@ h6,
 /*------------------------------------*\
     #Hovers 
 \*------------------------------------*/
-/* line 179, ../scss/modules/_typography.scss */
+/* line 167, ../scss/modules/_typography.scss */
 .title-area {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 183, ../scss/modules/_typography.scss */
+/* line 171, ../scss/modules/_typography.scss */
 .title-area:hover {
   opacity: .7;
 }
@@ -4430,7 +4412,7 @@ h6,
     #Flexbox 
 \*------------------------------------*/
 /* line 89, ../scss/modules/_generics.scss */
-.header--standout, .footer-nav, .footer-siteInfo {
+.footer-nav, .footer-siteInfo {
   text-align: center;
 }
 
@@ -4736,7 +4718,7 @@ footer {
 }
 
 /* line 446, ../scss/modules/_generics.scss */
-.panel, .header--standout, .mt1 {
+.panel, .mt1 {
   margin-top: 0.375rem !important;
 }
 
@@ -4766,7 +4748,7 @@ footer {
 }
 
 /* line 475, ../scss/modules/_generics.scss */
-.header--standout, .mb1, [rel*="copyright"], [rel*="credit"] {
+.mb1, [rel*="copyright"], [rel*="credit"] {
   margin-bottom: 0.375rem !important;
 }
 
@@ -4938,8 +4920,61 @@ ul {
 /*------------------------------------*\
     #Typography 
 \*------------------------------------*/
+/*------------------------------------*\
+    #Reset
+\*------------------------------------*/
+/* line 12, ../scss/partials/_typography.scss */
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 19, ../scss/partials/_typography.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 23, ../scss/partials/_typography.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 26, ../scss/partials/_typography.scss */
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 30, ../scss/partials/_typography.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 34, ../scss/partials/_typography.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 37, ../scss/partials/_typography.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* line 41, ../scss/partials/_typography.scss */
+a {
+  text-decoration: none;
+  color: #ef8111;
+}
+
+/*------------------------------------*\
+    #Base  
+\*------------------------------------*/
 /*  Base font sizes, margin-bottoms, and properties */
-/* line 8, ../scss/partials/_typography.scss */
+/* line 53, ../scss/partials/_typography.scss */
 body, html {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
@@ -4947,7 +4982,8 @@ body, html {
 }
 
 /* Common margin-bottom for vertical rhythm. */
-/* line 18, ../scss/partials/_typography.scss */
+/* line 63, ../scss/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 fieldset,
 p,
@@ -4958,61 +4994,20 @@ hr {
 }
 
 /*------------------------------------*\
-    #Text Weights 
+    #Header Styles and Sizes 
 \*------------------------------------*/
-/* line 33, ../scss/partials/_typography.scss */
-.fwn {
-  font-weight: 400;
-}
-
-/* line 34, ../scss/partials/_typography.scss */
-.fwb {
-  font-weight: 700;
-}
-
-/* line 35, ../scss/partials/_typography.scss */
-.uc {
-  text-transform: uppercase;
+/* line 83, ../scss/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Asar", "Times New Roman", serif;
 }
 
 /*------------------------------------*\
-    #Text Alignments  
+    #Paragraph Styles
 \*------------------------------------*/
-/* line 46, ../scss/partials/_typography.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 47, ../scss/partials/_typography.scss */
-.text-left {
-  text-align: left;
-}
-
-/* line 48, ../scss/partials/_typography.scss */
-.text-right {
-  text-align: right;
-}
-
-/*------------------------------------*\
-    #Text Sizes and hn sizes  
-\*------------------------------------*/
-/*------------------------------------*\
-    #Paragraph Sizes
-\*------------------------------------*/
-/* line 107, ../scss/partials/_typography.scss */
-.par--subText {
-  font-size: 0.875rem;
-}
-
-/* line 111, ../scss/partials/_typography.scss */
-.par--important {
-  font-size: 1.125rem;
-}
-
 /*------------------------------------*\
     #Blockquotes 
 \*------------------------------------*/
-/* line 199, ../scss/modules/_typography.scss */
+/* line 187, ../scss/modules/_typography.scss */
 .blockquote--bubble p {
   background-color: #63c7dc;
   padding: 0.875em;
@@ -5021,7 +5016,7 @@ hr {
   -webkit-border-radius: 0.375em;
   border-radius: 0.375em;
 }
-/* line 206, ../scss/modules/_typography.scss */
+/* line 194, ../scss/modules/_typography.scss */
 .blockquote--bubble p:after {
   content: "";
   bottom: auto;
@@ -5032,14 +5027,14 @@ hr {
   border-right: 24px solid transparent;
   border-top: 30px #63c7dc solid;
 }
-/* line 221, ../scss/modules/_typography.scss */
+/* line 209, ../scss/modules/_typography.scss */
 .blockquote--bubble cite {
   padding-bottom: 0.25em;
   text-align: right;
   font-weight: 700;
   font-style: normal;
 }
-/* line 227, ../scss/modules/_typography.scss */
+/* line 215, ../scss/modules/_typography.scss */
 .blockquote--bubble cite:before {
   content: none;
 }
@@ -5047,7 +5042,7 @@ hr {
 /*------------------------------------*\
     #Links
 \*------------------------------------*/
-/* line 139, ../scss/partials/_typography.scss */
+/* line 162, ../scss/partials/_typography.scss */
 a[class*="link"] {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5055,37 +5050,62 @@ a[class*="link"] {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 146, ../scss/partials/_typography.scss */
+/* line 169, ../scss/partials/_typography.scss */
 .link--underline {
   text-decoration: underline;
 }
-/* line 149, ../scss/partials/_typography.scss */
+/* line 172, ../scss/partials/_typography.scss */
 .link--underline:hover {
   text-decoration: none;
 }
 
 /*------------------------------------*\
-    #Headers
-\*------------------------------------*/
-/*------------------------------------*\
     #Font Color Classes 
 \*------------------------------------*/
-/* line 175, ../scss/partials/_typography.scss */
+/* line 185, ../scss/partials/_typography.scss */
 .txtc2 {
   color: #888f95;
 }
 
-/* line 179, ../scss/partials/_typography.scss */
+/* line 189, ../scss/partials/_typography.scss */
 .txtc3 {
   color: #ef8111;
 }
 
 /*------------------------------------*\
-    #hrs 
+    #Text Weights (Variables defined in _typography.scss module)
 \*------------------------------------*/
-/* line 192, ../scss/partials/_typography.scss */
-hr.secondary {
-  border-color: #262d33;
+/* line 202, ../scss/partials/_typography.scss */
+.fwn {
+  font-weight: 400;
+}
+
+/* line 203, ../scss/partials/_typography.scss */
+.fwb {
+  font-weight: 700;
+}
+
+/* line 204, ../scss/partials/_typography.scss */
+.uc {
+  text-transform: uppercase;
+}
+
+/*------------------------------------*\
+    #Text Alignments  
+\*------------------------------------*/
+/* line 215, ../scss/partials/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 216, ../scss/partials/_typography.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 217, ../scss/partials/_typography.scss */
+.text-right {
+  text-align: right;
 }
 
 /*------------------------------------*\
@@ -5320,20 +5340,20 @@ hr.secondary {
 .top-bar-container.is-alt .top-bar {
   background-color: #fff;
 }
-/* line 122, ../scss/partials/_navs.scss */
+/* line 123, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
   color: #3c4750;
 }
-/* line 128, ../scss/partials/_navs.scss */
+/* line 129, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .navBar-logo {
   display: none;
 }
-/* line 132, ../scss/partials/_navs.scss */
+/* line 133, ../scss/partials/_navs.scss */
 .top-bar-container.is-alt .top-bar .title-area .logo--alt {
   display: block;
 }
 
-/* line 140, ../scss/partials/_navs.scss */
+/* line 141, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   width: 100%;
   -moz-transform: translateY(0);
@@ -5342,7 +5362,7 @@ hr.secondary {
   transform: translateY(0);
 }
 @media (min-width: 900px) {
-  /* line 140, ../scss/partials/_navs.scss */
+  /* line 141, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -5350,22 +5370,22 @@ hr.secondary {
   }
 }
 
-/* line 154, ../scss/partials/_navs.scss */
+/* line 155, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
-  -moz-transform: translateY(-130px);
-  -ms-transform: translateY(-130px);
-  -webkit-transform: translateY(-130px);
-  transform: translateY(-130px);
   width: 100%;
   left: 0;
   top: 0;
   z-index: 99;
+  -moz-transform: translateY(-130px);
+  -ms-transform: translateY(-130px);
+  -webkit-transform: translateY(-130px);
+  transform: translateY(-130px);
 }
 
 /*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
-/* line 173, ../scss/partials/_navs.scss */
+/* line 174, ../scss/partials/_navs.scss */
 .top-bar {
   z-index: 950;
   -moz-transition: all 0.4s ease-in-out;
@@ -5377,14 +5397,14 @@ hr.secondary {
 /*------------------------------------*\
     #Top Bar Links 
 \*------------------------------------*/
-/* line 191, ../scss/partials/_navs.scss */
+/* line 192, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 196, ../scss/partials/_navs.scss */
+/* line 197, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:after {
   opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
@@ -5392,22 +5412,22 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 202, ../scss/partials/_navs.scss */
+/* line 203, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 203, ../scss/partials/_navs.scss */
+/* line 204, ../scss/partials/_navs.scss */
 .top-bar.is-normal .top-bar-section ul li.top-bar-link a {
   color: #3c4750;
 }
-/* line 211, ../scss/partials/_navs.scss */
+/* line 212, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover a {
   color: #ef8111;
 }
-/* line 216, ../scss/partials/_navs.scss */
+/* line 217, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:hover:after {
   height: 4px;
   right: 0;
@@ -5425,16 +5445,16 @@ hr.secondary {
 /*------------------------------------*\
     #Top Bar Dropdowns 
 \*------------------------------------*/
-/* line 245, ../scss/partials/_navs.scss */
+/* line 246, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 249, ../scss/partials/_navs.scss */
+/* line 250, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 253, ../scss/partials/_navs.scss */
+/* line 254, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5444,12 +5464,12 @@ hr.secondary {
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 259, ../scss/partials/_navs.scss */
+/* line 260, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link:hover {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 266, ../scss/partials/_navs.scss */
+/* line 267, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5459,7 +5479,7 @@ hr.secondary {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-/* line 272, ../scss/partials/_navs.scss */
+/* line 273, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a:hover {
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
@@ -5471,14 +5491,14 @@ hr.secondary {
 /*------------------------------------*\
     #Small Nav Styles 
 \*------------------------------------*/
-/* line 295, ../scss/partials/_navs.scss */
+/* line 296, ../scss/partials/_navs.scss */
 .off-canvas-list li {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 301, ../scss/partials/_navs.scss */
+/* line 302, ../scss/partials/_navs.scss */
 .off-canvas-list li:hover > a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5491,11 +5511,11 @@ hr.secondary {
 /*------------------------------------*\
     #Small Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 323, ../scss/partials/_navs.scss */
+/* line 324, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 328, ../scss/partials/_navs.scss */
+/* line 329, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5503,7 +5523,7 @@ hr.secondary {
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 341, ../scss/partials/_navs.scss */
+/* line 342, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -5511,32 +5531,32 @@ hr.secondary {
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 368, ../scss/partials/_navs.scss */
+/* line 369, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
-/* line 374, ../scss/partials/_navs.scss */
+/* line 375, ../scss/partials/_navs.scss */
 .title-area .logo--alt {
   display: none;
 }
 
-/* line 382, ../scss/partials/_navs.scss */
+/* line 383, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 389, ../scss/partials/_navs.scss */
+/* line 390, ../scss/partials/_navs.scss */
 .navBar-logo {
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 389, ../scss/partials/_navs.scss */
+  /* line 390, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 403, ../scss/partials/_navs.scss */
+/* line 404, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -5545,22 +5565,22 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 418, ../scss/partials/_navs.scss */
+/* line 419, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
-/* line 424, ../scss/partials/_navs.scss */
+/* line 425, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 429, ../scss/partials/_navs.scss */
+/* line 430, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.title--alt {
   background-color: #ef8111;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-/* line 439, ../scss/partials/_navs.scss */
+/* line 440, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
   overflow: hidden;
   border-left: 4px solid #fff;
@@ -5569,12 +5589,12 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 446, ../scss/partials/_navs.scss */
+/* line 447, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 451, ../scss/partials/_navs.scss */
+/* line 452, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
   line-height: 2.75rem;
@@ -5586,7 +5606,7 @@ hr.secondary {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 461, ../scss/partials/_navs.scss */
+/* line 462, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a:hover {
   background-color: transparent;
   color: #ef8111;
@@ -5595,12 +5615,12 @@ hr.secondary {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
-/* line 470, ../scss/partials/_navs.scss */
+/* line 471, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 475, ../scss/partials/_navs.scss */
+/* line 476, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active a {
   background-color: transparent;
   color: #ef8111;
@@ -5613,26 +5633,26 @@ hr.secondary {
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 495, ../scss/partials/_navs.scss */
+/* line 496, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
   right: 2.25rem;
   z-index: 100;
 }
-/* line 505, ../scss/partials/_navs.scss */
+/* line 506, ../scss/partials/_navs.scss */
 .secondaryNav--fixed .secondaryNav-list li.title {
   color: #888f95;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 495, ../scss/partials/_navs.scss */
+  /* line 496, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 495, ../scss/partials/_navs.scss */
+  /* line 496, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
@@ -5642,27 +5662,27 @@ hr.secondary {
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 541, ../scss/partials/_navs.scss */
+/* line 542, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 545, ../scss/partials/_navs.scss */
+/* line 546, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
 @media (min-width: 760px) {
-  /* line 545, ../scss/partials/_navs.scss */
+  /* line 546, ../scss/partials/_navs.scss */
   .footer-nav li {
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
 }
-/* line 556, ../scss/partials/_navs.scss */
+/* line 557, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 559, ../scss/partials/_navs.scss */
+/* line 560, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
   color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;

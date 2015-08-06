@@ -58,80 +58,68 @@ $base-font-weight: $normal;
     #Text Sizes and Hn sizes 
 \*------------------------------------*/
 
-// "Magic" numberis 24, line heights and font sizes must be multiples of 12----*/
-
-%text--mega {
-    font-size: rem-calc(36); 
-	line-height: 0.6; 
-    @extend %serif-font-family;  
-
-    @media #{$medium-up} {
-        font-size: rem-calc(60);
-        line-height: 0.4; 
-    }
-}
+// Magic numberis 24 (1.5rem), line heights 
+// must be multiples of this for vertical rhythm
+// 24 ÷ (font size) = (line height)
 
 %h1 {
 	font-size: rem-calc(36); 
 	line-height: 1.333; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h2 {
 	font-size: rem-calc(28); 
 	line-height: .85; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h3 {
 	font-size: rem-calc(24); 
 	line-height: 1; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h4 {
 	font-size: rem-calc(20);
 	line-height: 1.2; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h5 {
 	font-size: rem-calc(18);
 	line-height: 1.333; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h6 {
 	font-size: rem-calc(16);
 	line-height: 1.5; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
 %h7 {
     font-size: rem-calc(14);
     line-height: 1.71; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
+
+/* Sizes for text too small or too large for a header tag */
+%text--mega {
+    font-size: rem-calc(36); 
+    line-height: 1.333;  
+    @extend %fwn; 
+
+    @media #{$medium-up} {
+        font-size: rem-calc(60);
+        line-height: 1.5; 
+    }
+}
+
 
 %text--micro {
 	font-size: rem-calc(12); 
 	line-height: 2; 
-    margin-bottom: rem-calc(24px);
-    @extend %serif-font-family;  
     @extend %fwn; 
 }
 
