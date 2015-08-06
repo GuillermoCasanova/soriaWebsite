@@ -4,16 +4,22 @@ var app = (function(document, $) {
 
 	var docElem = document.documentElement,
 
+        // Defines client's devices on the <html> element's data-useragent attr
 		_userAgentInit = function() {
 			docElem.setAttribute('data-useragent', navigator.userAgent);
 		},
 
 		_init = function() {
+            // Initializes Foundation
 			$(document).foundation();
 			_userAgentInit();
+            // Initializes fast click on the document
             $(function() {
                 FastClick.attach(document.body);
             });
+            // Initializes back to top button
+            initBackToTopButton(); 
+
 		};
 
 	return {
@@ -22,10 +28,9 @@ var app = (function(document, $) {
 
 })(document, jQuery);
 
+
 (function() {
 	app.init();
-    // Initializes Back to Top button 
-    initBackToTopButton(); 
 })();
 
 
@@ -33,31 +38,34 @@ var app = (function(document, $) {
 
 
 
+/*------------------------------------*\
+    #Loading services side nav from components/nav--services.html
+\*------------------------------------*/
 
-
-// Code to load html component of secondaryNav for services 
-if($('#services-nav-container').length > 0) {
-    $('#services-nav-container').load("components/nav--services.html");
+if($("[data-action='load-services-side-nav']").length > 0) {
+    $("[data-action='load-services-side-nav']").load("components/nav--services.html");
 };
-
-
-
-
 
 
 
 
 $(document).on('ready', function() {
 
-    //* Scroll Magic *//
+
+    /*------------------------------------*\
+        #Scroll Magic
+    \*------------------------------------*/
+
+    // Defines the Scrollmagic controller to contain all scenes
     var controller = new ScrollMagic.Controller();
 
 
-    //Checks if there is a section--pinned to pin and it is not a touch device
-    if($('.section--pinned') && !$('html').hasClass('touch')) {
+    // Checks if there is a section--pinned to pin and it is not a touch device
+    // Removing the "pin" effect on touch devices avoids bugs with event being binded to scroll
+    if($('[data-action="pin-element-to-top"]') && !$('html').hasClass('touch')) {
 
           // Pins section--pinned sections for natural wipe up 
-        var slides = document.querySelectorAll(".section--pinned");
+        var slides = document.querySelectorAll('[data-action="pin-element-to-top"]');
         // Create scene for every slide
         for (var i=0; i<slides.length; i++) {
             new ScrollMagic.Scene({
@@ -70,193 +78,217 @@ $(document).on('ready', function() {
       
     }
 
+    /*------------------------------------*\
+        #Scroll animations on index.html page 
+    \*------------------------------------*/
 
-    $(function() {
 
-
-        // Checks to see if required trigger is on page
-        // Fixed Tab hidding/showing
-        if($('.fixedTab').length > 0 && $("[data-action='show-fixedTab']").length > 0) {
-
-            new ScrollMagic.Scene({triggerElement: "[data-action='show-fixedTab']"})
-                            .setClassToggle('.fixedTab', 'is-visible')
-                            .addTo(controller); 
-        }
-
-        //Checks to see if required trigger is on page
-        if($('#services').length > 0) {
-            // Sevices - Tween 
-             var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', 0.6, 
-                    {opacity:0, y: 300}, 
-                    {opacity: 1, y: 0},
-                     0.4); 
-
-            // Services - Scene
-            var scene = new ScrollMagic.Scene({
-                        triggerElement: "#services",
-                        reverse: false
-            }).setTween(enterFromBottom).addTo(controller);    
-
-        }
-
-        //Checks to see if required trigger is available for scrolling 
-        if($("#header-fadeIn").length > 0) {
-
-            // Header - Tween 
-            var enterFromBottom = TweenMax.staggerFromTo('#header-fadeIn .enter-from-bottom', 0.6, 
-                    {opacity:0, y: 300}, 
-                    {opacity: 1, y: 0},
-                     0.4); 
-
-            // Header - Scene
-            var scene = new ScrollMagic.Scene({
-                        triggerElement: "#header-fadeIn",
-                        reverse: false
-            }).setTween(enterFromBottom).addTo(controller);    
-
-        }
-
-        if($("#biografia").length > 0) {
-
-            // Header - Tween 
-           var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', 0.6, 
+    //Checks to see if required trigger is on page
+    if($("[data-action='bring-in-services']").length > 0) {
+        // Sevices - Tween 
+         var enterFromBottom = TweenMax.staggerFromTo('#services .enter-from-bottom', 0.6, 
                 {opacity:0, y: 300}, 
                 {opacity: 1, y: 0},
                  0.4); 
 
-            // Header - Scene
-            var scene = new ScrollMagic.Scene({
-                        triggerElement: "#biografia",
-                        reverse: false
-            }).setTween(enterFromBottom).addTo(controller);    
-
-        }
-
-
-        //Checks to see if required trigger is available for scrolling 
-        if($("#characteristics").length > 0) {
-
-            // Characteristics - Tween 
-            var fadeIn = TweenMax.staggerTo('.fade-in', .6, {
-                    opacity: 1
-            }, 0.4);
-
-            // Characteristics - Scene
-            var characteristics = new ScrollMagic.Scene({
-                    triggerElement: "#characteristics",
+        // Services - Scene
+        var scene = new ScrollMagic.Scene({
+                    triggerElement: "[data-action='bring-in-services']",
                     reverse: false
-            }).setTween(fadeIn).addTo(controller); 
-        }
+        }).setTween(enterFromBottom).addTo(controller);    
+
+    }
 
 
-        //Checks to see if required trigger is available for scrolling 
-        if($(".list-fadeIn").length > 0) {
+    // Checks to see if required trigger is available for scrolling 
+    if($("[data-action='fade-in-characteristics']").length > 0) {
 
-            // List 1 - Tween 
-            var fadeIn = TweenMax.staggerTo('.fadeIn', 0.6, {
-                    opacity: 1
-            }, 0.4);
+        // index.html Characteristics - Tween 
+        var fadeIn = TweenMax.staggerTo('.fade-in', .6, {
+                opacity: 1
+        }, 0.4);
 
-            // List 1 - Scene
-            var listFadeIn = new ScrollMagic.Scene({
-                    triggerElement: ".list-fadeIn",
+        // index.html Characteristics - Scene
+        var characteristics = new ScrollMagic.Scene({
+                triggerElement: "[data-action='fade-in-characteristics']",
+                reverse: false
+        }).setTween(fadeIn).addTo(controller); 
+    }
+
+
+
+    /*------------------------------------*\
+        #Scroll animations on ccpa.html page 
+    \*------------------------------------*/
+
+
+    //Checks to see if required trigger is available for scrolling 
+    if($("[data-action='bring-in-header']").length > 0) {
+
+        // ccpa.html Header - Tween 
+        var enterFromBottom = TweenMax.staggerFromTo('[data-action="bring-in-header"] .enter-from-bottom', 0.6, 
+                {opacity:0, y: 300}, 
+                {opacity: 1, y: 0},
+                 0.4); 
+
+        // ccpa.html Header - Scene
+        var scene = new ScrollMagic.Scene({
+                    triggerElement: "[data-action='bring-in-header']",
                     reverse: false
-            }).setTween(fadeIn).addTo(controller);
-        }
+        }).setTween(enterFromBottom).addTo(controller);    
 
-        //Checks to see if required trigger is available for scrolling 
-        if($("[data-action='fade-in-copy']").length > 0) {
+    }
 
-            // List 1 - Tween 
-            var fadeInCopy = TweenMax.staggerTo('.fadeIn', 0.6, {
-                    opacity: 1
-            }, 0.4);
 
-            // List 1 - Scene
-            new ScrollMagic.Scene({
-                    triggerElement: "[data-action='fadeInCopy']",
+    if($("[data-action='bring-in-biografia']").length > 0) {
+
+        // ccpa.html Biografia - Tween 
+        // has contents stagger fade in from the bottom 
+       var enterFromBottom = TweenMax.staggerFromTo('#biografia .enter-from-bottom', 0.6, 
+            {opacity:0, y: 300}, 
+            {opacity: 1, y: 0},
+             0.4); 
+
+        // ccpa.html Biografia - Scene
+        var scene = new ScrollMagic.Scene({
+                    triggerElement: "[data-action='bring-in-biografia']",
                     reverse: false
-            }).setTween(fadeInCopy).addTo(controller);
-        }
+        }).setTween(enterFromBottom).addTo(controller);    
+
+    }
 
 
-        //Checks to see if required trigger is available for scrolling 
-        if($('.smoothScroll').length > 0) {
-            // Anchor Smooth Scrolling - Scene 
-            var scene = new ScrollMagic.Scene({triggerElement: ".secondaryNav", duration: 200, triggerHook: "onLeave"})
-                            .addTo(controller);
+    // Checks to see if required trigger is available for scrolling 
+    if($("[data-action='fade-in-list']").length > 0) {
 
-            // Tells Controller to smoothly go to position with TweenMax
-            controller.scrollTo(function (newpos) {
-                TweenMax.to(window, 0.6, {scrollTo: {y: newpos}});
-            });
+        // ccpa.html List 1 - Tween 
+        // has contents stagger fade in from the bottom 
+        var fadeIn = TweenMax.staggerTo('#plan .fadeIn', 0.6, {
+                opacity: 1
+        }, 0.4);
 
-            // Bing scroll animation to links with .smoothScroll class
-            $(document).on("click", ".smoothScroll", function (e) {
-                var id = $(this).attr("href");
-                if ($(id).length > 0) {
-                    e.preventDefault();
+        // ccpa.html List 1 - Scene
+        var listFadeIn = new ScrollMagic.Scene({
+                triggerElement: "[data-action='fade-in-list']",
+                reverse: false
+        }).setTween(fadeIn).addTo(controller);
+    }
 
-                    controller.scrollTo(id); 
-                        // if supported by the browser we can even update the URL.
-                    if (window.history && window.history.pushState) {
-                        history.pushState("", document.title, id);
-                    }
+
+
+    /*------------------------------------*\
+        #SmoothScroll for Nav links (ccpa.html page)
+    \*------------------------------------*/
+
+
+    // Checks to see if required trigger is available for scrolling 
+    if($('[data-action="scroll-to-section"]').length > 0) {
+        // Anchor Smooth Scrolling - Scene 
+        var scene = new ScrollMagic.Scene({triggerElement: '[data-ui-component="smoothScroll-nav"]', duration: 200, triggerHook: "onLeave"})
+                        .addTo(controller);
+
+        // Tells Controller to smoothly go to position with TweenMax
+        controller.scrollTo(function (newpos) {
+            TweenMax.to(window, 0.6, {scrollTo: {y: newpos}});
+        });
+
+        // Bind scroll animation to links with .smoothScroll class
+        $('[data-action="scroll-to-section"]').on("click", function (e) {
+            var id = $(this).attr("href");
+            if ($(id).length > 0) {
+                e.preventDefault();
+
+                controller.scrollTo(id); 
+                    // if supported by the browser we can even update the URL.
+                if (window.history && window.history.pushState) {
+                    history.pushState("", document.title, id);
                 }
-            });
+            }
+        });
+
+        // Code below is for giving '[data-action="scroll-to-section"]' links the .active class
+        // when on their respective sections
+
+        // Gets all smoothScroll-links in order to create scenes for each one
+        var sections = document.querySelectorAll('[data-ui-component="smoothScroll-link"]');
+
+        // Create scene for every section link 
+        for (var i=0, l = sections.length; i < l; i++) { 
+
+            // Gets the section id's from the links in the secondaryNav--fixed list 
+            var section = $(sections[i]).attr("href");
+
+            // Gets the height of the corresponding section 
+            // This is needed so the link maintains it's active class for the duration of the height
+            var sectionHeight = $(section).height(); 
+
+            // Gets li's of anchor links to give them the 'active' class 
+            var anchorLink = $(section + "-anchor").parent().get(0);
+
+            new ScrollMagic.Scene({
+                    triggerElement: section,
+                    duration: sectionHeight
+                })
+                .setClassToggle(anchorLink, "is-active") 
+                .addTo(controller);
         }
 
-
-        // Fixed navigation indicators of corresponding section 
-        // Checks to see if required trigger is available for scrolling
-        if($('.secondaryNav--fixed').length > 0) {
-
-            // Gets the navigation for use when creating scenes  
-            var fixedNav = $('.secondaryNav--fixed');
-
-            // Gets all links in order to create scenes for each one
-            var sections = document.querySelectorAll("a.smoothScroll");
-
-            // Create scene for every section link 
-            for (var i=0, l = sections.length; i < l; i++) { 
-
-                // Gets the section id's from the links in the secondaryNav--fixed list 
-                var section = $(sections[i]).attr("href");
-
-                // Gets the height of the correspnding section 
-                var sectionHeight = $(section).height(); 
-
-                // Gets li's of anchor links to give them the 'active' class 
-                var anchorLink = $(section + "-anchor").parent().get(0);
-
-                new ScrollMagic.Scene({
-                        triggerElement: section,
-                        duration: sectionHeight
-                    })
-                    .setClassToggle(anchorLink, "is-active") 
-                    .addTo(controller);
-            }
-        };
+    };
 
 
-    });
-    
+    /*------------------------------------*\
+        #Smooth Fading Copy on pages  
+    \*------------------------------------*/
+
+
+    // Checks to see if required trigger is available for scrolling 
+    if($("[data-action='fade-in-copy']").length > 0) {
+
+        // Fade in Copy - Tween 
+        var fadeInCopy = TweenMax.staggerTo('.fadeIn', 0.6, {
+                opacity: 1
+        }, 0.4);
+
+        // Fade in Copy - Scene
+        new ScrollMagic.Scene({
+                triggerElement: "[data-action='fade-in-copy']",
+                reverse: false
+        }).setTween(fadeInCopy).addTo(controller);
+    }
+
+
+    /*------------------------------------*\
+        #Toggle Fixed Tab 
+    \*------------------------------------*/
+
+
+    // Checks to see if required trigger is on page
+    // Fixed Tab hidding/showing based on location of  [data-action='show-fixed-tab'] trigger
+    if($("[data-ui-component='fixed-tab']").length > 0 && $("[data-action='show-fixed-tab']").length > 0) {
+
+        new ScrollMagic.Scene({triggerElement: "[data-action='show-fixed-tab']"})
+                        .setClassToggle("[data-ui-component='fixed-tab']", 'is-visible')
+                        .addTo(controller); 
+    }
+
+    // End Scroll Magic Code 
 
 
 
 
+    /*------------------------------------*\
+        #Top Bar Slide in/out 
+    \*------------------------------------*/
 
-
-
-    // Checks to see if there is a top-bar-container to hide/show
-    // Essentially prevents it from working on small devices. 
-    if($('.top-bar-container').length > 0) {
+    // Checks to see if there is a '[data-action="toggle-top-bar"]' to hide/show
+    // This prevents it from activating on small devices. 
+    if($('[data-action="toggle-top-bar"]').length > 0) {
 
         (function($){
 
             var prevScroll = 0;
             var currentScroll; 
-            var navBar = $('.top-bar-container');
+            var navBar = $('[data-action="toggle-top-bar"]');
             var navBarHeight = navBar.height(); 
             var didScroll = false; 
             var theWindow = $(window);
@@ -310,21 +342,33 @@ $(document).on('ready', function() {
 
 
 
-    // Lazy Load for images Code 
-    $('img.lazy').lazyload({
+    /*------------------------------------*\
+        #Lazy Load Images 
+    \*------------------------------------*/
+
+
+    $('[data-action="lazy-load-img"]').lazyload({
         threshold: 200, 
         effect: "fadeIn"
-
     });
 
 
-    // Animation for flip-containers to active on click 
-    $('.flip-container').on('click  ontouchstart', function(e){
+    /*------------------------------------*\
+        #Toggle Panel Flipping  (index.html)
+    \*------------------------------------*/
+
+
+    $('[data-action="flip-panel"]').on('click  ontouchstart', function(e){
         e.stopPropagation();
         $(this).toggleClass('is-selected');
     });
 
-    // Code for profiles to show bios on click 
+
+    /*------------------------------------*\
+        #Profiles Toggle  (index.html)
+    \*------------------------------------*/
+
+
     $('[data-action="toggle-profile-bio"]').on('click', function(e) {
         var bioProfile = $(this).parents('.profile');
         e.stopPropagation(); 
@@ -332,21 +376,25 @@ $(document).on('ready', function() {
         bioProfile.toggleClass('is-showing'); 
     });
 
-    // Code for showing/hiding map on Contact Page
+
+    /*------------------------------------*\
+        #Contact Form/Map Toggle (contact.html)
+    \*------------------------------------*/
+
     $('[data-action="toggle-map"]').on('click', function(e) {
         e.stopPropagation(); 
         e.preventDefault();
-        // Stores the fixed tab dom element
-        var fixedTab = $('.map-toggleButton'); 
-        $('.section-bg--map').toggleClass('is-visible'); 
-        $('.map-cover').toggleClass('is-hidden'); 
+        // Stores the button
+        var toggleMapButton = $('[data-ui-component="toggle-map-button"]'); 
+        $('[data-ui-component="map"]').toggleClass('is-visible'); 
+        $('[data-ui-component="map-cover"]').toggleClass('is-hidden'); 
         $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
-        // Makes the tab to back to contact info visible 
-        if(fixedTab.hasClass('is-visible')) {
-              fixedTab.toggleClass('is-visible'); 
+        // Hides/Shows the toggleMapButton 
+        if(toggleMapButton.hasClass('is-visible')) {
+              toggleMapButton.toggleClass('is-visible'); 
         } else {
            setTimeout(function() {
-              fixedTab.toggleClass('is-visible'); 
+              toggleMapButton.toggleClass('is-visible'); 
             }, 500)         
         }
 
@@ -361,7 +409,11 @@ $(document).on('ready', function() {
 
 
 
-// Code for Contact Form 
+/*------------------------------------*\
+    #Processing Contact Form  
+\*------------------------------------*/
+
+
 $(function() {
     
     var form = $("[data-ui-component='contact-form']"); 
@@ -402,16 +454,24 @@ $(function() {
 });  
 
 
-// Back to top Button  
+
+
+
+/*------------------------------------*\
+    #Back to top Button
+\*------------------------------------*/
+
+
 function initBackToTopButton() {
 
-    var backToTopBtn = $('[data-action="go-to-top"]');
+    $('[data-action="go-to-top"]').on('click', function() {
 
-    backToTopBtn.on('click', function() {
         $("body, html").animate({
             scrollTop: 0
         }, 800)
+
         return false;
+
     }); 
 };
 

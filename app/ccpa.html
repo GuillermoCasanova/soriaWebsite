@@ -42,7 +42,8 @@
 
 
     <!-- Back to website tab -->    
-    <div class="fixedTab">
+    <div    data-ui-component="fixed-tab"
+            class="fixedTab">
         
         <span class="fwb  icon--left-circled2">
             Back to Site
@@ -61,22 +62,34 @@
 
 
     <!-- Navigation --> 
-    <nav class="secondaryNav  secondaryNav--fixed  show-for-medium-up">
+    <nav data-ui-component="smoothScroll-nav" class="secondaryNav  secondaryNav--fixed  show-for-medium-up">
 
         <ul class="secondaryNav-list">
 
             <li class="title">Navegación</li>
 
             <li class="link">
-                <a id="introduccion-anchor" class="smoothScroll" href="#introduccion">Introducción</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="introduccion-anchor"
+                    href="#introduccion">Introducción</a>
             </li>
             
             <li class="link">
-                <a id="plan-anchor" class="smoothScroll" href="#plan">Plan de Trabajo</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="plan-anchor"
+                    href="#plan">Plan de Trabajo</a>
             </li>
             
             <li class="link">
-                <a id="biografia-anchor" class="smoothScroll" href="#biografia">Sobre Eduardo Soria</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="biografia-anchor"
+                    href="#biografia">Sobre Eduardo Soria</a>
             </li>
             
         </ul>
@@ -107,7 +120,7 @@
             
         </div>
 
-        <div class="row  vertical-align"  id="header-fadeIn">
+        <div class="row  vertical-align"  data-action="bring-in-header">
 
             <div class="small-12 columns">
 
@@ -198,7 +211,7 @@
 
 
     <!-- Plan De Trabajo --> 
-    <section class="section section--normal  list-fadeIn" id="plan">
+    <section class="section section--normal  list-fadeIn" id="plan" data-action='fade-in-list'>
 
         <div class="row fadeIn">
 
@@ -381,9 +394,9 @@
     </section>
 
 
-    <section class="section section--alt" id="biografia">
+    <section class="section section--alt" id="biografia" data-action="bring-in-biografia">
 
-        <div class="row"  id="biografia" data-action="show-fixedTab">
+        <div class="row"  id="biografia" data-action="show-fixed-tab">
 
             <div class="small-12 medium-8 columns section-text">
 
