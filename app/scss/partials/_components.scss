@@ -112,10 +112,12 @@
     #Contact Info Container 
 \*------------------------------------*/
 
-
+// TODO: Abstract this functionality into a component with classes 
 [data-ui-component*="contact-info"] {
     z-index: 2; 
     @include single-transition(all, 0.6s, ease-in-out); 
+    @include transform(translateY(0)); 
+
 
     &.is-hidden {
         z-index: 0; 

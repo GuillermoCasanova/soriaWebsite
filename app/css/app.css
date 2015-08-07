@@ -5896,8 +5896,12 @@ a[class*="link"] {
   -o-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
-/* line 120, ../scss/partials/_components.scss */
+/* line 122, ../scss/partials/_components.scss */
 [data-ui-component*="contact-info"].is-hidden {
   z-index: 0;
   opacity: 0;
@@ -5910,7 +5914,7 @@ a[class*="link"] {
 /*------------------------------------*\
     #Contact Form States (It's used when a message is sent) 
 \*------------------------------------*/
-/* line 139, ../scss/partials/_components.scss */
+/* line 141, ../scss/partials/_components.scss */
 [data-ui-component*="contact-form"].is-hidden {
   opacity: 0;
   display: none;
@@ -6891,53 +6895,54 @@ footer .footer-link {
 \*------------------------------------*/
 /* line 135, ../scss/partials/_sections.scss */
 .section-bg--map {
-  opacity: .3;
+  opacity: .5;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   z-index: 0;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 148, ../scss/partials/_sections.scss */
+/* line 147, ../scss/partials/_sections.scss */
 .section-bg--map.is-visible {
   opacity: 1;
   z-index: 4;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
-/* line 156, ../scss/partials/_sections.scss */
+/* line 154, ../scss/partials/_sections.scss */
 .map-toggleButton {
   position: absolute;
   bottom: 20%;
   left: 50%;
   opacity: 0;
-  z-index: 2;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 165, ../scss/partials/_sections.scss */
+/* line 162, ../scss/partials/_sections.scss */
 .map-toggleButton.is-visible {
   opacity: 1;
   z-index: 3;
 }
 
-/* line 171, ../scss/partials/_sections.scss */
+/* line 168, ../scss/partials/_sections.scss */
 .map-cover {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #3c4750;
+  opacity: .5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-/* line 177, ../scss/partials/_sections.scss */
+/* line 180, ../scss/partials/_sections.scss */
 .map-cover.is-hidden {
   display: none !important;
 }
@@ -6945,7 +6950,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 211, ../scss/partials/_sections.scss */
+/* line 214, ../scss/partials/_sections.scss */
 .blur {
   opacity: 0;
   z-index: 4;
@@ -6954,29 +6959,29 @@ footer .footer-link {
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 225, ../scss/partials/_sections.scss */
+/* line 228, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 @media only screen {
-  /* line 225, ../scss/partials/_sections.scss */
+  /* line 228, ../scss/partials/_sections.scss */
   .section--header {
     height: 12rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 225, ../scss/partials/_sections.scss */
+  /* line 228, ../scss/partials/_sections.scss */
   .section--header {
     height: 13.5rem;
   }
 }
-/* line 237, ../scss/partials/_sections.scss */
+/* line 240, ../scss/partials/_sections.scss */
 .section--header .header-content {
   z-index: 100;
 }
-/* line 246, ../scss/partials/_sections.scss */
+/* line 249, ../scss/partials/_sections.scss */
 .section--header .section-bg {
   left: 0;
   margin: 0 auto;
@@ -6987,13 +6992,13 @@ footer .footer-link {
   z-index: 10;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 246, ../scss/partials/_sections.scss */
+  /* line 249, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 55rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 246, ../scss/partials/_sections.scss */
+  /* line 249, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 90rem;
   }

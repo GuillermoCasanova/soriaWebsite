@@ -384,23 +384,38 @@ $(document).on('ready', function() {
     $('[data-action="toggle-map"]').on('click', function(e) {
         e.stopPropagation(); 
         e.preventDefault();
+
         // Stores the button
         var toggleMapButton = $('[data-ui-component="toggle-map-button"]'); 
+
+
+        $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
+
+
+        // Hides or shows map and cover
         $('[data-ui-component="map"]').toggleClass('is-visible'); 
         $('[data-ui-component="map-cover"]').toggleClass('is-hidden'); 
-        $('[data-ui-component="contact-info"]').toggleClass('is-hidden'); 
+
+
         // Hides/Shows the toggleMapButton 
+
         if(toggleMapButton.hasClass('is-visible')) {
-              toggleMapButton.toggleClass('is-visible'); 
+
+            toggleMapButton.toggleClass('is-visible'); 
+
         } else {
-           setTimeout(function() {
+
+            // Have a delay before showing it so as to not distract the user when information hides 
+            setTimeout(function() {
+
               toggleMapButton.toggleClass('is-visible'); 
-            }, 500)         
+            }, 600);   
+       
+
         }
 
     });
 
-    
 });
 
 
