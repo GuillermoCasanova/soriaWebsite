@@ -81,12 +81,9 @@
 @mixin button--flat($color) {
         background-color: $color;
         @include transition(all .3s ease-in-out);
-		&:hover {
-			background-color: lighten($color, 6%);
-
-		}
 
 		&:active,
+        &:hover, 
         &:focus {
 			background-color: lighten($color, 5%); 
 		}
@@ -101,15 +98,12 @@
         @include border-radius(4px);
         @extend %disableDefaultHighlight; 
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active, {
             color: #fff; 
             background-color: $color; 
 
-        }
-
-        &:active,
-        &:focus {
-            background-color: $color; 
         }
         
 }

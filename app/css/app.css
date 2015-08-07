@@ -5094,12 +5094,8 @@ a,
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 84, ../scss/modules/_buttons.scss */
-.button--primary:hover {
-  background-color: #f1902e;
-}
-/* line 89, ../scss/modules/_buttons.scss */
-.button--primary:active, .button--primary:focus {
+/* line 85, ../scss/modules/_buttons.scss */
+.button--primary:active, .button--primary:hover, .button--primary:focus {
   background-color: #f18e29;
 }
 /* line 16, ../scss/partials/_buttons.scss */
@@ -5110,12 +5106,8 @@ a,
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 84, ../scss/modules/_buttons.scss */
-.button--primary.secondaryAction:hover {
-  background-color: #495761;
-}
-/* line 89, ../scss/modules/_buttons.scss */
-.button--primary.secondaryAction:active, .button--primary.secondaryAction:focus {
+/* line 85, ../scss/modules/_buttons.scss */
+.button--primary.secondaryAction:active, .button--primary.secondaryAction:hover, .button--primary.secondaryAction:focus {
   background-color: #47545f;
 }
 
@@ -5132,13 +5124,9 @@ a,
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 104, ../scss/modules/_buttons.scss */
-.button--secondary:hover {
+/* line 101, ../scss/modules/_buttons.scss */
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
   color: #fff;
-  background-color: #ef8111;
-}
-/* line 110, ../scss/modules/_buttons.scss */
-.button--secondary:active, .button--secondary:focus {
   background-color: #ef8111;
 }
 /* line 25, ../scss/partials/_buttons.scss */
@@ -5154,13 +5142,9 @@ a,
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 104, ../scss/modules/_buttons.scss */
-.button--secondary.secondaryAction:hover {
+/* line 101, ../scss/modules/_buttons.scss */
+.button--secondary.secondaryAction:hover, .button--secondary.secondaryAction:focus, .button--secondary.secondaryAction:active {
   color: #fff;
-  background-color: #3c4750;
-}
-/* line 110, ../scss/modules/_buttons.scss */
-.button--secondary.secondaryAction:active, .button--secondary.secondaryAction:focus {
   background-color: #3c4750;
 }
 
@@ -6734,16 +6718,14 @@ footer,
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
 /* line 124, ../scss/partials/_panels.scss */
-.flip-container.is-selected .back,
-.flip-container:focus .back {
+.flip-container.is-selected .back {
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 /* line 128, ../scss/partials/_panels.scss */
-.flip-container.is-selected .front,
-.flip-container:focus .front {
+.flip-container.is-selected .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);

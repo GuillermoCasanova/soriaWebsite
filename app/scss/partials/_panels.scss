@@ -118,8 +118,8 @@
 
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
-.flip-container.is-selected,
-.flip-container:focus {
+.flip-container.is-selected
+ {
 
     .back {
         @include transform(rotateY(0deg));
