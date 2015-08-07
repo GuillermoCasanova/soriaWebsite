@@ -156,12 +156,10 @@ h6,
 \*------------------------------------*/
 
 
-a {
+a,
+.link {
 	@extend %disableDefaultHighlight;
-
-	&[class*="link"] {
-			@include single-transition(all, .2s, ease-in-out);
-	}
+     @include single-transition(all, .3s, ease-in-out);
 
 }
 
