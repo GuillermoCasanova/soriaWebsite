@@ -24,7 +24,8 @@ ul {
 
 
 .list--bullet {
-  @extend %list;
+    @extend %ml3; 
+    @extend %list;
 
   & > li:before {
       content: '\2022';

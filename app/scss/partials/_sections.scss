@@ -5,6 +5,7 @@
 
 
 .section {
+    background-color: #FFF; 
     @include box-sizing(border-box);
     @extend %position--relative; 
     @extend %ptb5; 
@@ -15,11 +16,6 @@
 /*------------------------------------*\
     #Section Types 
 \*------------------------------------*/
-
-
-.section--normal {
-    background-color: #fff;   
-}
 
 
 .section--highlighted { 

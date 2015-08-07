@@ -427,21 +427,21 @@
         @extend %ml0; 
         @extend %pb2; 
         
-        li.title--alt {
-            background-color: $primaryColor; 
-            width: 100%; 
-            text-align: center; 
-            color: #fff; 
-            @extend %ptb2; 
-            @extend %mb2; 
-            @extend %h4; 
+
+        li.title {
+            color: $grey--dark;
+            @extend %mtb2; 
+            @extend %pt1; 
+            @extend %pl2; 
+            @extend %display--block; 
+            @extend %h5; 
         }
 
         li.link {
 
             overflow: hidden; 
             border-left: 4px solid #fff; 
-            @extend %h4; 
+            @extend %h5; 
             @include single-transition(all, .2s, ease-in-out);
 
             &:hover {
@@ -501,20 +501,6 @@
     @extend %mt5; 
     @extend %position--fixed; 
 
-    .secondaryNav-list {
-
-        li.title {
-            color: $grey--dark;
-            @extend %mtb2; 
-            @extend %pt1; 
-            @extend %pl2; 
-            @extend %display--block; 
-            @extend %h5; 
-
-        }
-
-    }
-
     @media #{$medium-up} {
         width: rem-calc(12 * 20); 
         display: block;
@@ -563,57 +549,3 @@
     }
   }
 }
-
-
-//Triangle Above Drop-downs
-//
-
-// .top-bar-section ul.dropdown:after {
-//  content: "";
-//  position: absolute;
-//  display: block;
-//  top: -14px;
-//  bottom: -14px;
-//  bottom: auto;
-//  left: 0;
-//  right: 0;
-//  margin: 0 auto; 
-//  width: 0; 
-//  border-width: 0 14px 14px;
-//  border-style: solid;
-//  border-color: $dropDown-color transparent;
-// }
-
-
-//
-//Triangle Next To link that are dropdowns 
-//
-
-// .top-bar-section .right .has-dropdown > a:after {
-//     -moz-border-bottom-colors: none;
-//     -moz-border-left-colors: none;
-//     -moz-border-right-colors: none;
-//     -moz-border-top-colors: none;
-//     border-color: $grey--mid transparent transparent;
-//     border-image: none;
-//     border-right: 5px inset transparent;
-//     border-style: solid inset inset;
-//     border-width: 5px;
-//     content: "";
-//     display: block;
-//     height: 0;
-//     margin-top: -2.5px;
-//     right: -8px; 
-//     top: 42.5px;
-//     width: 0;
-// }    
-
-// .top-bar-section .right .has-dropdown > a {
-//   padding-right: rem-calc(20) !important;
-// }
-
-
-
-
-
-
