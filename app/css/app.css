@@ -6482,13 +6482,12 @@ ul {
 /*------------------------------------*\
     #Height Classes 
 \*------------------------------------*/
-/* line 201, ../scss/partials/_generics.scss */
+/* line 202, ../scss/partials/_generics.scss */
 .vh100 {
-  min-height: 110vh;
-  height: 100%;
+  height: 130vh;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 201, ../scss/partials/_generics.scss */
+  /* line 202, ../scss/partials/_generics.scss */
   .vh100 {
     height: 100vh;
   }
@@ -6562,14 +6561,14 @@ ul {
 /*------------------------------------*\
     #Footer 
 \*------------------------------------*/
-/* line 10, ../scss/partials/_footer.scss */
+/* line 7, ../scss/partials/_footer.scss */
 footer {
   background-color: #3c4750;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 24, ../scss/partials/_footer.scss */
+/* line 21, ../scss/partials/_footer.scss */
 footer .footer-link {
   color: #888f95;
 }
@@ -6577,7 +6576,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Credit Info 
 \*------------------------------------*/
-/* line 47, ../scss/partials/_footer.scss */
+/* line 45, ../scss/partials/_footer.scss */
 .footer-siteInfo a {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -6587,14 +6586,14 @@ footer .footer-link {
 }
 
 @media (min-width: 760px) {
-  /* line 60, ../scss/partials/_footer.scss */
+  /* line 58, ../scss/partials/_footer.scss */
   [rel*="copyright"] {
     float: left;
   }
 }
 
 @media (min-width: 760px) {
-  /* line 70, ../scss/partials/_footer.scss */
+  /* line 68, ../scss/partials/_footer.scss */
   [rel*="credit"] {
     float: right;
   }
@@ -6603,12 +6602,12 @@ footer .footer-link {
 /*------------------------------------*\
     #Sticky Footer
 \*------------------------------------*/
-/* line 89, ../scss/partials/_footer.scss */
+/* line 87, ../scss/partials/_footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 93, ../scss/partials/_footer.scss */
+/* line 91, ../scss/partials/_footer.scss */
 [role*='main'] {
   min-height: 100%;
   height: auto !important;
@@ -6618,7 +6617,7 @@ html, body {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 101, ../scss/partials/_footer.scss */
+/* line 99, ../scss/partials/_footer.scss */
 footer,
 .push {
   height: 50px;
