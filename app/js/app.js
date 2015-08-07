@@ -374,7 +374,7 @@ $(document).on('ready', function() {
     \*------------------------------------*/
 
 
-    $('[data-action="toggle-profile-bio"]').on('click', function(e) {
+    $('[data-action="toggle-profile-bio"]').on('click focus', function(e) {
         var bioProfile = $(this).parents('.profile');
         e.stopPropagation(); 
         e.preventDefault();

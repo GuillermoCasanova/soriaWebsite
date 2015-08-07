@@ -32,8 +32,9 @@
     #Master Icon Class  (Applies to all icons)
 \*------------------------------------*/
 
-
- [class^="icon--"]:before, [class*="icon--"]:before {
+// Main styles for all icons before and after text 
+ [class^="icon--"]:before, [class*="icon--"]:before,
+  [class^="icon--"]:after, [class*="icon--"]:after {
     font-family: "fontello--soriallc";
     font-style: normal;
     font-weight: normal;
@@ -42,7 +43,6 @@
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
-    margin-right: .2em;
     text-align: center;
 
     /* For safety - reset parent styles, that can break glyph codes*/
@@ -51,14 +51,27 @@
 
     /* fix buttons height, for twitter bootstrap */
     line-height: 1em;
-
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
+    // Increase size of all icons 
+    font-size: 110%;
 
     /* Font smoothing. That was taken from TWBS */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+[class^="icon--"]:before, [class*="icon--"]:before {
+
+    margin-right: .2em;
+
+}
+
+[class^="icon--"]:after, [class*="icon--"]:after {
+
+    margin-left: .2em;
+
+}
+
 
 
 
@@ -77,6 +90,10 @@
 .icon--down-open-big:before { content: '\e813'; } 
 
 
+
+.icon--right-circled2-a:after {
+  content: '\e817';
+}
 
 
 

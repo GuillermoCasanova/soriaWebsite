@@ -207,7 +207,8 @@
         @include single-transition(all, .2s, ease-in-out); 
     }
     //Adds Bottom border to links on hover 
-    &:hover {
+    &:hover,
+    &:focus {
 
         a {
         color: $primaryColor; 
@@ -257,7 +258,8 @@
             border-left: 4px solid $dropDown-color; 
             overflow: hidden; 
             
-             &:hover {
+             &:hover,
+             &:focus {
                 border-left: 4px solid $primaryColor; 
                 //Taken from settings--overwrite in order for li to have same bg color as link
                 background-color: scale-color($topbar-dropdown-link-bg, $lightness: -5%);
@@ -297,7 +299,8 @@
 
         @include single-transition(all, .2s, ease-in-out); 
 
-         &:hover {
+         &:hover,
+         &:focus {
     
             & > a {
 
@@ -533,19 +536,15 @@
     font-weight: $extra-bold; 
     @extend %display--block; 
     
-    @include breakpoint(teenBear) {
-      display: inline-block;
-      margin-left: rem-calc(12);
-      margin-right: rem-calc(12); 
-    }
   }
 
   a {
     color: #fff; 
 
     &:hover {
-      color: $green;
       @include single-transition(all, .2s, ease-in-out); 
     }
+
   }
+
 }

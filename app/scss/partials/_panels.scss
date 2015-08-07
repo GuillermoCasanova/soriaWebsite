@@ -10,7 +10,8 @@
 
 
 .panel-body {
- @extend %h7; 
+    @extend %h5; 
+    @extend %text-center; 
 }
 
 
@@ -110,13 +111,15 @@
     cursor: pointer; 
     @include perspective(600px); 
     @include transform-style(preserve-3d); 
-    @include single-transition(all, 0.2s, ease-in-out); 
+    @include single-transition(all, .3s, ease-in-out); 
+    @extend %disableDefaultHighlight; 
     @extend %mb3; 
 }
 
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
-.flip-container.is-selected {
+.flip-container.is-selected,
+.flip-container:focus {
 
     .back {
         @include transform(rotateY(0deg));
@@ -132,7 +135,7 @@
 
 /* flip speed goes here */
 .flipper {
-    @include single-transition(all, 0.2s, ease-in-out); 
+    @include single-transition(all, .3s, ease-in-out); 
     @include transform-style(preserve-3d); 
     @extend %position--relative; 
     
@@ -145,7 +148,7 @@
     left: 0;
     @include backface-visibility(hidden);
     @include transform-style(preserve-3d);
-    @include single-transition(all, 0.2s, ease-in-out);  
+    @include single-transition(all, .3s, ease-in-out);  
     @extend %position--absolute; 
 }
 
@@ -176,12 +179,12 @@
 .flip-container.medium {
         width: 100%; 
         min-width: rem-calc(280px);
-        height: rem-calc(200px);
+        height: rem-calc(12px * 17px);
     .back, 
     .front {
         width: 100%; 
         min-width: rem-calc(280px);
-        height: rem-calc(200px);
+        height: rem-calc(12px * 17px);
     }
 
 }
