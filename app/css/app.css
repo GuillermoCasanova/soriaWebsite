@@ -4382,7 +4382,7 @@ h6,
 }
 
 /* line 39, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .name, .navBar-logo, .secondaryNav .secondaryNav-list li.link a, .secondaryNav--fixed .secondaryNav-list li.title, .footer-nav li, [rel*="copyright"], [rel*="credit"], .panel--success.is-visible {
+.blockquote--bubble p:after, .name, .navBar-logo, .secondaryNav .secondaryNav-list li.link a, .secondaryNav--fixed .secondaryNav-list li.title, .footer-nav li, footer, [rel*="copyright"], [rel*="credit"], .panel--success.is-visible {
   display: block;
 }
 
@@ -4390,12 +4390,12 @@ h6,
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .profile, .relative, footer, .flipper, .section, .section--alt > .row, .section--home, .section--header {
+.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .profile, .relative, .flipper, .section, .section--alt > .row, .section--home, .section--header {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, .front,
+.blockquote--bubble p:after, .profile .profile-bio, .profile .profile-bio-toggle, .profile .profile-bio-toggle .icon, .profile .profile-bio-close, .absolute, footer, .front,
 .back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
@@ -6552,11 +6552,14 @@ ul {
 /*------------------------------------*\
     #Footer 
 \*------------------------------------*/
-/* line 6, ../scss/partials/_footer.scss */
+/* line 10, ../scss/partials/_footer.scss */
 footer {
   background-color: #3c4750;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-/* line 16, ../scss/partials/_footer.scss */
+/* line 24, ../scss/partials/_footer.scss */
 footer .footer-link {
   color: #888f95;
 }
@@ -6564,7 +6567,7 @@ footer .footer-link {
 /*------------------------------------*\
     #Credit Info 
 \*------------------------------------*/
-/* line 39, ../scss/partials/_footer.scss */
+/* line 47, ../scss/partials/_footer.scss */
 .footer-siteInfo a {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -6574,17 +6577,42 @@ footer .footer-link {
 }
 
 @media (min-width: 760px) {
-  /* line 52, ../scss/partials/_footer.scss */
+  /* line 60, ../scss/partials/_footer.scss */
   [rel*="copyright"] {
     float: left;
   }
 }
 
 @media (min-width: 760px) {
-  /* line 62, ../scss/partials/_footer.scss */
+  /* line 70, ../scss/partials/_footer.scss */
   [rel*="credit"] {
     float: right;
   }
+}
+
+/*------------------------------------*\
+    #Sticky Footer
+\*------------------------------------*/
+/* line 89, ../scss/partials/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 93, ../scss/partials/_footer.scss */
+[role*='main'] {
+  min-height: 100%;
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto 0;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+/* line 101, ../scss/partials/_footer.scss */
+footer,
+.push {
+  height: 50px;
+  /* .push must be the same height as .footer */
 }
 
 /*------------------------------------*\

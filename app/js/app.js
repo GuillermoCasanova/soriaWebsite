@@ -43,8 +43,13 @@ var app = (function(document, $) {
 \*------------------------------------*/
 
 if($("[data-action='load-services-side-nav']").length > 0) {
-    $("[data-action='load-services-side-nav']").load("components/nav--services.html");
+
+    $("[data-action='load-services-side-nav']").load('components/nav--services.html');
 };
+
+if($("[data-action='load-footer']").length > 0) {
+    $("[data-action='load-footer']").load('components/footer.html')
+}
 
 
 
