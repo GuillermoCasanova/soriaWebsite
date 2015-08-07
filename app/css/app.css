@@ -4170,7 +4170,8 @@ th.hide-for-touch {
 }
 
 /* line 49, ../scss/modules/_buttons.scss */
-a, .button--primary, .button--primary.secondaryAction, .button--secondary, .button--secondary.secondaryAction {
+a,
+.link, .button--primary, .button--primary.secondaryAction, .button--secondary, .button--secondary.secondaryAction {
   outline: 0;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
@@ -4210,7 +4211,7 @@ h1,
 .h1, .icon--large, h2,
 .h2, h3,
 .h3, .panel .panel-title, h4,
-.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium, h5,
+.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .list--siteMap, .icon--medium, h5,
 .h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small, h6,
 .h6, .par--subText, .profile-bio .body, .panel-body, .text--mega, .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-weight: 400;
@@ -4260,7 +4261,7 @@ h3,
 
 /* line 87, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
-.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .icon--medium {
+.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .list--siteMap, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
 }
@@ -5042,19 +5043,20 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*\
     #Links
 \*------------------------------------*/
-/* line 162, ../scss/partials/_typography.scss */
-a[class*="link"] {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+/* line 159, ../scss/partials/_typography.scss */
+a,
+.link {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-/* line 169, ../scss/partials/_typography.scss */
+/* line 167, ../scss/partials/_typography.scss */
 .link--underline {
   text-decoration: underline;
 }
-/* line 172, ../scss/partials/_typography.scss */
+/* line 170, ../scss/partials/_typography.scss */
 .link--underline:hover {
   text-decoration: none;
 }
@@ -5062,12 +5064,12 @@ a[class*="link"] {
 /*------------------------------------*\
     #Font Color Classes 
 \*------------------------------------*/
-/* line 185, ../scss/partials/_typography.scss */
+/* line 183, ../scss/partials/_typography.scss */
 .txtc2 {
   color: #888f95;
 }
 
-/* line 189, ../scss/partials/_typography.scss */
+/* line 187, ../scss/partials/_typography.scss */
 .txtc3 {
   color: #ef8111;
 }
@@ -5075,17 +5077,17 @@ a[class*="link"] {
 /*------------------------------------*\
     #Text Weights (Variables defined in _typography.scss module)
 \*------------------------------------*/
-/* line 202, ../scss/partials/_typography.scss */
+/* line 200, ../scss/partials/_typography.scss */
 .fwn {
   font-weight: 400;
 }
 
-/* line 203, ../scss/partials/_typography.scss */
+/* line 201, ../scss/partials/_typography.scss */
 .fwb {
   font-weight: 700;
 }
 
-/* line 204, ../scss/partials/_typography.scss */
+/* line 202, ../scss/partials/_typography.scss */
 .uc {
   text-transform: uppercase;
 }
@@ -5093,17 +5095,17 @@ a[class*="link"] {
 /*------------------------------------*\
     #Text Alignments  
 \*------------------------------------*/
-/* line 215, ../scss/partials/_typography.scss */
+/* line 213, ../scss/partials/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 216, ../scss/partials/_typography.scss */
+/* line 214, ../scss/partials/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 217, ../scss/partials/_typography.scss */
+/* line 215, ../scss/partials/_typography.scss */
 .text-right {
   text-align: right;
 }
@@ -6000,17 +6002,21 @@ ul {
   font-size: 1.25rem;
 }
 
-/* line 45, ../scss/partials/_lists.scss */
+/* line 49, ../scss/partials/_lists.scss */
 .list--siteMap [class*="list-item"]:hover {
   text-decoration: underline;
 }
-/* line 51, ../scss/partials/_lists.scss */
+/* line 57, ../scss/partials/_lists.scss */
 .list--siteMap .list-item {
   color: #3c4750;
 }
-/* line 57, ../scss/partials/_lists.scss */
-.list--siteMap .list-item-subItem {
+/* line 63, ../scss/partials/_lists.scss */
+.list--siteMap .list-item--subItem {
   color: #888f95;
+}
+/* line 67, ../scss/partials/_lists.scss */
+.list--siteMap .list-item--subItem:hover {
+  color: #3c4750;
 }
 
 /*------------------------------------*\

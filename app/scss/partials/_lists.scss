@@ -42,23 +42,33 @@ ul {
 
 .list--siteMap {
 
-  [class*="list-item"]:hover {
+    @extend %h4; 
     
-    text-decoration: underline; 
+    [class*="list-item"] {
     
-  }
+        &:hover {
 
-  .list-item {
+        text-decoration: underline; 
 
-    color: $secondaryColor;  
+        }
 
-  }
+    }
 
-  .list-item-subItem {
+    .list-item {
 
-    color: $grey--dark;
+        color: $secondaryColor;  
+    
+    }
 
- }
+    .list-item--subItem {
+
+        color: $grey--dark;
+
+        &:hover {
+            color: $secondaryColor; 
+        }
+
+    }
 
 }
 
