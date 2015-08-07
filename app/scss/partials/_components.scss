@@ -14,7 +14,7 @@
 
 .profile {
     overflow: hidden;
-    @include single-transition(all, 0.2s, ease-in-out); 
+    @include single-transition(all, .3s, ease-in-out); 
     @extend %position--relative; 
 
     .profile-bio {
@@ -27,7 +27,7 @@
         right: 0; 
         width: 100%;
         text-align: left; 
-        @include single-transition(all, 0.2s, ease-in-out);
+        @include single-transition(all, .3s, ease-in-out);
         @extend %position--absolute;  
         @extend %ptrbl3; 
 
@@ -37,7 +37,7 @@
         }
     }  
 
-    .profile-bio-toggle {
+    .profile-bio-open {
         bottom: 0px;
         top: rem-calc(10px);
         right: 0;
@@ -47,33 +47,42 @@
         width: 40px;
         cursor: pointer; 
         @extend %position--absolute;
+        
 
         &:hover {
-
+            
             .icon {
-                color: #fff; 
+                opacity: 1; 
             }
         }
 
         .icon {
-            color: $primaryColor;
             top: rem-calc(5px); 
-            left: rem-calc(5px); 
-            @include single-transition(all, 0.6s, ease-in-out); 
+            left: rem-calc(10px); 
+            opacity: .7; 
+            @include single-transition(all, .3s, ease-in-out); 
             @extend %position--absolute; 
+
         }
     } 
 
     .profile-bio-close {
         right: rem-calc(5px); 
-        top: 0px; 
+        top: 0; 
         height: rem-calc(40px);
         width: rem-calc(40px);
+        opacity: .7; 
         @extend %position--absolute; 
 
         .icon {
             top: rem-calc(5px); 
             right: rem-calc(10px); 
+            opacity: .7; 
+            @include single-transition(all, .3s, ease-in-out); 
+            
+            &:hover {
+                opacity: 1; 
+            }
         }
 
     }
@@ -115,7 +124,7 @@
 // TODO: Abstract this functionality into a component with classes 
 [data-ui-component*="contact-info"] {
     z-index: 2; 
-    @include single-transition(all, 0.6s, ease-in-out); 
+    @include single-transition(all, .6s, ease-in-out); 
     @include transform(translateY(0)); 
 
 
