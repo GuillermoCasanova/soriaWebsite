@@ -6472,13 +6472,12 @@ ul {
 /*------------------------------------*\
     #Height Classes 
 \*------------------------------------*/
-/* line 201, ../scss/partials/_generics.scss */
+/* line 202, ../scss/partials/_generics.scss */
 .vh100 {
-  min-height: 110vh;
-  height: 100%;
+  height: 130vh;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 201, ../scss/partials/_generics.scss */
+  /* line 202, ../scss/partials/_generics.scss */
   .vh100 {
     height: 100vh;
   }
