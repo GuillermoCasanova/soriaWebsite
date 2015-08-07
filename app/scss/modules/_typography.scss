@@ -147,6 +147,19 @@ $base-font-weight: $normal;
 
 
 
+/*------------------------------------*\
+    #Text Alignments  
+\*------------------------------------*/
+
+
+%text-center { text-align: center; }
+%text-left { text-align: left; }
+%text-right { text-align: right; }
+
+
+
+
+
 
 /*------------------------------------*\
     #Link Types 

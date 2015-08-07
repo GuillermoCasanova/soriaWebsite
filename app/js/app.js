@@ -363,7 +363,7 @@ $(document).on('ready', function() {
     \*------------------------------------*/
 
 
-    $('[data-action="flip-panel"]').on('click  ontouchstart', function(e){
+    $('[data-action="flip-panel"]').on('click  ontouchstart  focus', function(e){
         e.stopPropagation();
         $(this).toggleClass('is-selected');
     });
@@ -374,7 +374,7 @@ $(document).on('ready', function() {
     \*------------------------------------*/
 
 
-    $('[data-action="toggle-profile-bio"]').on('click', function(e) {
+    $('[data-action="toggle-profile-bio"]').on('click  focus', function(e) {
         var bioProfile = $(this).parents('.profile');
         e.stopPropagation(); 
         e.preventDefault();

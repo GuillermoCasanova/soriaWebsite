@@ -4150,36 +4150,26 @@ th.hide-for-touch {
 \*------------------------------------*/
 /* line 7, ../scss/modules/_buttons.scss */
 .button {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
-  padding: 1.5rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
   transition: none;
   border: 0;
   color: #fff;
   cursor: pointer;
   text-align: center;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
-/* line 21, ../scss/modules/_buttons.scss */
+/* line 19, ../scss/modules/_buttons.scss */
 .button a {
   color: #fff;
 }
 
-/* line 49, ../scss/modules/_buttons.scss */
-a,
-.link, .button--primary, .button--primary.secondaryAction, .button--secondary, .button--secondary.secondaryAction {
-  outline: 0;
+/* line 47, ../scss/modules/_buttons.scss */
+.button, a,
+.link, .button--secondary, .button--secondary.secondaryAction, .flip-container {
+  outline: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 /*------------------------------------*\
@@ -4211,9 +4201,9 @@ h1,
 .h1, .icon--large, h2,
 .h2, h3,
 .h3, .panel .panel-title, h4,
-.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .list--siteMap, .icon--medium, h5,
-.h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small, h6,
-.h6, .par--subText, .profile-bio .body, .panel-body, .text--mega, .text--micro, [rel*="copyright"], [rel*="credit"] {
+.h4, .list--siteMap, .icon--medium, .button, h5,
+.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body, h6,
+.h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, [rel*="copyright"], [rel*="credit"] {
   font-weight: 400;
 }
 
@@ -4226,7 +4216,7 @@ h1,
     #Text Alignments 
 \*------------------------------------*/
 /* line 53, ../scss/modules/_typography.scss */
-.footer-nav, .footer-siteInfo {
+.footer-nav, .footer-siteInfo, .panel-body {
   text-align: center;
 }
 
@@ -4261,14 +4251,14 @@ h3,
 
 /* line 87, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
-.h4, .secondaryNav .secondaryNav-list li.title--alt, .secondaryNav .secondaryNav-list li.link, .list--siteMap, .icon--medium {
+.h4, .list--siteMap, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
 /* line 93, ../scss/modules/_typography.scss */
-h5,
-.h5, .secondaryNav--fixed .secondaryNav-list li.title, .icon--small {
+.button, h5,
+.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body {
   font-size: 1.125rem;
   line-height: 1.333;
 }
@@ -4281,7 +4271,7 @@ h6,
 }
 
 /* line 105, ../scss/modules/_typography.scss */
-.par--subText, .profile-bio .body, .panel-body {
+.par--subText, .profile-bio .body {
   font-size: 0.875rem;
   line-height: 1.71;
 }
@@ -4316,13 +4306,26 @@ h6,
 }
 
 /*------------------------------------*\
+    #Text Alignments  
+\*------------------------------------*/
+/* line 155, ../scss/modules/_typography.scss */
+.footer-nav, .footer-siteInfo, .panel-body {
+  text-align: center;
+}
+
+/* line 156, ../scss/modules/_typography.scss */
+footer {
+  text-align: left;
+}
+
+/*------------------------------------*\
     #Link Types 
 \*------------------------------------*/
-/* line 156, ../scss/modules/_typography.scss */
+/* line 169, ../scss/modules/_typography.scss */
 .footer-siteInfo a {
   text-decoration: underline;
 }
-/* line 159, ../scss/modules/_typography.scss */
+/* line 172, ../scss/modules/_typography.scss */
 .footer-siteInfo a:hover {
   text-decoration: none;
 }
@@ -4330,14 +4333,14 @@ h6,
 /*------------------------------------*\
     #Hovers 
 \*------------------------------------*/
-/* line 172, ../scss/modules/_typography.scss */
+/* line 185, ../scss/modules/_typography.scss */
 .title-area {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 176, ../scss/modules/_typography.scss */
+/* line 189, ../scss/modules/_typography.scss */
 .title-area:hover {
   opacity: .7;
 }
@@ -4383,7 +4386,7 @@ h6,
 }
 
 /* line 39, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .name, .navBar-logo, .secondaryNav .secondaryNav-list li.link a, .secondaryNav--fixed .secondaryNav-list li.title, .footer-nav li, footer, [rel*="copyright"], [rel*="credit"], .panel--success.is-visible {
+.name, .navBar-logo, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link a, .footer-nav li, footer, [rel*="copyright"], [rel*="credit"], .panel--success.is-visible {
   display: block;
 }
 
@@ -4396,7 +4399,7 @@ h6,
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.blockquote--bubble p:after, .profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, footer, .front,
+.profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, footer, .front,
 .back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
@@ -4413,7 +4416,7 @@ h6,
     #Flexbox 
 \*------------------------------------*/
 /* line 89, ../scss/modules/_generics.scss */
-.footer-nav, .footer-siteInfo {
+.footer-nav, .footer-siteInfo, .panel-body {
   text-align: center;
 }
 
@@ -4472,7 +4475,7 @@ footer {
 }
 
 /* line 198, ../scss/modules/_generics.scss */
-.panel, .ptrbl2 {
+.panel, .fixedTab, .ptrbl2 {
   padding: 0.75rem !important;
 }
 
@@ -4497,12 +4500,12 @@ footer {
 }
 
 /* line 223, ../scss/modules/_generics.scss */
-.secondaryNav--fixed .secondaryNav-list li.title, .pt1 {
+.secondaryNav .secondaryNav-list li.title, .pt1 {
   padding-top: 0.375rem !important;
 }
 
 /* line 227, ../scss/modules/_generics.scss */
-.fixedTab, .pt2 {
+.pt2 {
   padding-top: 0.75rem !important;
 }
 
@@ -4532,7 +4535,7 @@ footer {
 }
 
 /* line 256, ../scss/modules/_generics.scss */
-.fixedTab, .secondaryNav .secondaryNav-list, .pb2 {
+.secondaryNav .secondaryNav-list, .pb2 {
   padding-bottom: 0.75rem !important;
 }
 
@@ -4564,7 +4567,7 @@ footer {
 }
 
 /* line 288, ../scss/modules/_generics.scss */
-.secondaryNav .secondaryNav-list li.title--alt, .ptb2 {
+.ptb2 {
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
@@ -4634,7 +4637,7 @@ footer {
 }
 
 /* line 356, ../scss/modules/_generics.scss */
-.fixedTab, .pr2 {
+.pr2 {
   padding-right: 0.75rem !important;
 }
 
@@ -4664,7 +4667,7 @@ footer {
 }
 
 /* line 385, ../scss/modules/_generics.scss */
-.fixedTab, .secondaryNav--fixed .secondaryNav-list li.title, .pl2 {
+.secondaryNav .secondaryNav-list li.title, .pl2 {
   padding-left: 0.75rem !important;
 }
 
@@ -4749,12 +4752,12 @@ footer {
 }
 
 /* line 475, ../scss/modules/_generics.scss */
-.mb1, [rel*="copyright"], [rel*="credit"] {
+.button, .mb1, [rel*="copyright"], [rel*="credit"] {
   margin-bottom: 0.375rem !important;
 }
 
 /* line 479, ../scss/modules/_generics.scss */
-.secondaryNav .secondaryNav-list li.title--alt, .mb2 {
+.mb2 {
   margin-bottom: 0.75rem !important;
 }
 
@@ -4786,7 +4789,7 @@ footer {
 }
 
 /* line 511, ../scss/modules/_generics.scss */
-.secondaryNav--fixed .secondaryNav-list li.title, .mtb2 {
+.secondaryNav .secondaryNav-list li.title, .mtb2 {
   margin-top: 0.75rem !important;
   margin-bottom: 0.75rem !important;
 }
@@ -4858,6 +4861,11 @@ footer {
 /* line 608, ../scss/modules/_generics.scss */
 .title-area {
   margin-left: 0.75rem !important;
+}
+
+/* line 612, ../scss/modules/_generics.scss */
+.list--bullet {
+  margin-left: 1.5rem !important;
 }
 
 /*------------------------------------*\
@@ -5006,44 +5014,9 @@ h1, h2, h3, h4, h5, h6 {
     #Paragraph Styles
 \*------------------------------------*/
 /*------------------------------------*\
-    #Blockquotes 
-\*------------------------------------*/
-/* line 192, ../scss/modules/_typography.scss */
-.blockquote--bubble p {
-  background-color: #63c7dc;
-  padding: 0.875em;
-  margin-bottom: 0.875em;
-  -moz-border-radius: 0.375em;
-  -webkit-border-radius: 0.375em;
-  border-radius: 0.375em;
-}
-/* line 199, ../scss/modules/_typography.scss */
-.blockquote--bubble p:after {
-  content: "";
-  bottom: auto;
-  right: 4.375em;
-  width: 0;
-  height: 0;
-  border-left: 24px solid transparent;
-  border-right: 24px solid transparent;
-  border-top: 30px #63c7dc solid;
-}
-/* line 214, ../scss/modules/_typography.scss */
-.blockquote--bubble cite {
-  padding-bottom: 0.25em;
-  text-align: right;
-  font-weight: 700;
-  font-style: normal;
-}
-/* line 220, ../scss/modules/_typography.scss */
-.blockquote--bubble cite:before {
-  content: none;
-}
-
-/*------------------------------------*\
     #Links
 \*------------------------------------*/
-/* line 159, ../scss/partials/_typography.scss */
+/* line 147, ../scss/partials/_typography.scss */
 a,
 .link {
   -moz-transition: all 0.3s ease-in-out;
@@ -5052,11 +5025,11 @@ a,
   transition: all 0.3s ease-in-out;
 }
 
-/* line 167, ../scss/partials/_typography.scss */
+/* line 155, ../scss/partials/_typography.scss */
 .link--underline {
   text-decoration: underline;
 }
-/* line 170, ../scss/partials/_typography.scss */
+/* line 158, ../scss/partials/_typography.scss */
 .link--underline:hover {
   text-decoration: none;
 }
@@ -5064,12 +5037,12 @@ a,
 /*------------------------------------*\
     #Font Color Classes 
 \*------------------------------------*/
-/* line 183, ../scss/partials/_typography.scss */
+/* line 171, ../scss/partials/_typography.scss */
 .txtc2 {
   color: #888f95;
 }
 
-/* line 187, ../scss/partials/_typography.scss */
+/* line 175, ../scss/partials/_typography.scss */
 .txtc3 {
   color: #ef8111;
 }
@@ -5077,17 +5050,17 @@ a,
 /*------------------------------------*\
     #Text Weights (Variables defined in _typography.scss module)
 \*------------------------------------*/
-/* line 200, ../scss/partials/_typography.scss */
+/* line 188, ../scss/partials/_typography.scss */
 .fwn {
   font-weight: 400;
 }
 
-/* line 201, ../scss/partials/_typography.scss */
+/* line 189, ../scss/partials/_typography.scss */
 .fwb {
   font-weight: 700;
 }
 
-/* line 202, ../scss/partials/_typography.scss */
+/* line 190, ../scss/partials/_typography.scss */
 .uc {
   text-transform: uppercase;
 }
@@ -5095,106 +5068,123 @@ a,
 /*------------------------------------*\
     #Text Alignments  
 \*------------------------------------*/
-/* line 213, ../scss/partials/_typography.scss */
+/* line 201, ../scss/partials/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 214, ../scss/partials/_typography.scss */
+/* line 202, ../scss/partials/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 215, ../scss/partials/_typography.scss */
+/* line 203, ../scss/partials/_typography.scss */
 .text-right {
   text-align: right;
 }
 
 /*------------------------------------*\
-    #Buttons 
+    #Buttons  (Default button sizes being used from Foundation 5, disable at settings--overwrite.scss)
 \*------------------------------------*/
-/* line 10, ../scss/partials/_buttons.scss */
+/* line 12, ../scss/partials/_buttons.scss */
 .button--primary {
   background-color: #ef8111;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 89, ../scss/modules/_buttons.scss */
-.button--primary:hover {
-  background-color: #f1902e;
-}
-/* line 94, ../scss/modules/_buttons.scss */
-.button--primary:active, .button--primary:focus {
+/* line 85, ../scss/modules/_buttons.scss */
+.button--primary:active, .button--primary:hover, .button--primary:focus {
   background-color: #f18e29;
 }
-/* line 13, ../scss/partials/_buttons.scss */
+/* line 16, ../scss/partials/_buttons.scss */
 .button--primary.secondaryAction {
   background-color: #3c4750;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 89, ../scss/modules/_buttons.scss */
-.button--primary.secondaryAction:hover {
-  background-color: #495761;
-}
-/* line 94, ../scss/modules/_buttons.scss */
-.button--primary.secondaryAction:active, .button--primary.secondaryAction:focus {
+/* line 85, ../scss/modules/_buttons.scss */
+.button--primary.secondaryAction:active, .button--primary.secondaryAction:hover, .button--primary.secondaryAction:focus {
   background-color: #47545f;
 }
 
-/* line 18, ../scss/partials/_buttons.scss */
+/* line 21, ../scss/partials/_buttons.scss */
 .button--secondary {
   background-color: transparent;
   color: #ef8111;
   border: 2px solid #ef8111;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 109, ../scss/modules/_buttons.scss */
-.button--secondary:hover {
+/* line 101, ../scss/modules/_buttons.scss */
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
   color: #fff;
   background-color: #ef8111;
 }
-/* line 115, ../scss/modules/_buttons.scss */
-.button--secondary:active, .button--secondary:focus {
-  background-color: #ef8111;
-}
-/* line 21, ../scss/partials/_buttons.scss */
+/* line 25, ../scss/partials/_buttons.scss */
 .button--secondary.secondaryAction {
   background-color: transparent;
   color: #3c4750;
   border: 2px solid #3c4750;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 109, ../scss/modules/_buttons.scss */
-.button--secondary.secondaryAction:hover {
+/* line 101, ../scss/modules/_buttons.scss */
+.button--secondary.secondaryAction:hover, .button--secondary.secondaryAction:focus, .button--secondary.secondaryAction:active {
   color: #fff;
   background-color: #3c4750;
 }
-/* line 115, ../scss/modules/_buttons.scss */
-.button--secondary.secondaryAction:active, .button--secondary.secondaryAction:focus {
-  background-color: #3c4750;
+
+/*------------------------------------*\
+    #Button Sizes
+\*------------------------------------*/
+/* line 47, ../scss/partials/_buttons.scss */
+button.tiny,
+.button.tiny {
+  padding: 0.3125rem;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+}
+/* line 54, ../scss/partials/_buttons.scss */
+button.small,
+.button.small {
+  padding: 0.625rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+/* line 61, ../scss/partials/_buttons.scss */
+button.medium,
+.button.medium {
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+/* line 67, ../scss/partials/_buttons.scss */
+button.large,
+.button.large {
+  font-size: 1rem;
+  padding: 1.125rem;
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
 }
 
 /*------------------------------------*\
     #Button Classes
 \*------------------------------------*/
-/* line 35, ../scss/partials/_buttons.scss */
+/* line 85, ../scss/partials/_buttons.scss */
 .button--expanded {
   width: 100%;
 }
@@ -5202,7 +5192,7 @@ a,
 /*------------------------------------*\
     #Tab Buttons
 \*------------------------------------*/
-/* line 48, ../scss/partials/_buttons.scss */
+/* line 98, ../scss/partials/_buttons.scss */
 .fixedTab {
   background-color: #ef8111;
   color: #fff;
@@ -5221,11 +5211,11 @@ a,
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 69, ../scss/partials/_buttons.scss */
+/* line 116, ../scss/partials/_buttons.scss */
 .fixedTab.is-visible {
   opacity: 1;
 }
-/* line 73, ../scss/partials/_buttons.scss */
+/* line 120, ../scss/partials/_buttons.scss */
 .fixedTab .link {
   opacity: 0;
   -moz-transition: all 0.3s ease-in-out;
@@ -5233,19 +5223,19 @@ a,
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 78, ../scss/partials/_buttons.scss */
+/* line 125, ../scss/partials/_buttons.scss */
 .fixedTab a {
   color: #3c4750;
 }
-/* line 81, ../scss/partials/_buttons.scss */
+/* line 128, ../scss/partials/_buttons.scss */
 .fixedTab a:hover {
   color: #fff;
 }
-/* line 86, ../scss/partials/_buttons.scss */
+/* line 133, ../scss/partials/_buttons.scss */
 .fixedTab:hover {
   width: 20.25rem;
 }
-/* line 89, ../scss/partials/_buttons.scss */
+/* line 136, ../scss/partials/_buttons.scss */
 .fixedTab:hover .link {
   opacity: 1;
 }
@@ -5425,12 +5415,12 @@ a,
 .top-bar.is-normal .top-bar-section ul li.top-bar-link a {
   color: #3c4750;
 }
-/* line 212, ../scss/partials/_navs.scss */
-.top-bar-section ul li.top-bar-link:hover a {
+/* line 213, ../scss/partials/_navs.scss */
+.top-bar-section ul li.top-bar-link:hover a, .top-bar-section ul li.top-bar-link:focus a {
   color: #ef8111;
 }
-/* line 217, ../scss/partials/_navs.scss */
-.top-bar-section ul li.top-bar-link:hover:after {
+/* line 218, ../scss/partials/_navs.scss */
+.top-bar-section ul li.top-bar-link:hover:after, .top-bar-section ul li.top-bar-link:focus:after {
   height: 4px;
   right: 0;
   left: 0;
@@ -5447,16 +5437,16 @@ a,
 /*------------------------------------*\
     #Top Bar Dropdowns 
 \*------------------------------------*/
-/* line 246, ../scss/partials/_navs.scss */
+/* line 247, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 250, ../scss/partials/_navs.scss */
+/* line 251, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 254, ../scss/partials/_navs.scss */
+/* line 255, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5466,12 +5456,12 @@ a,
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 260, ../scss/partials/_navs.scss */
-.top-bar-section .dropdown .dropdown-link:hover {
+/* line 261, ../scss/partials/_navs.scss */
+.top-bar-section .dropdown .dropdown-link:hover, .top-bar-section .dropdown .dropdown-link:focus {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 267, ../scss/partials/_navs.scss */
+/* line 269, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5481,7 +5471,7 @@ a,
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-/* line 273, ../scss/partials/_navs.scss */
+/* line 275, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a:hover {
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
@@ -5493,15 +5483,15 @@ a,
 /*------------------------------------*\
     #Small Nav Styles 
 \*------------------------------------*/
-/* line 296, ../scss/partials/_navs.scss */
+/* line 298, ../scss/partials/_navs.scss */
 .off-canvas-list li {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 302, ../scss/partials/_navs.scss */
-.off-canvas-list li:hover > a {
+/* line 305, ../scss/partials/_navs.scss */
+.off-canvas-list li:hover > a, .off-canvas-list li:focus > a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5513,11 +5503,11 @@ a,
 /*------------------------------------*\
     #Small Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 324, ../scss/partials/_navs.scss */
+/* line 327, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 329, ../scss/partials/_navs.scss */
+/* line 332, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5525,7 +5515,7 @@ a,
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 342, ../scss/partials/_navs.scss */
+/* line 345, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -5533,32 +5523,32 @@ a,
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 369, ../scss/partials/_navs.scss */
+/* line 372, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
-/* line 375, ../scss/partials/_navs.scss */
+/* line 378, ../scss/partials/_navs.scss */
 .title-area .logo--alt {
   display: none;
 }
 
-/* line 383, ../scss/partials/_navs.scss */
+/* line 386, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 390, ../scss/partials/_navs.scss */
+/* line 393, ../scss/partials/_navs.scss */
 .navBar-logo {
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 390, ../scss/partials/_navs.scss */
+  /* line 393, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 404, ../scss/partials/_navs.scss */
+/* line 407, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -5567,22 +5557,19 @@ a,
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 419, ../scss/partials/_navs.scss */
+/* line 422, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
-/* line 425, ../scss/partials/_navs.scss */
+/* line 428, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 430, ../scss/partials/_navs.scss */
-.secondaryNav .secondaryNav-list li.title--alt {
-  background-color: #ef8111;
-  width: 100%;
-  text-align: center;
-  color: #fff;
+/* line 434, ../scss/partials/_navs.scss */
+.secondaryNav .secondaryNav-list li.title {
+  color: #888f95;
 }
-/* line 440, ../scss/partials/_navs.scss */
+/* line 443, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
   overflow: hidden;
   border-left: 4px solid #fff;
@@ -5591,12 +5578,12 @@ a,
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 447, ../scss/partials/_navs.scss */
+/* line 450, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link:hover {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 452, ../scss/partials/_navs.scss */
+/* line 455, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
   line-height: 2.75rem;
@@ -5608,7 +5595,7 @@ a,
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 462, ../scss/partials/_navs.scss */
+/* line 465, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a:hover {
   background-color: transparent;
   color: #ef8111;
@@ -5617,12 +5604,12 @@ a,
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
-/* line 471, ../scss/partials/_navs.scss */
+/* line 474, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 476, ../scss/partials/_navs.scss */
+/* line 479, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active a {
   background-color: transparent;
   color: #ef8111;
@@ -5635,26 +5622,22 @@ a,
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 496, ../scss/partials/_navs.scss */
+/* line 499, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
   right: 2.25rem;
   z-index: 100;
 }
-/* line 506, ../scss/partials/_navs.scss */
-.secondaryNav--fixed .secondaryNav-list li.title {
-  color: #888f95;
-}
 @media only screen and (min-width: 40.0625em) {
-  /* line 496, ../scss/partials/_navs.scss */
+  /* line 499, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 496, ../scss/partials/_navs.scss */
+  /* line 499, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
@@ -5664,29 +5647,20 @@ a,
 /*------------------------------------*\
     #Footer Nav 
 \*------------------------------------*/
-/* line 542, ../scss/partials/_navs.scss */
+/* line 531, ../scss/partials/_navs.scss */
 .footer-nav hr {
   border: 1px solid #888f95;
 }
-/* line 546, ../scss/partials/_navs.scss */
+/* line 535, ../scss/partials/_navs.scss */
 .footer-nav li {
   font-weight: 700;
 }
-@media (min-width: 760px) {
-  /* line 546, ../scss/partials/_navs.scss */
-  .footer-nav li {
-    display: inline-block;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-}
-/* line 557, ../scss/partials/_navs.scss */
+/* line 541, ../scss/partials/_navs.scss */
 .footer-nav a {
   color: #fff;
 }
-/* line 560, ../scss/partials/_navs.scss */
+/* line 544, ../scss/partials/_navs.scss */
 .footer-nav a:hover {
-  color: #b9d362;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -6003,7 +5977,7 @@ ul {
   display: inline-block;
 }
 
-/* line 29, ../scss/partials/_lists.scss */
+/* line 30, ../scss/partials/_lists.scss */
 .list--bullet > li:before {
   content: '\2022';
   display: block;
@@ -6016,19 +5990,19 @@ ul {
   font-size: 1.25rem;
 }
 
-/* line 49, ../scss/partials/_lists.scss */
+/* line 50, ../scss/partials/_lists.scss */
 .list--siteMap [class*="list-item"]:hover {
   text-decoration: underline;
 }
-/* line 57, ../scss/partials/_lists.scss */
+/* line 58, ../scss/partials/_lists.scss */
 .list--siteMap .list-item {
   color: #3c4750;
 }
-/* line 63, ../scss/partials/_lists.scss */
+/* line 64, ../scss/partials/_lists.scss */
 .list--siteMap .list-item--subItem {
   color: #888f95;
 }
-/* line 67, ../scss/partials/_lists.scss */
+/* line 68, ../scss/partials/_lists.scss */
 .list--siteMap .list-item--subItem:hover {
   color: #3c4750;
 }
@@ -6050,7 +6024,8 @@ ul {
     #Master Icon Class  (Applies to all icons)
 \*------------------------------------*/
 /* line 36, ../scss/partials/_icons.scss */
-[class^="icon--"]:before, [class*="icon--"]:before {
+[class^="icon--"]:before, [class*="icon--"]:before,
+[class^="icon--"]:after, [class*="icon--"]:after {
   font-family: "fontello--soriallc";
   font-style: normal;
   font-weight: normal;
@@ -6059,67 +6034,80 @@ ul {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
   text-align: center;
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  font-size: 110%;
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* line 63, ../scss/partials/_icons.scss */
+[class^="icon--"]:before, [class*="icon--"]:before {
+  margin-right: .2em;
+}
+
+/* line 69, ../scss/partials/_icons.scss */
+[class^="icon--"]:after, [class*="icon--"]:after {
+  margin-left: .2em;
+}
+
 /*------------------------------------*\
     #Arrows 
 \*------------------------------------*/
-/* line 72, ../scss/partials/_icons.scss */
+/* line 85, ../scss/partials/_icons.scss */
 .icon--left-open-big:before {
   content: '\e800';
 }
 
-/* line 73, ../scss/partials/_icons.scss */
+/* line 86, ../scss/partials/_icons.scss */
 .icon--right-open-big:before {
   content: '\e801';
 }
 
-/* line 74, ../scss/partials/_icons.scss */
+/* line 87, ../scss/partials/_icons.scss */
 .icon--right-circled2:before {
   content: '\e817';
 }
 
-/* line 75, ../scss/partials/_icons.scss */
+/* line 88, ../scss/partials/_icons.scss */
 .icon--left-circled2:before {
   content: '\e818';
 }
 
-/* line 76, ../scss/partials/_icons.scss */
+/* line 89, ../scss/partials/_icons.scss */
 .icon--up-open-big:before {
   content: '\e812';
 }
 
-/* line 77, ../scss/partials/_icons.scss */
+/* line 90, ../scss/partials/_icons.scss */
 .icon--down-open-big:before {
   content: '\e813';
+}
+
+/* line 94, ../scss/partials/_icons.scss */
+.icon--right-circled2-a:after {
+  content: '\e817';
 }
 
 /*------------------------------------*\
     #Plus, Minus, Cancel 
 \*------------------------------------*/
-/* line 88, ../scss/partials/_icons.scss */
+/* line 105, ../scss/partials/_icons.scss */
 .icon--plus-circled:before {
   content: '\e802';
 }
 
-/* line 89, ../scss/partials/_icons.scss */
+/* line 106, ../scss/partials/_icons.scss */
 .icon--minus-circled:before {
   content: '\e803';
 }
 
-/* line 90, ../scss/partials/_icons.scss */
+/* line 107, ../scss/partials/_icons.scss */
 .icon--cancel:before {
   content: '\e80a';
 }
@@ -6127,32 +6115,32 @@ ul {
 /*------------------------------------*\
     #Social Media 
 \*------------------------------------*/
-/* line 102, ../scss/partials/_icons.scss */
+/* line 119, ../scss/partials/_icons.scss */
 .icon--linkedin:before {
   content: '\e804';
 }
 
-/* line 103, ../scss/partials/_icons.scss */
+/* line 120, ../scss/partials/_icons.scss */
 .icon--facebook:before {
   content: '\e805';
 }
 
-/* line 104, ../scss/partials/_icons.scss */
+/* line 121, ../scss/partials/_icons.scss */
 .icon--facebook-circled:before {
   content: '\e806';
 }
 
-/* line 105, ../scss/partials/_icons.scss */
+/* line 122, ../scss/partials/_icons.scss */
 .icon--linkedin-circled:before {
   content: '\e807';
 }
 
-/* line 106, ../scss/partials/_icons.scss */
+/* line 123, ../scss/partials/_icons.scss */
 .icon--linkedin-rect:before {
   content: '\e815';
 }
 
-/* line 107, ../scss/partials/_icons.scss */
+/* line 124, ../scss/partials/_icons.scss */
 .icon--facebook-rect:before {
   content: '\e816';
 }
@@ -6160,22 +6148,22 @@ ul {
 /*------------------------------------*\
     #Contact  
 \*------------------------------------*/
-/* line 119, ../scss/partials/_icons.scss */
+/* line 136, ../scss/partials/_icons.scss */
 .icon--phone:before {
   content: '\e819';
 }
 
-/* line 120, ../scss/partials/_icons.scss */
+/* line 137, ../scss/partials/_icons.scss */
 .icon--buildings:before {
   content: '\e82e';
 }
 
-/* line 121, ../scss/partials/_icons.scss */
+/* line 138, ../scss/partials/_icons.scss */
 .icon--location:before {
   content: '\e814';
 }
 
-/* line 122, ../scss/partials/_icons.scss */
+/* line 139, ../scss/partials/_icons.scss */
 .icon--envelope:before {
   content: '\e82c';
 }
@@ -6183,127 +6171,127 @@ ul {
 /*------------------------------------*\
     #Services, Law & Finance
 \*------------------------------------*/
-/* line 133, ../scss/partials/_icons.scss */
+/* line 150, ../scss/partials/_icons.scss */
 .icon--hourglass:before {
   content: '\e808';
 }
 
-/* line 134, ../scss/partials/_icons.scss */
+/* line 151, ../scss/partials/_icons.scss */
 .icon--clock:before {
   content: '\e809';
 }
 
-/* line 135, ../scss/partials/_icons.scss */
+/* line 152, ../scss/partials/_icons.scss */
 .icon--compass:before {
   content: '\e80c';
 }
 
-/* line 136, ../scss/partials/_icons.scss */
+/* line 153, ../scss/partials/_icons.scss */
 .icon--chat:before {
   content: '\e80d';
 }
 
-/* line 137, ../scss/partials/_icons.scss */
+/* line 154, ../scss/partials/_icons.scss */
 .icon--search:before {
   content: '\e80e';
 }
 
-/* line 138, ../scss/partials/_icons.scss */
+/* line 155, ../scss/partials/_icons.scss */
 .icon--flow-tree:before {
   content: '\e810';
 }
 
-/* line 139, ../scss/partials/_icons.scss */
+/* line 156, ../scss/partials/_icons.scss */
 .icon--chart-pie:before {
   content: '\e811';
 }
 
-/* line 140, ../scss/partials/_icons.scss */
+/* line 157, ../scss/partials/_icons.scss */
 .icon--graph-up:before {
   content: '\e81b';
 }
 
-/* line 141, ../scss/partials/_icons.scss */
+/* line 158, ../scss/partials/_icons.scss */
 .icon--law:before {
   content: '\e81c';
 }
 
-/* line 142, ../scss/partials/_icons.scss */
+/* line 159, ../scss/partials/_icons.scss */
 .icon--gearHead:before {
   content: '\e81d';
 }
 
-/* line 143, ../scss/partials/_icons.scss */
+/* line 160, ../scss/partials/_icons.scss */
 .icon--group:before {
   content: '\e81e';
 }
 
-/* line 144, ../scss/partials/_icons.scss */
+/* line 161, ../scss/partials/_icons.scss */
 .icon--puzzle-piece:before {
   content: '\e81f';
 }
 
-/* line 145, ../scss/partials/_icons.scss */
+/* line 162, ../scss/partials/_icons.scss */
 .icon--magnify-money:before {
   content: '\e820';
 }
 
-/* line 146, ../scss/partials/_icons.scss */
+/* line 163, ../scss/partials/_icons.scss */
 .icon--magnify-person:before {
   content: '\e821';
 }
 
-/* line 147, ../scss/partials/_icons.scss */
+/* line 164, ../scss/partials/_icons.scss */
 .icon--contract:before {
   content: '\e822';
 }
 
-/* line 148, ../scss/partials/_icons.scss */
+/* line 165, ../scss/partials/_icons.scss */
 .icon--person-connections:before {
   content: '\e823';
 }
 
-/* line 149, ../scss/partials/_icons.scss */
+/* line 166, ../scss/partials/_icons.scss */
 .icon--litigation:before {
   content: '\e824';
 }
 
-/* line 150, ../scss/partials/_icons.scss */
+/* line 167, ../scss/partials/_icons.scss */
 .icon--shield:before {
   content: '\e825';
 }
 
-/* line 151, ../scss/partials/_icons.scss */
+/* line 168, ../scss/partials/_icons.scss */
 .icon--clipboard:before {
   content: '\e826';
 }
 
-/* line 152, ../scss/partials/_icons.scss */
+/* line 169, ../scss/partials/_icons.scss */
 .icon--team:before {
   content: '\e827';
 }
 
-/* line 153, ../scss/partials/_icons.scss */
+/* line 170, ../scss/partials/_icons.scss */
 .icon--wallet:before {
   content: '\e828';
 }
 
-/* line 154, ../scss/partials/_icons.scss */
+/* line 171, ../scss/partials/_icons.scss */
 .icon--target:before {
   content: '\e829';
 }
 
-/* line 155, ../scss/partials/_icons.scss */
+/* line 172, ../scss/partials/_icons.scss */
 .icon--handshake:before {
   content: '\e82a';
 }
 
-/* line 156, ../scss/partials/_icons.scss */
+/* line 173, ../scss/partials/_icons.scss */
 .icon--podium:before {
   content: '\e82b';
 }
 
-/* line 157, ../scss/partials/_icons.scss */
+/* line 174, ../scss/partials/_icons.scss */
 .icon--scales:before {
   content: '\e82d';
 }
@@ -6311,13 +6299,13 @@ ul {
 /*------------------------------------*\
     #Icon Sizes 
 \*------------------------------------*/
-/* line 169, ../scss/partials/_icons.scss */
+/* line 186, ../scss/partials/_icons.scss */
 .icon--mega {
   font-size: 6.25rem;
   line-height: 1;
 }
 
-/* line 186, ../scss/partials/_icons.scss */
+/* line 203, ../scss/partials/_icons.scss */
 .icon--tiny {
   margin: 0.25rem;
   font-size: 0.75rem;
@@ -6649,7 +6637,7 @@ footer,
 /*------------------------------------*\
     #Panel Types 
 \*------------------------------------*/
-/* line 25, ../scss/partials/_panels.scss */
+/* line 26, ../scss/partials/_panels.scss */
 .panel--success {
   opacity: 0;
   display: none;
@@ -6661,50 +6649,50 @@ footer,
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 33, ../scss/partials/_panels.scss */
+/* line 34, ../scss/partials/_panels.scss */
 .panel--success .panel-body,
 .panel--success .panel-title {
   color: #fff;
 }
-/* line 38, ../scss/partials/_panels.scss */
+/* line 39, ../scss/partials/_panels.scss */
 .panel--success.is-visible {
   opacity: 1;
 }
 
-/* line 45, ../scss/partials/_panels.scss */
+/* line 46, ../scss/partials/_panels.scss */
 .panel--information {
   border-top: 4px solid #ef8111;
   background-color: #fff;
 }
-/* line 51, ../scss/partials/_panels.scss */
+/* line 52, ../scss/partials/_panels.scss */
 .panel--information:hover .icon {
   fill: #ace63c;
 }
 
-/* line 60, ../scss/partials/_panels.scss */
+/* line 61, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 64, ../scss/partials/_panels.scss */
+/* line 65, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body .icon {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 77, ../scss/partials/_panels.scss */
+/* line 78, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body .icon {
   color: #3c4750;
 }
 
-/* line 88, ../scss/partials/_panels.scss */
+/* line 89, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 92, ../scss/partials/_panels.scss */
+/* line 93, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -6713,7 +6701,7 @@ footer,
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 109, ../scss/partials/_panels.scss */
+/* line 110, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -6722,21 +6710,21 @@ footer,
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
-/* line 121, ../scss/partials/_panels.scss */
+/* line 124, ../scss/partials/_panels.scss */
 .flip-container.is-selected .back {
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 125, ../scss/partials/_panels.scss */
+/* line 128, ../scss/partials/_panels.scss */
 .flip-container.is-selected .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -6745,19 +6733,19 @@ footer,
 }
 
 /* flip speed goes here */
-/* line 134, ../scss/partials/_panels.scss */
+/* line 137, ../scss/partials/_panels.scss */
 .flipper {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 /* hide back of pane during swap */
-/* line 142, ../scss/partials/_panels.scss */
+/* line 145, ../scss/partials/_panels.scss */
 .front,
 .back {
   top: 0;
@@ -6768,14 +6756,14 @@ footer,
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* front pane, placed above back */
-/* line 153, ../scss/partials/_panels.scss */
+/* line 156, ../scss/partials/_panels.scss */
 .front {
   /* for firefox 31 */
   -moz-transform: rotateY(0deg);
@@ -6785,7 +6773,7 @@ footer,
 }
 
 /* back, initially hidden pane */
-/* line 159, ../scss/partials/_panels.scss */
+/* line 162, ../scss/partials/_panels.scss */
 .back {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
@@ -6793,7 +6781,7 @@ footer,
   transform: rotateY(-180deg);
 }
 
-/* line 163, ../scss/partials/_panels.scss */
+/* line 166, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -6801,18 +6789,18 @@ footer,
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 176, ../scss/partials/_panels.scss */
+/* line 179, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
-  height: 12.5rem;
+  height: 12.75rem;
 }
-/* line 180, ../scss/partials/_panels.scss */
+/* line 183, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;
   min-width: 17.5rem;
-  height: 12.5rem;
+  height: 12.75rem;
 }
 
 /*------------------------------------*\
@@ -6820,6 +6808,7 @@ footer,
 \*------------------------------------*/
 /* line 7, ../scss/partials/_sections.scss */
 .section {
+  background-color: #FFF;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6828,41 +6817,36 @@ footer,
 /*------------------------------------*\
     #Section Types 
 \*------------------------------------*/
-/* line 20, ../scss/partials/_sections.scss */
-.section--normal {
-  background-color: #fff;
-}
-
-/* line 25, ../scss/partials/_sections.scss */
+/* line 21, ../scss/partials/_sections.scss */
 .section--highlighted {
   background-color: #f5f5f5;
   border-bottom: solid 1px #dfdfdf;
   border-top: solid 1px #dfdfdf;
 }
-/* line 30, ../scss/partials/_sections.scss */
+/* line 26, ../scss/partials/_sections.scss */
 .section--highlighted .section-text {
   color: #fff;
 }
 
-/* line 36, ../scss/partials/_sections.scss */
+/* line 32, ../scss/partials/_sections.scss */
 .section--alt {
   overflow: hidden;
   width: 100%;
   background-color: #3c4750;
 }
-/* line 45, ../scss/partials/_sections.scss */
+/* line 41, ../scss/partials/_sections.scss */
 .section--alt .section-title {
   color: #fff;
 }
-/* line 49, ../scss/partials/_sections.scss */
+/* line 45, ../scss/partials/_sections.scss */
 .section--alt .section-text {
   color: #fff;
 }
-/* line 53, ../scss/partials/_sections.scss */
+/* line 49, ../scss/partials/_sections.scss */
 .section--alt .section-text--highlight {
   color: #0d3d64;
 }
-/* line 57, ../scss/partials/_sections.scss */
+/* line 53, ../scss/partials/_sections.scss */
 .section--alt .section-bg {
   min-width: 50rem;
   opacity: .3;
@@ -6875,34 +6859,34 @@ footer,
   filter: grayscale(100%);
 }
 @media (min-width: 100px) and (max-width: 460px) {
-  /* line 57, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section-bg {
     margin-left: -50%;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 57, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section-bg {
     min-width: 60rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 57, ../scss/partials/_sections.scss */
+  /* line 53, ../scss/partials/_sections.scss */
   .section--alt .section-bg {
     min-width: 80rem;
   }
 }
 
-/* line 85, ../scss/partials/_sections.scss */
+/* line 81, ../scss/partials/_sections.scss */
 .section--primary {
   background-color: #ef8111;
 }
-/* line 88, ../scss/partials/_sections.scss */
+/* line 84, ../scss/partials/_sections.scss */
 .section--primary .section-text {
   color: #fff;
 }
 
-/* line 100, ../scss/partials/_sections.scss */
+/* line 96, ../scss/partials/_sections.scss */
 .section--callToAction {
   cursor: pointer;
   -moz-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -6910,7 +6894,7 @@ footer,
   -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-/* line 104, ../scss/partials/_sections.scss */
+/* line 100, ../scss/partials/_sections.scss */
 .section--callToAction:hover {
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
@@ -6921,14 +6905,14 @@ footer,
 /*------------------------------------*\
     #Section Properties 
 \*------------------------------------*/
-/* line 117, ../scss/partials/_sections.scss */
+/* line 113, ../scss/partials/_sections.scss */
 .section--pinned {
   width: 100%;
   height: 100vh;
   z-index: 0;
 }
 
-/* line 123, ../scss/partials/_sections.scss */
+/* line 119, ../scss/partials/_sections.scss */
 .section--pinnedCovered {
   z-index: 2;
 }
@@ -6936,7 +6920,7 @@ footer,
 /*------------------------------------*\
     #Map Section  
 \*------------------------------------*/
-/* line 135, ../scss/partials/_sections.scss */
+/* line 131, ../scss/partials/_sections.scss */
 .section-bg--map {
   opacity: .5;
   top: 0;
@@ -6950,13 +6934,13 @@ footer,
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 147, ../scss/partials/_sections.scss */
+/* line 143, ../scss/partials/_sections.scss */
 .section-bg--map.is-visible {
   opacity: 1;
   z-index: 4;
 }
 
-/* line 154, ../scss/partials/_sections.scss */
+/* line 150, ../scss/partials/_sections.scss */
 .map-toggleButton {
   position: absolute;
   bottom: 20%;
@@ -6967,13 +6951,13 @@ footer,
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 162, ../scss/partials/_sections.scss */
+/* line 158, ../scss/partials/_sections.scss */
 .map-toggleButton.is-visible {
   opacity: 1;
   z-index: 3;
 }
 
-/* line 168, ../scss/partials/_sections.scss */
+/* line 164, ../scss/partials/_sections.scss */
 .map-cover {
   width: 100%;
   height: 100%;
@@ -6985,7 +6969,7 @@ footer,
   left: 0;
   right: 0;
 }
-/* line 180, ../scss/partials/_sections.scss */
+/* line 176, ../scss/partials/_sections.scss */
 .map-cover.is-hidden {
   display: none !important;
 }
@@ -6993,7 +6977,7 @@ footer,
 /*------------------------------------*\
     #Section Scroll Blur Effect  
 \*------------------------------------*/
-/* line 214, ../scss/partials/_sections.scss */
+/* line 210, ../scss/partials/_sections.scss */
 .blur {
   opacity: 0;
   z-index: 4;
@@ -7002,29 +6986,29 @@ footer,
 /*------------------------------------*\
     #Section Header 
 \*------------------------------------*/
-/* line 228, ../scss/partials/_sections.scss */
+/* line 224, ../scss/partials/_sections.scss */
 .section--header {
   -moz-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 @media only screen {
-  /* line 228, ../scss/partials/_sections.scss */
+  /* line 224, ../scss/partials/_sections.scss */
   .section--header {
     height: 12rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 228, ../scss/partials/_sections.scss */
+  /* line 224, ../scss/partials/_sections.scss */
   .section--header {
     height: 13.5rem;
   }
 }
-/* line 240, ../scss/partials/_sections.scss */
+/* line 236, ../scss/partials/_sections.scss */
 .section--header .header-content {
   z-index: 100;
 }
-/* line 249, ../scss/partials/_sections.scss */
+/* line 245, ../scss/partials/_sections.scss */
 .section--header .section-bg {
   left: 0;
   margin: 0 auto;
@@ -7035,13 +7019,13 @@ footer,
   z-index: 10;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 249, ../scss/partials/_sections.scss */
+  /* line 245, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 55rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 249, ../scss/partials/_sections.scss */
+  /* line 245, ../scss/partials/_sections.scss */
   .section--header .section-bg {
     min-width: 90rem;
   }

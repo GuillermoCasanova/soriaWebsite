@@ -1,13 +1,16 @@
 
 /*------------------------------------*\
-    #Buttons 
+    #Buttons  (Default button sizes being used from Foundation 5, disable at settings--overwrite.scss)
 \*------------------------------------*/
 
 .button {
+
   @extend %button;
+  
 }
 
 .button--primary {
+
   @include button--flat($primaryColor); 
 
     &.secondaryAction {
@@ -16,11 +19,58 @@
 }
 
 .button--secondary {
-  @include button--outline($primaryColor);
 
-  &.secondaryAction {
+    @include button--outline($primaryColor);
+
+    &.secondaryAction {
+
         @include button--outline($secondaryColor);  
+
     }   
+
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    #Button Sizes
+\*------------------------------------*/
+
+
+button,
+.button {
+
+
+    &.tiny {
+      padding: rem-calc(5);
+      padding-right: rem-calc(18);
+      padding-left: rem-calc(18);
+    }
+
+
+    &.small {
+      padding: rem-calc(10);
+      padding-right: rem-calc(20);
+      padding-left: rem-calc(20);
+
+    }
+
+    &.medium {
+      padding: rem-calc(16);
+      padding-right: rem-calc(32);
+      padding-left: rem-calc(32);
+    }
+
+    &.large {
+      font-size: rem-calc(16); 
+      padding: rem-calc(18);
+      padding-right: rem-calc(36);
+      padding-left: rem-calc(36); 
+    }
+
 }
 
 
@@ -58,11 +108,8 @@
     width: rem-calc(200px); 
     cursor: pointer; 
     opacity: 0; 
-    @include single-transition(all, 0.3s, ease-in-out); 
-    @extend %pr2;
-    @extend %pl2;  
-    @extend %pt2; 
-    @extend %pb2; 
+    @include single-transition(all, .3s, ease-in-out); 
+    @extend %ptrbl2;
     @extend %position--fixed; 
 
 
@@ -72,7 +119,7 @@
 
     .link {
         opacity: 0; 
-        @include single-transition(all, 0.3s, ease-in-out); 
+        @include single-transition(all, .3s, ease-in-out); 
     }
 
     a {
