@@ -41,16 +41,24 @@ ul {
 
 
 .list--siteMap {
+
   [class*="list-item"]:hover {
+    
     text-decoration: underline; 
+    
   }
 
   .list-item {
-    color: $off-black; 
+
+    color: $secondaryColor;  
+
   }
 
   .list-item-subItem {
+
     color: $grey--dark;
+
  }
+
 }
 
