@@ -5,14 +5,11 @@
 
 
 footer {
-  background-color: $secondaryColor; 
-  bottom: 0; 
-  left: 0;
-  right: 0; 
-  @extend %position--absolute; 
   @extend %display--block; 
+  @extend %position--relative; 
   @extend %text-left; 
   @extend %text--white; 
+  @extend %ptb2; 
 
   .footer-title {
     @extend %text--white;
@@ -39,16 +36,18 @@ footer {
 
 
 .footer-siteInfo {
-  @extend %pb4; 
+  @extend %pb2; 
   @extend %text-center;
+  @extend %text--micro;  
+  @extend %text-center; 
 
   a { 
-    @include transition(color .2s ease-in-out);
+    @include transition(color .3s ease-in-out);
     color: $grey--dark;
     @extend %link--underline; 
 
     &:hover {
-      @extend %text--white; 
+      color: $primaryColor; 
     }
 
   }
@@ -56,23 +55,20 @@ footer {
 
 
 [rel*="copyright"] {
-  @extend %mb1; 
-  @extend %display--block; 
-  @extend %text--micro;  
+  @extend %mr1; 
 
-  @include breakpoint(teenBear) {
-    float: left; 
-  }
+      @media #{$medium-up} {
+
+        float: left; 
+    }
 }
   
 [rel*="credit"] {  
-  @extend %mb1; 
-  @extend %display--block; 
-  @extend %text--micro; 
-
-  @include breakpoint(teenBear) {
-    float: right; 
-  }
+    
+    @media #{$medium-up} {
+    
+        float: right; 
+    }
 }
 
 
@@ -85,19 +81,31 @@ footer {
 
 
 html, body {
-    height: 100%;
+    @media #{$medium-up} {
+
+        height: 100%;
+
+    }   
 }
 
 [role*='main'] {
-    min-height: 100%;
-    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-    height: 100%;
-    margin: 0 auto 0; /* the bottom margin is the negative value of the footer's height */
+    @media #{$medium-up} {
+
+        min-height: 100%;
+        height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+        height: 100%;
+        margin: 0 auto 0; /* the bottom margin is the negative value of the footer's height */
+
+    }
 }
 
 
 footer, 
 .push {
-    height: 50px; /* .push must be the same height as .footer */
+    @media #{$medium-up} {
+
+        height: 50px; /* .push must be the same height as .footer */
+
+    }
 }
 

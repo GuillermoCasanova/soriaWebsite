@@ -84,16 +84,22 @@
 
 .icon--left-open-big:before { content: '\e800'; } 
 .icon--right-open-big:before { content: '\e801'; }
+
 .icon--right-circled2:before { content: '\e817'; } 
+.icon--right-circled2-a:after {
+  content: '\e817';
+}
 .icon--left-circled2:before { content: '\e818'; } 
+
+
 .icon--up-open-big:before { content: '\e812'; } 
+.icon--up-open-big-a:after { content: '\e812'; } 
+
 .icon--down-open-big:before { content: '\e813'; } 
 
 
 
-.icon--right-circled2-a:after {
-  content: '\e817';
-}
+
 
 
 
