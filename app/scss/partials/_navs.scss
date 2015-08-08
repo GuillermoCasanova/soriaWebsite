@@ -1,6 +1,6 @@
 
 /*------------------------------------*\
-    #Navigation Styles  (Uses defaul Foundation classes and variables from settings--overwrite)
+    #Navigation Styles  
 \*------------------------------------*/
 
 
@@ -114,12 +114,16 @@
 
 }
 
-.top-bar-container {
+.top-bar-container.is-alt {
     
-    .top-bar.is-alt {
-        
-        background-color: #FFF;
+    .top-bar {
+        background-color: #fff; 
+        @extend %dropshadow1; 
 
+        .top-bar-section ul li.top-bar-link > a {
+            color: $secondaryColor; 
+        }
+        
         .title-area {
             
             .navBar-logo {
@@ -170,6 +174,10 @@
 .top-bar {
     z-index: 950;
     @include single-transition(all, 0.4s, ease-in-out); 
+
+    &.is-normal {
+        @extend %dropshadow1; 
+    }
 }
 
 
@@ -183,58 +191,48 @@
 
 .top-bar-section ul li.top-bar-link {
     
-    @include single-transition(all, .3s, ease-in-out); 
+    @include single-transition(all, .2s, ease-in-out); 
     @extend %position--relative; 
     
-    // Adds invisible border on links at first
     &:after {
         opacity: 0; 
-        height: 4px; 
-        right: 0; 
-        left: 0; 
-        bottom: 0; 
-        content: " "; 
-        position: absolute; 
-        display: block;
-        border-bottom: 4px solid #fff; 
-        margin-top: -4px;  
-        @include single-transition(all, .3s, ease-in-out); 
+        @include single-transition(all, .2s, ease-in-out); 
+
     }
 
-    // Shows bottom border on hover/focus
+    a {
+        .top-bar.is-normal & {
+            color: $secondaryColor; 
+        }
+        @include single-transition(all, .2s, ease-in-out); 
+    }
+    //Adds Bottom border to links on hover 
     &:hover,
     &:focus {
+
+        a {
+        color: $primaryColor; 
     
+        }
+
         &:after {
+            height: 4px; 
+            right: 0; 
+            left: 0; 
+            bottom: 0; 
+            content: " "; 
+            position: absolute; 
+            display: block;
             color: $primaryColor; 
             border-bottom: 4px solid $primaryColor;
+            margin-top: -4px;  
             opacity: 1; 
         }
     }
 
-}
-
-
-/*- Styles for Alt top-bar -*/
-.top-bar.is-alt {
-    background-color: #fff; 
-    @extend %dropshadow1; 
-
-    a {
-
-        color: $secondaryColor; 
-
-        &:hover,
-        &:active,
-        &:focus {
-            color: $primaryColor; 
-        }
-
-        @include single-transition(all, .3s, ease-in-out); 
-
-    }
 
 }
+
 
 
 
@@ -255,7 +253,7 @@
         }
         //Overrides Foundation Dropdown styles inherited from Top bar Styles
         .dropdown-link {
-            @include single-transition(all, .3s, ease-in-out);
+            @include single-transition(all, .2s, ease-in-out);
             background-color: $dropDown-color; 
             border-left: 4px solid $dropDown-color; 
             overflow: hidden; 
@@ -269,15 +267,14 @@
 
                             
             a {
+                @include single-transition(all, .2s, ease-in-out); 
                 line-height: rem-calc(44) !important; 
                 padding-left: rem-calc(16) !important; 
                 padding-right: rem-calc(16) !important; 
-                @include single-transition(all, .3s, ease-in-out); 
 
-                &:hover,
-                &:focus {
-                    color: $primaryColor; 
+                &:hover{
                     @include transform(translateX(4px)); 
+                    color: $primaryColor; 
                 }
             }
 
@@ -300,14 +297,14 @@
 
     li {
 
-        @include single-transition(all, .3s, ease-in-out); 
+        @include single-transition(all, .2s, ease-in-out); 
 
          &:hover,
          &:focus {
     
             & > a {
 
-                @include single-transition(all, .3s, ease-in-out); 
+                @include single-transition(all, .2s, ease-in-out); 
                 border-left: 4px solid $primaryColor; 
                 color: $primaryColor; 
                 
@@ -334,7 +331,7 @@
     .menu-icon {
             span:after {
             
-                @include single-transition(all, .3s, ease-in-out); 
+                @include single-transition(all, .2s, ease-in-out); 
                   box-shadow: 
               0px 0px 0px 1.5px $grey--dark, 
               0px 7px 0px 1.5px $grey--dark, 
@@ -448,10 +445,9 @@
             overflow: hidden; 
             border-left: 4px solid #fff; 
             @extend %h5; 
-            @include single-transition(all, .3s, ease-in-out);
+            @include single-transition(all, .2s, ease-in-out);
 
-            &:hover,
-            &:focus {
+            &:hover {
                 border-left: 4px solid $primaryColor; 
                 background-color: $grey--light;  
             }
@@ -464,10 +460,9 @@
                 color: $secondaryColor;  
                 @extend %ptb1; 
                 @extend %display--block; 
-                @include single-transition(all, .3s, ease-in-out); 
+                @include single-transition(all, .2s, ease-in-out); 
 
-                &:hover,
-                &:focus {
+                &:hover {
                     background-color: transparent; 
                     color: $primaryColor; 
                     @include transform(translateX(4px)); 
