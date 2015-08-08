@@ -196,7 +196,7 @@
         content: " "; 
         position: absolute; 
         display: block;
-        border-bottom: 4px solid #fff; 
+        border-bottom: 4px solid transparent; 
         margin-top: -4px;  
         @include single-transition(all, .3s, ease-in-out); 
     }

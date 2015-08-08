@@ -5407,7 +5407,7 @@ button.large,
   content: " ";
   position: absolute;
   display: block;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid transparent;
   margin-top: -4px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
