@@ -3,8 +3,7 @@
     #Forms 
 \*------------------------------------*/
 
-
-//Overrides Foundation Forms styles unable to edit through settings--overwrite
+input, 
 input[type="text"], 
 input[type="password"], 
 input[type="date"], 
@@ -18,24 +17,27 @@ input[type="search"],
 input[type="tel"], 
 input[type="time"], 
 input[type="url"], 
-input[type="color"] {
-    min-height: rem-calc(40px); 
-}
-
-input[type="text"], 
-input[type="password"], 
-input[type="date"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="month"], 
-input[type="week"], 
-input[type="email"], 
-input[type="number"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="time"], 
-input[type="url"], 
-input[type="color"], textarea {
+input[type="color"],
+textarea {
+    min-height: rem-calc(50px);
+    outline: none; 
+    border: 2px solid $grey--mid; 
+    width: 100%;
+    @include single-transition(all, .3s, ease-in-out); 
+    @extend %ptb1; 
+    @extend %prl2; 
+    @extend %mb3;  
     @extend %br1; 
 
+    &:focus,
+    &:active {
+        border: 2px solid $primaryColor; 
+    }
+
+}
+
+
+label {
+    @extend %mb1; 
+    @extend %display--block; 
 }
