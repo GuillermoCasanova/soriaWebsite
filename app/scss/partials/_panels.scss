@@ -128,11 +128,11 @@
  {
 
     .back {
-        @include transform(rotateY(180deg));
+        @include transform(rotateY(0));
     }
 
     .front {
-        @include transform(rotateY(0));
+        @include transform(rotateY(-180deg));
 
     }
 
@@ -161,12 +161,12 @@
 /* front pane, placed above back */
 .front {
     /* for firefox 31 */
-    @include transform(rotateY(-180deg));
+    @include transform(rotateY(0));
 }
 
 /* back, initially hidden pane */
 .back {
-    @include transform(rotateY(0));
+    @include transform(rotateY(180deg));
 }
 
 .enter-in {

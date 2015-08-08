@@ -6775,17 +6775,17 @@ footer .footer-link {
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
 /* line 130, ../scss/partials/_panels.scss */
 .flip-container.is-selected .back {
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-/* line 134, ../scss/partials/_panels.scss */
-.flip-container.is-selected .front {
   -moz-transform: rotateY(0);
   -ms-transform: rotateY(0);
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
+}
+/* line 134, ../scss/partials/_panels.scss */
+.flip-container.is-selected .front {
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 /* flip speed goes here */
@@ -6822,19 +6822,19 @@ footer .footer-link {
 /* line 162, ../scss/partials/_panels.scss */
 .front {
   /* for firefox 31 */
-  -moz-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 /* back, initially hidden pane */
 /* line 168, ../scss/partials/_panels.scss */
 .back {
-  -moz-transform: rotateY(0);
-  -ms-transform: rotateY(0);
-  -webkit-transform: rotateY(0);
-  transform: rotateY(0);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* line 172, ../scss/partials/_panels.scss */
