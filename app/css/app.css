@@ -4429,7 +4429,7 @@ footer {
     #Dropshadows 
 \*------------------------------------*/
 /* line 102, ../scss/modules/_generics.scss */
-.top-bar-container.is-alt .top-bar, .top-bar.is-normal, .tab-bar, .dropshadow1 {
+.top-bar.is-alt, .tab-bar, .dropshadow1 {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
@@ -5246,7 +5246,7 @@ button.large,
 }
 
 /*------------------------------------*\
-    #Navigation Styles  
+    #Navigation Styles  (Uses defaul Foundation classes and variables from settings--overwrite)
 \*------------------------------------*/
 /*------------------------------------*\
     #Top Contact bar 
@@ -5334,23 +5334,19 @@ button.large,
 }
 
 /* line 119, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar {
-  background-color: #fff;
+.top-bar-container .top-bar.is-alt {
+  background-color: #FFF;
 }
-/* line 123, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .top-bar-section ul li.top-bar-link > a {
-  color: #3c4750;
-}
-/* line 129, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .title-area .navBar-logo {
+/* line 125, ../scss/partials/_navs.scss */
+.top-bar-container .top-bar.is-alt .title-area .navBar-logo {
   display: none;
 }
-/* line 133, ../scss/partials/_navs.scss */
-.top-bar-container.is-alt .top-bar .title-area .logo--alt {
+/* line 129, ../scss/partials/_navs.scss */
+.top-bar-container .top-bar.is-alt .title-area .logo--alt {
   display: block;
 }
 
-/* line 141, ../scss/partials/_navs.scss */
+/* line 137, ../scss/partials/_navs.scss */
 .top-bar-container.is-fixed {
   width: 100%;
   -moz-transform: translateY(0);
@@ -5359,7 +5355,7 @@ button.large,
   transform: translateY(0);
 }
 @media (min-width: 900px) {
-  /* line 141, ../scss/partials/_navs.scss */
+  /* line 137, ../scss/partials/_navs.scss */
   .top-bar-container.is-fixed {
     position: fixed;
     left: 0;
@@ -5367,7 +5363,7 @@ button.large,
   }
 }
 
-/* line 155, ../scss/partials/_navs.scss */
+/* line 151, ../scss/partials/_navs.scss */
 .top-bar-container.is-hidden {
   width: 100%;
   left: 0;
@@ -5382,7 +5378,7 @@ button.large,
 /*------------------------------------*\
     #Top Bar Styles 
 \*------------------------------------*/
-/* line 174, ../scss/partials/_navs.scss */
+/* line 170, ../scss/partials/_navs.scss */
 .top-bar {
   z-index: 950;
   -moz-transition: all 0.4s ease-in-out;
@@ -5394,38 +5390,16 @@ button.large,
 /*------------------------------------*\
     #Top Bar Links 
 \*------------------------------------*/
-/* line 192, ../scss/partials/_navs.scss */
+/* line 184, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 197, ../scss/partials/_navs.scss */
+/* line 190, ../scss/partials/_navs.scss */
 .top-bar-section ul li.top-bar-link:after {
   opacity: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 203, ../scss/partials/_navs.scss */
-.top-bar-section ul li.top-bar-link a {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 204, ../scss/partials/_navs.scss */
-.top-bar.is-normal .top-bar-section ul li.top-bar-link a {
-  color: #3c4750;
-}
-/* line 213, ../scss/partials/_navs.scss */
-.top-bar-section ul li.top-bar-link:hover a, .top-bar-section ul li.top-bar-link:focus a {
-  color: #ef8111;
-}
-/* line 218, ../scss/partials/_navs.scss */
-.top-bar-section ul li.top-bar-link:hover:after, .top-bar-section ul li.top-bar-link:focus:after {
   height: 4px;
   right: 0;
   left: 0;
@@ -5433,74 +5407,100 @@ button.large,
   content: " ";
   position: absolute;
   display: block;
+  border-bottom: 4px solid #fff;
+  margin-top: -4px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 208, ../scss/partials/_navs.scss */
+.top-bar-section ul li.top-bar-link:hover:after, .top-bar-section ul li.top-bar-link:focus:after {
   color: #ef8111;
   border-bottom: 4px solid #ef8111;
-  margin-top: -4px;
   opacity: 1;
+}
+
+/*- Styles for Alt top-bar -*/
+/* line 219, ../scss/partials/_navs.scss */
+.top-bar.is-alt {
+  background-color: #fff;
+}
+/* line 223, ../scss/partials/_navs.scss */
+.top-bar.is-alt a {
+  color: #3c4750;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 227, ../scss/partials/_navs.scss */
+.top-bar.is-alt a:hover, .top-bar.is-alt a:active, .top-bar.is-alt a:focus {
+  color: #ef8111;
 }
 
 /*------------------------------------*\
     #Top Bar Dropdowns 
 \*------------------------------------*/
-/* line 247, ../scss/partials/_navs.scss */
+/* line 249, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown {
   background-color: #3c4750;
   overflow: hidden;
 }
-/* line 251, ../scss/partials/_navs.scss */
+/* line 253, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .parent-link {
   display: none;
 }
-/* line 255, ../scss/partials/_navs.scss */
+/* line 257, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #3c4750;
   border-left: 4px solid #3c4750;
   overflow: hidden;
 }
-/* line 261, ../scss/partials/_navs.scss */
+/* line 263, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link:hover, .top-bar-section .dropdown .dropdown-link:focus {
   border-left: 4px solid #ef8111;
   background-color: #39434c;
 }
-/* line 269, ../scss/partials/_navs.scss */
+/* line 271, ../scss/partials/_navs.scss */
 .top-bar-section .dropdown .dropdown-link a {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   line-height: 2.75rem !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 275, ../scss/partials/_navs.scss */
-.top-bar-section .dropdown .dropdown-link a:hover {
+/* line 277, ../scss/partials/_navs.scss */
+.top-bar-section .dropdown .dropdown-link a:hover, .top-bar-section .dropdown .dropdown-link a:focus {
+  color: #ef8111;
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
-  color: #ef8111;
 }
 
 /*------------------------------------*\
     #Small Nav Styles 
 \*------------------------------------*/
-/* line 298, ../scss/partials/_navs.scss */
+/* line 301, ../scss/partials/_navs.scss */
 .off-canvas-list li {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 305, ../scss/partials/_navs.scss */
+/* line 308, ../scss/partials/_navs.scss */
 .off-canvas-list li:hover > a, .off-canvas-list li:focus > a {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-left: 4px solid #ef8111;
   color: #ef8111;
 }
@@ -5508,19 +5508,19 @@ button.large,
 /*------------------------------------*\
     #Small Nav Hamburger Icon 
 \*------------------------------------*/
-/* line 327, ../scss/partials/_navs.scss */
+/* line 330, ../scss/partials/_navs.scss */
 .tab-bar {
   z-index: 970;
 }
-/* line 332, ../scss/partials/_navs.scss */
+/* line 335, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon span:after {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0px 0px 0px 1.5px #888f95, 0px 7px 0px 1.5px #888f95, 0px 14px 0px 1.5px #888f95;
 }
-/* line 345, ../scss/partials/_navs.scss */
+/* line 348, ../scss/partials/_navs.scss */
 .tab-bar .menu-icon:hover span:after, .tab-bar .menu-icon:active span:after {
   box-shadow: 0px 0px 0px 1.5px #3c4750, 0px 7px 0px 1.5px #3c4750, 0px 14px 0px 1.5px #3c4750;
 }
@@ -5528,32 +5528,32 @@ button.large,
 /*------------------------------------*\
     #Logo Container Styles 
 \*------------------------------------*/
-/* line 372, ../scss/partials/_navs.scss */
+/* line 375, ../scss/partials/_navs.scss */
 .title-area .toggle-topbar span {
   color: #191919;
 }
-/* line 378, ../scss/partials/_navs.scss */
+/* line 381, ../scss/partials/_navs.scss */
 .title-area .logo--alt {
   display: none;
 }
 
-/* line 386, ../scss/partials/_navs.scss */
+/* line 389, ../scss/partials/_navs.scss */
 .name {
   height: 100%;
 }
 
-/* line 393, ../scss/partials/_navs.scss */
+/* line 396, ../scss/partials/_navs.scss */
 .navBar-logo {
   width: 6.875rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 393, ../scss/partials/_navs.scss */
+  /* line 396, ../scss/partials/_navs.scss */
   .navBar-logo {
     width: 11.25rem;
   }
 }
 
-/* line 407, ../scss/partials/_navs.scss */
+/* line 410, ../scss/partials/_navs.scss */
 .off-canvas-wrap, .inner-wrap,
 .left-off-canvas-menu {
   -webkit-backface-visibility: inherit;
@@ -5562,46 +5562,46 @@ button.large,
 /*------------------------------------*\
     #Secondary Nav
 \*------------------------------------*/
-/* line 422, ../scss/partials/_navs.scss */
+/* line 425, ../scss/partials/_navs.scss */
 .secondaryNav {
   background-color: #fff;
 }
-/* line 428, ../scss/partials/_navs.scss */
+/* line 431, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list {
   background-color: #FFF;
 }
-/* line 434, ../scss/partials/_navs.scss */
+/* line 437, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.title {
   color: #888f95;
 }
-/* line 443, ../scss/partials/_navs.scss */
+/* line 446, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link {
   overflow: hidden;
   border-left: 4px solid #fff;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 450, ../scss/partials/_navs.scss */
-.secondaryNav .secondaryNav-list li.link:hover {
+/* line 453, ../scss/partials/_navs.scss */
+.secondaryNav .secondaryNav-list li.link:hover, .secondaryNav .secondaryNav-list li.link:focus {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 455, ../scss/partials/_navs.scss */
+/* line 459, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link a {
   width: 100%;
   line-height: 2.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   color: #3c4750;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 465, ../scss/partials/_navs.scss */
-.secondaryNav .secondaryNav-list li.link a:hover {
+/* line 469, ../scss/partials/_navs.scss */
+.secondaryNav .secondaryNav-list li.link a:hover, .secondaryNav .secondaryNav-list li.link a:focus {
   background-color: transparent;
   color: #ef8111;
   -moz-transform: translateX(4px);
@@ -5609,12 +5609,12 @@ button.large,
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
-/* line 474, ../scss/partials/_navs.scss */
+/* line 479, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active {
   border-left: 4px solid #ef8111;
   background-color: #f5f5f5;
 }
-/* line 479, ../scss/partials/_navs.scss */
+/* line 484, ../scss/partials/_navs.scss */
 .secondaryNav .secondaryNav-list li.link.is-active a {
   background-color: transparent;
   color: #ef8111;
@@ -5627,7 +5627,7 @@ button.large,
 /*------------------------------------*\
     #Secondary Nav -- Fixed  
 \*------------------------------------*/
-/* line 499, ../scss/partials/_navs.scss */
+/* line 504, ../scss/partials/_navs.scss */
 .secondaryNav--fixed {
   display: none;
   width: 10.5rem;
@@ -5635,14 +5635,14 @@ button.large,
   z-index: 100;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 499, ../scss/partials/_navs.scss */
+  /* line 504, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 15rem;
     display: block;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 499, ../scss/partials/_navs.scss */
+  /* line 504, ../scss/partials/_navs.scss */
   .secondaryNav--fixed {
     width: 18rem;
     right: 3.125rem;
