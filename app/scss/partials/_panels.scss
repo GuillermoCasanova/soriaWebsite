@@ -1,17 +1,23 @@
-
+    
 /*------------------------------------*\
     #Panels
 \*------------------------------------*/
 
 
 .panel {
-  @extend %panel; 
+    @extend %panel; 
 }
 
 
 .panel-body {
-    @extend %h5; 
     @extend %text-center; 
+}
+
+.panel-button {
+    bottom: rem-calc(24px);
+    right: rem-calc(24px); 
+    left: rem-calc(24px); 
+    @extend %position--absolute; 
 }
 
 
@@ -122,11 +128,11 @@
  {
 
     .back {
-        @include transform(rotateY(0deg));
+        @include transform(rotateY(180deg));
     }
 
     .front {
-        @include transform(rotateY(180deg));
+        @include transform(rotateY(0));
 
     }
 
@@ -155,12 +161,12 @@
 /* front pane, placed above back */
 .front {
     /* for firefox 31 */
-    @include transform(rotateY(0deg));
+    @include transform(rotateY(-180deg));
 }
 
 /* back, initially hidden pane */
 .back {
-    @include transform(rotateY(-180deg));
+    @include transform(rotateY(0));
 }
 
 .enter-in {
@@ -177,9 +183,11 @@
 
 
 .flip-container.medium {
-        width: 100%; 
-        min-width: rem-calc(280px);
-        height: rem-calc(12px * 17px);
+
+    width: 100%; 
+    min-width: rem-calc(280px);
+    height: rem-calc(12px * 17px);
+
     .back, 
     .front {
         width: 100%; 
