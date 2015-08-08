@@ -5,13 +5,19 @@
 
 
 .panel {
-  @extend %panel; 
+    @extend %panel; 
 }
 
 
 .panel-body {
-    @extend %h5; 
     @extend %text-center; 
+}
+
+.panel-button {
+    bottom: rem-calc(24px);
+    right: rem-calc(24px); 
+    left: rem-calc(24px); 
+    @extend %position--absolute; 
 }
 
 
