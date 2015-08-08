@@ -362,7 +362,7 @@ $(document).on('ready', function() {
     \*------------------------------------*/
 
 
-    $('[data-action="flip-panel"]').on('click  ontouchstart  focus', function(e){
+    $('[data-action="flip-panel"]').on('click  ontouchstart', function(e){
         e.stopPropagation();
         $(this).toggleClass('is-selected');
     });
