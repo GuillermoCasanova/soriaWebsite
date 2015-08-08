@@ -4201,9 +4201,11 @@ h1,
 .h1, .icon--large, h2,
 .h2, h3,
 .h3, .panel .panel-title, h4,
-.h4, .list--siteMap, .icon--medium, .button, h5,
+.h4, button.large,
+.button.large, .list--siteMap, .icon--medium, .button, h5,
 .h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body, h6,
-.h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, .footer-siteInfo {
+.h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, button.tiny,
+.button.tiny, .footer-siteInfo {
   font-weight: 400;
 }
 
@@ -4251,7 +4253,8 @@ h3,
 
 /* line 87, ../scss/modules/_typography.scss */
 .panel .panel-title, h4,
-.h4, .list--siteMap, .icon--medium {
+.h4, button.large,
+.button.large, .list--siteMap, .icon--medium {
   font-size: 1.25rem;
   line-height: 1.2;
 }
@@ -4291,7 +4294,8 @@ h6,
 }
 
 /* line 124, ../scss/modules/_typography.scss */
-.text--micro, .footer-siteInfo {
+.text--micro, button.tiny,
+.button.tiny, .footer-siteInfo {
   font-size: 0.75rem;
   line-height: 2;
 }
@@ -5163,7 +5167,7 @@ button.tiny,
   padding-right: 1.125rem;
   padding-left: 1.125rem;
 }
-/* line 54, ../scss/partials/_buttons.scss */
+/* line 55, ../scss/partials/_buttons.scss */
 button.small,
 .button.small {
   padding: 0.625rem;
@@ -5180,7 +5184,6 @@ button.medium,
 /* line 67, ../scss/partials/_buttons.scss */
 button.large,
 .button.large {
-  font-size: 1rem;
   padding: 1.125rem;
   padding-right: 2.25rem;
   padding-left: 2.25rem;
