@@ -4202,7 +4202,7 @@ h1,
 .h2, h3,
 .h3, .panel .panel-title, h4,
 .h4, .list--siteMap, .icon--medium, .button, h5,
-.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body, h6,
+.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, h6,
 .h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, .footer-siteInfo {
   font-weight: 400;
 }
@@ -4258,7 +4258,7 @@ h3,
 
 /* line 93, ../scss/modules/_typography.scss */
 .button, h5,
-.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body {
+.h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small {
   font-size: 1.125rem;
   line-height: 1.333;
 }
@@ -4399,7 +4399,7 @@ footer {
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, .front,
+.profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, .panel-button, .front,
 .back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
@@ -5166,9 +5166,9 @@ button.tiny,
 /* line 54, ../scss/partials/_buttons.scss */
 button.small,
 .button.small {
-  padding: 0.625rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 /* line 61, ../scss/partials/_buttons.scss */
 button.medium,
@@ -6624,10 +6624,17 @@ footer .footer-link {
 /*------------------------------------*\
     #Panels
 \*------------------------------------*/
+/* line 16, ../scss/partials/_panels.scss */
+.panel-button {
+  bottom: 1.5rem;
+  right: 1.5rem;
+  left: 1.5rem;
+}
+
 /*------------------------------------*\
     #Panel Types 
 \*------------------------------------*/
-/* line 26, ../scss/partials/_panels.scss */
+/* line 32, ../scss/partials/_panels.scss */
 .panel--success {
   opacity: 0;
   display: none;
@@ -6639,50 +6646,50 @@ footer .footer-link {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 34, ../scss/partials/_panels.scss */
+/* line 40, ../scss/partials/_panels.scss */
 .panel--success .panel-body,
 .panel--success .panel-title {
   color: #fff;
 }
-/* line 39, ../scss/partials/_panels.scss */
+/* line 45, ../scss/partials/_panels.scss */
 .panel--success.is-visible {
   opacity: 1;
 }
 
-/* line 46, ../scss/partials/_panels.scss */
+/* line 52, ../scss/partials/_panels.scss */
 .panel--information {
   border-top: 4px solid #ef8111;
   background-color: #fff;
 }
-/* line 52, ../scss/partials/_panels.scss */
+/* line 58, ../scss/partials/_panels.scss */
 .panel--information:hover .icon {
   fill: #ace63c;
 }
 
-/* line 61, ../scss/partials/_panels.scss */
+/* line 67, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 65, ../scss/partials/_panels.scss */
+/* line 71, ../scss/partials/_panels.scss */
 .panel--information.front .panel-body .icon {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 78, ../scss/partials/_panels.scss */
+/* line 84, ../scss/partials/_panels.scss */
 .panel--information.front:hover .panel-body .icon {
   color: #3c4750;
 }
 
-/* line 89, ../scss/partials/_panels.scss */
+/* line 95, ../scss/partials/_panels.scss */
 .panel--alt {
   background-color: #3c4750;
 }
-/* line 93, ../scss/partials/_panels.scss */
+/* line 99, ../scss/partials/_panels.scss */
 .panel--alt .panel-body {
   color: #fff;
 }
@@ -6691,7 +6698,7 @@ footer .footer-link {
     #Flipping Panels
 \*------------------------------------*/
 /* entire container, keeps perspective */
-/* line 110, ../scss/partials/_panels.scss */
+/* line 116, ../scss/partials/_panels.scss */
 .flip-container {
   cursor: pointer;
   -moz-perspective: 600px;
@@ -6707,23 +6714,23 @@ footer .footer-link {
 }
 
 /* flip the pane when clicked through jQuery Class 'is-selected' Toggle */
-/* line 124, ../scss/partials/_panels.scss */
+/* line 130, ../scss/partials/_panels.scss */
 .flip-container.is-selected .back {
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-/* line 128, ../scss/partials/_panels.scss */
-.flip-container.is-selected .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+/* line 134, ../scss/partials/_panels.scss */
+.flip-container.is-selected .front {
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
 
 /* flip speed goes here */
-/* line 137, ../scss/partials/_panels.scss */
+/* line 143, ../scss/partials/_panels.scss */
 .flipper {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -6735,7 +6742,7 @@ footer .footer-link {
 }
 
 /* hide back of pane during swap */
-/* line 145, ../scss/partials/_panels.scss */
+/* line 151, ../scss/partials/_panels.scss */
 .front,
 .back {
   top: 0;
@@ -6753,25 +6760,25 @@ footer .footer-link {
 }
 
 /* front pane, placed above back */
-/* line 156, ../scss/partials/_panels.scss */
+/* line 162, ../scss/partials/_panels.scss */
 .front {
   /* for firefox 31 */
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-/* line 162, ../scss/partials/_panels.scss */
-.back {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-/* line 166, ../scss/partials/_panels.scss */
+/* back, initially hidden pane */
+/* line 168, ../scss/partials/_panels.scss */
+.back {
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* line 172, ../scss/partials/_panels.scss */
 .enter-in {
   opacity: 1;
 }
@@ -6779,13 +6786,13 @@ footer .footer-link {
 /*------------------------------------*\
     #Flipping Panels Sizes
 \*------------------------------------*/
-/* line 179, ../scss/partials/_panels.scss */
+/* line 185, ../scss/partials/_panels.scss */
 .flip-container.medium {
   width: 100%;
   min-width: 17.5rem;
   height: 12.75rem;
 }
-/* line 183, ../scss/partials/_panels.scss */
+/* line 191, ../scss/partials/_panels.scss */
 .flip-container.medium .back,
 .flip-container.medium .front {
   width: 100%;
