@@ -520,31 +520,3 @@
 
 
 
-/*------------------------------------*\
-    #Footer Nav 
-\*------------------------------------*/
-
-
-.footer-nav {
-  @extend %text-center; 
-  
-  hr {
-    border: 1px solid $grey--dark;
-  }
-
-  li { 
-    font-weight: $extra-bold; 
-    @extend %display--block; 
-    
-  }
-
-  a {
-    color: #fff; 
-
-    &:hover {
-      @include single-transition(all, .2s, ease-in-out); 
-    }
-
-  }
-
-}

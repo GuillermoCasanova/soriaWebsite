@@ -18,7 +18,6 @@ var app = (function(document, $) {
                 FastClick.attach(document.body);
             });
             // Initializes back to top button
-            initBackToTopButton(); 
 
 		};
 

@@ -4203,7 +4203,7 @@ h1,
 .h3, .panel .panel-title, h4,
 .h4, .list--siteMap, .icon--medium, .button, h5,
 .h5, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link, .icon--small, .panel-body, h6,
-.h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, [rel*="copyright"], [rel*="credit"] {
+.h6, .par--subText, .profile-bio .body, .text--mega, .text--micro, .footer-siteInfo {
   font-weight: 400;
 }
 
@@ -4216,7 +4216,7 @@ h1,
     #Text Alignments 
 \*------------------------------------*/
 /* line 53, ../scss/modules/_typography.scss */
-.footer-nav, .footer-siteInfo, .panel-body {
+.footer-siteInfo, .panel-body {
   text-align: center;
 }
 
@@ -4291,7 +4291,7 @@ h6,
 }
 
 /* line 124, ../scss/modules/_typography.scss */
-.text--micro, [rel*="copyright"], [rel*="credit"] {
+.text--micro, .footer-siteInfo {
   font-size: 0.75rem;
   line-height: 2;
 }
@@ -4301,7 +4301,7 @@ h6,
 \*------------------------------------*/
 /* line 139, ../scss/modules/_typography.scss */
 .topContactBar .topContactBar-item,
-.topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .footer-siteInfo a:hover, .section--header .header-content, .section--header .header-title {
+.topContactBar .topContactBar-item a, footer, footer .footer-title, footer .footer-link:hover, .section--header .header-content, .section--header .header-title {
   color: #fff;
 }
 
@@ -4309,7 +4309,7 @@ h6,
     #Text Alignments  
 \*------------------------------------*/
 /* line 155, ../scss/modules/_typography.scss */
-.footer-nav, .footer-siteInfo, .panel-body {
+.footer-siteInfo, .panel-body {
   text-align: center;
 }
 
@@ -4386,7 +4386,7 @@ footer {
 }
 
 /* line 39, ../scss/modules/_generics.scss */
-.name, .navBar-logo, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link a, .footer-nav li, footer, [rel*="copyright"], [rel*="credit"], .panel--success.is-visible {
+.name, .navBar-logo, .secondaryNav .secondaryNav-list li.title, .secondaryNav .secondaryNav-list li.link a, footer, .panel--success.is-visible {
   display: block;
 }
 
@@ -4394,12 +4394,12 @@ footer {
     #Display Types 
 \*------------------------------------*/
 /* line 51, ../scss/modules/_generics.scss */
-.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .profile, .relative, .flipper, .section, .section--alt > .row, .section--home, .section--header {
+.top-bar-container.is-fixed, .top-bar-section ul li.top-bar-link, .secondaryNav, .profile, .relative, footer, .flipper, .section, .section--alt > .row, .section--home, .section--header {
   position: relative;
 }
 
 /* line 55, ../scss/modules/_generics.scss */
-.profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, footer, .front,
+.profile .profile-bio, .profile .profile-bio-open, .profile .profile-bio-open .icon, .profile .profile-bio-close, .absolute, .front,
 .back, .section--alt .section-bg, .section-bg--map, .map-toggleButton, .map-cover, .section--header .section-bg {
   position: absolute;
 }
@@ -4416,7 +4416,7 @@ footer {
     #Flexbox 
 \*------------------------------------*/
 /* line 89, ../scss/modules/_generics.scss */
-.footer-nav, .footer-siteInfo, .panel-body {
+.footer-siteInfo, .panel-body {
   text-align: center;
 }
 
@@ -4535,7 +4535,7 @@ footer {
 }
 
 /* line 256, ../scss/modules/_generics.scss */
-.secondaryNav .secondaryNav-list, .pb2 {
+.secondaryNav .secondaryNav-list, .pb2, .footer-siteInfo {
   padding-bottom: 0.75rem !important;
 }
 
@@ -4545,7 +4545,7 @@ footer {
 }
 
 /* line 264, ../scss/modules/_generics.scss */
-.pb4, .footer-siteInfo {
+.pb4 {
   padding-bottom: 2.25rem !important;
 }
 
@@ -4567,7 +4567,7 @@ footer {
 }
 
 /* line 288, ../scss/modules/_generics.scss */
-.ptb2 {
+.ptb2, footer {
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
@@ -4752,7 +4752,7 @@ footer {
 }
 
 /* line 475, ../scss/modules/_generics.scss */
-.button, .mb1, [rel*="copyright"], [rel*="credit"] {
+.button, .mb1 {
   margin-bottom: 0.375rem !important;
 }
 
@@ -4846,6 +4846,11 @@ footer {
 .mrl5 {
   margin-right: 3rem !important;
   margin-left: 3rem !important;
+}
+
+/* line 575, ../scss/modules/_generics.scss */
+[rel*="copyright"] {
+  margin-right: 0.375rem !important;
 }
 
 /* line 579, ../scss/modules/_generics.scss */
@@ -5645,29 +5650,6 @@ button.large,
 }
 
 /*------------------------------------*\
-    #Footer Nav 
-\*------------------------------------*/
-/* line 531, ../scss/partials/_navs.scss */
-.footer-nav hr {
-  border: 1px solid #888f95;
-}
-/* line 535, ../scss/partials/_navs.scss */
-.footer-nav li {
-  font-weight: 700;
-}
-/* line 541, ../scss/partials/_navs.scss */
-.footer-nav a {
-  color: #fff;
-}
-/* line 544, ../scss/partials/_navs.scss */
-.footer-nav a:hover {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-/*------------------------------------*\
     #Logos 
 \*------------------------------------*/
 /* line 7, ../scss/partials/_logos.scss */
@@ -6069,45 +6051,50 @@ ul {
   content: '\e801';
 }
 
-/* line 87, ../scss/partials/_icons.scss */
+/* line 88, ../scss/partials/_icons.scss */
 .icon--right-circled2:before {
   content: '\e817';
 }
 
-/* line 88, ../scss/partials/_icons.scss */
+/* line 89, ../scss/partials/_icons.scss */
+.icon--right-circled2-a:after {
+  content: '\e817';
+}
+
+/* line 92, ../scss/partials/_icons.scss */
 .icon--left-circled2:before {
   content: '\e818';
 }
 
-/* line 89, ../scss/partials/_icons.scss */
+/* line 95, ../scss/partials/_icons.scss */
 .icon--up-open-big:before {
   content: '\e812';
 }
 
-/* line 90, ../scss/partials/_icons.scss */
-.icon--down-open-big:before {
-  content: '\e813';
+/* line 96, ../scss/partials/_icons.scss */
+.icon--up-open-big-a:after {
+  content: '\e812';
 }
 
-/* line 94, ../scss/partials/_icons.scss */
-.icon--right-circled2-a:after {
-  content: '\e817';
+/* line 98, ../scss/partials/_icons.scss */
+.icon--down-open-big:before {
+  content: '\e813';
 }
 
 /*------------------------------------*\
     #Plus, Minus, Cancel 
 \*------------------------------------*/
-/* line 105, ../scss/partials/_icons.scss */
+/* line 111, ../scss/partials/_icons.scss */
 .icon--plus-circled:before {
   content: '\e802';
 }
 
-/* line 106, ../scss/partials/_icons.scss */
+/* line 112, ../scss/partials/_icons.scss */
 .icon--minus-circled:before {
   content: '\e803';
 }
 
-/* line 107, ../scss/partials/_icons.scss */
+/* line 113, ../scss/partials/_icons.scss */
 .icon--cancel:before {
   content: '\e80a';
 }
@@ -6115,32 +6102,32 @@ ul {
 /*------------------------------------*\
     #Social Media 
 \*------------------------------------*/
-/* line 119, ../scss/partials/_icons.scss */
+/* line 125, ../scss/partials/_icons.scss */
 .icon--linkedin:before {
   content: '\e804';
 }
 
-/* line 120, ../scss/partials/_icons.scss */
+/* line 126, ../scss/partials/_icons.scss */
 .icon--facebook:before {
   content: '\e805';
 }
 
-/* line 121, ../scss/partials/_icons.scss */
+/* line 127, ../scss/partials/_icons.scss */
 .icon--facebook-circled:before {
   content: '\e806';
 }
 
-/* line 122, ../scss/partials/_icons.scss */
+/* line 128, ../scss/partials/_icons.scss */
 .icon--linkedin-circled:before {
   content: '\e807';
 }
 
-/* line 123, ../scss/partials/_icons.scss */
+/* line 129, ../scss/partials/_icons.scss */
 .icon--linkedin-rect:before {
   content: '\e815';
 }
 
-/* line 124, ../scss/partials/_icons.scss */
+/* line 130, ../scss/partials/_icons.scss */
 .icon--facebook-rect:before {
   content: '\e816';
 }
@@ -6148,22 +6135,22 @@ ul {
 /*------------------------------------*\
     #Contact  
 \*------------------------------------*/
-/* line 136, ../scss/partials/_icons.scss */
+/* line 142, ../scss/partials/_icons.scss */
 .icon--phone:before {
   content: '\e819';
 }
 
-/* line 137, ../scss/partials/_icons.scss */
+/* line 143, ../scss/partials/_icons.scss */
 .icon--buildings:before {
   content: '\e82e';
 }
 
-/* line 138, ../scss/partials/_icons.scss */
+/* line 144, ../scss/partials/_icons.scss */
 .icon--location:before {
   content: '\e814';
 }
 
-/* line 139, ../scss/partials/_icons.scss */
+/* line 145, ../scss/partials/_icons.scss */
 .icon--envelope:before {
   content: '\e82c';
 }
@@ -6171,127 +6158,127 @@ ul {
 /*------------------------------------*\
     #Services, Law & Finance
 \*------------------------------------*/
-/* line 150, ../scss/partials/_icons.scss */
+/* line 156, ../scss/partials/_icons.scss */
 .icon--hourglass:before {
   content: '\e808';
 }
 
-/* line 151, ../scss/partials/_icons.scss */
+/* line 157, ../scss/partials/_icons.scss */
 .icon--clock:before {
   content: '\e809';
 }
 
-/* line 152, ../scss/partials/_icons.scss */
+/* line 158, ../scss/partials/_icons.scss */
 .icon--compass:before {
   content: '\e80c';
 }
 
-/* line 153, ../scss/partials/_icons.scss */
+/* line 159, ../scss/partials/_icons.scss */
 .icon--chat:before {
   content: '\e80d';
 }
 
-/* line 154, ../scss/partials/_icons.scss */
+/* line 160, ../scss/partials/_icons.scss */
 .icon--search:before {
   content: '\e80e';
 }
 
-/* line 155, ../scss/partials/_icons.scss */
+/* line 161, ../scss/partials/_icons.scss */
 .icon--flow-tree:before {
   content: '\e810';
 }
 
-/* line 156, ../scss/partials/_icons.scss */
+/* line 162, ../scss/partials/_icons.scss */
 .icon--chart-pie:before {
   content: '\e811';
 }
 
-/* line 157, ../scss/partials/_icons.scss */
+/* line 163, ../scss/partials/_icons.scss */
 .icon--graph-up:before {
   content: '\e81b';
 }
 
-/* line 158, ../scss/partials/_icons.scss */
+/* line 164, ../scss/partials/_icons.scss */
 .icon--law:before {
   content: '\e81c';
 }
 
-/* line 159, ../scss/partials/_icons.scss */
+/* line 165, ../scss/partials/_icons.scss */
 .icon--gearHead:before {
   content: '\e81d';
 }
 
-/* line 160, ../scss/partials/_icons.scss */
+/* line 166, ../scss/partials/_icons.scss */
 .icon--group:before {
   content: '\e81e';
 }
 
-/* line 161, ../scss/partials/_icons.scss */
+/* line 167, ../scss/partials/_icons.scss */
 .icon--puzzle-piece:before {
   content: '\e81f';
 }
 
-/* line 162, ../scss/partials/_icons.scss */
+/* line 168, ../scss/partials/_icons.scss */
 .icon--magnify-money:before {
   content: '\e820';
 }
 
-/* line 163, ../scss/partials/_icons.scss */
+/* line 169, ../scss/partials/_icons.scss */
 .icon--magnify-person:before {
   content: '\e821';
 }
 
-/* line 164, ../scss/partials/_icons.scss */
+/* line 170, ../scss/partials/_icons.scss */
 .icon--contract:before {
   content: '\e822';
 }
 
-/* line 165, ../scss/partials/_icons.scss */
+/* line 171, ../scss/partials/_icons.scss */
 .icon--person-connections:before {
   content: '\e823';
 }
 
-/* line 166, ../scss/partials/_icons.scss */
+/* line 172, ../scss/partials/_icons.scss */
 .icon--litigation:before {
   content: '\e824';
 }
 
-/* line 167, ../scss/partials/_icons.scss */
+/* line 173, ../scss/partials/_icons.scss */
 .icon--shield:before {
   content: '\e825';
 }
 
-/* line 168, ../scss/partials/_icons.scss */
+/* line 174, ../scss/partials/_icons.scss */
 .icon--clipboard:before {
   content: '\e826';
 }
 
-/* line 169, ../scss/partials/_icons.scss */
+/* line 175, ../scss/partials/_icons.scss */
 .icon--team:before {
   content: '\e827';
 }
 
-/* line 170, ../scss/partials/_icons.scss */
+/* line 176, ../scss/partials/_icons.scss */
 .icon--wallet:before {
   content: '\e828';
 }
 
-/* line 171, ../scss/partials/_icons.scss */
+/* line 177, ../scss/partials/_icons.scss */
 .icon--target:before {
   content: '\e829';
 }
 
-/* line 172, ../scss/partials/_icons.scss */
+/* line 178, ../scss/partials/_icons.scss */
 .icon--handshake:before {
   content: '\e82a';
 }
 
-/* line 173, ../scss/partials/_icons.scss */
+/* line 179, ../scss/partials/_icons.scss */
 .icon--podium:before {
   content: '\e82b';
 }
 
-/* line 174, ../scss/partials/_icons.scss */
+/* line 180, ../scss/partials/_icons.scss */
 .icon--scales:before {
   content: '\e82d';
 }
@@ -6299,13 +6286,13 @@ ul {
 /*------------------------------------*\
     #Icon Sizes 
 \*------------------------------------*/
-/* line 186, ../scss/partials/_icons.scss */
+/* line 192, ../scss/partials/_icons.scss */
 .icon--mega {
   font-size: 6.25rem;
   line-height: 1;
 }
 
-/* line 203, ../scss/partials/_icons.scss */
+/* line 209, ../scss/partials/_icons.scss */
 .icon--tiny {
   margin: 0.25rem;
   font-size: 0.75rem;
@@ -6559,14 +6546,7 @@ ul {
 /*------------------------------------*\
     #Footer 
 \*------------------------------------*/
-/* line 7, ../scss/partials/_footer.scss */
-footer {
-  background-color: #3c4750;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-/* line 21, ../scss/partials/_footer.scss */
+/* line 18, ../scss/partials/_footer.scss */
 footer .footer-link {
   color: #888f95;
 }
@@ -6574,24 +6554,28 @@ footer .footer-link {
 /*------------------------------------*\
     #Credit Info 
 \*------------------------------------*/
-/* line 45, ../scss/partials/_footer.scss */
+/* line 44, ../scss/partials/_footer.scss */
 .footer-siteInfo a {
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   color: #888f95;
 }
+/* line 49, ../scss/partials/_footer.scss */
+.footer-siteInfo a:hover {
+  color: #ef8111;
+}
 
-@media (min-width: 760px) {
-  /* line 58, ../scss/partials/_footer.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 57, ../scss/partials/_footer.scss */
   [rel*="copyright"] {
     float: left;
   }
 }
 
-@media (min-width: 760px) {
-  /* line 68, ../scss/partials/_footer.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 66, ../scss/partials/_footer.scss */
   [rel*="credit"] {
     float: right;
   }
@@ -6600,26 +6584,32 @@ footer .footer-link {
 /*------------------------------------*\
     #Sticky Footer
 \*------------------------------------*/
-/* line 87, ../scss/partials/_footer.scss */
-html, body {
-  height: 100%;
+@media only screen and (min-width: 40.0625em) {
+  /* line 83, ../scss/partials/_footer.scss */
+  html, body {
+    height: 100%;
+  }
 }
 
-/* line 91, ../scss/partials/_footer.scss */
-[role*='main'] {
-  min-height: 100%;
-  height: auto !important;
-  /* This line and the next line are not necessary unless you need IE6 support */
-  height: 100%;
-  margin: 0 auto 0;
-  /* the bottom margin is the negative value of the footer's height */
+@media only screen and (min-width: 40.0625em) {
+  /* line 91, ../scss/partials/_footer.scss */
+  [role*='main'] {
+    min-height: 100%;
+    height: auto !important;
+    /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto 0;
+    /* the bottom margin is the negative value of the footer's height */
+  }
 }
 
-/* line 99, ../scss/partials/_footer.scss */
-footer,
-.push {
-  height: 50px;
-  /* .push must be the same height as .footer */
+@media only screen and (min-width: 40.0625em) {
+  /* line 103, ../scss/partials/_footer.scss */
+  footer,
+  .push {
+    height: 50px;
+    /* .push must be the same height as .footer */
+  }
 }
 
 /*------------------------------------*\
