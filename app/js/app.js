@@ -286,13 +286,14 @@ $(document).on('ready', function() {
 
     // Checks to see if there is a '[data-action="toggle-top-bar"]' to hide/show
     // This prevents it from activating on small devices. 
-    if($('[data-action="toggle-top-bar"]').length > 0) {
+    if($('[data-ui-component="navigation-container"]').length > 0) {
 
         (function($){
 
             var prevScroll = 0;
             var currentScroll; 
-            var navBar = $('[data-action="toggle-top-bar"]');
+            var navBarContainer = $('[data-ui-component="navigation-container"]');
+            var navBar = $('[data-ui-component="navigation"]');
             var navBarHeight = navBar.height(); 
             var didScroll = false; 
             var theWindow = $(window);
@@ -310,28 +311,23 @@ $(document).on('ready', function() {
                     currentScroll = theWindow.scrollTop();
 
                     if (currentScroll < navBarHeight) {
-                        setTimeout(function() {
-
-
-                        }, 500);
                         navBar.removeClass('is-alt'); 
                     }
 
                     //Shows Navigation Bar when user starts scrolling up 
                     if( currentScroll < prevScroll ) {
-                        navBar.removeClass('is-hidden'); 
-                        navBar.addClass('is-fixed');
+                        navBarContainer.removeClass('is-hidden'); 
+                        navBarContainer.addClass('is-fixed');
                     }
 
                     if(currentScroll > prevScroll) {
-                        navBar.removeClass('is-fixed'); 
-                        navBar.addClass('is-hidden');
+                        navBarContainer.removeClass('is-fixed'); 
+                        navBarContainer.addClass('is-hidden');
                     }
 
-                    if(navBar.hasClass('is-fixed') && currentScroll > navBarHeight) {
+                    if(navBarContainer.hasClass('is-fixed') && currentScroll > navBarHeight) {
 
-                            navBar.addClass('is-alt');
-
+                         navBar.addClass('is-alt');
                        
                     }
 
@@ -339,7 +335,7 @@ $(document).on('ready', function() {
 
                 }
 
-            }, 300);
+            }, 400);
 
         })(jQuery);
     }
