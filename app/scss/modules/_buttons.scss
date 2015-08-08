@@ -5,42 +5,42 @@
 
 
 %button {
-		transition: none;
-		border: 0;
-		color: #fff;
-		cursor: pointer; 
-		text-align: center;
-        @extend %disableDefaultHighlight; 
-        @extend %base-font-family;
-        @extend %h5; 
-        @extend %mb1; 
-        @include border-radius(4px);
+	transition: none;
+	border: 0;
+	color: #fff;
+	cursor: pointer; 
+	text-align: center;
+    @extend %disableDefaultHighlight; 
+    @extend %base-font-family;
+    @extend %h5; 
+    @extend %mb1; 
+    @include border-radius(4px);
 
-		a { 
-			color: #fff;
-		}
+	a { 
+		color: #fff;
+	}
 }
 
 %button--3d {
-		&:active {
-				outline: none;
-				position: relative; 
-				top: 2px;
-		}
+	&:active {
+			outline: none;
+			position: relative; 
+			top: 2px;
+	}
 
-		&:focus {
-				outline: none;
-		}
+	&:focus {
+			outline: none;
+	}
 }
 
 %button--flat {
-		&:active {
-				outline: none;
-		}
+	&:active {
+			outline: none;
+	}
 
-		&:focus {
-				outline: none;
-		}
+	&:focus {
+			outline: none;
+	}
 }
 
 // Removes blue border around selected inputs, buttons or elements with tab-index attr
