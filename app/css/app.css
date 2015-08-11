@@ -7181,29 +7181,29 @@ textarea:active {
 /*------------------------------------*\
     #Theme Styles 
 \*------------------------------------*/
-/* line 7, ../scss/partials/_theme.scss */
-.bg--primaryColor {
+/* line 10, ../scss/partials/_theme.scss */
+.ui-guide .brandColor--primaryColor {
   background-color: #ef8111;
 }
-
-/* line 11, ../scss/partials/_theme.scss */
-.bg--primaryColor--dark {
+/* line 14, ../scss/partials/_theme.scss */
+.ui-guide .brandColor--primaryColor--dark {
   background-color: #c0670d;
 }
-
-/* line 15, ../scss/partials/_theme.scss */
-.bg--secondaryColor {
+/* line 18, ../scss/partials/_theme.scss */
+.ui-guide .brandColor--secondaryColor {
   background-color: #3c4750;
 }
-
-/* line 19, ../scss/partials/_theme.scss */
-.bg--accentColor {
+/* line 22, ../scss/partials/_theme.scss */
+.ui-guide .brandColor--accentColor {
   background-color: #0d3d64;
 }
-
-/* line 23, ../scss/partials/_theme.scss */
-.bg--grey {
+/* line 26, ../scss/partials/_theme.scss */
+.ui-guide .brandColor--grey {
   background-color: #888f95;
+}
+/* line 30, ../scss/partials/_theme.scss */
+.ui-guide [class*='brandColor--'] {
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
