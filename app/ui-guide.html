@@ -235,12 +235,20 @@
             </div>
 
             <div class="display--block">
+
+                <p>Buttons can change in size using .small, .medium, .large classes.</p>
+
                 <ul>
-                    <li>Button Sizes Classes</li>
-                    <li>.small</li>
-                    <li>.medium</li>
-                    <li>.large</li>
+                    <li class="mb3">Button Sizes Classes</li>
+
+                    <li class="mb5">.small  <a href="" class="button button--primary small">Small button</a></li>
+
+                    <li class="mb5">.medium <a href="" class="button button--primary medium">Medium button</a></li>
+
+                    <li class="mb5">.large  <a href="" class="button button--primary large">Large button</a></li>
+
                 </ul>    
+
             </div>
 
             <i>Tab Button</i>
@@ -267,6 +275,12 @@
             <i>Text Input</i>
             <input name="" id="subject" type="text" placeholder="Text goes here" required>
 
+            <i>Text in put with label</i>
+            <label for="fullName">Full Name</label>
+            <input name="fullName" type="text" placeholder="Text goes here" required>
+
+
+
         </section>
         
         <section>
@@ -281,12 +295,13 @@
             <ul class="list--inline">
                 <li class="icon icon--large icon--left-open-big"></li>
                 <li class="icon icon--large icon--right-open-big"></li>
+                <li class="icon icon--large icon--up-open-big"></li>
+                <li class="icon icon--large icon--down-open-big"></li>
                 <li class="icon icon--large icon--right-circled2"></li>
+                <li class="icon icon--large icon--left-circled2"></li>
                 <li class="icon icon--large icon--plus-circled"></li>
                 <li class="icon icon--large icon--minus-circled"></li>
                 <li class="icon icon--large icon--cancel"></li>
-
-
             </ul>
             
             <i>Social Media</i>            
@@ -336,9 +351,609 @@
                 <li><span class="icon icon--large  icon--scales"></span></li>
             </ul>
 
+
+            <i>Icon Sizes Classes</i>
+            <ul>
+                <li><span class="fwb">.icon--tiny</span> for an icon of 12px</li>
+                <li><span class="fwb">.icon--small</span> for an icon of 18px</li>
+                <li><span class="fwb">.icon--medium</span> for an icon of 20px</li>
+                <li><span class="fwb">.icon--large</span> for an icon size of 36px</li>
+                <li><span class="fwb">.icon--mega</span> for an icon size of 100px</li>
+            </ul>
+
         </section>
 
+        <section>
+<div class="row">
+    
+                <h1>
+                    Navigation
+                </h1>
+    
+                <p>Soria, llc site uses two types of navigation: a top-bar for large devices and a off-canvas menu for small devices.</p>
+                
+                <i>Large Navigation</i>
+                <nav class="top-bar  is-normal  show-for-medium-up" data-topbar   data-options="is_hover: false">
+            
+                <ul class="title-area ">
+            
+                    <a href="http://soriallc.com/">
+            
+                        <li class="name">
+                
+                            <img class="navBar-logo  vertical-align" src="images/logo--soriallc.svg" alt="Soria, llc logo">
+                
+                        </li>
+    
+                    </a>
+            
+                </ul>
+            
+                <section class="top-bar-section ">
+            
+                    <!-- Right Nav Section -->
+                    <ul class="right">
+            
+                        <li class="top-bar-link"><a href="index.html">Home</a></li>
+    
+                        <li class="top-bar-link  has-dropdown">
+    
+                            <a>Services</a>
+                            
+                            <ul class="dropdown" data-options="is_hover: false">
+    
+                                <li class="dropdown-link">
+                                    <a href="business-valuations.html">Business Valuations, Mergers & Acquisitions</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="litigation-support.html">Litigation Support</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="forensic-accounting.html">Forensic Accounting-Fraud Services</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="erm-management.html">ERM–Risk Management Services</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="due-diligence.html">Due Diligence Services</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="transfer-pricing.html">Transfer Pricing Studies</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="internal-audits.html">Internal Audits/Operations Support</a>
+                                </li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top-bar-link"><a href="contact.html">Contact</a></li>
+    
+                    </ul>
+            
+            
+                </section>
+            
+            </nav>
+    
+            <i>Small navigation</i>
+            <p>The small navigation uses the same structure as Foundation's off-canvas animation, documentation can be found on the <a href="">Foundation docs</a>.</p>
+            
+            <div class="off-canvas-wrap" data-offcanvas>
+    
+                <nav class="tab-bar ">
+                    
+                    <section class="left-small">
+    
+                        <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+    
+                    </section>
+    
+                    <section class="middle tab-bar-section  text-right">
+    
+                        <img class="navBar-logo   text-right  vertical-align" src="images/logo--soriallc.svg" alt="Soria,llc logo">
+    
+                    </section>
+    
+                </nav>
+    
+                <div class="inner-wrap">
+    
+                    <aside class="left-off-canvas-menu">
+    
+                        <ul class="off-canvas-list">
+    
+                            <li><a href="index.html">Home</a></li>
+    
+                            <li><label>Services</label></li>
+                                
+                                  <ul>
+                                    <li>
+                                        <a href="business-valuations.html">Business Valuations, Mergers & Acquisitions</a>
+                                    </li>
+                                    <li>
+                                        <a href="litigation-support.html">Litigation Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="forensic-accounting.html">Forensic Accounting-Fraud Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="erm-management.html">ERM–Risk Management Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="due-diligence.html">Due Diligence Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="transfer-pricing.html">Transfer Pricing Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="internal-audits.html">Internal Audits/Operations Support</a>
+                                    </li>
+    
+                                  </ul>
+    
+                            <li><a href="contact.html">Contact</a></li>
+    
+    
+                        </ul>
+    
+                    </aside>
+    
+                    <div class="row ">
+    
+                        <div class="small-12 columns">
+    
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto excepturi illum dolorum eaque temporibus delectus rerum ipsam animi quibusdam vero provident quo possimus ipsum quisquam deleniti soluta dolores, dolorem deserunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto excepturi illum dolorum eaque temporibus delectus rerum ipsam animi quibusdam vero provident quo possimus ipsum quisquam deleniti soluta dolores, dolorem deserunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto excepturi illum dolorum eaque temporibus delectus rerum ipsam animi quibusdam vero provident quo possimus ipsum quisquam deleniti soluta dolores, dolorem deserunt.</p>
+                        </div>
+    
+                    </div>
+    
+                    <a class="exit-off-canvas"></a>
+    
+                </div>
+    
+            </div>
+    
+    
+            <i>Secondary Navigation</i>
+            <p>The secondary navigation is used on pages with various related sections like the services page. It can also be made into a fixed navigation by adding a class of ".secondarynav--fixed".</p>
+    
+            <div class="small-12 medium-5 columns">
+    
+                <nav class="secondaryNav ">
+                    
+                    <ul class="secondaryNav-list">
+                
+                        <li class="title">Our Services</li>
+                        
+                        <li class="link">
+                            <a href="business-valuations.html">Business Valuations, Mergers & Acquisitions</a>
+                        </li>
+                        <li class="link">
+                            <a href="litigation-support.html">Litigation Support</a>
+                        </li>
+                        <li class="link">
+                            <a href="forensic-accounting.html">Forensic Accounting-Fraud Services</a>
+                        </li>
+                        <li class="link">
+                            <a href="erm-management.html">ERM–Risk Management Services</a>
+                        </li>
+                        <li class="link">
+                            <a href="due-diligence.html">Due Diligence Services</a>
+                        </li>
+                        <li class="link">
+                            <a href="transfer-pricing.html">Transfer Pricing Studies</a>
+                        </li>
+                        <li class="link">
+                            <a href="internal-audits.html">Internal Audits</a>
+                        </li>
+                        
+                    </ul>  
+                
+                </nav>
+    
+            </div>
+</div>
 
+    </section>
+
+    <section>
+        
+        <div class="row">
+
+            <h1>Panels</h1>
+
+           
+            <div class="small-12 medium-6">
+
+                 <i>Normal panel</i>
+                <div class="panel">
+                
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nulla dolor, ipsum quibusdam repellendus hic consectetur quisquam. Commodi, ullam et officia cupiditate est sequi officiis impedit dolorem laborum, a.
+                    </div>
+                
+                </div>
+
+                <i>Informational Panel</i>
+                <div class="panel  panel--information">
+                
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit animi, exercitationem quae iure dolore consequatur officiis quidem quia, asperiores tenetur enim omnis earum qui facere voluptatibus, nemo magni? Culpa, eum.
+                    </div>
+                    
+                </div>
+
+                <i>Alternative Information Panel</i>
+                <div class="panel  panel--information  panel--alt">
+                
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit animi, exercitationem quae iure dolore consequatur officiis quidem quia, asperiores tenetur enim omnis earum qui facere voluptatibus, nemo magni? Culpa, eum.
+                    </div>
+                    
+                </div>
+                
+                <i>Flip Panels</i>
+                <p>Panels can be converterd into flip containers by being wrapped inside the .flip-container </p>
+                <div class="flip-container  medium"
+                     data-action="flip-panel"
+                     tabindex="0" 
+                     role="button">
+                
+                    <div class="flipper">
+                    
+                        <div class="[ panel  panel--information  ]  front">
+                        
+                                <div class="vertical-align  panel-body">
+                
+                                    <span 
+                                        role="presentation"
+                                        class="icon  icon--handshake  icon--mega txtc2">
+                                    </span>
+                                    
+                                     <div class="bd">
+                                    
+                                        <h3 class="h4">
+                                            Business Valuations, Mergers & Acquisitions
+                                        </h3>
+                                    
+                                    </div>
+                
+                                </div>
+                        
+                        </div>
+                    
+                        <div class="text-center  [ panel  panel--information panel--alt   ] ptb2  back">
+                            
+                                <p class="panel-body  mt2">
+                                    Since markets and the economy are in constant flux, Business Valuations are a necessity.
+                
+                                </p>
+                
+                                <a  role="button" 
+                                    tabindex="1" 
+                                    href="business-valuations.html"  
+                                    class="panel-button  [ button--secondary  button  small ]
+                                      ">
+                                    Learn More
+                                </a>
+                    
+                
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        
+        <div class="row">
+
+            <h1>Sections</h1>
+            
+            <hr>
+
+            <p>Section classes are used to divide sections throughout the site by being wrapped around row classes.</p>
+
+            <i>Normal Section</i>
+            <p>Normal section with default section styles.</p>
+            <div class="section">
+
+                <div class="row">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <i>Alternative Section</i>
+            <p>Alternative sections are created by adding the class of 'section--alt' to a div with the 'section' class. Giving containers with text the'section-text' class will adjust text color  for readability. </p>
+            <div class="section  section--alt">
+
+                <div class="row">
+
+                    <div class="small-12 columns">
+
+                        <div class="section-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <i>Alternative Section With Background Image</i>
+            <p>Alternative sections can also have background images by inserting a div with the class section-bg and giving it a background image through inline styles.</p>
+            <div class="section  section--alt">
+
+                <div class="section-bg" 
+                     role="presentation"
+                     style="background:url(images/communication--small.jpg) no-repeat center center; background-size: cover;" data-interchange="[images/communication--small.jpg, (default)], [images/communication--medium.jpg, (medium)], [images/communication--large.jpg, (large)]"></div>
+
+                <div class="row">
+
+                    <div class="small-12 columns">
+
+                        <div class="section-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <i>Highlighted Section</i>
+            <div class="section  section--highlighted">
+
+                <div class="row">
+
+                    <div class="small-12 columns">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo a quidem quaerat nihil esse minima dolores perferendis quibusdam neque veniam, sunt fuga reprehenderit, asperiores similique minus laborum, quam labore.</p>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        
+        <div class="row">
+            
+            <h1>Helper Classes</h1>    
+            <p>We have a number of helper classes that allow us to quickly style elements throughout the application without adding unnecessary bloat and complexity to our CSS. This also allows us to keep our CSS specificity low.</p>
+
+            <hr>
+
+            <h2>Spacing</h2>
+            <p>Padding and margin can be applied by using the classes mt, mr, mb, ml for margin and pt, pr, pb, pl for padding (from 0-5). For example, adding .mt1 to a div gives it a margin top of 6px, mb2 would be a margin bottom of 24px, and so forth. The classes .mtrbl (top right bottom left) and .ptrbl apply the specified value to all sides of the element, and .mtrbl0 and .ptrbl0 removing all margin and padding from the element respectively.</p>
+            
+            <i>Top and bottom margins</i>
+            
+            <ul>
+                <li><span class="fwb">.mt0</span> for removing margin at top</li>
+                <li><span class="fwb">.mt1</span> for margin top of 6px</li>
+                <li><span class="fwb">.mt2</span> for margin top of 12px</li>
+                <li><span class="fwb">.mt3</span> for margin top of 24px</li>
+                <li><span class="fwb">.mt4</span> for margin top of 36px</li>
+                <li><span class="fwb">.mt5</span> for margin top of 48px</li>
+            </ul>
+
+            <ul>
+                <li><span class="fwb">.mb0</span> for removing margin at bottom</li>
+                <li><span class="fwb">.mb1</span> for margin bottom of 6px</li>
+                <li><span class="fwb">.mb2</span> for margin bottom of 12px</li>
+                <li><span class="fwb">.mb3</span> for margin bottom of 24px</li>
+                <li><span class="fwb">.mb4</span> for margin bottom of 36px</li>
+                <li><span class="fwb">.mb5</span> for margin bottom of 48px</li>
+            </ul>
+
+            <i>Top and bottom paddings</i>
+            <ul>
+                <li><span class="fwb">.pt0</span> for removing padding at top</li>
+                <li><span class="fwb">.pt1</span> for padding top of 6px</li>
+                <li><span class="fwb">.pt2</span> for padding top of 12px</li>
+                <li><span class="fwb">.pt3</span> for padding top of 24px</li>
+                <li><span class="fwb">.pt4</span> for padding top of 36px</li>
+                <li><span class="fwb">.pt5</span> for padding top of 48px</li>
+            </ul>
+
+            <ul>
+                <li><span class="fwb">.pb0</span> for removing padding at bottom</li>
+                <li><span class="fwb">.pb1</span> for padding bottom of 6px</li>
+                <li><span class="fwb">.pb2</span> for padding bottom of 12px</li>
+                <li><span class="fwb">.pb3</span> for padding bottom of 24px</li>
+                <li><span class="fwb">.pb4</span> for padding bottom of 36px</li>
+                <li><span class="fwb">.pb5</span> for padding bottom of 48px</li>
+            </ul>
+
+
+            <h2>Typography</h2>
+            <table>
+
+                <thead>
+
+                    <th>Class</th>
+                    <th>Description</th>
+                    
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>.text-center</td>
+                        <td>Centers the text</td>
+                    </tr>
+
+                    <tr>
+                        <td>.text-left</td>
+                        <td>Aligns text to the left</td>
+                    </tr>
+
+                    <tr>
+                        <td>.text-right</td>   
+                        <td>Aligns text to the right</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>.fwn</td>
+                        <td>Gives element normal font weight.</td>    
+                    </tr>
+
+                    <tr>
+                        <td>.fwb</td>
+                        <td>Gives element bold font weight</td>
+                    </tr>
+
+                    <tr>
+                        <td>.uc</td>
+                        <td>Turns all text to uppercase.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.txtc2</td>   
+                        <td>Gives element color of $grey--dark</td>
+                    </tr>
+
+                    <tr>
+                        <td>.txtc3</td>   
+                        <td>Gives element $primaryColor</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <h2>Display and alignment</h2>
+            <table>
+
+                <thead>
+
+                    <th>Class</th>
+                    <th>Description</th>
+                    
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>.display--block</td>
+                        <td>display: block;</td>
+                    </tr>
+
+                    <tr>
+                        <td>.display--inlineBlock</td>
+                        <td>display: inline-block; </td>
+                    </tr>
+
+                    <tr>
+                        <td>.center (centers element horizontally if position: relative)</td>   
+                        <td>display: block;
+                            margin-left: auto; 
+                            margin-right: auto;
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>.vertical-align (centers element if height is known)</td>   
+                        <td>  position: relative;
+                              top: 50%;
+                              @include transform(translateY(-50%));
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>.relative</td>
+                        <td>position: relative; </td>
+                    </tr>
+
+                    <tr>
+                        <td>.absolute</td>
+                        <td>position: absolute; </td>
+                    </tr>
+
+                    <tr>
+                        <td>.overflow-visible</td>
+                        <td>overflow: visible; </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <h2>Dropshadows</h2>
+            <p>These classes help with adding dropshadows to elements to differentiate their distance from the page. They are also available as mixins if you do not wish to place them in your HTML.</p>
+
+            <table>
+
+                <thead>
+
+                    <th>Class</th>
+
+                    <th>Description</th>
+
+                </thead>
+
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            .dropshadow1
+                        </td>
+                        <td>
+                            Gives the element a dropshow at the highest level
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            .dropshadow2
+                        </td>
+                        <td>
+                            Gives the element a dropshow at the lower level
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
 
 
         </div>
