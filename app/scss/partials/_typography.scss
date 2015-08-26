@@ -4,82 +4,122 @@
 \*------------------------------------*/
 
 
+/*------------------------------------*\
+    #Reset
+\*------------------------------------*/
+
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td { 
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+}
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+
+a{ text-decoration: none;
+   color: $primaryColor; }
+
+
+
+
+
+/*------------------------------------*\
+    #Base  
+\*------------------------------------*/
+/*  Base font sizes, margin-bottoms, and properties */
+
 body, html {	
 	font-family: $base-font-family; 
-	font-size: rem-calc(16);
+	font-size: $base-font-size; 
+    line-height: $base-font-line-height; //24px 
+}
+
+// 24px magic number, all line heights and margin bottoms will be multiples of this
+// to maintain vertical and line  height rhythm 
+
+/* Common margin-bottom for vertical rhythm. */
+h1,h2,h3,h4,h5,h6,
+ul,ol,dl,
+fieldset,
+p,
+table,
+pre,
+hr{
+    margin-bottom: rem-calc(24px);
 }
 
 
 
 
 
-/*------------------------------------*\
-    #Text Weights 
-\*------------------------------------*/
-
-
-.fwn {font-weight: $normal;}
-.fwb {font-weight: $bold;}
-.uc {text-transform: uppercase;}
-
-
-
-
 
 /*------------------------------------*\
-    #Text Alignments  
+    #Header Styles and Sizes 
 \*------------------------------------*/
 
-
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-
-
-
-
-
-/*------------------------------------*\
-    #Text Sizes and hn sizes  
-\*------------------------------------*/
-
+// Default font family for all headers 
+h1,h2,h3,h4,h5,h6 {
+    font-family: $serif-font-family;
+}
 
 h1, 
 .h1 { 
-		@extend %h1; 
+	@extend %h1; 
 }
 
 h2, 
 .h2 { 
-		@extend %h2; 
+	@extend %h2; 
 }
 
 h3, 
 .h3 { 
-		@extend %h3; 
+	@extend %h3; 
 }
 
 h4, 
 .h4 { 
-		@extend %h4; 
+	@extend %h4; 
 }
 
 h5, 
 .h5 { 
-		@extend %h5; 
+	@extend %h5; 
 }
 
 h6, 
 .h6 { 
-		@extend %h6; 
+	@extend %h6; 
 }
 
 .text--mega { 
-		@extend %text--mega; 
+	@extend %text--mega; 
 }
 
 .text--micro { 
-		@extend %text--micro; 
+	@extend %text--micro; 
 }
 
 
@@ -87,30 +127,14 @@ h6,
 
 
 /*------------------------------------*\
-    #Paragraph Sizes
+    #Paragraph Styles
 \*------------------------------------*/
 
 
 .par--subText {
-		font-size: rem-calc(14);
+	@extend %h7; 
 }
 
-.par--important {
-		font-size: rem-calc(18);
-}
-
-
-
-
-
-/*------------------------------------*\
-    #Blockquotes 
-\*------------------------------------*/
-
-
-.blockquote--bubble {
-		@include blockquote($blue);
-}	
 
 
 
@@ -120,12 +144,10 @@ h6,
 \*------------------------------------*/
 
 
-a {
+a,
+.link {
 	@extend %disableDefaultHighlight;
-
-	&[class*="link"] {
-			@include single-transition(all, .2s, ease-in-out);
-	}
+     @include single-transition(all, .3s, ease-in-out);
 
 }
 
@@ -138,19 +160,6 @@ a {
 	}
 }
 
-
-
-
-/*------------------------------------*\
-    #Headers
-\*------------------------------------*/
-
-
-.header--standout {
-	@extend %mt1; 
-	@extend %mb1; 
-	@extend %text-center; 
-}
 
 
 
@@ -172,12 +181,24 @@ a {
 
 
 /*------------------------------------*\
-    #hrs 
+    #Text Weights (Variables defined in _typography.scss module)
 \*------------------------------------*/
 
 
-hr.secondary {
-    border-color: darken($secondaryColor, 10%); 
-}
+.fwn {font-weight: $normal;}
+.fwb {font-weight: $bold;}
+.uc {text-transform: uppercase;}
 
+
+
+
+
+/*------------------------------------*\
+    #Text Alignments  
+\*------------------------------------*/
+
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
