@@ -4,22 +4,32 @@
 \*------------------------------------*/
 
 
-.bg--primaryColor {
-    background-color: $primaryColor;
-}
 
-.bg--primaryColor--dark {
-    background-color: $primaryColor--dark; 
-}
+.ui-guide {
 
-.bg--secondaryColor {
-    background-color: $secondaryColor; 
-}
+    .brandColor--primaryColor {
+        background-color: $primaryColor;
+    }
 
-.bg--accentColor {
-    background-color: $accentColor; 
-}
+    .brandColor--primaryColor--dark {
+        background-color: $primaryColor--dark; 
+    }
 
-.bg--grey {
-    background-color: $grey--dark; 
+    .brandColor--secondaryColor {
+        background-color: $secondaryColor; 
+    }
+
+    .brandColor--accentColor {
+        background-color: $accentColor; 
+    }
+
+    .brandColor--grey {
+        background-color: $grey--dark; 
+    }
+
+    [class*='brandColor--'] {
+        
+        color: #fff; 
+    }
+
 }

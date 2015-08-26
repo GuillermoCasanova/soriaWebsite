@@ -78,39 +78,29 @@
 
 
 /*------------------------------------*\
-    #Arrows 
+    #UI Elements 
 \*------------------------------------*/
 
 
-.icon--left-open-big:before { content: '\e800'; } 
-.icon--right-open-big:before { content: '\e801'; }
+.icon--left-open-big:before     { content: '\e800'; } 
+.icon--right-open-big:before    { content: '\e801'; }
 
-.icon--right-circled2:before { content: '\e817'; } 
-.icon--right-circled2-a:after {
+.icon--right-circled2:before    { content: '\e817'; } 
+.icon--right-circled2-a:after   {
   content: '\e817';
 }
-.icon--left-circled2:before { content: '\e818'; } 
+.icon--left-circled2:before     { content: '\e818'; } 
 
 
-.icon--up-open-big:before { content: '\e812'; } 
-.icon--up-open-big-a:after { content: '\e812'; } 
+.icon--up-open-big:before       { content: '\e812'; } 
+.icon--up-open-big-a:after      { content: '\e812'; } 
 
-.icon--down-open-big:before { content: '\e813'; } 
-
-
+.icon--down-open-big:before     { content: '\e813'; } 
 
 
-
-
-
-/*------------------------------------*\
-    #Plus, Minus, Cancel 
-\*------------------------------------*/
-
-
-.icon--plus-circled:before { content: '\e802'; } 
-.icon--minus-circled:before { content: '\e803'; } 
-.icon--cancel:before { content: '\e80a'; } 
+.icon--plus-circled:before      { content: '\e802'; } 
+.icon--minus-circled:before     { content: '\e803'; } 
+.icon--cancel:before            { content: '\e80a'; } 
 
 
 
@@ -122,12 +112,12 @@
 \*------------------------------------*/
 
 
-.icon--linkedin:before { content: '\e804'; } 
-.icon--facebook:before { content: '\e805'; } 
-.icon--facebook-circled:before { content: '\e806'; } 
-.icon--linkedin-circled:before { content: '\e807'; } 
-.icon--linkedin-rect:before { content: '\e815'; } 
-.icon--facebook-rect:before { content: '\e816'; } 
+.icon--linkedin:before          { content: '\e804'; } 
+.icon--facebook:before          { content: '\e805'; } 
+.icon--facebook-circled:before  { content: '\e806'; } 
+.icon--linkedin-circled:before  { content: '\e807'; } 
+.icon--linkedin-rect:before     { content: '\e815'; } 
+.icon--facebook-rect:before     { content: '\e816'; } 
 
 
 
@@ -139,10 +129,10 @@
 \*------------------------------------*/
 
 
-.icon--phone:before { content: '\e819'; } 
-.icon--buildings:before { content: '\e82e'; } 
-.icon--location:before { content: '\e814'; } 
-.icon--envelope:before { content: '\e82c'; } 
+.icon--phone:before             { content: '\e819'; } 
+.icon--buildings:before         { content: '\e82e'; } 
+.icon--location:before          { content: '\e814'; } 
+.icon--envelope:before          { content: '\e82c'; } 
 
 
 
@@ -153,31 +143,31 @@
 \*------------------------------------*/
 
 
-.icon--hourglass:before { content: '\e808'; } 
-.icon--clock:before { content: '\e809'; } 
-.icon--compass:before { content: '\e80c'; } 
-.icon--chat:before { content: '\e80d'; } 
-.icon--search:before { content: '\e80e'; } 
-.icon--flow-tree:before { content: '\e810'; } 
-.icon--chart-pie:before { content: '\e811'; } 
-.icon--graph-up:before { content: '\e81b'; } 
-.icon--law:before { content: '\e81c'; } 
-.icon--gearHead:before { content: '\e81d'; } 
-.icon--group:before { content: '\e81e'; } 
-.icon--puzzle-piece:before { content: '\e81f'; } 
-.icon--magnify-money:before { content: '\e820'; } 
-.icon--magnify-person:before { content: '\e821'; } 
-.icon--contract:before { content: '\e822'; } 
-.icon--person-connections:before { content: '\e823'; } 
-.icon--litigation:before { content: '\e824'; } 
-.icon--shield:before { content: '\e825'; } 
-.icon--clipboard:before { content: '\e826'; } 
-.icon--team:before { content: '\e827'; } 
-.icon--wallet:before { content: '\e828'; } 
-.icon--target:before { content: '\e829'; } 
-.icon--handshake:before { content: '\e82a'; } 
-.icon--podium:before { content: '\e82b'; } 
-.icon--scales:before { content: '\e82d'; } 
+.icon--hourglass:before         { content: '\e808'; } 
+.icon--clock:before             { content: '\e809'; } 
+.icon--compass:before           { content: '\e80c'; } 
+.icon--chat:before              { content: '\e80d'; } 
+.icon--search:before            { content: '\e80e'; } 
+.icon--flow-tree:before         { content: '\e810'; } 
+.icon--chart-pie:before         { content: '\e811'; } 
+.icon--graph-up:before          { content: '\e81b'; } 
+.icon--law:before               { content: '\e81c'; } 
+.icon--gearHead:before          { content: '\e81d'; } 
+.icon--group:before             { content: '\e81e'; } 
+.icon--puzzle-piece:before      { content: '\e81f'; } 
+.icon--magnify-money:before     { content: '\e820'; } 
+.icon--magnify-person:before    { content: '\e821'; } 
+.icon--contract:before          { content: '\e822'; } 
+.icon--person-connections:before{ content: '\e823'; } 
+.icon--litigation:before        { content: '\e824'; } 
+.icon--shield:before            { content: '\e825'; } 
+.icon--clipboard:before         { content: '\e826'; } 
+.icon--team:before              { content: '\e827'; } 
+.icon--wallet:before            { content: '\e828'; } 
+.icon--target:before            { content: '\e829'; } 
+.icon--handshake:before         { content: '\e82a'; } 
+.icon--podium:before            { content: '\e82b'; } 
+.icon--scales:before            { content: '\e82d'; } 
 
 
 
