@@ -111,7 +111,7 @@ $base-font-weight: $normal;
 /* Sizes for text too small or too large for a header tag */
 %text--mega {
     font-size: rem-calc(36); 
-    line-height: 1.333;  
+    line-height: 1;  
     @extend %fwn; 
 
     @media #{$medium-up} {
