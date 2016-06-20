@@ -353,7 +353,8 @@ $(document).on('ready', function() {
 
     $('[data-action="lazy-load-img"]').lazyload({
         threshold: 200, 
-        effect: "fadeIn"
+        effect: "fadeIn",
+        duration: 10 
     });
 
 
