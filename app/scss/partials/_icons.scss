@@ -1,12 +1,181 @@
 
 /*------------------------------------*\
-    #Icons (Extends from modules/partials.scss)
+    #Icons 
 \*------------------------------------*/
 
 
 
+
+
+
 /*------------------------------------*\
-    #Sizes 
+    #Fon-face font-family  
+\*------------------------------------*/
+
+
+@font-face {
+  font-family: 'fontello--soriallc';
+  src: url('../fonts/fontello--soriallc.eot?66118239');
+  src: url('../fonts/fontello--soriallc.eot?66118239#iefix') format('embedded-opentype'),
+       url('../fonts/fontello--soriallc.woff?66118239') format('woff'),
+       url('../fonts/fontello--soriallc.ttf?66118239') format('truetype'),
+       url('../fonts/fontello--soriallc.svg?66118239#fontello--soriallc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Master Icon Class  (Applies to all icons)
+\*------------------------------------*/
+
+// Main styles for all icons before and after text 
+ [class^="icon--"]:before, [class*="icon--"]:before,
+  [class^="icon--"]:after, [class*="icon--"]:after {
+    font-family: "fontello--soriallc";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    // Increase size of all icons 
+    font-size: 110%;
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+[class^="icon--"]:before, [class*="icon--"]:before {
+
+    margin-right: .2em;
+
+}
+
+[class^="icon--"]:after, [class*="icon--"]:after {
+
+    margin-left: .2em;
+
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    #UI Elements 
+\*------------------------------------*/
+
+
+.icon--left-open-big:before     { content: '\e800'; } 
+.icon--right-open-big:before    { content: '\e801'; }
+
+.icon--right-circled2:before    { content: '\e817'; } 
+.icon--right-circled2-a:after   {
+  content: '\e817';
+}
+.icon--left-circled2:before     { content: '\e818'; } 
+
+
+.icon--up-open-big:before       { content: '\e812'; } 
+.icon--up-open-big-a:after      { content: '\e812'; } 
+
+.icon--down-open-big:before     { content: '\e813'; } 
+
+
+.icon--plus-circled:before      { content: '\e802'; } 
+.icon--minus-circled:before     { content: '\e803'; } 
+.icon--cancel:before            { content: '\e80a'; } 
+
+
+
+
+
+
+/*------------------------------------*\
+    #Social Media 
+\*------------------------------------*/
+
+
+.icon--linkedin:before          { content: '\e804'; } 
+.icon--facebook:before          { content: '\e805'; } 
+.icon--facebook-circled:before  { content: '\e806'; } 
+.icon--linkedin-circled:before  { content: '\e807'; } 
+.icon--linkedin-rect:before     { content: '\e815'; } 
+.icon--facebook-rect:before     { content: '\e816'; } 
+
+
+
+
+
+
+/*------------------------------------*\
+    #Contact  
+\*------------------------------------*/
+
+
+.icon--phone:before             { content: '\e819'; } 
+.icon--buildings:before         { content: '\e82e'; } 
+.icon--location:before          { content: '\e814'; } 
+.icon--envelope:before          { content: '\e82c'; } 
+
+
+
+
+
+/*------------------------------------*\
+    #Services, Law & Finance
+\*------------------------------------*/
+
+
+.icon--hourglass:before         { content: '\e808'; } 
+.icon--clock:before             { content: '\e809'; } 
+.icon--compass:before           { content: '\e80c'; } 
+.icon--chat:before              { content: '\e80d'; } 
+.icon--search:before            { content: '\e80e'; } 
+.icon--flow-tree:before         { content: '\e810'; } 
+.icon--chart-pie:before         { content: '\e811'; } 
+.icon--graph-up:before          { content: '\e81b'; } 
+.icon--law:before               { content: '\e81c'; } 
+.icon--gearHead:before          { content: '\e81d'; } 
+.icon--group:before             { content: '\e81e'; } 
+.icon--puzzle-piece:before      { content: '\e81f'; } 
+.icon--magnify-money:before     { content: '\e820'; } 
+.icon--magnify-person:before    { content: '\e821'; } 
+.icon--contract:before          { content: '\e822'; } 
+.icon--person-connections:before{ content: '\e823'; } 
+.icon--litigation:before        { content: '\e824'; } 
+.icon--shield:before            { content: '\e825'; } 
+.icon--clipboard:before         { content: '\e826'; } 
+.icon--team:before              { content: '\e827'; } 
+.icon--wallet:before            { content: '\e828'; } 
+.icon--target:before            { content: '\e829'; } 
+.icon--handshake:before         { content: '\e82a'; } 
+.icon--podium:before            { content: '\e82b'; } 
+.icon--scales:before            { content: '\e82d'; } 
+
+
+
+
+
+
+/*------------------------------------*\
+    #Icon Sizes 
 \*------------------------------------*/
 
 
@@ -28,184 +197,7 @@
 }
 
 .icon--tiny {
-  margin: rem-calc(4); 
+   margin: rem-calc(4); 
   font-size: rem-calc(12);
 }
 
-
-
-
-/*------------------------------------*\
-    #Classes  
-\*------------------------------------*/
-
-
-.icon--opacityHover {
-  @include transition(.1s, ease-in-out);
-  opacity: .7;
-  
-  &:hover {
-    opacity: 1; 
-  }
-}
-
-.hasNoIcon {
-  &:before,
-  &:after {
-    content: "" !important; 
-  }
-}
-
-
-
-
-/*------------------------------------*\
-    #Communications 
-\*------------------------------------*/
-
-
-[rel*="email"] {
-  @include icon($icon--email) {
-    margin-right: 10px;
-  }
-}
-
-[rel*="phone"] {
-  @include icon($icon--phone) {
-    margin-right: 10px;
-    }
-}
-
-
-[rel*="location"] {
-  @include icon($icon--location) {
-    margin-right: 10px;
-  }
-
-  &.icon--brandColors {
-    color: $red;
-  }
-}
-
-
-
-
-
-/*------------------------------------*\
-    #Arrows 
-\*------------------------------------*/
-
-
-[rel*="prev"] {
-  @include icon($icon--arrowleft);
-}
-
-[rel*="next"] {
-  @include icon($icon--arrowright);
-}
-
-[rel*="up"] {
-  @include icon($icon--arrowup);
-}
-
-[rel*="down"] {
-  @include icon($icon--arrowdown);
-}
-
-
-
-
-
-
-/*------------------------------------*\
-    #Social media 
-\*------------------------------------*/
-
-
-a[href*="facebook"],
-.icon--facebook {
-  @include icon($icon--facebook);
-
-    &.icon--brandColors {
-    color: $blue--facebook;
-  }
-
-}
-
-.icon--linkedIn {
-    @include icon($icon--linkedIn);
-}
-
-
-
-
-
-
-
-/*------------------------------------*\
-    #Plus and Negative 
-\*------------------------------------*/
-
-
-[rel*="plus"] {
-  @include icon($icon--plussign);
-}
-
-[rel*="neg"] {
-  @include icon($icon--negsign);
-}
-
-
-
-
-
-/*------------------------------------*\
-    #Misc 
-\*------------------------------------*/
-
-
-
-.icon--left-open-big:before { content: '\e800'; } /* '' */
-.icon--right-open-big:before { content: '\e801'; } /* '' */
-.icon--plus-circled:before { content: '\e802'; } /* '' */
-.icon--minus-circled:before { content: '\e803'; } /* '' */
-.icon--linkedin:before { content: '\e804'; } /* '' */
-.icon--facebook:before { content: '\e805'; } /* '' */
-.icon--facebook-circled:before { content: '\e806'; } /* '' */
-.icon--linkedin-circled:before { content: '\e807'; } /* '' */
-.icon--hourglass:before { content: '\e808'; } /* '' */
-.icon--clock:before { content: '\e809'; } /* '' */
-.icon--cancel:before { content: '\e80a'; } /* '' */
-.icon--compass:before { content: '\e80c'; } /* '' */
-.icon--chat:before { content: '\e80d'; } /* '' */
-.icon--search:before { content: '\e80e'; } /* '' */
-.icon--flow-tree:before { content: '\e810'; } /* '' */
-.icon--chart-pie:before { content: '\e811'; } /* '' */
-.icon--up-open-big:before { content: '\e812'; } /* '' */
-.icon--down-open-big:before { content: '\e813'; } /* '' */
-.icon--location:before { content: '\e814'; } /* '' */
-.icon--linkedin-rect:before { content: '\e815'; } /* '' */
-.icon--facebook-rect:before { content: '\e816'; } /* '' */
-.icon--right-circled2:before { content: '\e817'; } /* '' */
-.icon--left-circled2:before { content: '\e818'; } /* '' */
-.icon--phone:before { content: '\e819'; } /* '' */
-.icon--graph-up:before { content: '\e81b'; } /* '' */
-.icon--law:before { content: '\e81c'; } /* '' */
-.icon--gearHead:before { content: '\e81d'; } /* '' */
-.icon--group:before { content: '\e81e'; } /* '' */
-.icon--puzzle-piece:before { content: '\e81f'; } /* '' */
-.icon--magnify-money:before { content: '\e820'; } /* '' */
-.icon--magnify-person:before { content: '\e821'; } /* '' */
-.icon--contract:before { content: '\e822'; } /* '' */
-.icon--person-connections:before { content: '\e823'; } /* '' */
-.icon--litigation:before { content: '\e824'; } /* '' */
-.icon--shield:before { content: '\e825'; } /* '' */
-.icon--clipboard:before { content: '\e826'; } /* '' */
-.icon--team:before { content: '\e827'; } /* '' */
-.icon--wallet:before { content: '\e828'; } /* '' */
-.icon--target:before { content: '\e829'; } /* '' */
-.icon--handshake:before { content: '\e82a'; } /* '' */
-.icon--podium:before { content: '\e82b'; } /* '' */
-.icon--envelope:before { content: '\e82c'; } /* '' */
-.icon--scales:before { content: '\e82d'; } /* '' */
-.icon--buildings:before { content: '\e82e'; } /* '' */

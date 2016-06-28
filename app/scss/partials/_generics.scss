@@ -17,9 +17,6 @@
   display: inline-block; 
 }
 
-.display--inlineBlockOnSmall {
-    display: inline-block; 
-}
 
 
 
@@ -198,10 +195,10 @@
 \*------------------------------------*/
 
 // Gives the element 100% height of viewport on large 
+// and 130vh on smaller devices 
 .vh100 {    
     
-    min-height: 110vh; 
-    height: 100%; 
+    height: 130vh; 
     
     @media #{$medium-up} {
         height: 100vh;

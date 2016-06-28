@@ -24,7 +24,7 @@
 
   </head>
 
-  <body >
+  <body role="document">
 
 
     <!-- Strip of color at top --> 
@@ -42,7 +42,8 @@
 
 
     <!-- Back to website tab -->    
-    <div class="fixedTab">
+    <div    data-ui-component="fixed-tab"
+            class="fixedTab">
         
         <span class="fwb  icon--left-circled2">
             Back to Site
@@ -61,22 +62,34 @@
 
 
     <!-- Navigation --> 
-    <nav class="secondaryNav  secondaryNav--fixed  show-for-medium-up">
+    <nav data-ui-component="smoothScroll-nav" class="secondaryNav  secondaryNav--fixed  show-for-medium-up">
 
         <ul class="secondaryNav-list">
 
             <li class="title">Navegación</li>
 
             <li class="link">
-                <a id="introduccion-anchor" class="smoothScroll" href="#introduccion">Introducción</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="introduccion-anchor"
+                    href="#introduccion">Introducción</a>
             </li>
             
             <li class="link">
-                <a id="plan-anchor" class="smoothScroll" href="#plan">Plan de Trabajo</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="plan-anchor"
+                    href="#plan">Plan de Trabajo</a>
             </li>
             
             <li class="link">
-                <a id="biografia-anchor" class="smoothScroll" href="#biografia">Sobre Eduardo Soria</a>
+
+                <a  data-action="scroll-to-section"
+                    data-ui-component="smoothScroll-link"
+                    id="biografia-anchor"
+                    href="#biografia">Sobre Eduardo Soria</a>
             </li>
             
         </ul>
@@ -96,358 +109,375 @@
     </nav>
 
 
-    <!-- Introduccion --> 
-    <section class="section  section--alt  vh100" id="introduccion">
+    <div role="main">
 
-
-        <div class="section-bg">
-
-            <div class="vh100" 
-                style="background:url(images/business12.jpg) no-repeat center center; background-size: cover;"></div>
-            
-        </div>
-
-        <div class="row  vertical-align"  id="header-fadeIn">
-
-            <div class="small-12 columns">
-
-                <div class="row  large-collapse  enter-from-bottom">
+        <!-- Introduccion --> 
+        <div class="section  section--alt  vh100" id="introduccion">
+        
+            <div class="section-bg">
+        
+                <div class="vh100" 
+                    style="background:url(images/business12.jpg) no-repeat center center; background-size: cover;"></div>
                 
-                    <div class="small-12 medium-8  large-9 columns">
+            </div>
+        
+            <div class="row  vertical-align"  data-action="bring-in-header">
+        
+                <div class="small-12 columns">
+        
+                    <div class="row  large-collapse  enter-from-bottom">
                     
-                        <h1 class="  section-text text--mega  mt5  mb3">
-                            "Creo en la colaboración, el servicio, la receptividad, y la defensa de la profesión."
-                        </h1>
-                
-                    </div>
-                
-                </div>
-                
-                <div class="row enter-from-bottom">
-                
-                    <section class="small-12  medium-8  large-9  columns  ">
+                        <div class="small-12 medium-8  large-9 columns">
                         
-
-                        <!-- Picture/Name/title for Small only --> 
-                        <div class="flag  show-for-small-only">
-                
-                            <div class="flag-image pr2">
-                
-                               <div class="image--circle tiny">
-                
-                                    <img src="images/eduardo.jpg" alt="" width="200">
-
-                               </div>
-                
+                            <h1 class="  section-text text--mega  mt5  mb3">
+                                "Creo en la colaboración, el servicio, la receptividad, y la defensa de la profesión."
+                            </h1>
+                    
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="row enter-from-bottom">
+                    
+                        <section class="small-12  medium-8  large-9  columns  ">
+                            
+        
+                            <!-- Picture/Name/title for Small only --> 
+                            <div class="flag  show-for-small-only">
+                    
+                                <div class="flag-image pr2">
+                    
+                                   <div class="image--circle tiny">
+                    
+                                        <img src="images/eduardo.jpg" alt="" width="200">
+        
+                                   </div>
+                    
+                                </div>
+                                
+                                <div class="flag-body">
+                                    
+                                    <h1 class="h2 section-text">
+                                        CPA Eduardo Soria Rivera
+                                    </h1>
+                                    
+                                    <h2 class="h4 section-text">
+                    
+                                        <span class="txtc3">Candidato para 1er vicepresidente</span>
+        
+                                    </h2>
+                    
+                                </div>          
+                                    
                             </div>
                             
-                            <div class="flag-body">
+                            <!-- Picture/Name/title for Medium Up --> 
+                            <div class="flag  mb4  show-for-medium-up">
+                    
+                                <div class="flag-image pr2">
+                    
+                                   <div class="image--circle small">
+                    
+                                        <img src="images/eduardo.jpg" alt="" width="200">
+        
+                                   </div>
+                    
+                                </div>
                                 
-                                <h1 class="h2 section-text">
-                                    CPA Eduardo Soria Rivera
-                                </h1>
-                                
-                                <span class="h4 section-text">
-                
-                                    <span class="txtc3">Candidato para 1er vicepresidente</span>
+                                <div class="flag-body">
+                                    
+                                    <h1 class="section-text">
+                                        CPA Eduardo Soria Rivera
+                                    </h1>
+                                    
+                                    <h2 class="h3 section-text">
+                    
+                                        <span class="txtc3">Candidato para 1er vicepresidente</span>
+        
+                                    </h2>
+                    
+                                </div>          
+                                    
+                            </div>       
+        
+                        </section>
+                    
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        
+        <!-- Plan De Trabajo --> 
+        <div class="section section--normal  list-fadeIn" id="plan" data-action='fade-in-list'>
+        
+            <section>        
 
-                                </span>
-                
-                            </div>          
+                <div class="row fadeIn">
+                        
+                    <div class="small-12 columns">
+                        
+                        <h1 class="text--mega  mb4  section-text">Mi Plan de Trabajo</h1>
+                        
+                    </div>
+                        
+                </div>
+                        
+                <div class="row  mb4  fadeIn" >
+                        
+                    <div class="small-12  medium-8  columns">
+                        
+                        <div class="flag">
+                        
+                            <div class="flag-image">
+                        
+                                <span class="icon--group icon icon--mega  txtc2"></span>
+                        
+                            </div>
                                 
+                            <div class="flag-body">
+                        
+                                <h2>Capítulos</h2>
+                                
+                                <p class="section-text">
+                                    Otorgar autonomía a los Capítulos en asuntos de Educación Continuada. 
+                                    Evaluar los cargos que el Colegio le hace a los Capítulos por servicios rendidos y otros costos.
+                                </p>
+                        
+                            </div>
+                        
                         </div>
                         
-                        <!-- Picture/Name/title for Medium Up --> 
-                        <div class="flag  mb4  show-for-medium-up">
-                
-                            <div class="flag-image pr2">
-                
-                               <div class="image--circle small">
-                
-                                    <img src="images/eduardo.jpg" alt="" width="200">
-
-                               </div>
-                
+                    </div>
+                        
+                </div>
+                        
+                <div class="row  mb4  fadeIn">
+                        
+                    <div class="small-12  medium-8  columns">
+                        
+                        <div class="flag">
+                        
+                            <div class="flag-image">
+                        
+                                <span class="icon--law icon icon--mega  txtc2"></span>
+                                
                             </div>
+                                
+                            <div class="flag-body">
+                        
+                                <h2>Legislación</h2>
                             
+                                <p  class="section-text">
+                                    Lograr legislación para establecer trabajos de atestiguamiento limitado para empresas con ventas entre $1-$3 millones.
+                                </p>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                        
+                </div>
+                        
+                        
+                <div class="row  mb4  fadeIn">
+                        
+                    <div class="small-12  medium-8  columns">
+                        
+                        <div class="flag">
+                        
+                            <div class="flag-image">
+                        
+                                <span class="icon--gearHead icon icon--mega  txtc2"></span>
+                        
+                            </div>
+                                
+                            <div class="flag-body">
+                        
+                                <h2>Eficiencia y Optimización</h2>
+                        
+                                <p class="section-text">
+                                   Evaluar la razonabilidad de la estructura de costos actual del Colegio y establecer un plan de optimización de los costos que el CPA paga en:
+                                </p>
+                        
+                                <ul class="list--bullet  pl4">
+                                    <li>Créditos de Educacion Continuada</li>
+                                    <li>Matrícula</li>
+                                    <li>Precios de la Convención</li>
+                                </ul>
+                        
+                                <p>
+                                    Optimizar la utilización de la tecnología en beneficio al colegiado.
+                                    <br><br>
+                        
+                                    Convertir el periódico El CPA en un foro de información técnica.
+                        
+                                    <br><br>
+                        
+                                    Lograr que cada Comité tenga una misión objetiva y tangible que justifique su existencia.
+                        
+                                </p>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                        
+                </div>
+                    
+                <div class="row  mb4  fadeIn">
+                        
+                    <div class="small-12  medium-8  columns">
+                        
+                        <div class="flag">
+                        
+                            <div class="flag-image">
+                                
+                                <span class="icon--graph-up icon icon--mega  txtc2"></span>
+                                
+                            </div>
+                                
+                            <div class="flag-body">
+                        
+                                <h2>Desarrollo Económico</h2>
+                            
+                                <p  class="section-text">
+                                    Integrar a la Junta de Gobierno miembros CPA, nombrados por la misma, que representen las industrias más relevantes con el propósito de generar ideas de desarrollo económico para el país. 
+                                    Por ejemplo:
+                                </p>     
+                            
+                                <ul class="list--bullet  pl4"> 
+                                    <li>Servicios Financieros</li>
+                                    <li>Sin Fines de Lucro</li>
+                                    <li>Industria y Comercio</li>
+                                    <li>Servicios</li>
+                                </ul>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                        
+                </div>
+                        
+                <div class="row  mb4  fadeIn">
+                        
+                    <div class="small-12  medium-8  columns">
+                        
+                        <div class="flag">
+                        
+                            <div class="flag-image">
+                        
+                                <span class="icon--podium icon icon--mega  txtc2"></span>
+                        
+                            </div>
+                                
                             <div class="flag-body">
                                 
-                                <h1 class="section-text">
-                                    CPA Eduardo Soria Rivera
-                                </h1>
-                                
-                                <span class="h3 section-text">
-                
-                                    <span class="txtc3">Candidato para 1er vicepresidente</span>
-
-                                </span>
-                
-                            </div>          
-                                
-                        </div>       
-
-                    </section>
-                
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Plan De Trabajo --> 
-    <section class="section section--normal  list-fadeIn" id="plan">
-
-        <div class="row fadeIn">
-
-            <div class="small-12 columns">
-
-                <h1 class="text--mega  mb4  section-text">Mi Plan de Trabajo</h1>
-
-            </div>
-
-        </div>
-
-        <div class="row  mb4  fadeIn" >
-
-            <div class="small-12  medium-8  columns">
-
-                <div class="flag">
-
-                    <div class="flag-image">
-
-                        <span class="icon--group icon icon--mega  txtc2"></span>
-
-                    </div>
+                                <h2>Proyección Pública</h2>
+                            
+                                <p>
+                                    Lograr mayor exposición en los medios de comunicación sobre asuntos relevantes a la profesión y el quehacer económico del país.
+                                </p>
                         
-                    <div class="flag-body">
-
-                        <h2>Capítulos</h2>
+                            </div>
                         
-                        <p class="section-text">
-                            Otorgar autonomía a los Capítulos en asuntos de Educación Continuada. 
-                            Evaluar los cargos que el Colegio le hace a los Capítulos por servicios rendidos y otros costos.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row  mb4  fadeIn">
-
-            <div class="small-12  medium-8  columns">
-
-                <div class="flag">
-
-                    <div class="flag-image">
-
-                        <span class="icon--law icon icon--mega  txtc2"></span>
-                        
-                    </div>
-                        
-                    <div class="flag-body">
-                
-                        <h2>Legislación</h2>
+                        </div>
                     
-                        <p  class="section-text">
-                            Lograr legislación para establecer trabajos de atestiguamiento limitado para empresas con ventas entre $1-$3 millones.
-                        </p>
-
                     </div>
-
+                        
                 </div>
-            
-            </div>
+
+            </section>
 
         </div>
-
-
-        <div class="row  mb4  fadeIn">
-                
-            <div class="small-12  medium-8  columns">
-
-                <div class="flag">
-
-                    <div class="flag-image">
-
-                        <span class="icon--gearHead icon icon--mega  txtc2"></span>
-
-                    </div>
-                        
-                    <div class="flag-body">
-                
-                        <h2>Eficiencia y Optimización</h2>
-
-                        <p class="section-text">
-                           Evaluar la razonabilidad de la estructura de costos actual del Colegio y establecer un plan de optimización de los costos que el CPA paga en:
-                        </p>
-
-                        <ul class="list--bullet  pl4">
-                            <li>Créditos de Educacion Continuada</li>
-                            <li>Matrícula</li>
-                            <li>Precios de la Convención</li>
-                        </ul>
-
-                        <p>
-                            Optimizar la utilización de la tecnología en beneficio al colegiado.
-                            <br><br>
-
-                            Convertir el periódico El CPA en un foro de información técnica.
-
-                            <br><br>
-
-                            Lograr que cada Comité tenga una misión objetiva y tangible que justifique su existencia.
-
-                        </p>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-        </div>
-            
-        <div class="row  mb4  fadeIn">
-
-            <div class="small-12  medium-8  columns">
-
-                <div class="flag">
-
-                    <div class="flag-image">
-                        
-                        <span class="icon--graph-up icon icon--mega  txtc2"></span>
-                        
-                    </div>
-                        
-                    <div class="flag-body">
-                
-                        <h2>Desarrollo Económico</h2>
-                    
-                        <p  class="section-text">
-                            Integrar a la Junta de Gobierno miembros CPA, nombrados por la misma, que representen las industrias más relevantes con el propósito de generar ideas de desarrollo económico para el país. 
-                            Por ejemplo:
-                        </p>     
-                    
-                        <ul class="list--bullet  pl4"> 
-                            <li>Servicios Financieros</li>
-                            <li>Sin Fines de Lucro</li>
-                            <li>Industria y Comercio</li>
-                            <li>Servicios</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-        </div>
-
-        <div class="row  mb4  fadeIn">
-
-            <div class="small-12  medium-8  columns">
-
-                <div class="flag">
-
-                    <div class="flag-image">
-
-                        <span class="icon--podium icon icon--mega  txtc2"></span>
-
-                    </div>
-                        
-                    <div class="flag-body">
-                        
-                        <h2>Proyección Pública</h2>
-                    
-                        <p>
-                            Lograr mayor exposición en los medios de comunicación sobre asuntos relevantes a la profesión y el quehacer económico del país.
-                        </p>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="section section--alt" id="biografia">
-
-        <div class="row"  id="biografia" data-action="show-fixedTab">
-
-            <div class="small-12 medium-8 columns section-text">
-
-                <h1 class="section-title mb3  enter-from-bottom text--mega">Sobre Eduardo Soria</h1>
-
-                <div class="enter-from-bottom">
-
-                    <p>El Contador Público Autorizado (CPA) y Abogado licenciado Soria es graduado del Recinto de Río Piedras de la Universidad de Puerto Rico (1995), Cum Laude, y de la Facultad de Derecho de la Universidad Interamericana (2007), Magna Cum Laude. Pasó en su primer intento ambas reválidas profesionales. Comenzó su carrera profesional en la firma Arthur Andersen en el 1995. Ha trabajado principalmente en la contabilidad pública en varias capacidades hasta alcanzar la posición de socio encargado de servicios de consultoría en Aquino de Córdova & Alfaro y en BDO Puerto Rico. En BDO fungió como Socio a Cargo de Servicios de Consultoría a nivel regional para las Américas (Head of Regional Advisory Services).
-                    </p>
     
-                    <p>
-                    Desde 1999 se dedica principalmente a trabajos de consultoría. Actualmente es miembro fundador de una práctica de consultoría en donde se combinan la Contabilidad y el Derecho. Tiene dos certificaciones de especialista en Valoración de Negocio (CVA y ABV), Examinador de Fraude (CFE) y Auditor Interno (CIA). También es Arbitro Certificado por el Tribunal Supremo de Puerto Rico. Ha tomado cursos relacionados a sus especialidades en la Universidad de Columbia en NYC y Oxford en Inglaterra. Ha sido aceptado en múltiples ocasiones para fungir como perito en el Tribunal Estatal, de Quiebras y el Federal.
-                    </p>
-                    <p>
-                    El CPA Soria es instructor y conferenciante frecuente en sus áreas de especialidad, tanto para CPA como para Abogados. Ha sido instructor/conferenciante, desde el año 2000, en aproximadamente veinte (20) seminarios para el CCPA y desde el 2008, lo ha sido de educación continuada para abogados en aproximadamente quince (15) ocasiones.
-                    </p>
-                    <p>
-                    Ha sido miembro activo del CCPA desde los inicios de su carrera, participando de los siguientes Comités del Colegio; Educación Continuada, Estudio sobre Fraude, CPA Abogados, Enlace con Instituciones Educativas, Enlace con Universidades, Firmas Locales, Proyección Pública, Valoración y Forense. Ha sido partícipe del programa Móntate en la Ola desde sus inicios.
-                    </p>
-                    <p>
-                    Fue Presidente de la Asociación de Exalumnos 
-                    de la Facultad de Derecho de la Universidad 
-                    Interamericana de Puerto Rico del 2010 
-                    al 2012 y miembro de su Junta de 
-                    Directores desde el 2008 al 2012.
-                    </p>
+    
+    <div class="section section--alt" id="biografia" data-action="bring-in-biografia">
+    
+        <div class="row"  id="biografia" data-action="show-fixed-tab">
+    
+            <div class="small-12 medium-8 columns section-text">
+    
+                <section>
+    
+                    <h1 class="section-title mb3  enter-from-bottom text--mega">Sobre Eduardo Soria</h1>
                     
-                    <a target="_blank" href="https://pr.linkedin.com/pub/eduardo-soria-rivera/8a/216/95" class="h4 text-center  right">Eduardo en linkedIn: <i class="icon--linkedIn icon--large"></i> </a>
-
-                </div>
-
+                    <div class="enter-from-bottom">
+                    
+                        <p>El Contador Público Autorizado (CPA) y Abogado licenciado Soria es graduado del Recinto de Río Piedras de la Universidad de Puerto Rico (1995), Cum Laude, y de la Facultad de Derecho de la Universidad Interamericana (2007), Magna Cum Laude. Pasó en su primer intento ambas reválidas profesionales. Comenzó su carrera profesional en la firma Arthur Andersen en el 1995. Ha trabajado principalmente en la contabilidad pública en varias capacidades hasta alcanzar la posición de socio encargado de servicios de consultoría en Aquino de Córdova & Alfaro y en BDO Puerto Rico. En BDO fungió como Socio a Cargo de Servicios de Consultoría a nivel regional para las Américas (Head of Regional Advisory Services).
+                        </p>
+                        
+                        <p>
+                        Desde 1999 se dedica principalmente a trabajos de consultoría. Actualmente es miembro fundador de una práctica de consultoría en donde se combinan la Contabilidad y el Derecho. Tiene dos certificaciones de especialista en Valoración de Negocio (CVA y ABV), Examinador de Fraude (CFE) y Auditor Interno (CIA). También es Arbitro Certificado por el Tribunal Supremo de Puerto Rico. Ha tomado cursos relacionados a sus especialidades en la Universidad de Columbia en NYC y Oxford en Inglaterra. Ha sido aceptado en múltiples ocasiones para fungir como perito en el Tribunal Estatal, de Quiebras y el Federal.
+                        </p>
+                        <p>
+                        El CPA Soria es instructor y conferenciante frecuente en sus áreas de especialidad, tanto para CPA como para Abogados. Ha sido instructor/conferenciante, desde el año 2000, en aproximadamente veinte (20) seminarios para el CCPA y desde el 2008, lo ha sido de educación continuada para abogados en aproximadamente quince (15) ocasiones.
+                        </p>
+                        <p>
+                        Ha sido miembro activo del CCPA desde los inicios de su carrera, participando de los siguientes Comités del Colegio; Educación Continuada, Estudio sobre Fraude, CPA Abogados, Enlace con Instituciones Educativas, Enlace con Universidades, Firmas Locales, Proyección Pública, Valoración y Forense. Ha sido partícipe del programa Móntate en la Ola desde sus inicios.
+                        </p>
+                        <p>
+                        Fue Presidente de la Asociación de Exalumnos 
+                        de la Facultad de Derecho de la Universidad 
+                        Interamericana de Puerto Rico del 2010 
+                        al 2012 y miembro de su Junta de 
+                        Directores desde el 2008 al 2012.
+                        </p>
+                        
+                        <a target="_blank" href="https://pr.linkedin.com/pub/eduardo-soria-rivera/8a/216/95" class="h4 text-center  right">Eduardo en linkedIn: <i class="icon  icon--linkedin-rect icon--large"></i> </a>
+                    
+                    </div>
+    
+                </section>
+    
             </div>
-
+    
         </div>
-
-    </section>
-
-
+    
+    </div>
+    
+    
     <!-- Vote Button for Small Only--> 
-    <section class="section  section--normal  show-for-small-only">
-
+    <div class="section  section--normal  show-for-small-only">
+    
         <div class="row">
-
+    
             <div class="small-12 columns">
-
+    
                 <div class="prl3  pb5 text-center">
-
+    
                     <a target="_blank" href="http://www.colegiocpa.com/index.php?node=12386">
-
+    
                         <button class="button large  button--primary  button--expanded">
                                 VOTA AQUI
                         </button>
-
+    
                     </a>
-
+    
                 </div>
-
+    
             </div>
-
+    
         </div>
+    
+    </div>
+
+</div>
 
 
-    </section>
+<!-- Footer --> 
+<div data-action="load-footer">
 
+
+    
+</div>
 
 
     

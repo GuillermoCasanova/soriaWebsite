@@ -24,7 +24,7 @@
 
   </head>
 
-  <body >
+  <body>
 
 
     <!--Main Navigation for Medium Up --> 
@@ -169,12 +169,14 @@
         
         
             <!--Contact Copy --> 
-            <section class="section  section--alt  vh100">
+            <div class="section  section--alt">
                 
                 <!-- Google Map - Medium Up --> 
-                <div class="section-bg--map show-for-medium-up vh100" data-ui-component="map">
+                <div class="section-bg--map show-for-medium-up" data-ui-component="map">
                     
-                    <button data-action="toggle-map" class="[ large  button  button--secondary ] map-toggleButton" >
+                    <button data-action="toggle-map" 
+                            data-ui-component="toggle-map-button"
+                            class="[ large  button  button--secondary ] map-toggleButton" >
                         Back to Contact
                     </button>
 
@@ -188,7 +190,7 @@
 
                 </div>
         
-                <div class="show-for-medium-up  map-cover">
+                <div role="presentation" class="show-for-medium-up  map-cover" data-ui-component='map-cover'>
                     
                 </div>
                 <!-- End Map Components --> 
@@ -196,39 +198,60 @@
                 <div class="row">
 
                    <!--Contact info - Medium Up --> 
-                    <section class="section--normal  dropshadow1 [ small-12 medium-11 medium-centered  large-uncentered large-7 columns large-push-1 ] "  data-ui-component="contact-info">
+                    <div class="panel  dropshadow1 [ small-12 medium-11 medium-centered  large-uncentered large-7 columns large-push-1 ]"  data-ui-component="contact-info">
 
-                        <div class="row  ptrbl2">
+                        <div class="row  prl2">
 
-                            <h1>Let's Talk</h1>
-                    
-                            <p class="pb2">Have questions or a case we could help you with? Please get in touch below:</p>
+                            <div class="small-12 columns">
+                            
+                                <h1 class="mb1">Let's Talk</h1>
+                                                    
+                                <p class="pb2">
+                                    Have questions or a case we can help with? Please get in touch below:
+                                </p>
+                                
+                            </div>
 
                         
-                            <div class="small-12 medium-7 large-6  columns">
+                            <div class="small-12 medium-7  columns">
 
                                 <!-- Form - uses mailer.php file for action attribute --> 
                                 <form data-ui-component="contact-form"  method="post" action="../mailer.php">
                         
-                                    <label for="fullName">Full Name</label>
-                                    <input name="fullName" id="fullName" type="text" placeholder="Your full name please" required>
+                                <div class="row">
 
-                                    <label for="email">Email</label>
-                                    <input name="email" id="email" type="email" placeholder="Please enter a valid e-mail address" required>
+                                    <div class="small-12  medium-11 columns">
+                                        <label for="fullName">Full Name</label>
+                                        <input name="fullName" id="fullName" type="text" placeholder="Your full name please" required autofocus>
+                                    </div>
+                                    
+                                    <div class="small-12  medium-11 columns">
+                                        <label for="email">Email</label>
+                                        <input name="email" id="email" type="email" placeholder="Please enter a valid e-mail address" required>
+                                    </div>
+                                    
+                                    <div class="small-12  medium-11 columns">
+                                        <label for="subject">Subject</label>
+                                        <input name="" id="subject" type="text" placeholder="Subject" required>
+                                    </div>
+                                    
+                                    <div class="small-12  medium-11 columns">
+                                        
+                                        <label for="message">Your Message</label>
+                                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message here" required></textarea>
+                                                                          
+                                    </div>
+                                                                      
+                                    <div class="small-12  medium-11 columns  end">
+                                        <button type="submit" class="[ medium  button  button--primary ]  right">Submit</button>
+                                    </div>
 
-                                    <label for="subject">Subject</label>
-                                    <input name="" id="subject" type="text" placeholder="Subject" required>
-
-                                    <label for="message">Your Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="7" placeholder="" required>
-                                    </textarea>
-                                  
-                                    <button type="submit" class="[ medium  button  button--primary ]  right">Submit</button>
+                                </div>
 
                                 </form>
                                 
                                 <!-- Success or Error Message for contact form --> 
-                                <div data-ui-component="form-message" class="panel  panel--success">
+                                <div role="alert" data-ui-component="form-message" class="panel  panel--success">
 
                                     <div class="panel-body">
 
@@ -243,7 +266,7 @@
                             </div>
                             
                             <!-- Contact information -->
-                            <div class="small-12 medium-5 large-6  columns  ">
+                            <div class="small-12 medium-5   columns  ">
                         
                                 <ul>
                         
@@ -289,7 +312,8 @@
 
                                             <a class="show-for-medium-up" data-action="toggle-map">Show on Map  
                                             </a>
-
+                                            
+                                            <!-- Fall back on small screens, opens the map in a new tab instead--> 
                                             <a href="https://www.google.com.pr/maps/place/MCS+Plaza/@18.4263598,-66.0564049,18z/data=!4m2!3m1!1s0x0000000000000000:0xef4654344b2951d0" target="_blank" class="show-for-small-only">Show on Map  
                                             </a>
 
@@ -302,48 +326,21 @@
                         
                         </div>                   
 
-                    </section>
+                    </div>
  
                 </div>
 
-            </section>
+            </div>
 
 
             <!-- Footer --> 
-            <footer class="pt2">
-            
-                <div class="row">
-            
-                    <div class="small-12 columns show-for-small-only [ prl2 ] ">
-            
-                        <button data-action="go-to-top" class="button  button--small  right  button--expanded  button--secondary mtb3">
-                            Back to Top <span rel="up"></span>
-                        </button>
-            
-                        <hr>
-            
-                    </div>
-            
-                    <div class="small-12 columns">
-            
-                        <div class="footer-siteInfo">
-            
-                            <p rel="copyright">
-            
-                            © 2015 Soria, LLC All Rights Reserved
-                            </p>
-            
-                            <p rel="credit">
-                            Website by <a href="http://guillermo-casanova.com/">Guillermo Casanova </a>
-                            </p>
-            
-                        </div>
-            
-                    </div>
-            
-                </div>
+            <div data-action="load-footer">
+
+
                 
-            </footer>
+            </div>
+
+
 
             <a class="exit-off-canvas"></a>
 
