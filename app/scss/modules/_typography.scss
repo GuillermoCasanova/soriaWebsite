@@ -75,7 +75,7 @@ $base-font-weight: $normal;
 
 %h2 {
 	font-size: rem-calc(28); 
-	line-height: .85; 
+	line-height: 1; 
     @extend %fwn; 
 }
 

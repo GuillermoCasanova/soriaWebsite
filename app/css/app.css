@@ -4303,7 +4303,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
-  line-height: .85;
+  line-height: 1;
 }
 
 /* line 82, ../scss/modules/_typography.scss */
@@ -5199,6 +5199,13 @@ a,
 /* line 203, ../scss/partials/_typography.scss */
 .text-right {
   text-align: right;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  /* line 205, ../scss/partials/_typography.scss */
+  .medium-text-left {
+    text-align: left;
+  }
 }
 
 /*------------------------------------*\
