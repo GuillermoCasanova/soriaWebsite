@@ -17,8 +17,10 @@ footer {
 
   .footer-link {  
     color: $grey--dark; 
+    @extend %link--underline; 
 
-    &:hover {
+    &:hover,
+    &:focus {
          @extend %text--white; 
     }
 
@@ -44,7 +46,6 @@ footer {
   a { 
     @include transition(color .3s ease-in-out);
     color: $grey--dark;
-    @extend %link--underline; 
 
     &:hover {
       color: $primaryColor; 

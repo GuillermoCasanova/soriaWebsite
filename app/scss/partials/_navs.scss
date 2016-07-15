@@ -126,6 +126,19 @@
         
     }
 
+    .navBar-logo {
+
+        display: none; 
+
+        &.logo--alt {
+
+            @extend %display--block; 
+
+        }
+
+    }
+   
+
 }
 
 .top-bar-container.is-fixed {
@@ -232,6 +245,17 @@
 }
 
 
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: transparent;
+    line-height: 5.625rem;
+
+    @media #{$medium-only} {
+
+        padding: 0 1.2rem;
+
+    }
+    
+  }
 
 
 

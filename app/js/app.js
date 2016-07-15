@@ -46,9 +46,46 @@ if($("[data-action='load-services-side-nav']").length > 0) {
     $("[data-action='load-services-side-nav']").load('components/nav--services.html');
 };
 
+
+
+
+/*------------------------------------*\
+    #Loading footer from components/footer.html
+\*------------------------------------*/
+
 if($("[data-action='load-footer']").length > 0) {
     $("[data-action='load-footer']").load('components/footer.html')
 }
+
+
+
+/*------------------------------------*\
+    #Loading footer from components/footer.html
+\*------------------------------------*/
+
+var activeMap = 'sanjuan';
+
+if($("[data-action='load-map']").length > 0) {
+
+    $("[data-action='load-map']").on('click', function(pLocation) {
+
+        var location = $(this).attr('map'); 
+
+
+        if(activeMap === location) {
+
+            return 
+
+        } else {
+
+            $("[ data-ui-component='map-container']").load("components/map--" + location + ".html"); 
+
+            activeMap = location; 
+        }
+
+    });
+
+}; 
 
 
 
@@ -386,7 +423,7 @@ $(document).on('ready', function() {
         #Contact Form/Map Toggle (contact.html)
     \*------------------------------------*/
 
-    $('[data-action="toggle-map"]').on('click', function(e) {
+    $('[data-action="load-map"]').on('click', function(e) {
         e.stopPropagation(); 
         e.preventDefault();
 
