@@ -156,6 +156,22 @@ $(document).on('ready', function() {
         }).setTween(fadeIn).addTo(controller); 
     }
 
+    // Checks to see if required trigger is available for scrolling 
+    if($("[data-action='fade-in-locations']").length > 0) {
+
+        // index.html Characteristics - Tween 
+        var fadeIn = TweenMax.staggerTo('.fade-in', .6, {
+                opacity: 1
+        }, 0.4);
+
+        // index.html Characteristics - Scene
+        var characteristics = new ScrollMagic.Scene({
+                triggerElement: "[data-action='fade-in-characteristics']",
+                reverse: false
+        }).setTween(fadeIn).addTo(controller); 
+    }
+
+
 
 
     /*------------------------------------*\
