@@ -1,0 +1,16 @@
+
+[13-Apr-2017 04:13:19 UTC] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.websitehostserver.net' did not match expected CN=`localhost' in /home/soriallc/public_html/phpMailer/class.smtp.php on line 344
+[13-Apr-2017 04:13:19 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'SMTP Error: Could not connect to SMTP host.' in /home/soriallc/public_html/phpMailer/class.phpmailer.php:1444
+Stack trace:
+#0 /home/soriallc/public_html/phpMailer/class.phpmailer.php(1311): PHPMailer->smtpConnect(Array)
+#1 /home/soriallc/public_html/phpMailer/class.phpmailer.php(1156): PHPMailer->smtpSend('Date: Thu, 13 A...', 'This is a multi...')
+#2 /home/soriallc/public_html/phpMailer/class.phpmailer.php(1060): PHPMailer->postSend()
+#3 /home/soriallc/public_html/mailer.php(57): PHPMailer->send()
+#4 {main}
+  thrown in /home/soriallc/public_html/phpMailer/class.phpmailer.php on line 1444
+[17-Apr-2017 11:29:39 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Message body empty' in /home/soriallc/public_html/phpMailer/class.phpmailer.php:1093
+Stack trace:
+#0 /home/soriallc/public_html/phpMailer/class.phpmailer.php(1057): PHPMailer->preSend()
+#1 /home/soriallc/public_html/mailer.php(57): PHPMailer->send()
+#2 {main}
+  thrown in /home/soriallc/public_html/phpMailer/class.phpmailer.php on line 1093
